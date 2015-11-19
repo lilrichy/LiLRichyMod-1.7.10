@@ -1,0 +1,19 @@
+[
+    {
+        "modid": "LiLRichyMod",
+        "name": "LiLRichy Mod",
+        "description": "A few random items made by LiLRichy for his ModPacks.",
+        "mcversion": "1.7.10",
+        "version": "1.0",
+        "url": "",
+        "updateUrl": "",
+        "authors": [
+            "LiLRichy"
+        ],
+        "credits": "",
+        "logoFile": "",
+        "screenshots": [],
+        "parent": "",
+        "dependencies": []
+    }
+]
