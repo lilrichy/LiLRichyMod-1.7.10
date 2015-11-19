@@ -1,4 +1,4 @@
-package com.blogspot.richardreigens.LiLRichyMod.reference;
+package com.blogspot.richardreigens.lilrichymod.reference;
 
 /**
  * Created by Rich on 11/19/2015.

@@ -1,11 +1,27 @@
-[06:23:07] [main/INFO]: Setting user: Player547
-[06:23:11] [Client thread/INFO]: LWJGL Version: 2.9.1
-[06:23:24] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod
-[06:23:25] [Sound Library Loader/INFO]: Sound engine started
-[06:23:29] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[06:23:29] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[06:23:30] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod
-[06:23:30] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[06:23:30] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[06:23:31] [Sound Library Loader/INFO]: Sound engine started
-[06:24:52] [Client thread/INFO]: Stopping!
+[10:33:12] [main/INFO]: Setting user: Player415
+[10:33:16] [Client thread/INFO]: LWJGL Version: 2.9.1
+[10:33:30] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
+[10:33:32] [Sound Library Loader/INFO]: Sound engine started
+[10:33:34] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[10:33:34] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[10:33:36] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
+[10:33:36] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[10:33:36] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[10:33:37] [Sound Library Loader/INFO]: Sound engine started
+[10:33:46] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[10:33:46] [Server thread/INFO]: Generating keypair
+[10:33:46] [Server thread/INFO]: Preparing start region for level 0
+[10:33:47] [Server thread/INFO]: Changing view distance to 12, from 10
+[10:33:48] [Server thread/INFO]: Player415[local:E:207ff0c2] logged in with entity id 2 at (228.30988569342466, 56.0, -237.51287167637673)
+[10:33:48] [Server thread/INFO]: Player415 joined the game
+[10:33:57] [Client thread/INFO]: [CHAT] The foul stench of such a stinky sock, has caused it to Proc!
+[10:33:57] [Client thread/INFO]: [CHAT] The foul stench of such a stinky sock, has caused it to Proc!
+[10:34:05] [Server thread/INFO]: Player415 has just earned the achievement [Taking Inventory]
+[10:34:05] [Client thread/INFO]: [CHAT] Player415 has just earned the achievement [Taking Inventory]
+[10:40:06] [Client thread/INFO]: Stopping!
+[10:40:06] [Server thread/INFO]: Stopping server
+[10:40:06] [Server thread/INFO]: Saving players
+[10:40:06] [Server thread/INFO]: Saving worlds
+[10:40:06] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Overworld
+[10:40:06] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Nether
+[10:40:06] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/The End

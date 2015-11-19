@@ -18,8 +18,8 @@ buildscript {
 apply plugin: 'forge'
 
 version = "1.7.10-1.0"
-group= "com.blogspot.richardreigens.LiLRichyMod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "LiLRichyMod"
+group= "com.blogspot.richardreigens.lilrichymod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "lilrichymod"
 
 minecraft {
     version = "1.7.10-10.13.4.1566-1.7.10"
@@ -40,6 +40,10 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
+}
+
+sourceSets{
+    main{ output.resourcesDir = output.classesDir}
 }
 
 processResources

@@ -1,8 +1,11 @@
-package com.blogspot.richardreigens.LiLRichyMod;
+package com.blogspot.richardreigens.lilrichymod;
 
-import com.blogspot.richardreigens.LiLRichyMod.configuration.ConfigurationHandler;
-import com.blogspot.richardreigens.LiLRichyMod.proxy.IProxy;
-import com.blogspot.richardreigens.LiLRichyMod.reference.Reference;
+import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
+import com.blogspot.richardreigens.lilrichymod.init.ModItems;
+import com.blogspot.richardreigens.lilrichymod.proxy.IProxy;
+import com.blogspot.richardreigens.lilrichymod.reference.Reference;
+import com.blogspot.richardreigens.lilrichymod.utility.LogHelper;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -14,10 +17,10 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
  */
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
-public class LiLRichyMod
+public class lilrichymod
 {
     @Mod.Instance(Reference.MOD_ID)
-    public static LiLRichyMod instance;
+    public static lilrichymod instance;
 
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static IProxy proxy;
@@ -27,17 +30,25 @@ public class LiLRichyMod
     public void preInit(FMLPreInitializationEvent event)
     {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+
+        ModItems.init();
+
+
+        LogHelper.info("Pre Initialization Complete");
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
 
+        LogHelper.info("Initialization Complete");
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
 
+        LogHelper.info("Post Initialization Complete");
     }
 }

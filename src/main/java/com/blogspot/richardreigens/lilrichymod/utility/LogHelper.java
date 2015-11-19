@@ -1,9 +1,7 @@
-package com.blogspot.richardreigens.LiLRichyMod.utility;
+package com.blogspot.richardreigens.lilrichymod.utility;
 
-import com.blogspot.richardreigens.LiLRichyMod.reference.Reference;
+import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import cpw.mods.fml.common.FMLLog;
-
-import java.util.logging.Level;
 
 
 /**
