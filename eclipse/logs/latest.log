@@ -1,11 +1,11 @@
-[05:22:58] [main/INFO]: Setting user: Player283
-[05:23:02] [Client thread/INFO]: LWJGL Version: 2.9.1
-[05:23:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod
-[05:23:17] [Sound Library Loader/INFO]: Sound engine started
-[05:23:21] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[05:23:21] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[05:23:22] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod
-[05:23:22] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[05:23:22] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[05:23:23] [Sound Library Loader/INFO]: Sound engine started
-[05:23:37] [Client thread/INFO]: Stopping!
+[06:23:07] [main/INFO]: Setting user: Player547
+[06:23:11] [Client thread/INFO]: LWJGL Version: 2.9.1
+[06:23:24] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod
+[06:23:25] [Sound Library Loader/INFO]: Sound engine started
+[06:23:29] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[06:23:29] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[06:23:30] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod
+[06:23:30] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[06:23:30] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[06:23:31] [Sound Library Loader/INFO]: Sound engine started
+[06:24:52] [Client thread/INFO]: Stopping!
