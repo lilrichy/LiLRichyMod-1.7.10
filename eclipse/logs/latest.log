@@ -1,11 +1,39 @@
-[20:25:19] [main/INFO]: Setting user: Player352
-[20:25:21] [Client thread/INFO]: LWJGL Version: 2.9.1
-[20:25:35] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge
-[20:25:36] [Sound Library Loader/INFO]: Sound engine started
-[20:25:39] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[20:25:39] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[20:25:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge
-[20:25:39] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[20:25:39] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[20:25:40] [Sound Library Loader/INFO]: Sound engine started
-[20:25:46] [Client thread/INFO]: Stopping!
+[20:33:59] [main/INFO]: Setting user: Player531
+[20:34:02] [Client thread/INFO]: LWJGL Version: 2.9.1
+[20:34:15] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items
+[20:34:16] [Sound Library Loader/INFO]: Sound engine started
+[20:34:19] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[20:34:19] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[20:34:20] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items
+[20:34:20] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[20:34:21] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[20:34:21] [Sound Library Loader/INFO]: Sound engine started
+[20:36:06] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[20:36:06] [Server thread/INFO]: Generating keypair
+[20:36:06] [Server thread/INFO]: Converting map!
+[20:36:06] [Server thread/INFO]: Scanning folders...
+[20:36:06] [Server thread/INFO]: Total conversion count is 0
+[20:36:07] [Server thread/WARN]: Unable to find spawn biome
+[20:36:08] [Server thread/INFO]: Preparing start region for level 0
+[20:36:09] [Server thread/INFO]: Preparing spawn area: 78%
+[20:36:09] [Server thread/INFO]: Changing view distance to 12, from 10
+[20:36:11] [Server thread/INFO]: Player531[local:E:10e9cb67] logged in with entity id 1 at (236.5, 56.0, -227.5)
+[20:36:11] [Server thread/INFO]: Player531 joined the game
+[20:36:19] [Server thread/INFO]: Player531 has just earned the achievement [Taking Inventory]
+[20:36:19] [Client thread/INFO]: [CHAT] Player531 has just earned the achievement [Taking Inventory]
+[20:36:27] [Client thread/INFO]: [CHAT] You are now playing creative+
+[20:36:31] [Server thread/INFO]: [Player531: Given [Crafting Table] * 1 to Player531]
+[20:36:32] [Client thread/INFO]: [CHAT] Given [Crafting Table] * 1 to Player531
+[20:36:36] [Server thread/INFO]: [Player531: Given [Crafting Table] * 64 to Player531]
+[20:36:36] [Client thread/INFO]: [CHAT] Given [Crafting Table] * 64 to Player531
+[20:36:48] [Server thread/INFO]: Saving and pausing game...
+[20:36:48] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Overworld
+[20:36:49] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Nether
+[20:36:49] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/The End
+[20:36:49] [Server thread/INFO]: Stopping server
+[20:36:49] [Server thread/INFO]: Saving players
+[20:36:49] [Server thread/INFO]: Saving worlds
+[20:36:49] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Overworld
+[20:36:49] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Nether
+[20:36:49] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/The End
+[20:36:54] [Client thread/INFO]: Stopping!
