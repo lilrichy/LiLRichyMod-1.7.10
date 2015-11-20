@@ -1,54 +1,48 @@
-[19:16:30] [main/INFO]: Setting user: Player290
-[19:16:34] [Client thread/INFO]: LWJGL Version: 2.9.1
-[19:16:47] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
-[19:16:49] [Sound Library Loader/INFO]: Sound engine started
-[19:16:51] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[19:16:51] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[19:16:53] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
-[19:16:54] [Client thread/INFO]: Created: 2048x1024 textures/blocks-atlas
-[19:16:54] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[19:16:55] [Sound Library Loader/INFO]: Sound engine started
-[19:17:37] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[19:17:37] [Server thread/INFO]: Generating keypair
-[19:17:37] [Server thread/INFO]: Preparing start region for level 0
-[19:17:38] [Server thread/INFO]: Changing view distance to 12, from 10
-[19:17:39] [Server thread/INFO]: Player290[local:E:31004c0a] logged in with entity id 1 at (238.5, 56.0, -243.5)
-[19:17:39] [Server thread/INFO]: Player290 joined the game
-[19:17:55] [Client thread/INFO]: [CHAT] lilrichymod:deathSock, lilrichymod:concreteBlocks
-[19:17:56] [Client thread/INFO]: [CHAT] lilrichymod:deathSock, lilrichymod:concreteBlocks
-[19:17:57] [Server thread/INFO]: [Player290: Given [Concrete Blocks] * 1 to Player290]
-[19:17:57] [Client thread/INFO]: [CHAT] Given [Concrete Blocks] * 1 to Player290
-[19:18:06] [Server thread/INFO]: Player290 has just earned the achievement [Taking Inventory]
-[19:18:06] [Client thread/INFO]: [CHAT] Player290 has just earned the achievement [Taking Inventory]
-[19:18:07] [Client thread/INFO]: [CHAT] You are now playing creative
-[19:18:07] [Client thread/INFO]: [CHAT] You are now playing creative+
-[19:18:18] [Server thread/INFO]: [Player290: Given [Concrete Blocks] * 1 to Player290]
-[19:18:19] [Client thread/INFO]: [CHAT] Given [Concrete Blocks] * 1 to Player290
-[19:19:52] [Server thread/INFO]: Saving and pausing game...
-[19:19:52] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Overworld
-[19:19:52] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Nether
-[19:19:52] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/The End
-[19:20:05] [Server thread/INFO]: Saving and pausing game...
-[19:20:05] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Overworld
-[19:20:05] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Nether
-[19:20:05] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/The End
-[19:20:22] [Server thread/INFO]: Saving and pausing game...
-[19:20:22] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Overworld
-[19:20:22] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Nether
-[19:20:22] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/The End
-[19:20:41] [Server thread/INFO]: Saving and pausing game...
-[19:20:41] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Overworld
-[19:20:41] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Nether
-[19:20:41] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/The End
-[19:25:28] [Client thread/INFO]: [CHAT] Saved screenshot as 2015-11-19_19.25.28.png
-[19:25:31] [Server thread/INFO]: Saving and pausing game...
-[19:25:31] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Overworld
-[19:25:31] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Nether
-[19:25:31] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/The End
-[19:34:02] [Client thread/INFO]: Stopping!
-[19:34:02] [Server thread/INFO]: Stopping server
-[19:34:02] [Server thread/INFO]: Saving players
-[19:34:02] [Server thread/INFO]: Saving worlds
-[19:34:02] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Overworld
-[19:34:02] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Nether
-[19:34:02] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/The End
+[22:16:18] [main/INFO]: Setting user: Player624
+[22:16:23] [Client thread/INFO]: LWJGL Version: 2.9.1
+[22:16:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
+[22:16:40] [Sound Library Loader/INFO]: Sound engine started
+[22:16:43] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[22:16:43] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[22:16:45] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
+[22:16:46] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[22:16:46] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[22:16:47] [Sound Library Loader/INFO]: Sound engine started
+[22:16:57] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[22:16:57] [Server thread/INFO]: Generating keypair
+[22:16:57] [Server thread/INFO]: Preparing start region for level 0
+[22:16:58] [Server thread/INFO]: Changing view distance to 12, from 10
+[22:16:59] [Server thread/INFO]: Player624[local:E:17fbdc02] logged in with entity id 1 at (234.5929637736203, 57.73901677465356, -234.0208484274344)
+[22:16:59] [Server thread/INFO]: Player624 joined the game
+[22:17:09] [Server thread/INFO]: Player624 has just earned the achievement [Taking Inventory]
+[22:17:09] [Client thread/INFO]: [CHAT] Player624 has just earned the achievement [Taking Inventory]
+[22:17:11] [Client thread/INFO]: [CHAT] You are now playing creative+
+[22:17:15] [Server thread/INFO]: [Player624: Given [Rough Concrete Squares] * 1 to Player624]
+[22:17:15] [Client thread/INFO]: [CHAT] Given [Rough Concrete Squares] * 1 to Player624
+[22:17:44] [Server thread/INFO]: [Player624: Given [Concrete Bricks] * 1 to Player624]
+[22:17:44] [Client thread/INFO]: [CHAT] Given [Concrete Bricks] * 1 to Player624
+[22:17:45] [Server thread/INFO]: [Player624: Given [Dark Concrete Bricks] * 1 to Player624]
+[22:17:45] [Client thread/INFO]: [CHAT] Given [Dark Concrete Bricks] * 1 to Player624
+[22:17:46] [Server thread/INFO]: [Player624: Given [Concrete Rocks] * 1 to Player624]
+[22:17:46] [Client thread/INFO]: [CHAT] Given [Concrete Rocks] * 1 to Player624
+[22:17:48] [Server thread/INFO]: [Player624: Given [tile.lilrichymod:concreteTexturedBlocks.name] * 1 to Player624]
+[22:17:48] [Client thread/INFO]: [CHAT] Given [tile.lilrichymod:concreteTexturedBlocks.name] * 1 to Player624
+[22:17:50] [Server thread/INFO]: [Player624: Given [Old Concrete Squares] * 1 to Player624]
+[22:17:50] [Client thread/INFO]: [CHAT] Given [Old Concrete Squares] * 1 to Player624
+[22:17:53] [Server thread/INFO]: [Player624: Given [Small Concrete Bricks] * 1 to Player624]
+[22:17:53] [Client thread/INFO]: [CHAT] Given [Small Concrete Bricks] * 1 to Player624
+[22:17:54] [Server thread/INFO]: [Player624: Given [tile.lilrichymod:smallConcreteTexturedSquares.name] * 1 to Player624]
+[22:17:55] [Client thread/INFO]: [CHAT] Given [tile.lilrichymod:smallConcreteTexturedSquares.name] * 1 to Player624
+[22:19:14] [Client thread/INFO]: [CHAT] Saved screenshot as 2015-11-19_22.19.14.png
+[22:19:25] [Client thread/INFO]: [CHAT] Saved screenshot as 2015-11-19_22.19.25.png
+[22:19:30] [Server thread/INFO]: Saving and pausing game...
+[22:19:30] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Overworld
+[22:19:30] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Nether
+[22:19:30] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/The End
+[22:19:33] [Client thread/INFO]: Stopping!
+[22:19:33] [Server thread/INFO]: Stopping server
+[22:19:33] [Server thread/INFO]: Saving players
+[22:19:33] [Server thread/INFO]: Saving worlds
+[22:19:33] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Overworld
+[22:19:33] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Nether
+[22:19:33] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/The End
