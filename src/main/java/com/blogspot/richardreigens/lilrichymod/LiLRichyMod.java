@@ -1,6 +1,7 @@
 package com.blogspot.richardreigens.lilrichymod;
 
 import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
+import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
 import com.blogspot.richardreigens.lilrichymod.proxy.IProxy;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
@@ -33,6 +34,8 @@ public class lilrichymod
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
         ModItems.init();
+
+        ModBlocks.init();
 
 
         LogHelper.info("Pre Initialization Complete");

@@ -2,17 +2,10 @@ package com.blogspot.richardreigens.lilrichymod.items;
 
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import com.blogspot.richardreigens.lilrichymod.utility.LogHelper;
-import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.item.ItemStack;
-import net.minecraft.server.MinecraftServer;
-import net.minecraft.server.management.ServerConfigurationManager;
 import net.minecraft.util.ChatComponentText;
-import net.minecraft.util.IChatComponent;
 import net.minecraft.world.World;
-import net.minecraftforge.client.event.RenderGameOverlayEvent;
 
 /**
  * Created by Rich on 11/19/2015.
@@ -43,7 +36,6 @@ public class ItemDeathSock extends ItemLiLRichyMod
 
         return itemStack;
     }
-
 
 
 }
