@@ -3,6 +3,7 @@ package com.blogspot.richardreigens.lilrichymod;
 import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
 import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
+import com.blogspot.richardreigens.lilrichymod.init.Recipes;
 import com.blogspot.richardreigens.lilrichymod.proxy.IProxy;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import com.blogspot.richardreigens.lilrichymod.utility.LogHelper;
@@ -37,13 +38,13 @@ public class lilrichymod
 
         ModBlocks.init();
 
-
         LogHelper.info("Pre Initialization Complete");
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
+        Recipes.init();
 
         LogHelper.info("Initialization Complete");
     }

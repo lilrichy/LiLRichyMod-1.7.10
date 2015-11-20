@@ -1,5 +1,6 @@
-package com.blogspot.richardreigens.lilrichymod.items;
+package com.blogspot.richardreigens.lilrichymod.items.tools;
 
+import com.blogspot.richardreigens.lilrichymod.items.ItemLiLRichyMod;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import com.blogspot.richardreigens.lilrichymod.utility.LogHelper;
 import net.minecraft.entity.player.EntityPlayer;

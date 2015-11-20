@@ -11,18 +11,12 @@ import static com.blogspot.richardreigens.lilrichymod.reference.Reference.MOD_ID
  */
 public class CreativeTabLiLRichyMod
 {
-    public static final CreativeTabs LR_Tab = new CreativeTabs(MOD_ID)
+    public static final CreativeTabs LR_Tab = new CreativeTabs(MOD_ID.toLowerCase())
     {
         @Override
         public Item getTabIconItem()
         {
             return ModItems.shadowmourne;
-        }
-
-        @Override
-        public String getTranslatedTabLabel()
-        {
-          return "LiLRichy Mod";
         }
     };
 }

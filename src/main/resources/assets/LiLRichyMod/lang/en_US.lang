@@ -1,16 +1,19 @@
+itemGroup.lilrichymod=LiLRichy Mod
+
 item.lilrichymod:deathSock.name=Death Sock
 item.lilrichymod:concreteMix.name=Concrete Mix
 item.lilrichymod:shadowmourne.name=Shadowmourne
+item.lilrichymod:crushedConcrete.name=Crushed Concrete
 
 tile.lilrichymod:arrangedConcreteBricks.name=Arranged Concrete Bricks
 tile.lilrichymod:concrete.name=Concrete
-tile.lilrichymod:concreteBlocks.name=Concrete Blocks
+tile.lilrichymod:fancyConcreteBlocks.name=Fancy Concrete Blocks
 tile.lilrichymod:concreteBricks.name=Concrete Bricks
 tile.lilrichymod:concreteBricksDark.name=Dark Concrete Bricks
 tile.lilrichymod:concreteRocks.name=Concrete Rocks
 tile.lilrichymod:concreteTexturedBlocks.name=Textured Concrete Blocks
 tile.lilrichymod:oldConcreteSquares.name=Old Concrete Squares
-tile.lilrichymod:concreteSquares.name=Rough Concrete Squares
+tile.lilrichymod:concreteSquares.name=Concrete Squares
 tile.lilrichymod:smallConcreteBricks.name=Small Concrete Bricks
 tile.lilrichymod:smallConcreteTexturedSquares.name=Small Textured Concrete Squares
 

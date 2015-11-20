@@ -1,6 +1,7 @@
 package com.blogspot.richardreigens.lilrichymod.init;
 
 import com.blogspot.richardreigens.lilrichymod.blocks.*;
+import com.blogspot.richardreigens.lilrichymod.blocks.type.concrete.*;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -12,7 +13,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class ModBlocks
 {
     public static final BlockLiLRichyMod concrete = new BlockConcrete();
-    public static final BlockLiLRichyMod concreteBlocks = new BlockConcreteBlocks();
+    public static final BlockLiLRichyMod fancyConcreteBlocks = new BlockFancyConcreteBlocks();
     public static final BlockLiLRichyMod concreteBricks = new BlockConcreteBricks();
     public static final BlockLiLRichyMod concreteBricksDark = new BlockConcreteBricksDark();
     public static final BlockLiLRichyMod concreteRocks = new BlockConcreteRocks();
@@ -21,11 +22,13 @@ public class ModBlocks
     public static final BlockLiLRichyMod concreteSquares = new BlockConcreteSquares();
     public static final BlockLiLRichyMod smallConcreteBricks = new BlockSmallConcreteBricks();
     public static final BlockLiLRichyMod smallConcreteTexturedSquares = new BlockSmallConcreteTexturedSquares();
+    public static final BlockLiLRichyMod arrangedConcreteBricks = new BlockArrangedConcreteBricks();
+
 
     public static void init()
     {
         GameRegistry.registerBlock(concrete, "concrete");
-        GameRegistry.registerBlock(concreteBlocks, "concreteBlocks");
+        GameRegistry.registerBlock(fancyConcreteBlocks, "fancyConcreteBlocks");
         GameRegistry.registerBlock(concreteBricks, "concreteBricks");
         GameRegistry.registerBlock(concreteBricksDark, "concreteBricksDark");
         GameRegistry.registerBlock(concreteRocks, "concreteRocks");
@@ -34,5 +37,6 @@ public class ModBlocks
         GameRegistry.registerBlock(concreteSquares, "concreteSquares");
         GameRegistry.registerBlock(smallConcreteBricks, "smallConcreteBricks");
         GameRegistry.registerBlock(smallConcreteTexturedSquares, "smallConcreteTexturedSquares");
+        GameRegistry.registerBlock(arrangedConcreteBricks, "arrangedConcreteBricks");
     }
 }
