@@ -1,11 +1,14 @@
 package com.blogspot.richardreigens.lilrichymod.init;
 
 import com.blogspot.richardreigens.lilrichymod.blocks.*;
+import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 /**
  * Created by Rich on 11/19/2015.
  */
+
+@GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModBlocks
 {
     public static final BlockLiLRichyMod concrete = new BlockConcrete();
