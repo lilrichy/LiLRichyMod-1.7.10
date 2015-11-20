@@ -16,7 +16,8 @@ tile.lilrichymod:oldConcreteSquares.name=Old Concrete Squares
 tile.lilrichymod:concreteSquares.name=Concrete Squares
 tile.lilrichymod:smallConcreteBricks.name=Small Concrete Bricks
 tile.lilrichymod:smallConcreteTexturedSquares.name=Small Textured Concrete Squares
-
+tile.lilrichymod:crackedStone.name=Cracked Stone
+tile.lilrichymod:arrangedStoneBricks.name=Arranged Stone Bricks
 
 
 

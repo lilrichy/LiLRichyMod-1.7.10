@@ -1,9 +1,12 @@
 package com.blogspot.richardreigens.lilrichymod.init;
 
 import com.blogspot.richardreigens.lilrichymod.blocks.*;
+import com.blogspot.richardreigens.lilrichymod.blocks.type.stone.BlockArrangedStoneBricks;
+import com.blogspot.richardreigens.lilrichymod.blocks.type.stone.BlockCrackedStone;
 import com.blogspot.richardreigens.lilrichymod.blocks.type.concrete.*;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.material.Material;
 
 /**
  * Created by Rich on 11/19/2015.
@@ -23,10 +26,13 @@ public class ModBlocks
     public static final BlockLiLRichyMod smallConcreteBricks = new BlockSmallConcreteBricks();
     public static final BlockLiLRichyMod smallConcreteTexturedSquares = new BlockSmallConcreteTexturedSquares();
     public static final BlockLiLRichyMod arrangedConcreteBricks = new BlockArrangedConcreteBricks();
+    public static final BlockLiLRichyMod crackedStone = new BlockCrackedStone();
+    public static final BlockLiLRichyMod arrangedStoneBricks = new BlockArrangedStoneBricks();
 
 
     public static void init()
     {
+
         GameRegistry.registerBlock(concrete, "concrete");
         GameRegistry.registerBlock(fancyConcreteBlocks, "fancyConcreteBlocks");
         GameRegistry.registerBlock(concreteBricks, "concreteBricks");
@@ -38,5 +44,7 @@ public class ModBlocks
         GameRegistry.registerBlock(smallConcreteBricks, "smallConcreteBricks");
         GameRegistry.registerBlock(smallConcreteTexturedSquares, "smallConcreteTexturedSquares");
         GameRegistry.registerBlock(arrangedConcreteBricks, "arrangedConcreteBricks");
+        GameRegistry.registerBlock(crackedStone, "crackedStone");
+        GameRegistry.registerBlock(arrangedStoneBricks, "arrangedStoneBricks");
     }
 }

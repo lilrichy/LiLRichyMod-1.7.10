@@ -75,6 +75,14 @@ public class Recipes
                 new ItemStack(ModBlocks.smallConcreteBricks), new ItemStack(ModBlocks.smallConcreteBricks),
                 new ItemStack(ModBlocks.smallConcreteBricks), new ItemStack(ModBlocks.smallConcreteBricks));
 
+        //Cracked Stone
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.crackedStone, 4), "ccc", "csc", "ccc",
+                'c', new ItemStack(Blocks.cobblestone), 's', new ItemStack(Blocks.stone));
+
+        //Arranged Stone Bricks
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.arrangedStoneBricks, 4), "bbb", "bsb", "bbb",
+                'b', new ItemStack(Blocks.stonebrick), 's', new ItemStack(Blocks.stone));
+
 
     }
 }
