@@ -1,5 +1,6 @@
 package com.blogspot.richardreigens.lilrichymod.items;
 
+import com.blogspot.richardreigens.lilrichymod.creativeTab.CreativeTabLiLRichyMod;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -16,10 +17,8 @@ public class ItemLiLRichyMod extends Item
     {
         super();
         this.maxStackSize = 1;
-        //this.setCreativeTab();
+        this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
         this.setNoRepair();
-
-
     }
 
     @Override

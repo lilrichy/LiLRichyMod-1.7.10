@@ -1,5 +1,6 @@
 package com.blogspot.richardreigens.lilrichymod.blocks;
 
+import com.blogspot.richardreigens.lilrichymod.creativeTab.CreativeTabLiLRichyMod;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -20,7 +21,9 @@ public class BlockLiLRichyMod extends Block
     public BlockLiLRichyMod()
     {
         this(Material.rock);
+        this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
     }
+
 
     @Override
     public String getUnlocalizedName()
