@@ -1,10 +1,12 @@
 package com.blogspot.richardreigens.lilrichymod;
 
 import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
+import com.blogspot.richardreigens.lilrichymod.handler.PacketDescriptionHandler;
 import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
+import com.blogspot.richardreigens.lilrichymod.init.ModTileEntitys;
 import com.blogspot.richardreigens.lilrichymod.init.Recipes;
-import com.blogspot.richardreigens.lilrichymod.proxy.IProxy;
+import com.blogspot.richardreigens.lilrichymod.proxy.CommonProxy;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import com.blogspot.richardreigens.lilrichymod.utility.LogHelper;
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -25,7 +27,7 @@ public class lilrichymod
     public static lilrichymod instance;
 
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
-    public static IProxy proxy;
+    public static CommonProxy proxy;
 
 
     @Mod.EventHandler
@@ -35,8 +37,16 @@ public class lilrichymod
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
         ModItems.init();
+        LogHelper.info("Items Loaded");
 
         ModBlocks.init();
+        LogHelper.info("Blocks Loaded");
+
+        ModTileEntitys.Init();
+        LogHelper.info("Tile Entity's Loaded");
+
+        PacketDescriptionHandler.init();
+        LogHelper.info("Packet Description Handler Loaded");
 
         LogHelper.info("Pre Initialization Complete");
     }
@@ -45,6 +55,7 @@ public class lilrichymod
     public void init(FMLInitializationEvent event)
     {
         Recipes.init();
+        LogHelper.info("Recipes Loaded");
 
         LogHelper.info("Initialization Complete");
     }

@@ -1,25 +1,29 @@
-[12:32:23] [main/INFO]: Logging in with username & password
-[12:32:33] [main/INFO]: Setting user: LiLRichy
-[12:32:37] [Client thread/INFO]: LWJGL Version: 2.9.1
-[12:32:38] [Twitch authenticator/ERROR]: [Broadcast controller] TTV_EC_INTEL_FAILED_SESSION_INIT
-[12:32:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
-[12:32:51] [Sound Library Loader/INFO]: Sound engine started
-[12:32:54] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[12:32:54] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[12:32:56] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
-[12:32:57] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
-[12:32:57] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[12:32:58] [Sound Library Loader/INFO]: Sound engine started
-[12:33:06] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[12:33:06] [Server thread/INFO]: Generating keypair
-[12:33:15] [Server thread/INFO]: Preparing start region for level 0
-[12:33:15] [Server thread/INFO]: Changing view distance to 12, from 10
-[12:33:17] [Server thread/INFO]: LiLRichy[local:E:cf8fc424] logged in with entity id 1 at (205.37663355081972, 56.0, -234.14588878431397)
-[12:33:17] [Server thread/INFO]: LiLRichy joined the game
-[13:00:03] [Client thread/INFO]: Stopping!
-[13:00:03] [Server thread/INFO]: Stopping server
-[13:00:03] [Server thread/INFO]: Saving players
-[13:00:03] [Server thread/INFO]: Saving worlds
-[13:00:03] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Overworld
-[13:00:03] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Nether
-[13:00:03] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/The End
+[06:00:48] [main/INFO]: Logging in with username & password
+[06:00:57] [main/INFO]: Setting user: LiLRichy
+[06:01:01] [Client thread/INFO]: LWJGL Version: 2.9.1
+[06:01:02] [Twitch authenticator/ERROR]: [Broadcast controller] TTV_EC_INTEL_FAILED_SESSION_INIT
+[06:01:14] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
+[06:01:16] [Sound Library Loader/INFO]: Sound engine started
+[06:01:19] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[06:01:19] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[06:01:20] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
+[06:01:21] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[06:01:21] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[06:01:22] [Sound Library Loader/INFO]: Sound engine started
+[06:01:30] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[06:01:30] [Server thread/INFO]: Generating keypair
+[06:01:30] [Server thread/INFO]: Preparing start region for level 0
+[06:01:31] [Server thread/INFO]: Changing view distance to 12, from 10
+[06:01:32] [Server thread/INFO]: LiLRichy[local:E:77f3325b] logged in with entity id 3 at (220.19107162516596, 56.0, -261.13919817456826)
+[06:01:32] [Server thread/INFO]: LiLRichy joined the game
+[06:01:56] [Server thread/INFO]: Saving and pausing game...
+[06:01:56] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Overworld
+[06:01:56] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Nether
+[06:01:56] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/The End
+[06:01:58] [Client thread/INFO]: Stopping!
+[06:01:58] [Server thread/INFO]: Stopping server
+[06:01:58] [Server thread/INFO]: Saving players
+[06:01:58] [Server thread/INFO]: Saving worlds
+[06:01:58] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Overworld
+[06:01:58] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/Nether
+[06:01:58] [Server thread/INFO]: Saving chunks for level 'Creative Flat'/The End

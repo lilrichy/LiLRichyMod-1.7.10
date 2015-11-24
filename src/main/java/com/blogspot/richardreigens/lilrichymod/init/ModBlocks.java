@@ -1,12 +1,12 @@
 package com.blogspot.richardreigens.lilrichymod.init;
 
 import com.blogspot.richardreigens.lilrichymod.blocks.*;
+import com.blogspot.richardreigens.lilrichymod.blocks.type.concrete.*;
 import com.blogspot.richardreigens.lilrichymod.blocks.type.stone.BlockArrangedStoneBricks;
 import com.blogspot.richardreigens.lilrichymod.blocks.type.stone.BlockCrackedStone;
-import com.blogspot.richardreigens.lilrichymod.blocks.type.concrete.*;
+import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.block.material.Material;
 
 /**
  * Created by Rich on 11/19/2015.
@@ -15,6 +15,7 @@ import net.minecraft.block.material.Material;
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModBlocks
 {
+    //Blocks
     public static final BlockLiLRichyMod concrete = new BlockConcrete();
     public static final BlockLiLRichyMod fancyConcreteBlocks = new BlockFancyConcreteBlocks();
     public static final BlockLiLRichyMod concreteBricks = new BlockConcreteBricks();
@@ -30,9 +31,14 @@ public class ModBlocks
     public static final BlockLiLRichyMod arrangedStoneBricks = new BlockArrangedStoneBricks();
 
 
+    //Tile Entity Blocks
+    public static final BlockTileEntityLiLRichyMod playerDetector = new BlockPlayerDetector();
+    public static final BlockLiLRichyMod playerDetectorON = new BlockPlayerDetectorON();
+    public static final BlockLiLRichyMod playerDetectorOFF = new BlockPlayerDetectorOFF();
+
     public static void init()
     {
-
+        //Blocks
         GameRegistry.registerBlock(concrete, "concrete");
         GameRegistry.registerBlock(fancyConcreteBlocks, "fancyConcreteBlocks");
         GameRegistry.registerBlock(concreteBricks, "concreteBricks");
@@ -46,5 +52,10 @@ public class ModBlocks
         GameRegistry.registerBlock(arrangedConcreteBricks, "arrangedConcreteBricks");
         GameRegistry.registerBlock(crackedStone, "crackedStone");
         GameRegistry.registerBlock(arrangedStoneBricks, "arrangedStoneBricks");
+
+        //Tile Entity Blocks
+        GameRegistry.registerBlock(playerDetector, Names.Blocks.PLAYER_DETECTOR);
+        GameRegistry.registerBlock(playerDetectorON, Names.Blocks.PLAYER_DETECTOR_ON);
+        GameRegistry.registerBlock(playerDetectorOFF, Names.Blocks.PLAYER_DETECTOR_OFF);
     }
 }
