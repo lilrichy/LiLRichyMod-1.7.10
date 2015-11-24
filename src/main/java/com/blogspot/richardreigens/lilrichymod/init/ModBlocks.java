@@ -39,19 +39,19 @@ public class ModBlocks
     public static void init()
     {
         //Blocks
-        GameRegistry.registerBlock(concrete, "concrete");
-        GameRegistry.registerBlock(fancyConcreteBlocks, "fancyConcreteBlocks");
-        GameRegistry.registerBlock(concreteBricks, "concreteBricks");
-        GameRegistry.registerBlock(concreteBricksDark, "concreteBricksDark");
-        GameRegistry.registerBlock(concreteRocks, "concreteRocks");
-        GameRegistry.registerBlock(concreteTexturedBlocks, "concreteTexturedBlocks");
-        GameRegistry.registerBlock(oldConcreteSquares, "oldConcreteSquares");
-        GameRegistry.registerBlock(concreteSquares, "concreteSquares");
-        GameRegistry.registerBlock(smallConcreteBricks, "smallConcreteBricks");
-        GameRegistry.registerBlock(smallConcreteTexturedSquares, "smallConcreteTexturedSquares");
-        GameRegistry.registerBlock(arrangedConcreteBricks, "arrangedConcreteBricks");
-        GameRegistry.registerBlock(crackedStone, "crackedStone");
-        GameRegistry.registerBlock(arrangedStoneBricks, "arrangedStoneBricks");
+        GameRegistry.registerBlock(concrete, Names.Blocks.CONCRETE);
+        GameRegistry.registerBlock(fancyConcreteBlocks, Names.Blocks.FANCY_CONCRETE_BLOCKS);
+        GameRegistry.registerBlock(concreteBricks, Names.Blocks.CONCRETE_BRICKS);
+        GameRegistry.registerBlock(concreteBricksDark, Names.Blocks.CONCRETE_BRICKS_DARK);
+        GameRegistry.registerBlock(concreteRocks, Names.Blocks.CONCRETE_ROCKS);
+        GameRegistry.registerBlock(concreteTexturedBlocks, Names.Blocks.CONCRETE_TEXTURED_BLOCKS);
+        GameRegistry.registerBlock(oldConcreteSquares, Names.Blocks.OLD_CONCRETE_SQUARES);
+        GameRegistry.registerBlock(concreteSquares, Names.Blocks.CONCRETE_SQUARES);
+        GameRegistry.registerBlock(smallConcreteBricks, Names.Blocks.SMALL_CONCRETE_BRICKS);
+        GameRegistry.registerBlock(smallConcreteTexturedSquares, Names.Blocks.SMALL_CONCRETE_TEXTURED_SQUARES);
+        GameRegistry.registerBlock(arrangedConcreteBricks, Names.Blocks.ARRANGED_CONCRETE_BRICKS);
+        GameRegistry.registerBlock(crackedStone, Names.Blocks.CRACKED_STONE);
+        GameRegistry.registerBlock(arrangedStoneBricks, Names.Blocks.ARRANGED_STONE_BRICKS);
 
         //Tile Entity Blocks
         GameRegistry.registerBlock(playerDetector, Names.Blocks.PLAYER_DETECTOR);

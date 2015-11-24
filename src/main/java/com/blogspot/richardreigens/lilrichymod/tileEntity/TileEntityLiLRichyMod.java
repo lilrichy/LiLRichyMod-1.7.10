@@ -10,7 +10,7 @@ import net.minecraft.tileentity.TileEntity;
 /**
  * Created by Rich on 11/24/2015.
  */
-public class TileEntityLiLRichyMod extends TileEntity
+public abstract class TileEntityLiLRichyMod extends TileEntity
 {
     @Override
     public Packet getDescriptionPacket()
@@ -23,6 +23,7 @@ public class TileEntityLiLRichyMod extends TileEntity
         writeToPacket(buf);
         return new FMLProxyPacket(buf, PacketDescriptionHandler.CHANNEL);
     }
+
 
     public void writeToPacket(ByteBuf buf)
     {

@@ -3,6 +3,7 @@ package com.blogspot.richardreigens.lilrichymod.blocks;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityPlayerDetector;
+import com.blogspot.richardreigens.lilrichymod.utility.LogHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import io.netty.buffer.ByteBuf;
@@ -26,12 +27,23 @@ public class BlockPlayerDetector extends BlockTileEntityLiLRichyMod
     {
         setBlockName("playerDetector");
         setBlockTextureName(Reference.MOD_ID.toLowerCase() + ":" + Names.Blocks.PLAYER_DETECTOR_ON);
+        canProvidePower();
     }
 
     @Override
     public TileEntity createNewTileEntity(World world, int metadata)
     {
         return new TileEntityPlayerDetector();
+    }
+
+    public int isProvidingStrongPower(IBlockAccess world, int x, int y, int z, int strength)
+    {
+        TileEntityPlayerDetector te = (TileEntityPlayerDetector) world.getTileEntity(x, y, z);
+        if (te.getActivated()) {
+            LogHelper.info(te.getActivated());
+            return 1;
+        } else
+            return 0;
     }
 
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int par6, float par7, float par8, float par9)

@@ -27,9 +27,11 @@ public class TileEntityPlayerDetector extends TileEntityLiLRichyMod
                     (xCoord - 1, yCoord - 1, zCoord - 1, xCoord + 2, yCoord + 2, zCoord + 2));
             if (entities.size() > 0) {
                 activated = true;
+
             } else if (entities.size() < 1) {
                 activated = false;
-                writeToNBT(tag);
+
+
             }
         }
     }

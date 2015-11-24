@@ -1,10 +1,9 @@
 package com.blogspot.richardreigens.lilrichymod.blocks.type.concrete;
 
 import com.blogspot.richardreigens.lilrichymod.blocks.BlockLiLRichyMod;
-import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
+import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 
 import java.util.Random;
 
@@ -16,7 +15,7 @@ public class BlockConcrete extends BlockLiLRichyMod
     public BlockConcrete()
     {
         super();
-        this.setBlockName("concrete");
+        this.setBlockName(Names.Blocks.CONCRETE);
         this.setHardness(2f);
         this.setStepSound(soundTypePiston);
     }
