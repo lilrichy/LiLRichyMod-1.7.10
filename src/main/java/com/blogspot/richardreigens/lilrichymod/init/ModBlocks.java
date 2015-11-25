@@ -1,6 +1,8 @@
 package com.blogspot.richardreigens.lilrichymod.init;
 
-import com.blogspot.richardreigens.lilrichymod.blocks.*;
+import com.blogspot.richardreigens.lilrichymod.blocks.BlockLiLRichyMod;
+import com.blogspot.richardreigens.lilrichymod.blocks.BlockPlayerDetector;
+import com.blogspot.richardreigens.lilrichymod.blocks.BlockTileEntityLiLRichyMod;
 import com.blogspot.richardreigens.lilrichymod.blocks.type.concrete.*;
 import com.blogspot.richardreigens.lilrichymod.blocks.type.stone.BlockArrangedStoneBricks;
 import com.blogspot.richardreigens.lilrichymod.blocks.type.stone.BlockCrackedStone;
@@ -33,8 +35,7 @@ public class ModBlocks
 
     //Tile Entity Blocks
     public static final BlockTileEntityLiLRichyMod playerDetector = new BlockPlayerDetector();
-    public static final BlockLiLRichyMod playerDetectorON = new BlockPlayerDetectorON();
-    public static final BlockLiLRichyMod playerDetectorOFF = new BlockPlayerDetectorOFF();
+
 
     public static void init()
     {
@@ -55,7 +56,6 @@ public class ModBlocks
 
         //Tile Entity Blocks
         GameRegistry.registerBlock(playerDetector, Names.Blocks.PLAYER_DETECTOR);
-        GameRegistry.registerBlock(playerDetectorON, Names.Blocks.PLAYER_DETECTOR_ON);
-        GameRegistry.registerBlock(playerDetectorOFF, Names.Blocks.PLAYER_DETECTOR_OFF);
+
     }
 }

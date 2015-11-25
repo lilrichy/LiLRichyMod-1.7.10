@@ -1,11 +1,10 @@
 package com.blogspot.richardreigens.lilrichymod.items.tools;
 
+import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 
 /**
  * Created by Rich on 11/20/2015.
@@ -17,7 +16,7 @@ public class ItemShadowmourne extends ItemSwordLiLRichyMod
     public ItemShadowmourne(ToolMaterial material, float damage)
     {
         super(material);
-        this.setUnlocalizedName("shadowmourne");
+        this.setUnlocalizedName(Names.Items.SHADOWMOURNE);
         this.weaponDamage = 4.0F + damage + material.getDamageVsEntity();
     }
 

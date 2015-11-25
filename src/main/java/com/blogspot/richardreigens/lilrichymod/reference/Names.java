@@ -26,8 +26,6 @@ public class Names
 
         //PlayerDetector Blocks
         public static final String PLAYER_DETECTOR = "playerDetector";
-        public static final String PLAYER_DETECTOR_ON = "playerDetectorON";
-        public static final String PLAYER_DETECTOR_OFF = "playerDetectorOFF";
 
     }
 

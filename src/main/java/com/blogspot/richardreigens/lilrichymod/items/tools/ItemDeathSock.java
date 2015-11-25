@@ -1,6 +1,7 @@
 package com.blogspot.richardreigens.lilrichymod.items.tools;
 
 import com.blogspot.richardreigens.lilrichymod.items.ItemLiLRichyMod;
+import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import com.blogspot.richardreigens.lilrichymod.utility.LogHelper;
 import net.minecraft.entity.player.EntityPlayer;
@@ -16,7 +17,7 @@ public class ItemDeathSock extends ItemLiLRichyMod
     public ItemDeathSock()
     {
         super();
-        this.setUnlocalizedName("deathSock");
+        this.setUnlocalizedName(Names.Items.DEATH_SOCK);
         this.maxStackSize = 1;
 
     }

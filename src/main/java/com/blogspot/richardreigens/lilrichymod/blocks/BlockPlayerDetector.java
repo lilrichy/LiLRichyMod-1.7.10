@@ -25,9 +25,10 @@ public class BlockPlayerDetector extends BlockTileEntityLiLRichyMod
 
     public BlockPlayerDetector()
     {
-        setBlockName("playerDetector");
-        setBlockTextureName(Reference.MOD_ID.toLowerCase() + ":" + Names.Blocks.PLAYER_DETECTOR_ON);
-        canProvidePower();
+        setBlockName(Names.Blocks.PLAYER_DETECTOR);
+        setBlockTextureName(Reference.MOD_ID.toLowerCase() + ":" + Names.Blocks.PLAYER_DETECTOR);
+        this.canProvidePower();
+
     }
 
     @Override

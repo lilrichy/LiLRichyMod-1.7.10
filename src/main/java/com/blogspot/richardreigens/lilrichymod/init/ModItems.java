@@ -2,10 +2,11 @@ package com.blogspot.richardreigens.lilrichymod.init;
 
 import com.blogspot.richardreigens.lilrichymod.items.ItemConcreteMix;
 import com.blogspot.richardreigens.lilrichymod.items.ItemCrushedConcrete;
-import com.blogspot.richardreigens.lilrichymod.items.tools.ItemDeathSock;
 import com.blogspot.richardreigens.lilrichymod.items.ItemLiLRichyMod;
+import com.blogspot.richardreigens.lilrichymod.items.tools.ItemDeathSock;
 import com.blogspot.richardreigens.lilrichymod.items.tools.ItemShadowmourne;
 import com.blogspot.richardreigens.lilrichymod.items.tools.ItemSwordLiLRichyMod;
+import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
@@ -25,9 +26,9 @@ public class ModItems
 
     public static void init()
     {
-        GameRegistry.registerItem(deathSock, "deathSock");
-        GameRegistry.registerItem(concreteMix, "concreteMix");
-        GameRegistry.registerItem(crushedConcrete, "crushedConcrete");
-        GameRegistry.registerItem(shadowmourne, "shadowmourn");
+        GameRegistry.registerItem(deathSock, Names.Items.DEATH_SOCK);
+        GameRegistry.registerItem(concreteMix, Names.Items.CONCRETE_MIX);
+        GameRegistry.registerItem(crushedConcrete, Names.Items.CRUSHED_CONCRETE);
+        GameRegistry.registerItem(shadowmourne, Names.Items.SHADOWMOURNE);
     }
 }
