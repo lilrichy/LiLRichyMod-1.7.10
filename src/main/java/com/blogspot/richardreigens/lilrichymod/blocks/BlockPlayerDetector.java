@@ -3,7 +3,6 @@ package com.blogspot.richardreigens.lilrichymod.blocks;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityPlayerDetector;
-import com.blogspot.richardreigens.lilrichymod.utility.LogHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import io.netty.buffer.ByteBuf;
@@ -21,14 +20,13 @@ import net.minecraft.world.World;
  */
 public class BlockPlayerDetector extends BlockTileEntityLiLRichyMod
 {
+    boolean activated;
     private ByteBuf buf;
 
     public BlockPlayerDetector()
     {
         setBlockName(Names.Blocks.PLAYER_DETECTOR);
         setBlockTextureName(Reference.MOD_ID.toLowerCase() + ":" + Names.Blocks.PLAYER_DETECTOR);
-        this.canProvidePower();
-
     }
 
     @Override
@@ -37,15 +35,32 @@ public class BlockPlayerDetector extends BlockTileEntityLiLRichyMod
         return new TileEntityPlayerDetector();
     }
 
-    public int isProvidingStrongPower(IBlockAccess world, int x, int y, int z, int strength)
+    @Override
+    public boolean canConnectRedstone(IBlockAccess world, int x, int y, int z, int side)
+    {
+        return !(side == 0 || side == 1);
+    }
+
+    public boolean canProvidePower()
+    {
+        return true;
+    }
+
+    public int isProvidingWeakPower(IBlockAccess world, int x, int y, int z, int p_149709_5_)
     {
         TileEntityPlayerDetector te = (TileEntityPlayerDetector) world.getTileEntity(x, y, z);
-        if (te.getActivated()) {
-            LogHelper.info(te.getActivated());
-            return 1;
+        activated = te.getActivated();
+
+        if (activated == true) {
+            return 15;
         } else
             return 0;
+
     }
+
+
+
+
 
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int par6, float par7, float par8, float par9)
     {
