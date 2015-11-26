@@ -1,5 +1,6 @@
 package com.blogspot.richardreigens.lilrichymod.init;
 
+import com.blogspot.richardreigens.lilrichymod.blocks.BlockAdvancedDetector;
 import com.blogspot.richardreigens.lilrichymod.blocks.BlockLiLRichyMod;
 import com.blogspot.richardreigens.lilrichymod.blocks.BlockPlayerDetector;
 import com.blogspot.richardreigens.lilrichymod.blocks.BlockTileEntityLiLRichyMod;
@@ -35,6 +36,7 @@ public class ModBlocks
 
     //Tile Entity Blocks
     public static final BlockTileEntityLiLRichyMod playerDetector = new BlockPlayerDetector();
+    public static final BlockTileEntityLiLRichyMod advancedDetector = new BlockAdvancedDetector();
 
 
     public static void init()
@@ -56,6 +58,7 @@ public class ModBlocks
 
         //Tile Entity Blocks
         GameRegistry.registerBlock(playerDetector, Names.Blocks.PLAYER_DETECTOR);
+        GameRegistry.registerBlock(advancedDetector, Names.Blocks.ADVANCED_DETECTOR);
 
     }
 }

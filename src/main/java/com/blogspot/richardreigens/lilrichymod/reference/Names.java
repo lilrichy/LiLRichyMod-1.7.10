@@ -26,7 +26,7 @@ public class Names
 
         //PlayerDetector Blocks
         public static final String PLAYER_DETECTOR = "playerDetector";
-
+        public static final String ADVANCED_DETECTOR = "advancedDetector";
     }
 
     public static class Items
@@ -40,6 +40,7 @@ public class Names
     public static class TileEntities
     {
         public static final String PLAYER_DETECTOR = Reference.MOD_ID + ":" + "playerDetector";
+        public static final String ADVANCED_DETECTOR = Reference.MOD_ID + ":" + "advancedDetector";
 
     }
 }

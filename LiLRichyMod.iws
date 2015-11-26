@@ -4,12 +4,29 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f2f7f7-ba3d-43fb-b0b7-76bafc0d90d7" name="Default" comment="player detector reduces itemstacks and gives back item when removed&#10;">
+    <list default="true" id="87f2f7f7-ba3d-43fb-b0b7-76bafc0d90d7" name="Default" comment="Added Recipe for Player Detector">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/LiLRichyMod/textures/blocks/advancedDetector.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/LiLRichyMod/textures/blocks/advancedDetectorOFF.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/LiLRichyMod/textures/blocks/advancedDetectorON.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/LiLRichyMod/textures/blocks/advancedDetectorTopBottom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/LiLRichyMod/textures/blocks/projectFiles/playerDetector.pdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/LiLRichyMod/textures/items/projectFiles/deathSockTexture.pdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockAdvancedDetector.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityAdvancedDetector.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/LiLRichyMod/textures/items/deathSockTexture.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/LiLRichyMod/textures/items/glass_pane_top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/assets/LiLRichyMod/textures/items/planks_oak.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/LiLRichyMod/textures/blocks/Thumbs.db" afterPath="$PROJECT_DIR$/src/main/resources/assets/LiLRichyMod/textures/blocks/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/LiLRichyMod/textures/blocks/playerDetectorON.png" afterPath="$PROJECT_DIR$/src/main/resources/assets/LiLRichyMod/textures/blocks/playerDetectorON.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LiLRichyMod.iws" afterPath="$PROJECT_DIR$/LiLRichyMod.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-latest.log" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-latest.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/fml-junk-earlystartup.log" afterPath="$PROJECT_DIR$/eclipse/logs/fml-junk-earlystartup.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/latest.log" afterPath="$PROJECT_DIR$/eclipse/logs/latest.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockPlayerDetector.java" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockPlayerDetector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModBlocks.java" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModBlocks.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModTileEntitys.java" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModTileEntitys.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/Recipes.java" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/Recipes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/Names.java" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/Names.java" />
     </list>
     <ignored path="LiLRichyMod.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -129,39 +146,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BlockPlayerDetector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockPlayerDetector.java">
+      <file leaf-file-name="TileEntityAdvancedDetector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityAdvancedDetector.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="161" column="5" selection-start-line="161" selection-start-column="5" selection-end-line="161" selection-end-column="5" />
-              <folding>
-                <element signature="docComment;class#BlockPlayerDetector#0" expanded="false" />
-              </folding>
+              <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TileEntityPlayerDetector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityPlayerDetector.java">
+      <file leaf-file-name="ModTileEntitys.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModTileEntitys.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="97" column="38" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="38" />
-              <folding>
-                <element signature="docComment;class#TileEntityPlayerDetector#0" expanded="false" />
-                <element signature="e#2090#2091#0" expanded="true" />
-                <element signature="e#2118#2119#0" expanded="true" />
-                <element signature="e#2161#2162#0" expanded="true" />
-                <element signature="e#2195#2196#0" expanded="true" />
-              </folding>
+              <caret line="15" column="110" selection-start-line="15" selection-start-column="110" selection-end-line="15" selection-end-column="110" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Recipes.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BlockAdvancedDetector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockAdvancedDetector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Recipes.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/Recipes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2006745">
-              <caret line="88" column="132" selection-start-line="88" selection-start-column="132" selection-end-line="88" selection-end-column="132" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="91" column="86" selection-start-line="91" selection-start-column="86" selection-end-line="91" selection-end-column="86" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="en_US.lang" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/lilrichymod/lang/en_US.lang">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6306914">
+              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -768,8 +797,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockConcreteBricksDark.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockConcreteRocks.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockConcrete.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockConcreteBlocks.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockConcreteBricks.java" />
@@ -784,7 +811,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/type/BlockPaneWood.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/Names/Blocks.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/Reference.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModTileEntitys.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/proxy/CommonProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/proxy/ClientProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/proxy/ServerProxy.java" />
@@ -811,14 +837,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/items/ItemConcreteMix.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/items/ItemCrushedConcrete.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModItems.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModBlocks.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/Names.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockLiLRichyMod.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockTileEntityLiLRichyMod.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/lilrichymod/lang/en_US.lang" />
+        <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityAdvancedDetector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/Names.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityPlayerDetector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModBlocks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModTileEntitys.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockAdvancedDetector.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockPlayerDetector.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/Recipes.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/lilrichymod/lang/en_US.lang" />
       </list>
     </option>
   </component>
@@ -986,7 +1015,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="net" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -994,7 +1023,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tileentity" />
+              <option name="myItemId" value="textures" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1016,7 +1045,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="net" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1024,7 +1053,109 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="block" />
+              <option name="myItemId" value="textures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LiLRichyMod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle: :forgeSrc:1.7.10-10.13.4.1566-1.7.10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="minecraft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="textures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="container" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LiLRichyMod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle: :forgeSrc:1.7.10-10.13.4.1566-1.7.10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="minecraft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="textures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LiLRichyMod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle: :forgeSrc:1.7.10-10.13.4.1566-1.7.10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="minecraft" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1079,40 +1210,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LiLRichyMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LiLRichyMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilrichymod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="textures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="items" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1472,113 +1569,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="handler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LiLRichyMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LiLRichyMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilrichymod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="blocks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LiLRichyMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LiLRichyMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilrichymod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blocks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="type" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LiLRichyMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LiLRichyMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilrichymod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blocks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="type" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="concrete" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1768,7 +1759,7 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/ItemUnstableIngot.class" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -1779,11 +1770,14 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.blogspot.richardreigens.lilrichymod.blocks" />
+      <recent name="com.blogspot.richardreigens.lilrichymod.tileEntity" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.blogspot.richardreigens.LiLRichyMod.handler" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Rich\IdeaProjects\LiLRichyMod\src\main\resources\assets\lilrichymod\textures\blocks\projectFiles" />
+      <recent name="C:\Users\Rich\IdeaProjects\LiLRichyMod\src\main\resources\assets\lilrichymod\textures\gui" />
       <recent name="C:\Users\Rich\IdeaProjects\LiLRichyMod\src\main\resources\assets\lilrichymod\textures\blocks" />
       <recent name="C:\Users\Rich\IdeaProjects\LiLRichyMod\src\main\resources\assets\lilrichymod\textures\items" />
     </key>
@@ -1795,11 +1789,11 @@
       <recent name="com.blogspot.richardreigens.lilrichymod.items" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Rich\IdeaProjects\LiLRichyMod\src\main\resources\assets\lilrichymod\textures\items\projectFiles" />
+      <recent name="C:\Users\Rich\IdeaProjects\LiLRichyMod\src\main\resources\assets\lilrichymod\textures\gui\projectFiles" />
       <recent name="C:\Users\Rich\IdeaProjects\LiLRichyMod\src\main\resources" />
       <recent name="C:\Users\Rich\IdeaProjects\LiLRichyMod\src\main\resources\assets\lilrichymod" />
       <recent name="C:\Users\Rich\IdeaProjects\LiLRichyMod\src\main" />
-      <recent name="C:\Users\Rich\IdeaProjects\LiLRichyMod" />
-      <recent name="C:\Users\Rich\IdeaProjects\LiLRichyMod\src\main\resources\assets\LiLRichyMod" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Minecraft Client">
@@ -2295,7 +2289,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448564327669</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added Recipe for Player Detector">
+      <created>1448567587998</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1448567587998</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2393,7 +2393,8 @@
     <MESSAGE value="player detector redstone works finaly&#10;" />
     <MESSAGE value="player detector side images working now&#10;" />
     <MESSAGE value="player detector reduces itemstacks and gives back item when removed&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="player detector reduces itemstacks and gives back item when removed&#10;" />
+    <MESSAGE value="Added Recipe for Player Detector" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Recipe for Player Detector" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
@@ -2401,7 +2402,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2410,232 +2411,236 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/lilrichymod.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/gui/container/creative_inventory/tab_inventory.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/gui/container/beacon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/gui/container/dispenser.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/gui/container/furnace.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/gui/container/villager.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/gui/container/anvil.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/gui/container/brewing_stand.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/gui/container/generic_54.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/gui/container/horse.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/gui/container/inventory.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/gui/container/stats_icons.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/gui/container/crafting_table.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/gui/widgets.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/gui/demo_background.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/gui/book.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/gui/icons.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/gui/resource_packs.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/map/map_background.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/map/map_icons.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/misc/enchanted_item_glint.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/misc/vignette.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/misc/underwater.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/misc/unknown_pack.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/misc/pumpkinblur.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/models/armor/chainmail_layer_1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/models/armor/diamond_layer_1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/painting/paintings_kristoffer_zetterstrand.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/particle/particles.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/particle/footprint.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/environment/clouds.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/environment/end_sky.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/environment/moon_phases.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/entity/beacon_beam.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/entity/creeper/creeper_armor.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/entity/creeper/creeper.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/effect/dither.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/colormap/grass.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/colormap/foliage.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/blocks/repeater_on.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/blocks/repeater_off.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/blocks/redstone_torch_on.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/blocks/redstone_torch_off.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModBlocks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76936024">
-          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.8531792">
+          <caret line="60" column="83" selection-start-line="60" selection-start-column="83" selection-end-line="60" selection-end-column="83" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/net/minecraft/item/Item.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/Names.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55028903">
+          <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityAdvancedDetector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10-sources.jar!/net/minecraft/init/Blocks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7037037">
-          <caret line="186" column="30" selection-start-line="186" selection-start-column="30" selection-end-line="186" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10-sources.jar!/net/minecraft/block/BlockDaylightDetector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10-sources.jar!/net/minecraft/block/BlockRedstoneTorch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="210" column="45" selection-start-line="210" selection-start-column="45" selection-end-line="210" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10-sources.jar!/net/minecraft/block/BlockRedstoneWire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="365" column="5" selection-start-line="362" selection-start-column="3" selection-end-line="365" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10-sources.jar!/net/minecraft/block/BlockRedstoneRepeater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10-sources.jar!/net/minecraft/block/BlockButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="280" column="12" selection-start-line="267" selection-start-column="3" selection-end-line="285" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityLiLRichyMod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/type/concrete/BlockArrangedConcreteBricks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4006734">
-          <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/type/concrete/BlockConcreteBricks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37205386">
-          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/type/concrete/BlockConcreteBricksDark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37205386">
-          <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/type/concrete/BlockConcreteRocks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37205386">
-          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/type/concrete/BlockConcreteSquares.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37205386">
-          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/type/concrete/BlockConcreteTexturedBlocks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37205386">
-          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/type/concrete/BlockFancyConcreteBlocks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37205386">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/type/concrete/BlockOldConcreteSquares.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37205386">
-          <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/type/concrete/BlockSmallConcreteBricks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37205386">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/type/stone/BlockCrackedStone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37205386">
-          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/type/stone/BlockArrangedStoneBricks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37205386">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/items/tools/ItemDeathSock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22727273">
-          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/items/ItemConcreteMix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34343433">
-          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/items/ItemCrushedConcrete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34343433">
-          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/type/concrete/BlockSmallConcreteTexturedSquares.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34343433">
-          <caret line="13" column="70" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModItems.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/items/tools/ItemShadowmourne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3989899">
-          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+          <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2643,208 +2648,51 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModTileEntitys.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModBlocks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/Names.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockLiLRichyMod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="5" selection-start-line="26" selection-start-column="3" selection-end-line="35" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockTileEntityLiLRichyMod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/lilrichymod/lang/en_US.lang">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41271678">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10-sources.jar!/net/minecraft/tileentity/TileEntityDaylightDetector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.078612715">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10-sources.jar!/net/minecraft/tileentity/TileEntityChest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.256647">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10-sources.jar!/net/minecraft/block/BlockCompressed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11544991">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10-sources.jar!/net/minecraft/block/BlockCompressedPowered.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17317487">
-          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10-sources.jar!/net/minecraft/tileentity/TileEntityComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11544991">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10-sources.jar!/net/minecraft/block/BlockRedstoneLight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2359933">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10-sources.jar!/net/minecraft/block/BlockRedstoneDiode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3463497">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.93887943">
-          <caret line="270" column="29" selection-start-line="270" selection-start-column="29" selection-end-line="270" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/net/minecraft/block/Block.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10-sources.jar!/net/minecraft/world/World.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2015" column="48" selection-start-line="2015" selection-start-column="48" selection-end-line="2015" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10-sources.jar!/net/minecraft/block/Block.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1159" column="15" selection-start-line="1159" selection-start-column="15" selection-end-line="1159" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10-sources.jar!/net/minecraft/tileentity/TileEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24453025">
-          <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/handler/ConfigurationHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18085106">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/handler/PacketDescriptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="method#init#0;class#PacketDescriptionHandler#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/lilrichymod/textures/blocks/concrete.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/type/concrete/BlockConcrete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3726813">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="7" selection-end-line="19" selection-end-column="43" />
+          <caret line="15" column="110" selection-start-line="15" selection-start-column="110" selection-end-line="15" selection-end-column="110" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockPlayerDetector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="161" column="5" selection-start-line="161" selection-start-column="5" selection-end-line="161" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.2716763">
+          <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
           <folding>
             <element signature="docComment;class#BlockPlayerDetector#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityPlayerDetector.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockAdvancedDetector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="97" column="38" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="38" />
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityPlayerDetector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.098265894">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
           <folding>
             <element signature="docComment;class#TileEntityPlayerDetector#0" expanded="false" />
-            <element signature="e#2090#2091#0" expanded="true" />
-            <element signature="e#2118#2119#0" expanded="true" />
-            <element signature="e#2161#2162#0" expanded="true" />
-            <element signature="e#2195#2196#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/Recipes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2006745">
-          <caret line="88" column="132" selection-start-line="88" selection-start-column="132" selection-end-line="88" selection-end-column="132" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="86" selection-start-line="91" selection-start-column="86" selection-end-line="91" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/lilrichymod/lang/en_US.lang">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6306914">
+          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
           <folding />
         </state>
       </provider>

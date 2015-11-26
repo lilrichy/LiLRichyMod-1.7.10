@@ -2,7 +2,7 @@ package com.blogspot.richardreigens.lilrichymod.blocks;
 
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
-import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityPlayerDetector;
+import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityAdvancedDetector;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.item.EntityItem;
@@ -18,15 +18,15 @@ import net.minecraftforge.common.util.ForgeDirection;
 /**
  * Created by Rich on 11/23/2015.
  */
-public class BlockPlayerDetector extends BlockTileEntityLiLRichyMod
+public class BlockAdvancedDetector extends BlockTileEntityLiLRichyMod
 {
     IIcon sideOff;
     IIcon sideOn;
     IIcon topBottom;
 
-    public BlockPlayerDetector()
+    public BlockAdvancedDetector()
     {
-        setBlockName(Names.Blocks.PLAYER_DETECTOR);
+        setBlockName(Names.Blocks.ADVANCED_DETECTOR);
         this.setHardness(3f);
         this.setStepSound(soundTypeMetal);
     }
@@ -34,14 +34,14 @@ public class BlockPlayerDetector extends BlockTileEntityLiLRichyMod
     @Override
     public void registerBlockIcons(IIconRegister iconRegister)
     {
-        sideOff = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "playerDetectorOff");
-        sideOn = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "playerDetectorOn");
-        topBottom = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "playerDetectorTopBottom");
+        sideOff = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "advancedDetectorOff");
+        sideOn = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "advancedDetectorOn");
+        topBottom = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "advancedDetectorTopBottom");
     }
 
     public IIcon getIcon(IBlockAccess world, int x, int y, int z, int side)
     {
-        TileEntityPlayerDetector te = (TileEntityPlayerDetector) world.getTileEntity(x, y, z);
+        TileEntityAdvancedDetector te = (TileEntityAdvancedDetector) world.getTileEntity(x, y, z);
         ItemStack stack = te.getCamouflage();
         if (stack != null && stack.getItem() instanceof ItemBlock) {
             Block block = ((ItemBlock) stack.getItem()).field_150939_a;
@@ -77,7 +77,7 @@ public class BlockPlayerDetector extends BlockTileEntityLiLRichyMod
     @Override
     public TileEntity createNewTileEntity(World world, int metadata)
     {
-        return new TileEntityPlayerDetector();
+        return new TileEntityAdvancedDetector();
     }
 
     @Override
@@ -113,7 +113,7 @@ public class BlockPlayerDetector extends BlockTileEntityLiLRichyMod
     public int isProvidingWeakPower(IBlockAccess world, int x, int y, int z, int p_149709_5_)
     {
         TileEntity te = world.getTileEntity(x, y, z);
-        TileEntityPlayerDetector detector = (te != null && te instanceof TileEntityPlayerDetector) ? (TileEntityPlayerDetector) te : null;
+        TileEntityAdvancedDetector detector = (te != null && te instanceof TileEntityAdvancedDetector) ? (TileEntityAdvancedDetector) te : null;
         if (detector != null)
             return detector.activated ? 15 : 0;
         else
@@ -124,7 +124,7 @@ public class BlockPlayerDetector extends BlockTileEntityLiLRichyMod
     public int isProvidingStrongPower(IBlockAccess world, int x, int y, int z, int meta)
     {
         TileEntity te = world.getTileEntity(x, y, z);
-        TileEntityPlayerDetector detector = (te != null && te instanceof TileEntityPlayerDetector) ? (TileEntityPlayerDetector) te : null;
+        TileEntityAdvancedDetector detector = (te != null && te instanceof TileEntityAdvancedDetector) ? (TileEntityAdvancedDetector) te : null;
         if (detector != null)
             return detector.activated ? 15 : 0;
         else
@@ -135,7 +135,7 @@ public class BlockPlayerDetector extends BlockTileEntityLiLRichyMod
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ)
     {
         if (!world.isRemote) {
-            TileEntityPlayerDetector te = (TileEntityPlayerDetector) world.getTileEntity(x, y, z);
+            TileEntityAdvancedDetector te = (TileEntityAdvancedDetector) world.getTileEntity(x, y, z);
             //check if sneaking and if using empty hand and if block has camo then remove camo
             if (player.isSneaking() && player.getCurrentEquippedItem() == null) {
                 if (te.getCamouflage() != null) {
