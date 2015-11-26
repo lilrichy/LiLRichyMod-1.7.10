@@ -4,17 +4,12 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f2f7f7-ba3d-43fb-b0b7-76bafc0d90d7" name="Default" comment="player detector redstone works finaly&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/LiLRichyMod/textures/blocks/playerDetectorOFF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/LiLRichyMod/textures/blocks/playerDetectorON.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/LiLRichyMod/textures/blocks/playerDetectorTopBottom.png" />
+    <list default="true" id="87f2f7f7-ba3d-43fb-b0b7-76bafc0d90d7" name="Default" comment="player detector side images working now&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LiLRichyMod.iws" afterPath="$PROJECT_DIR$/LiLRichyMod.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-latest.log" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-latest.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/fml-junk-earlystartup.log" afterPath="$PROJECT_DIR$/eclipse/logs/fml-junk-earlystartup.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/latest.log" afterPath="$PROJECT_DIR$/eclipse/logs/latest.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/options.txt" afterPath="$PROJECT_DIR$/eclipse/options.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockPlayerDetector.java" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockPlayerDetector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityPlayerDetector.java" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityPlayerDetector.java" />
     </list>
     <ignored path="LiLRichyMod.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -134,11 +129,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BlockPlayerDetector.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BlockPlayerDetector.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockPlayerDetector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="68" selection-start-line="58" selection-start-column="68" selection-end-line="58" selection-end-column="68" />
+            <state vertical-scroll-proportion="0.87795275">
+              <caret line="153" column="46" selection-start-line="153" selection-start-column="46" selection-end-line="153" selection-end-column="46" />
               <folding>
                 <element signature="docComment;class#BlockPlayerDetector#0" expanded="false" />
               </folding>
@@ -146,29 +141,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TileEntityPlayerDetector.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TileEntityPlayerDetector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityPlayerDetector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5851602">
+            <state vertical-scroll-proportion="0.0">
               <caret line="97" column="38" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="38" />
               <folding>
                 <element signature="docComment;class#TileEntityPlayerDetector#0" expanded="false" />
-                <element signature="e#2272#2273#0" expanded="true" />
-                <element signature="e#2306#2307#0" expanded="true" />
-                <element signature="e#2339#2340#0" expanded="true" />
-                <element signature="e#2367#2368#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PacketDescriptionHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/handler/PacketDescriptionHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding>
-                <element signature="method#init#0;class#PacketDescriptionHandler#0" expanded="false" />
+                <element signature="e#2090#2091#0" expanded="true" />
+                <element signature="e#2118#2119#0" expanded="true" />
+                <element signature="e#2161#2162#0" expanded="true" />
+                <element signature="e#2195#2196#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -824,8 +807,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockLiLRichyMod.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockTileEntityLiLRichyMod.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/lilrichymod/lang/en_US.lang" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockPlayerDetector.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityPlayerDetector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockPlayerDetector.java" />
       </list>
     </option>
   </component>
@@ -2290,7 +2273,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448468489613</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="player detector side images working now&#10;">
+      <created>1448498302320</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1448498302320</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2313,7 +2302,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39977604" sideWeight="0.5073892" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30907056" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30459127" sideWeight="0.49753696" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30459127" sideWeight="0.49753696" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.49753696" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21332519" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -2323,7 +2312,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39977604" sideWeight="0.49261084" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39977604" sideWeight="0.49261084" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2386,7 +2375,8 @@
     <MESSAGE value="Updateing Names to String file" />
     <MESSAGE value="finished upating Names to String file&#10;added localization to PlayerDetector Block&#10;Removed unneeded blocks" />
     <MESSAGE value="player detector redstone works finaly&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="player detector redstone works finaly&#10;" />
+    <MESSAGE value="player detector side images working now&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="player detector side images working now&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
@@ -2818,26 +2808,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockPlayerDetector.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityPlayerDetector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="68" selection-start-line="58" selection-start-column="68" selection-end-line="58" selection-end-column="68" />
+          <caret line="97" column="38" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="38" />
           <folding>
-            <element signature="docComment;class#BlockPlayerDetector#0" expanded="false" />
+            <element signature="docComment;class#TileEntityPlayerDetector#0" expanded="false" />
+            <element signature="e#2090#2091#0" expanded="true" />
+            <element signature="e#2118#2119#0" expanded="true" />
+            <element signature="e#2161#2162#0" expanded="true" />
+            <element signature="e#2195#2196#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityPlayerDetector.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockPlayerDetector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5851602">
-          <caret line="97" column="38" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.87795275">
+          <caret line="153" column="46" selection-start-line="153" selection-start-column="46" selection-end-line="153" selection-end-column="46" />
           <folding>
-            <element signature="docComment;class#TileEntityPlayerDetector#0" expanded="false" />
-            <element signature="e#2272#2273#0" expanded="true" />
-            <element signature="e#2306#2307#0" expanded="true" />
-            <element signature="e#2339#2340#0" expanded="true" />
-            <element signature="e#2367#2368#0" expanded="true" />
+            <element signature="docComment;class#BlockPlayerDetector#0" expanded="false" />
           </folding>
         </state>
       </provider>

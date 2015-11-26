@@ -6,6 +6,7 @@ import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityPlayerDetect
 import com.blogspot.richardreigens.lilrichymod.utility.LogHelper;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
@@ -133,15 +134,28 @@ public class BlockPlayerDetector extends BlockTileEntityLiLRichyMod
     }
 
     @Override
-    public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int par6, float par7, float par8, float par9)
+    public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ)
     {
         if (!world.isRemote) {
             TileEntityPlayerDetector te = (TileEntityPlayerDetector) world.getTileEntity(x, y, z);
             if (player.isSneaking() && player.getCurrentEquippedItem() == null) {
-                te.setCamouflage(null);
+                if (te.getCamouflage() != null) {
+                    ItemStack camoItemStack = te.getCamouflage();
+                    te.setCamouflage(null);
+                    world.playSoundEffect((double) x + 0.5D, (double) y + 0.5D, (double) z + 0.5D, "random.click", 0.3F, .1f);
+                    EntityItem itemEntity = new EntityItem(world, x, y, z, camoItemStack);
+                    world.spawnEntityInWorld(itemEntity);
+                }
+
             } else {
-                te.setCamouflage(player.getCurrentEquippedItem());
-                world.playSoundEffect((double) x + 0.5D, (double) y + 0.5D, (double) z + 0.5D, "random.click", 0.3F, .5f);
+                ItemStack playerItem = player.getCurrentEquippedItem();
+                if (playerItem != null && te.getCamouflage() == null) {
+                    ItemStack camoStack = playerItem.splitStack(1);
+                    te.setCamouflage(camoStack);
+                    world.playSoundEffect((double) x + 0.5D, (double) y + 0.5D, (double) z + 0.5D, "random.click", 0.3F, 1f);
+                }
+
+
             }
         }
         return true;
