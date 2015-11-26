@@ -84,5 +84,8 @@ public class Recipes
                 'b', new ItemStack(Blocks.stonebrick), 's', new ItemStack(Blocks.stone));
 
 
+        //Player Detector
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.playerDetector, 1), "ici", "ctc", "ici",
+                'i', new ItemStack(Items.iron_ingot), 'c', new ItemStack(Items.comparator), 't', new ItemStack(Blocks.redstone_torch));
     }
 }
