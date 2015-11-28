@@ -1,15 +1,18 @@
 package com.blogspot.richardreigens.lilrichymod.tileEntity;
 
+import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
 import cpw.mods.fml.common.network.ByteBufUtils;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.IInventory;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 
 /**
  * Created by Rich on 11/23/2015.
  */
-public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod
+public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements IInventory
 {
     public boolean activated = false;
     private int tick = 0;
@@ -62,19 +65,22 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod
         this.range = value;
     }
 
-    public ItemStack getCamouflage()
+    public ItemStack getCamouflage(int camoSlot)
     {
-        return camoStack;
+
+        return getStackInSlot(camoSlot);
     }
 
-    public void setCamouflage(ItemStack stack)
+    public void setCamouflage(int camoSlot, ItemStack stack)
     {
+        setInventorySlotContents(camoSlot, stack);
         this.camoStack = stack;
         worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
     }
 
     public Boolean getActivated()
     {
+
         return activated;
     }
 
@@ -124,5 +130,111 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod
             tag.setTag("camoStack", t);
         }
         super.writeToNBT(tag);
+    }
+
+
+    @Override
+    public int getSizeInventory()
+    {
+        return 1;
+    }
+
+    @Override
+    public ItemStack getStackInSlot(int p_70301_1_)
+    {
+        return camoStack;
+    }
+
+    @Override
+    public ItemStack decrStackSize(int slot, int decreaseAmount)
+    {
+        if (camoStack != null) {
+            ItemStack itemstack;
+
+            if (camoStack.stackSize <= decreaseAmount) {
+                itemstack = camoStack;
+                setInventorySlotContents(0, null);
+                markDirty();
+                return itemstack;
+            } else {
+                itemstack = camoStack.splitStack(decreaseAmount);
+
+                if (camoStack.stackSize == 0) {
+                    setInventorySlotContents(0, null);
+                }
+
+                markDirty();
+                return itemstack;
+            }
+        } else {
+            return null;
+        }
+    }
+
+    @Override
+    public ItemStack getStackInSlotOnClosing(int slot)
+    {
+        if (camoStack != null) {
+            ItemStack itemstack = camoStack;
+            camoStack = null;
+            return itemstack;
+        } else {
+            return null;
+        }
+    }
+
+    @Override
+    public void setInventorySlotContents(int slot, ItemStack stack)
+    {
+        camoStack = stack;
+
+        if (stack != null && stack.stackSize > getInventoryStackLimit()) {
+            stack.stackSize = getInventoryStackLimit();
+        }
+
+        markDirty();
+        worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
+    }
+
+    @Override
+    public String getInventoryName()
+    {
+        return ModBlocks.advancedDetector.getUnlocalizedName() + ".name";
+    }
+
+    @Override
+    public boolean hasCustomInventoryName()
+    {
+        return false;
+    }
+
+    @Override
+    public int getInventoryStackLimit()
+    {
+        return 1;
+    }
+
+    @Override
+    public boolean isUseableByPlayer(EntityPlayer player)
+    {
+        return worldObj.getTileEntity(xCoord, yCoord, zCoord) != this ? false : player.getDistanceSq(xCoord + 0.5D, yCoord + 0.5D, zCoord + 0.5D) <= 64.0D;
+    }
+
+    @Override
+    public void openInventory()
+    {
+
+    }
+
+    @Override
+    public void closeInventory()
+    {
+
+    }
+
+    @Override
+    public boolean isItemValidForSlot(int p_94041_1_, ItemStack stack)
+    {
+        return stack != null && stack.getItem() instanceof ItemBlock;
     }
 }

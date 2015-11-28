@@ -43,4 +43,9 @@ public class Names
         public static final String ADVANCED_DETECTOR = Reference.MOD_ID + ":" + "advancedDetector";
 
     }
+
+    public static class Gui
+    {
+        public static final String ADVANCED_DETECTOR_GUI = "advancedDetectorGUI";
+    }
 }

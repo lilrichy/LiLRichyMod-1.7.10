@@ -1,6 +1,7 @@
 package com.blogspot.richardreigens.lilrichymod;
 
 import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
+import com.blogspot.richardreigens.lilrichymod.handler.GuiHandler;
 import com.blogspot.richardreigens.lilrichymod.handler.PacketDescriptionHandler;
 import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
@@ -15,6 +16,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 
 /**
  * Created by Rich on 11/18/2015.
@@ -36,6 +38,8 @@ public class lilrichymod
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
+        LogHelper.info("LILRICHY MOD IS BOOTING UP!!!!!!!!!");
+
         ModItems.init();
         LogHelper.info("Items Loaded");
 
@@ -47,6 +51,9 @@ public class lilrichymod
 
         PacketDescriptionHandler.init();
         LogHelper.info("Packet Description Handler Loaded");
+
+        NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
+        LogHelper.info("GUI Handler Loaded");
 
         LogHelper.info("Pre Initialization Complete");
     }
@@ -65,5 +72,7 @@ public class lilrichymod
     {
 
         LogHelper.info("Post Initialization Complete");
+
+        LogHelper.info("LiLRichy Mod Loaded!");
     }
 }

@@ -1,11 +1,12 @@
 package com.blogspot.richardreigens.lilrichymod.blocks;
 
+import com.blogspot.richardreigens.lilrichymod.handler.GuiHandler;
+import com.blogspot.richardreigens.lilrichymod.lilrichymod;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityAdvancedDetector;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
@@ -42,7 +43,7 @@ public class BlockAdvancedDetector extends BlockTileEntityLiLRichyMod
     public IIcon getIcon(IBlockAccess world, int x, int y, int z, int side)
     {
         TileEntityAdvancedDetector te = (TileEntityAdvancedDetector) world.getTileEntity(x, y, z);
-        ItemStack stack = te.getCamouflage();
+        ItemStack stack = te.getCamouflage(0);
         if (stack != null && stack.getItem() instanceof ItemBlock) {
             Block block = ((ItemBlock) stack.getItem()).field_150939_a;
             return block.getIcon(side, stack.getItemDamage());
@@ -135,9 +136,15 @@ public class BlockAdvancedDetector extends BlockTileEntityLiLRichyMod
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ)
     {
         if (!world.isRemote) {
-            TileEntityAdvancedDetector te = (TileEntityAdvancedDetector) world.getTileEntity(x, y, z);
+
+            player.openGui(lilrichymod.instance, GuiHandler.GuiIDs.ADVANCED_DETECTOR.ordinal(), world, x, y, z);
+
+
+            //ToDo Delete this if not needed
             //check if sneaking and if using empty hand and if block has camo then remove camo
-            if (player.isSneaking() && player.getCurrentEquippedItem() == null) {
+            //Player detector code saving in case needed but shouldn't need it due to this block having a GUI
+            //TileEntityAdvancedDetector te = (TileEntityAdvancedDetector) world.getTileEntity(x, y, z);
+           /* if (player.isSneaking() && player.getCurrentEquippedItem() == null) {
                 if (te.getCamouflage() != null) {
                     ItemStack camoItemStack = te.getCamouflage();
                     te.setCamouflage(null);
@@ -157,7 +164,7 @@ public class BlockAdvancedDetector extends BlockTileEntityLiLRichyMod
                 }
 
 
-            }
+            }*/
         }
         return true;
     }
