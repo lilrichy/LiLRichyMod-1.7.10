@@ -34,4 +34,8 @@ public abstract class TileEntityLiLRichyMod extends TileEntity
     {
 
     }
+
+    public void onGuiButtonPress(int id)
+    {
+    }
 }

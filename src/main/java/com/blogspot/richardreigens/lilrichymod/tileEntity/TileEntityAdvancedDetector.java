@@ -18,28 +18,50 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
     private int tick = 0;
     private int rate = 5;
     private int range = 5;
+    private boolean invert = false;
     private ItemStack camoStack;
     private NBTTagCompound tag = new NBTTagCompound();
 
     @Override
     public void updateEntity()
     {
-        {
-            if (worldObj.isRemote)
-                return;
 
-            if (tick >= rate) {
-                tick = 0;
-                EntityPlayer player = worldObj.getClosestPlayer(xCoord + 0.5D, yCoord + 0.5D, zCoord + 0.5D, range + 0.5D);
-                if (player != null) {
-                    if (!activated)
-                        setActivated(true);
-                } else {
-                    if (activated)
-                        setActivated(false);
+        if (worldObj.isRemote)
+            return;
+
+        if (tick >= rate) {
+            tick = 0;
+            EntityPlayer player = worldObj.getClosestPlayer(xCoord + 0.5D, yCoord + 0.5D, zCoord + 0.5D, range + 0.5D);
+            if (player != null) {
+                //Found Player
+                if (!activated && !invert) {
+                    setActivated(true);
+                } else if (!activated && invert) {
+                    setActivated(false);
+                } else if (activated && invert) {
+                    setActivated(false);
                 }
-            } else
-                tick++;
+            }
+
+            //No player
+            else {
+                if (activated && !invert) {
+                    setActivated(false);
+                } else if (activated && invert) {
+                    setActivated(true);
+                } else if (!activated && invert) {
+                    setActivated(true);
+                }
+            }
+        } else
+            tick++;
+    }
+
+    @Override
+    public void onGuiButtonPress(int id)
+    {
+        if (id == 0) {
+            invert = !invert;
         }
     }
 

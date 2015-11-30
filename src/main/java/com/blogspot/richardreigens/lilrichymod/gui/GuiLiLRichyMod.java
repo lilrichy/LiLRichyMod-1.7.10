@@ -1,8 +1,11 @@
 package com.blogspot.richardreigens.lilrichymod.gui;
 
+import com.blogspot.richardreigens.lilrichymod.reference.Colors;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.client.resources.I18n;
 import net.minecraft.inventory.Container;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.util.ResourceLocation;
 
 /**
@@ -10,12 +13,22 @@ import net.minecraft.util.ResourceLocation;
  */
 public abstract class GuiLiLRichyMod extends GuiContainer
 {
-    private ResourceLocation guiTexture;
+    private final ResourceLocation guiTexture;
+    private final IInventory inventory;
 
-    public GuiLiLRichyMod(Container container, String guiTextureName)
+    public GuiLiLRichyMod(Container container, String guiTextureName, IInventory inventory)
     {
         super(container);
+
         this.guiTexture = new ResourceLocation(Reference.MOD_ID + ":textures/gui/" + guiTextureName + ".png");
+        this.inventory = inventory;
+    }
+
+    protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY)
+    {
+        String s = this.inventory.hasCustomInventoryName() ? this.inventory.getInventoryName() : I18n.format(this.inventory.getInventoryName());
+        this.fontRendererObj.drawString(s, this.xSize / 2 - this.fontRendererObj.getStringWidth(s) / 2, 6, Colors.COLOR_BLACK_GUI_TEXT);
+        this.fontRendererObj.drawString(I18n.format("container.inventory"), 8, this.ySize - 96 + 2, Colors.COLOR_BLACK_GUI_TEXT);
     }
 
     @Override
