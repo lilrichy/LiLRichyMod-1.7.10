@@ -4,28 +4,12 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f2f7f7-ba3d-43fb-b0b7-76bafc0d90d7" name="Default" comment="Added Invert Option to Advanced Detector GUI">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.0/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.0/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.0/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.0/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.0/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.0/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.0/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.0/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.0/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.0/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/gradle.log" afterPath="$PROJECT_DIR$/.gradle/gradle.log" />
+    <list default="true" id="87f2f7f7-ba3d-43fb-b0b7-76bafc0d90d7" name="Default" comment="Added config options for disableing detector blocks and shadowmourne, and default range for detectors. Fixed Caps error preventing textures from loading correctly">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LiLRichyMod.iws" afterPath="$PROJECT_DIR$/LiLRichyMod.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-latest.log" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-latest.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/fml-junk-earlystartup.log" afterPath="$PROJECT_DIR$/eclipse/logs/fml-junk-earlystartup.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/latest.log" afterPath="$PROJECT_DIR$/eclipse/logs/latest.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockAdvancedDetector.java" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockAdvancedDetector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockPlayerDetector.java" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockPlayerDetector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/gui/GuiAdvancedDetector.java" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/gui/GuiAdvancedDetector.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/handler/ConfigurationHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/handler/ConfigurationHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModBlocks.java" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModBlocks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModItems.java" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModItems.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/Names.java" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/Names.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityAdvancedDetector.java" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityAdvancedDetector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityLiLRichyMod.java" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityLiLRichyMod.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityPlayerDetector.java" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityPlayerDetector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/LiLRichyMod/lang/en_US.lang" afterPath="$PROJECT_DIR$/src/main/resources/assets/LiLRichyMod/lang/en_US.lang" />
     </list>
     <ignored path="LiLRichyMod.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -144,28 +128,7 @@
     <favorites_list name="LiLRichyMod" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ConfigurationHandler.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/handler/ConfigurationHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.94266444">
-              <caret line="49" column="129" selection-start-line="49" selection-start-column="129" selection-end-line="49" selection-end-column="129" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModBlocks.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModBlocks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="62" column="54" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -813,10 +776,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockPlayerDetector.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/Names.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModItems.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/handler/ConfigurationHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityAdvancedDetector.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityPlayerDetector.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModBlocks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/handler/ConfigurationHandler.java" />
       </list>
     </option>
   </component>
@@ -2384,7 +2347,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448916727940</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Added config options for disableing detector blocks and shadowmourne, and default range for detectors. Fixed Caps error preventing textures from loading correctly">
+      <created>1448925543309</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1448925543309</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2398,7 +2367,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.49753696" order="6" side_tool="false" content_ui="tabs" />
@@ -2407,7 +2376,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39977604" sideWeight="0.5073892" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30907056" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30459127" sideWeight="0.49753696" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30459127" sideWeight="0.49753696" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.49753696" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21515892" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -2417,7 +2386,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5643897" sideWeight="0.49261084" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.268757" sideWeight="0.49261084" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2488,7 +2457,8 @@
     <MESSAGE value="Gui for Advanced Detector no longer takes multiple blocks or items that are not blocks" />
     <MESSAGE value="Added Network Handler, and Invert Option to Advanced Detector" />
     <MESSAGE value="Added Invert Option to Advanced Detector GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Invert Option to Advanced Detector GUI" />
+    <MESSAGE value="Added config options for disableing detector blocks and shadowmourne, and default range for detectors. Fixed Caps error preventing textures from loading correctly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added config options for disableing detector blocks and shadowmourne, and default range for detectors. Fixed Caps error preventing textures from loading correctly" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
@@ -2869,18 +2839,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModBlocks.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/handler/ConfigurationHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="54" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.856661">
+          <caret line="41" column="107" selection-start-line="41" selection-start-column="107" selection-end-line="41" selection-end-column="107" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/handler/ConfigurationHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModBlocks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.94266444">
-          <caret line="49" column="129" selection-start-line="49" selection-start-column="129" selection-end-line="49" selection-end-column="129" />
+        <state vertical-scroll-proportion="0.85328835">
+          <caret line="62" column="54" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
           <folding />
         </state>
       </provider>

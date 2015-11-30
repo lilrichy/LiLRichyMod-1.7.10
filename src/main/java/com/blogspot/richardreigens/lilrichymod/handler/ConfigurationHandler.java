@@ -30,16 +30,17 @@ public class ConfigurationHandler
 
     private static void loadConfiguration()
     {
-        String Main = "Main Settings";
+        String DETECTOR_SETTINGS = "Detector Settings";
+        String SHOULD_LOAD = "Enable or Disable Blocks and Items";
         // testValue = configuration.getBoolean("configValue", "Main Settings", false, "This is an example of a config value");
         // Get int = String name, String category, int defaultValue, int minValue, int maxValue, String comment
 
 
-        loadShadowmourne = configuration.getBoolean("loadShandowmourne", Main, false, "Load the Shadowmourne Weapon.");
-        loadPlayerDetector = configuration.getBoolean("loadPlayerDetector", Main, true, "Enable the Player Detector Block.");
-        loadAdvancedDetector = configuration.getBoolean("loadAdvancedDetector", Main, true, "Enable the Advanced Detector Block.");
-        defaultRangePlayerDetector = configuration.getInt("defautRangePlayerDetector", Main, 3, 1, 20, "Range of the Player Detector");
-        defaultRangeAdvancedDetector = configuration.getInt("defautRangeAdvancedDetector", Main, 5, 1, 20, "Range of the Advanced Detector");
+        loadShadowmourne = configuration.getBoolean("loadShandowmourne", SHOULD_LOAD, false, "Enable the Shadowmourne Weapon *Note currently a WIP Creative Only Item.");
+        loadPlayerDetector = configuration.getBoolean("loadPlayerDetector", SHOULD_LOAD, true, "Enable the Player Detector Block.");
+        loadAdvancedDetector = configuration.getBoolean("loadAdvancedDetector", SHOULD_LOAD, true, "Enable the Advanced Detector Block.");
+        defaultRangePlayerDetector = configuration.getInt("defautRangePlayerDetector", DETECTOR_SETTINGS, 2, 1, 20, "Range of the Player Detector");
+        defaultRangeAdvancedDetector = configuration.getInt("defautRangeAdvancedDetector", DETECTOR_SETTINGS, 5, 1, 20, "Range of the Advanced Detector");
 
         if (configuration.hasChanged()) {
             configuration.save();
