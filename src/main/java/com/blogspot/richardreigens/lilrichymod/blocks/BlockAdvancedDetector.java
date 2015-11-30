@@ -35,8 +35,8 @@ public class BlockAdvancedDetector extends BlockTileEntityLiLRichyMod
     @Override
     public void registerBlockIcons(IIconRegister iconRegister)
     {
-        sideOff = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "advancedDetectorOff");
-        sideOn = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "advancedDetectorOn");
+        sideOff = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "advancedDetectorOFF");
+        sideOn = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "advancedDetectorON");
         topBottom = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "advancedDetectorTopBottom");
     }
 
@@ -50,7 +50,7 @@ public class BlockAdvancedDetector extends BlockTileEntityLiLRichyMod
         } else {
             IIcon side_icon;
             TileEntity tile = world.getTileEntity(x, y, z);
-            if (tile != null && te.getActivated())
+            if (tile instanceof TileEntityAdvancedDetector && ((TileEntityAdvancedDetector) tile).activated)
                 side_icon = sideOn;
             else
                 side_icon = sideOff;
@@ -136,35 +136,7 @@ public class BlockAdvancedDetector extends BlockTileEntityLiLRichyMod
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ)
     {
         if (!world.isRemote) {
-
             player.openGui(lilrichymod.instance, GuiHandler.GuiIDs.ADVANCED_DETECTOR.ordinal(), world, x, y, z);
-
-
-            //ToDo Delete this if not needed
-            //check if sneaking and if using empty hand and if block has camo then remove camo
-            //Player detector code saving in case needed but shouldn't need it due to this block having a GUI
-            //TileEntityAdvancedDetector te = (TileEntityAdvancedDetector) world.getTileEntity(x, y, z);
-           /* if (player.isSneaking() && player.getCurrentEquippedItem() == null) {
-                if (te.getCamouflage() != null) {
-                    ItemStack camoItemStack = te.getCamouflage();
-                    te.setCamouflage(null);
-                    world.playSoundEffect((double) x + 0.5D, (double) y + 0.5D, (double) z + 0.5D, "random.click", 0.3F, .1f);
-                    EntityItem itemEntity = new EntityItem(world, x, y, z, camoItemStack);
-                    world.spawnEntityInWorld(itemEntity);
-                }
-            } else {
-                //check if player has item in hand that is a BLOCK and then set camo
-                ItemStack playerItem = player.getCurrentEquippedItem();
-                if (playerItem != null && te.getCamouflage() == null) {
-                    if (playerItem.getItem() instanceof ItemBlock) {
-                        ItemStack camoStack = playerItem.splitStack(1);
-                        te.setCamouflage(camoStack);
-                        world.playSoundEffect((double) x + 0.5D, (double) y + 0.5D, (double) z + 0.5D, "random.click", 0.3F, 1f);
-                    }
-                }
-
-
-            }*/
         }
         return true;
     }

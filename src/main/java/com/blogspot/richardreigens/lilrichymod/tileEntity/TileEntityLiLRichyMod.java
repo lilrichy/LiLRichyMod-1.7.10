@@ -19,20 +19,16 @@ public abstract class TileEntityLiLRichyMod extends TileEntity
         buf.writeInt(xCoord);
         buf.writeInt(yCoord);
         buf.writeInt(zCoord);
-
         writeToPacket(buf);
         return new FMLProxyPacket(buf, PacketDescriptionHandler.CHANNEL);
     }
 
-
     public void writeToPacket(ByteBuf buf)
     {
-
     }
 
     public void readFromPacket(ByteBuf buf)
     {
-
     }
 
     public void onGuiButtonPress(int id)

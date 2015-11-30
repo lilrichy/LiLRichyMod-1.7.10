@@ -7,6 +7,7 @@ import com.blogspot.richardreigens.lilrichymod.blocks.BlockTileEntityLiLRichyMod
 import com.blogspot.richardreigens.lilrichymod.blocks.type.concrete.*;
 import com.blogspot.richardreigens.lilrichymod.blocks.type.stone.BlockArrangedStoneBricks;
 import com.blogspot.richardreigens.lilrichymod.blocks.type.stone.BlockCrackedStone;
+import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -57,8 +58,10 @@ public class ModBlocks
         GameRegistry.registerBlock(arrangedStoneBricks, Names.Blocks.ARRANGED_STONE_BRICKS);
 
         //Tile Entity Blocks
-        GameRegistry.registerBlock(playerDetector, Names.Blocks.PLAYER_DETECTOR);
-        GameRegistry.registerBlock(advancedDetector, Names.Blocks.ADVANCED_DETECTOR);
+        if (ConfigurationHandler.loadPlayerDetector)
+            GameRegistry.registerBlock(playerDetector, Names.Blocks.PLAYER_DETECTOR);
+        if (ConfigurationHandler.loadAdvancedDetector)
+            GameRegistry.registerBlock(advancedDetector, Names.Blocks.ADVANCED_DETECTOR);
 
     }
 }

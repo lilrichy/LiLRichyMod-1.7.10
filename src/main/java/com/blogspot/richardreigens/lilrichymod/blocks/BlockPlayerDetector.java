@@ -34,8 +34,8 @@ public class BlockPlayerDetector extends BlockTileEntityLiLRichyMod
     @Override
     public void registerBlockIcons(IIconRegister iconRegister)
     {
-        sideOff = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "playerDetectorOff");
-        sideOn = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "playerDetectorOn");
+        sideOff = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "playerDetectorOFF");
+        sideOn = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "playerDetectorON");
         topBottom = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "playerDetectorTopBottom");
     }
 
@@ -49,7 +49,7 @@ public class BlockPlayerDetector extends BlockTileEntityLiLRichyMod
         } else {
             IIcon side_icon;
             TileEntity tile = world.getTileEntity(x, y, z);
-            if (tile != null && te.getActivated())
+            if (tile instanceof TileEntityPlayerDetector && ((TileEntityPlayerDetector) tile).activated)
                 side_icon = sideOn;
             else
                 side_icon = sideOff;

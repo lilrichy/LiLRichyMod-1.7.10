@@ -22,7 +22,8 @@ tile.lilrichymod:arrangedStoneBricks.name=Arranged Stone Bricks
 tile.lilrichymod:playerDetector.name=Player Detector
 tile.lilrichymod:advancedDetector.name=Advanced Detector
 
-gui.LiLRichyMod.AdvancedDetector.button.invert=Invert Redstone
+gui.LiLRichyMod.AdvancedDetector.button.invert=Inverted
+gui.LiLRichyMod.AdvancedDetector.button.regular=Regular
 gui.LiLRichyMod.AdvancedDetector.button.rangeUp=Increase Range
 gui.LiLRichyMod.AdvancedDetector.button.rangeDown=Decrease Range
 gui.LiLRichyMod.AdvancedDetector.button.filterUp=Browse up

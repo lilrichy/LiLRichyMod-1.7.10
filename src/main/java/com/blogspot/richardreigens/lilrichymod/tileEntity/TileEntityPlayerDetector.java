@@ -1,5 +1,6 @@
 package com.blogspot.richardreigens.lilrichymod.tileEntity;
 
+import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
 import cpw.mods.fml.common.network.ByteBufUtils;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.entity.player.EntityPlayer;
@@ -14,7 +15,7 @@ public class TileEntityPlayerDetector extends TileEntityLiLRichyMod
     public boolean activated = false;
     private int tick = 0;
     private int rate = 5;
-    private int range = 2;
+    private int range = ConfigurationHandler.defaultRangePlayerDetector;
     private ItemStack camoStack;
     private NBTTagCompound tag = new NBTTagCompound();
 

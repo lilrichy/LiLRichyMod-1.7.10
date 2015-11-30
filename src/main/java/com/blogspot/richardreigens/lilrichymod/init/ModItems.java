@@ -1,5 +1,6 @@
 package com.blogspot.richardreigens.lilrichymod.init;
 
+import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
 import com.blogspot.richardreigens.lilrichymod.items.ItemConcreteMix;
 import com.blogspot.richardreigens.lilrichymod.items.ItemCrushedConcrete;
 import com.blogspot.richardreigens.lilrichymod.items.ItemLiLRichyMod;
@@ -29,6 +30,6 @@ public class ModItems
         GameRegistry.registerItem(deathSock, Names.Items.DEATH_SOCK);
         GameRegistry.registerItem(concreteMix, Names.Items.CONCRETE_MIX);
         GameRegistry.registerItem(crushedConcrete, Names.Items.CRUSHED_CONCRETE);
-        GameRegistry.registerItem(shadowmourne, Names.Items.SHADOWMOURNE);
+        if (ConfigurationHandler.loadShadowmourne) GameRegistry.registerItem(shadowmourne, Names.Items.SHADOWMOURNE);
     }
 }

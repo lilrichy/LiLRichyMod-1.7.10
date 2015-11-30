@@ -5,8 +5,6 @@ package com.blogspot.richardreigens.lilrichymod.reference;
  */
 public class Names
 {
-    //Todo Remap all block names to this file
-
     public static class Blocks
     {
         //Deco Blocks

@@ -1,5 +1,6 @@
 package com.blogspot.richardreigens.lilrichymod.tileEntity;
 
+import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
 import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
 import cpw.mods.fml.common.network.ByteBufUtils;
 import io.netty.buffer.ByteBuf;
@@ -17,10 +18,8 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
     public boolean activated = false;
     public boolean invert = false;
     private int tick = 0;
-    private int rate = 5;
-    private int range = 5;
+    private int range = ConfigurationHandler.defaultRangeAdvancedDetector;
     private ItemStack camoStack;
-    private NBTTagCompound tag = new NBTTagCompound();
 
     @Override
     public void updateEntity()
@@ -28,6 +27,7 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
         if (worldObj.isRemote)
             return;
 
+        int rate = 5;
         if (tick >= rate) {
             tick = 0;
             EntityPlayer player = worldObj.getClosestPlayer(xCoord + 0.5D, yCoord + 0.5D, zCoord + 0.5D, range + 0.5D);
@@ -65,7 +65,6 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
     }
 
     private void updateBlocks()
-
     {
         worldObj.notifyBlocksOfNeighborChange(xCoord, yCoord, zCoord, worldObj.getBlock(xCoord, yCoord, zCoord));
         worldObj.notifyBlocksOfNeighborChange(xCoord - 1, yCoord, zCoord, worldObj.getBlock(xCoord, yCoord, zCoord));
@@ -88,7 +87,6 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
 
     public ItemStack getCamouflage(int camoSlot)
     {
-
         return getStackInSlot(camoSlot);
     }
 
@@ -101,7 +99,6 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
 
     public Boolean getActivated()
     {
-
         return activated;
     }
 
@@ -117,7 +114,6 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
         ByteBufUtils.writeItemStack(buf, camoStack);
         buf.writeBoolean(activated);
         buf.writeBoolean(invert);
-
     }
 
     public void readFromPacket(ByteBuf buf)
@@ -126,7 +122,6 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
         activated = buf.readBoolean();
         invert = buf.readBoolean();
         worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
-
     }
 
     @Override
@@ -157,7 +152,6 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
         super.writeToNBT(tag);
     }
 
-
     @Override
     public int getSizeInventory()
     {
@@ -183,11 +177,9 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
                 return itemstack;
             } else {
                 itemstack = camoStack.splitStack(decreaseAmount);
-
                 if (camoStack.stackSize == 0) {
                     setInventorySlotContents(0, null);
                 }
-
                 markDirty();
                 return itemstack;
             }
@@ -212,11 +204,9 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
     public void setInventorySlotContents(int slot, ItemStack stack)
     {
         camoStack = stack;
-
         if (stack != null && stack.stackSize > getInventoryStackLimit()) {
             stack.stackSize = getInventoryStackLimit();
         }
-
         markDirty();
         worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
     }
@@ -248,13 +238,11 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
     @Override
     public void openInventory()
     {
-
     }
 
     @Override
     public void closeInventory()
     {
-
     }
 
     @Override
