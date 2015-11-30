@@ -1,34 +1,41 @@
-[13:53:01] [main/INFO]: Logging in with username & password
-[13:53:11] [main/INFO]: Setting user: LiLRichy
-[13:53:16] [Client thread/INFO]: LWJGL Version: 2.9.1
-[13:53:17] [Twitch authenticator/ERROR]: [Broadcast controller] TTV_EC_INTEL_FAILED_SESSION_INIT
-[13:53:31] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
-[13:53:33] [Sound Library Loader/INFO]: Sound engine started
-[13:53:36] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[13:53:36] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[13:53:38] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
-[13:53:39] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
-[13:53:39] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[13:53:40] [Sound Library Loader/INFO]: Sound engine started
-[13:53:54] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[13:53:54] [Server thread/INFO]: Generating keypair
-[13:53:55] [Server thread/INFO]: Preparing start region for level 0
-[13:53:56] [Server thread/INFO]: Changing view distance to 12, from 10
-[13:53:57] [Server thread/INFO]: LiLRichy[local:E:26a52330] logged in with entity id 237 at (835.1342751297996, 4.0, -315.9640182890987)
-[13:53:57] [Server thread/INFO]: LiLRichy joined the game
-[13:58:30] [Server thread/INFO]: Saving and pausing game...
-[13:58:30] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
-[13:58:30] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
-[13:58:30] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
-[14:18:39] [Server thread/INFO]: Saving and pausing game...
-[14:18:39] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
-[14:18:39] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
-[14:18:39] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
-[14:32:50] [Server thread/INFO]: Saving and pausing game...
-[14:32:50] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
-[14:32:50] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
-[14:32:50] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
-[14:35:06] [Server thread/INFO]: Saving and pausing game...
-[14:35:06] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
-[14:35:06] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
-[14:35:06] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
+[15:47:11] [main/INFO]: Logging in with username & password
+[15:47:21] [main/INFO]: Setting user: LiLRichy
+[15:47:26] [Client thread/INFO]: LWJGL Version: 2.9.1
+[15:47:28] [Twitch authenticator/ERROR]: [Broadcast controller] TTV_EC_INTEL_FAILED_SESSION_INIT
+[15:47:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
+[15:47:44] [Sound Library Loader/INFO]: Sound engine started
+[15:47:47] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[15:47:47] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[15:47:49] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
+[15:47:50] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[15:47:50] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[15:47:51] [Sound Library Loader/INFO]: Sound engine started
+[15:47:58] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[15:47:58] [Server thread/INFO]: Generating keypair
+[15:47:58] [Server thread/INFO]: Preparing start region for level 0
+[15:47:59] [Server thread/INFO]: Changing view distance to 12, from 10
+[15:48:00] [Server thread/INFO]: LiLRichy[local:E:71db44c4] logged in with entity id 233 at (840.7640199144101, 4.0, -319.8941679915823)
+[15:48:00] [Server thread/INFO]: LiLRichy joined the game
+[15:49:24] [Server thread/INFO]: Saving and pausing game...
+[15:49:24] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
+[15:49:24] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
+[15:49:24] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
+[15:49:25] [Server thread/INFO]: Stopping server
+[15:49:25] [Server thread/INFO]: Saving players
+[15:49:25] [Server thread/INFO]: Saving worlds
+[15:49:25] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
+[15:49:25] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
+[15:49:25] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
+[15:49:29] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[15:49:29] [Server thread/INFO]: Generating keypair
+[15:49:29] [Server thread/INFO]: Preparing start region for level 0
+[15:49:29] [Server thread/INFO]: Changing view distance to 12, from 10
+[15:49:29] [Server thread/INFO]: LiLRichy[local:E:312be621] logged in with entity id 290192 at (839.0160809873177, 4.0, -313.6082711298058)
+[15:49:29] [Server thread/INFO]: LiLRichy joined the game
+[15:51:38] [Client thread/INFO]: Stopping!
+[15:51:38] [Server thread/INFO]: Stopping server
+[15:51:38] [Server thread/INFO]: Saving players
+[15:51:38] [Server thread/INFO]: Saving worlds
+[15:51:38] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
+[15:51:38] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
+[15:51:38] [Server thread/INFO]: Saving chunks for level 'Flat'/The End

@@ -14,7 +14,7 @@ public class TileEntityPlayerDetector extends TileEntityLiLRichyMod
     public boolean activated = false;
     private int tick = 0;
     private int rate = 5;
-    private int range = 5;
+    private int range = 2;
     private ItemStack camoStack;
     private NBTTagCompound tag = new NBTTagCompound();
 

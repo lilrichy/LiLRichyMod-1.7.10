@@ -15,6 +15,8 @@ import net.minecraft.entity.player.InventoryPlayer;
 public class GuiAdvancedDetector extends GuiLiLRichyMod
 {
     private final TileEntityAdvancedDetector te;
+    private GuiButton invertButton;
+
     public GuiAdvancedDetector(InventoryPlayer playerInventory, TileEntityAdvancedDetector te)
     {
         super(new ContainerAdvancedDetector(playerInventory, te), Names.Gui.ADVANCED_DETECTOR_GUI, te);
@@ -25,7 +27,8 @@ public class GuiAdvancedDetector extends GuiLiLRichyMod
     public void initGui()
     {
         super.initGui();
-        GuiButton invertButton = new GuiButton(0, guiLeft + 9, guiTop + 50, 32, 20, I18n.format("gui.LiLRichyMod.AdvancedDetector.button.invert"));
+        invertButton = new GuiButton(0, guiLeft + 7, guiTop + 48, 55, 20, I18n.format("gui.LiLRichyMod.AdvancedDetector.button.invert"));
+
         buttonList.add(invertButton);
     }
 
@@ -37,4 +40,9 @@ public class GuiAdvancedDetector extends GuiLiLRichyMod
         }
     }
 
+    public void updateScreen()
+    {
+        super.updateScreen();
+        invertButton.displayString = I18n.format("gui.LiLRichyMod.AdvancedDetector.button." + (te.invert == true ? "invert" : "regular"));
+    }
 }

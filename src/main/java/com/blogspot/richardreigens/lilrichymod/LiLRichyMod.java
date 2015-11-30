@@ -3,6 +3,7 @@ package com.blogspot.richardreigens.lilrichymod;
 import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
 import com.blogspot.richardreigens.lilrichymod.handler.GuiHandler;
 import com.blogspot.richardreigens.lilrichymod.handler.PacketDescriptionHandler;
+import com.blogspot.richardreigens.lilrichymod.handler.network.NetworkHandler;
 import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
 import com.blogspot.richardreigens.lilrichymod.init.ModTileEntitys;
@@ -51,6 +52,8 @@ public class lilrichymod
 
         PacketDescriptionHandler.init();
         LogHelper.info("Packet Description Handler Loaded");
+
+        NetworkHandler.init();
 
         NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
         LogHelper.info("GUI Handler Loaded");

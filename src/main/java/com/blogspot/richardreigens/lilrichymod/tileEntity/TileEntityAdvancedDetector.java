@@ -15,25 +15,24 @@ import net.minecraft.nbt.NBTTagCompound;
 public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements IInventory
 {
     public boolean activated = false;
+    public boolean invert = false;
     private int tick = 0;
     private int rate = 5;
     private int range = 5;
-    private boolean invert = false;
     private ItemStack camoStack;
     private NBTTagCompound tag = new NBTTagCompound();
 
     @Override
     public void updateEntity()
     {
-
         if (worldObj.isRemote)
             return;
 
         if (tick >= rate) {
             tick = 0;
             EntityPlayer player = worldObj.getClosestPlayer(xCoord + 0.5D, yCoord + 0.5D, zCoord + 0.5D, range + 0.5D);
+            //Found Player
             if (player != null) {
-                //Found Player
                 if (!activated && !invert) {
                     setActivated(true);
                 } else if (!activated && invert) {
@@ -117,6 +116,7 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
     {
         ByteBufUtils.writeItemStack(buf, camoStack);
         buf.writeBoolean(activated);
+        buf.writeBoolean(invert);
 
     }
 
@@ -124,6 +124,7 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
     {
         camoStack = ByteBufUtils.readItemStack(buf);
         activated = buf.readBoolean();
+        invert = buf.readBoolean();
         worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
 
     }
@@ -132,6 +133,7 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
     public void readFromNBT(NBTTagCompound tag)
     {
         activated = tag.getBoolean("activated");
+        invert = tag.getBoolean("invert");
         range = tag.getInteger("range");
         if (tag.hasKey("camoStack")) {
             camoStack = ItemStack.loadItemStackFromNBT(tag.getCompoundTag("camoStack"));
@@ -145,6 +147,7 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
     public void writeToNBT(NBTTagCompound tag)
     {
         tag.setBoolean("activated", activated);
+        tag.setBoolean("invert", invert);
         tag.setInteger("range", range);
         if (camoStack != null) {
             NBTTagCompound t = new NBTTagCompound();
