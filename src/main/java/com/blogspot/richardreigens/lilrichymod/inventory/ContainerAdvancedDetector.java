@@ -4,6 +4,7 @@ import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityAdvancedDete
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Slot;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 
 /**
@@ -49,7 +50,8 @@ public class ContainerAdvancedDetector extends ContainerLiLRichyMod
             }
             //Change par3 to number of slots added.
             //stack size number is to check so only that number go into slot
-            else if (itemstack.stackSize == 1 && !this.mergeItemStack(itemstack1, 0, 1, false)) {
+            else if (te.getCamouflage(0) == null && itemstack.getItem() instanceof
+                    ItemBlock && itemstack.stackSize == 1 && !this.mergeItemStack(itemstack1, 0, 1, false)) {
                 return null;
             }
 

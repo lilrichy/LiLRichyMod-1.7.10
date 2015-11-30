@@ -1,53 +1,24 @@
-[19:59:56] [main/INFO]: Logging in with username & password
-[20:00:05] [main/INFO]: Setting user: LiLRichy
-[20:00:09] [Client thread/INFO]: LWJGL Version: 2.9.1
-[20:00:11] [Twitch authenticator/ERROR]: [Broadcast controller] TTV_EC_INTEL_FAILED_SESSION_INIT
-[20:00:24] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
-[20:00:26] [Sound Library Loader/INFO]: Sound engine started
-[20:00:29] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[20:00:29] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[20:00:31] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
-[20:00:32] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
-[20:00:32] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[20:00:33] [Sound Library Loader/INFO]: Sound engine started
-[20:01:04] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[20:01:04] [Server thread/INFO]: Generating keypair
-[20:01:05] [Server thread/INFO]: Preparing start region for level 0
-[20:01:06] [Server thread/INFO]: Changing view distance to 12, from 10
-[20:01:07] [Server thread/INFO]: LiLRichy[local:E:01521e60] logged in with entity id 238 at (827.2402064334343, 4.0, -309.2735795665183)
-[20:01:07] [Server thread/INFO]: LiLRichy joined the game
-[20:01:21] [Server thread/INFO]: [LiLRichy: Given [Gravel] * 64 to LiLRichy]
-[20:01:21] [Client thread/INFO]: [CHAT] Given [Gravel] * 64 to LiLRichy
-[20:05:56] [Server thread/INFO]: [LiLRichy: Given [Redstone Comparator] * 64 to LiLRichy]
-[20:05:56] [Client thread/INFO]: [CHAT] Given [Redstone Comparator] * 64 to LiLRichy
-[20:06:00] [Server thread/INFO]: [LiLRichy: Given [Redstone Torch] * 64 to LiLRichy]
-[20:06:00] [Client thread/INFO]: [CHAT] Given [Redstone Torch] * 64 to LiLRichy
-[20:06:07] [Server thread/INFO]: [LiLRichy: Given [Iron Ingot] * 64 to LiLRichy]
-[20:06:07] [Client thread/INFO]: [CHAT] Given [Iron Ingot] * 64 to LiLRichy
-[20:06:15] [Server thread/INFO]: [LiLRichy: Given [Birch Wood] * 64 to LiLRichy]
-[20:06:15] [Client thread/INFO]: [CHAT] Given [Birch Wood] * 64 to LiLRichy
-[20:06:21] [Server thread/INFO]: [LiLRichy: Given [Sponge] * 64 to LiLRichy]
-[20:06:21] [Client thread/INFO]: [CHAT] Given [Sponge] * 64 to LiLRichy
-[20:06:25] [Server thread/INFO]: [LiLRichy: Given [Stone] * 64 to LiLRichy]
-[20:06:25] [Client thread/INFO]: [CHAT] Given [Stone] * 64 to LiLRichy
-[20:06:30] [Server thread/INFO]: [LiLRichy: Given [Diamond] * 64 to LiLRichy]
-[20:06:30] [Client thread/INFO]: [CHAT] Given [Diamond] * 64 to LiLRichy
-[20:06:35] [Server thread/INFO]: [LiLRichy: Given [Gold Ingot] * 64 to LiLRichy]
-[20:06:36] [Client thread/INFO]: [CHAT] Given [Gold Ingot] * 64 to LiLRichy
-[20:13:54] [Server thread/INFO]: [LiLRichy: Given [Sponge] * 64 to LiLRichy]
-[20:13:54] [Client thread/INFO]: [CHAT] Given [Sponge] * 64 to LiLRichy
-[20:14:04] [Server thread/INFO]: [LiLRichy: Given [Player Detector] * 64 to LiLRichy]
-[20:14:04] [Client thread/INFO]: [CHAT] Given [Player Detector] * 64 to LiLRichy
-[20:17:26] [Server thread/INFO]: [LiLRichy: Given [Player Detector] * 64 to LiLRichy]
-[20:17:27] [Client thread/INFO]: [CHAT] Given [Player Detector] * 64 to LiLRichy
-[20:19:12] [Server thread/INFO]: LiLRichy has just earned the achievement [Getting Wood]
-[20:19:12] [Client thread/INFO]: [CHAT] LiLRichy has just earned the achievement [Getting Wood]
-[20:27:56] [Client thread/INFO]: Stopping!
-[20:27:56] [Server thread/INFO]: Stopping server
-[20:27:56] [Server thread/INFO]: Saving players
-[20:27:56] [Server thread/INFO]: Saving worlds
-[20:27:56] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
-[20:27:56] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
-[20:27:56] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
-[20:27:56] [Client Shutdown Thread/INFO]: Stopping server
-[20:27:56] [Client Shutdown Thread/INFO]: Saving players
+[09:02:13] [main/INFO]: Logging in with username & password
+[09:02:23] [main/INFO]: Setting user: LiLRichy
+[09:02:27] [Client thread/INFO]: LWJGL Version: 2.9.1
+[09:02:29] [Twitch authenticator/ERROR]: [Broadcast controller] TTV_EC_INTEL_FAILED_SESSION_INIT
+[09:02:43] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
+[09:02:44] [Sound Library Loader/INFO]: Sound engine started
+[09:02:47] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[09:02:47] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[09:02:49] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
+[09:02:50] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[09:02:50] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[09:02:51] [Sound Library Loader/INFO]: Sound engine started
+[09:04:00] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[09:04:00] [Server thread/INFO]: Generating keypair
+[09:04:00] [Server thread/INFO]: Preparing start region for level 0
+[09:04:01] [Server thread/INFO]: Changing view distance to 12, from 10
+[09:04:02] [Server thread/INFO]: LiLRichy[local:E:7e2a4c2e] logged in with entity id 208 at (826.1746076419108, 4.0, -308.6570455893371)
+[09:04:02] [Server thread/INFO]: LiLRichy joined the game
+[09:06:00] [Server thread/INFO]: [LiLRichy: Given [Shadowmourne] * 1 to LiLRichy]
+[09:06:00] [Client thread/INFO]: [CHAT] Given [Shadowmourne] * 1 to LiLRichy
+[09:06:23] [Server thread/INFO]: Saving and pausing game...
+[09:06:23] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
+[09:06:23] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
+[09:06:23] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
