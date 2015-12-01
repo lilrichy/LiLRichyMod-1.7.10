@@ -19,12 +19,17 @@ tile.lilrichymod:smallConcreteTexturedSquares.name=Small Textured Concrete Squar
 tile.lilrichymod:crackedStone.name=Cracked Stone
 tile.lilrichymod:arrangedStoneBricks.name=Arranged Stone Bricks
 
+tile.lilrichymod:panels/acaciaPanel.name=Acacia Paneling
+tile.lilrichymod:panels/big_oakPanel.name=Dark Oak Paneling
+tile.lilrichymod:panels/birchPanel.name=Birch Paneling
+tile.lilrichymod:panels/junglePanel.name=Jungle Paneling
+tile.lilrichymod:panels/oakPanel.name=Oak Paneling
+tile.lilrichymod:panels/sprucePanel.name=Spruce Paneling
+
+
 tile.lilrichymod:playerDetector.name=Player Detector
 tile.lilrichymod:advancedDetector.name=Advanced Detector
 
 gui.LiLRichyMod.AdvancedDetector.button.invert=Inverted
 gui.LiLRichyMod.AdvancedDetector.button.regular=Regular
-gui.LiLRichyMod.AdvancedDetector.button.rangeUp=Increase Range
-gui.LiLRichyMod.AdvancedDetector.button.rangeDown=Decrease Range
-gui.LiLRichyMod.AdvancedDetector.button.filterUp=Browse up
-gui.LiLRichyMod.AdvancedDetector.button.filterDown=Browse Down
+

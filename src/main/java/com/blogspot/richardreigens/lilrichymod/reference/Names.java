@@ -22,9 +22,11 @@ public class Names
         public static final String CRACKED_STONE = "crackedStone";
         public static final String ARRANGED_STONE_BRICKS = "arrangedStoneBricks";
 
+
         //PlayerDetector Blocks
         public static final String PLAYER_DETECTOR = "playerDetector";
         public static final String ADVANCED_DETECTOR = "advancedDetector";
+
     }
 
     public static class Items
@@ -45,5 +47,15 @@ public class Names
     public static class Gui
     {
         public static final String ADVANCED_DETECTOR_GUI = "advancedDetectorGUI";
+    }
+
+    public static class Panels
+    {
+        public static final String OAK_PANEL = "oakPanel";
+        public static final String ACACIA_PANEL = "acaciaPanel";
+        public static final String BIG_OAK_PANEL = "big_oakPanel";
+        public static final String BIRCH_PANEL = "birchPanel";
+        public static final String JUNGLE_PANEL = "junglePanel";
+        public static final String SPRUCE_PANEL = "sprucePanel";
     }
 }

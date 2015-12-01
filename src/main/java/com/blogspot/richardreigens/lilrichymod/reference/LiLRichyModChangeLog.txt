@@ -1,0 +1,5 @@
+LiLRichy Mod Change Log
+Versioning =VForge Change . Mod change + incremental NEVER Reset
+
+v1.0
+Initial Release

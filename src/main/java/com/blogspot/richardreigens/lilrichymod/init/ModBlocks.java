@@ -1,9 +1,6 @@
 package com.blogspot.richardreigens.lilrichymod.init;
 
-import com.blogspot.richardreigens.lilrichymod.blocks.BlockAdvancedDetector;
-import com.blogspot.richardreigens.lilrichymod.blocks.BlockLiLRichyMod;
-import com.blogspot.richardreigens.lilrichymod.blocks.BlockPlayerDetector;
-import com.blogspot.richardreigens.lilrichymod.blocks.BlockTileEntityLiLRichyMod;
+import com.blogspot.richardreigens.lilrichymod.blocks.*;
 import com.blogspot.richardreigens.lilrichymod.blocks.type.concrete.*;
 import com.blogspot.richardreigens.lilrichymod.blocks.type.stone.BlockArrangedStoneBricks;
 import com.blogspot.richardreigens.lilrichymod.blocks.type.stone.BlockCrackedStone;
@@ -11,6 +8,7 @@ import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.material.Material;
 
 /**
  * Created by Rich on 11/19/2015.
@@ -34,6 +32,14 @@ public class ModBlocks
     public static final BlockLiLRichyMod crackedStone = new BlockCrackedStone();
     public static final BlockLiLRichyMod arrangedStoneBricks = new BlockArrangedStoneBricks();
 
+    //Panels
+    public static final LiLRichyPanel acaciaPanel = new LiLRichyPanel(Names.Panels.ACACIA_PANEL, "Side", "Top", Material.wood, true);
+    public static final LiLRichyPanel big_oakPanel = new LiLRichyPanel(Names.Panels.BIG_OAK_PANEL, "Side", "Top", Material.wood, true);
+    public static final LiLRichyPanel birchPanel = new LiLRichyPanel(Names.Panels.BIRCH_PANEL, "Side", "Top", Material.wood, true);
+    public static final LiLRichyPanel junglePanel = new LiLRichyPanel(Names.Panels.JUNGLE_PANEL, "Side", "Top", Material.wood, true);
+    public static final LiLRichyPanel oakPanel = new LiLRichyPanel(Names.Panels.OAK_PANEL, "Side", "Top", Material.wood, true);
+    public static final LiLRichyPanel sprucePanel = new LiLRichyPanel(Names.Panels.SPRUCE_PANEL, "Side", "Top", Material.wood, true);
+
 
     //Tile Entity Blocks
     public static final BlockTileEntityLiLRichyMod playerDetector = new BlockPlayerDetector();
@@ -56,6 +62,14 @@ public class ModBlocks
         GameRegistry.registerBlock(arrangedConcreteBricks, Names.Blocks.ARRANGED_CONCRETE_BRICKS);
         GameRegistry.registerBlock(crackedStone, Names.Blocks.CRACKED_STONE);
         GameRegistry.registerBlock(arrangedStoneBricks, Names.Blocks.ARRANGED_STONE_BRICKS);
+
+        //Panels
+        GameRegistry.registerBlock(acaciaPanel, Names.Panels.ACACIA_PANEL);
+        GameRegistry.registerBlock(big_oakPanel, Names.Panels.BIG_OAK_PANEL);
+        GameRegistry.registerBlock(birchPanel, Names.Panels.BIRCH_PANEL);
+        GameRegistry.registerBlock(junglePanel, Names.Panels.JUNGLE_PANEL);
+        GameRegistry.registerBlock(oakPanel, Names.Panels.OAK_PANEL);
+        GameRegistry.registerBlock(sprucePanel, Names.Panels.SPRUCE_PANEL);
 
         //Tile Entity Blocks
         if (ConfigurationHandler.loadPlayerDetector)
