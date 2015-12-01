@@ -70,6 +70,8 @@ public class Recipes
                 new ItemStack(ModItems.crushedConcrete), new ItemStack(ModItems.crushedConcrete),
                 new ItemStack(ModItems.crushedConcrete), new ItemStack(ModItems.crushedConcrete));
 
+        GameRegistry.addSmelting(new ItemStack(ModItems.concreteMix), new ItemStack(ModBlocks.concrete), 0.1f);
+
         //Arranged Concrete Bricks
         GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.arrangedConcreteBricks, 4),
                 new ItemStack(ModBlocks.smallConcreteBricks), new ItemStack(ModBlocks.smallConcreteBricks),

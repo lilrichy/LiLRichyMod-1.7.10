@@ -1,6 +1,11 @@
 LiLRichy Mod Change Log
 Versioning =VForge Change . Mod change + incremental NEVER Reset
 
+v1.2
+Fixed render of panels to be 2 pixels wide
+Fixed Hardness of Panels
+Added Smelting recipe for concrete
+
 v1.1
 Added Wood Panels and Planks Panels
 

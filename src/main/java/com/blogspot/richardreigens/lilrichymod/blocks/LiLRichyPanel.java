@@ -18,7 +18,6 @@ public class LiLRichyPanel extends BlockPane
     private String sideIcon;
     private String topIcon;
 
-
     public LiLRichyPanel(String Name, String sideBlockName, String topName, Material material, boolean canDrop)
     {
         super(sideBlockName, topName, material, canDrop);
@@ -26,6 +25,7 @@ public class LiLRichyPanel extends BlockPane
         this.topIcon = topName;
         this.setBlockName(Name);
         this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
+        this.setHardness(2.0f);
     }
 
     @SideOnly(Side.CLIENT)
@@ -34,6 +34,11 @@ public class LiLRichyPanel extends BlockPane
         return this.blockIconTop;
     }
 
+    @Override
+    public int getRenderType()
+    {
+        return this.blockMaterial == Material.wood ? 41 : 18;
+    }
 
     @Override
     public String getUnlocalizedName()
