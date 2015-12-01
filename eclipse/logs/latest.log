@@ -51,3 +51,10 @@
 [08:29:02] [Server thread/INFO]: [LiLRichy: Given [Glass] * 1 to LiLRichy]
 [08:29:02] [Client thread/INFO]: [CHAT] Given [Glass] * 1 to LiLRichy
 [08:29:38] [Client thread/INFO]: [CHAT] Saved screenshot as 2015-12-01_08.29.38.png
+[08:55:30] [Client thread/INFO]: Stopping!
+[08:55:30] [Server thread/INFO]: Stopping server
+[08:55:30] [Server thread/INFO]: Saving players
+[08:55:30] [Server thread/INFO]: Saving worlds
+[08:55:30] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
+[08:55:31] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
+[08:55:31] [Server thread/INFO]: Saving chunks for level 'Flat'/The End

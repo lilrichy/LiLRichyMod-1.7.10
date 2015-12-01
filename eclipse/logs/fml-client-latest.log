@@ -1084,3 +1084,106 @@ Details:
 [08:34:46] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
 [08:35:31] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
 [08:36:16] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:37:01] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:37:46] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:38:31] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:39:16] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:40:01] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:40:46] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:41:31] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:42:16] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:43:01] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:43:46] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:44:31] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:45:16] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:46:01] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:46:46] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:47:31] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:48:16] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:49:01] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:49:46] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:50:31] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:51:16] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:52:01] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:52:46] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:53:31] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:54:16] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:55:01] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:55:30] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerStoppingEvent to mod mcp
+[08:55:30] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerStoppingEvent to mod mcp
+[08:55:30] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopping - Minecraft Coder Pack took 0.002s
+[08:55:30] [Server thread/TRACE] [FML/FML]: Sending event FMLServerStoppingEvent to mod FML
+[08:55:30] [Server thread/TRACE] [FML/FML]: Sent event FMLServerStoppingEvent to mod FML
+[08:55:30] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopping - Forge Mod Loader took 0.001s
+[08:55:30] [Server thread/TRACE] [Forge/Forge]: Sending event FMLServerStoppingEvent to mod Forge
+[08:55:30] [Server thread/TRACE] [Forge/Forge]: Sent event FMLServerStoppingEvent to mod Forge
+[08:55:30] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopping - Minecraft Forge took 0.000s
+[08:55:30] [Server thread/TRACE] [CodeChickenCore/CodeChickenCore]: Sending event FMLServerStoppingEvent to mod CodeChickenCore
+[08:55:30] [Server thread/TRACE] [CodeChickenCore/CodeChickenCore]: Sent event FMLServerStoppingEvent to mod CodeChickenCore
+[08:55:30] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopping - CodeChicken Core took 0.000s
+[08:55:30] [Server thread/TRACE] [NotEnoughItems/NotEnoughItems]: Sending event FMLServerStoppingEvent to mod NotEnoughItems
+[08:55:30] [Server thread/TRACE] [NotEnoughItems/NotEnoughItems]: Sent event FMLServerStoppingEvent to mod NotEnoughItems
+[08:55:30] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopping - Not Enough Items took 0.001s
+[08:55:30] [Server thread/TRACE] [lilrichymod/lilrichymod]: Sending event FMLServerStoppingEvent to mod lilrichymod
+[08:55:30] [Server thread/TRACE] [lilrichymod/lilrichymod]: Sent event FMLServerStoppingEvent to mod lilrichymod
+[08:55:30] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopping - LiLRichy Mod took 0.000s
+[08:55:30] [Server thread/TRACE] [Waila/Waila]: Sending event FMLServerStoppingEvent to mod Waila
+[08:55:30] [Server thread/TRACE] [Waila/Waila]: Sent event FMLServerStoppingEvent to mod Waila
+[08:55:30] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopping - Waila took 0.000s
+[08:55:30] [Server thread/DEBUG] [FML/]: Bar Finished: ServerStopping took 0.005s
+[08:55:30] [Client thread/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[08:55:30] [Client thread/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: SoundSystem shutting down...
+[08:55:30] [Server thread/DEBUG] [FML/]: Gathering id map for writing to world save Flat
+[08:55:31] [Server thread/INFO] [FML/]: Unloading dimension 0
+[08:55:31] [Server thread/INFO] [FML/]: Unloading dimension -1
+[08:55:31] [Server thread/INFO] [FML/]: Unloading dimension 1
+[08:55:31] [Server thread/DEBUG] [FML/]: Reverting to frozen data state.
+[08:55:31] [Server thread/TRACE] [mcp/mcp]: Sending event FMLModIdMappingEvent to mod mcp
+[08:55:31] [Server thread/TRACE] [mcp/mcp]: Sent event FMLModIdMappingEvent to mod mcp
+[08:55:31] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Minecraft Coder Pack took 0.000s
+[08:55:31] [Server thread/TRACE] [FML/FML]: Sending event FMLModIdMappingEvent to mod FML
+[08:55:31] [Server thread/TRACE] [FML/FML]: Sent event FMLModIdMappingEvent to mod FML
+[08:55:31] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Forge Mod Loader took 0.003s
+[08:55:31] [Server thread/TRACE] [Forge/Forge]: Sending event FMLModIdMappingEvent to mod Forge
+[08:55:31] [Server thread/TRACE] [Forge/Forge]: Sent event FMLModIdMappingEvent to mod Forge
+[08:55:31] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Minecraft Forge took 0.002s
+[08:55:31] [Server thread/TRACE] [CodeChickenCore/CodeChickenCore]: Sending event FMLModIdMappingEvent to mod CodeChickenCore
+[08:55:31] [Server thread/TRACE] [CodeChickenCore/CodeChickenCore]: Sent event FMLModIdMappingEvent to mod CodeChickenCore
+[08:55:31] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - CodeChicken Core took 0.001s
+[08:55:31] [Server thread/TRACE] [NotEnoughItems/NotEnoughItems]: Sending event FMLModIdMappingEvent to mod NotEnoughItems
+[08:55:31] [Server thread/TRACE] [NotEnoughItems/NotEnoughItems]: Sent event FMLModIdMappingEvent to mod NotEnoughItems
+[08:55:31] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Not Enough Items took 0.000s
+[08:55:31] [Server thread/TRACE] [lilrichymod/lilrichymod]: Sending event FMLModIdMappingEvent to mod lilrichymod
+[08:55:31] [Server thread/TRACE] [lilrichymod/lilrichymod]: Sent event FMLModIdMappingEvent to mod lilrichymod
+[08:55:31] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - LiLRichy Mod took 0.000s
+[08:55:31] [Server thread/TRACE] [Waila/Waila]: Sending event FMLModIdMappingEvent to mod Waila
+[08:55:31] [Server thread/TRACE] [Waila/Waila]: Sent event FMLModIdMappingEvent to mod Waila
+[08:55:31] [Server thread/DEBUG] [FML/]: Bar Step: ModIdMapping - Waila took 0.000s
+[08:55:31] [Server thread/DEBUG] [FML/]: Bar Finished: ModIdMapping took 0.008s
+[08:55:31] [Server thread/INFO] [FML/]: Applying holder lookups
+[08:55:31] [Server thread/DEBUG] [FML/]: Unable to lookup lilrichymod:shadowmourne for public static com.blogspot.richardreigens.lilrichymod.items.tools.ItemSwordLiLRichyMod com.blogspot.richardreigens.lilrichymod.init.ModItems.shadowmourne. This means the object wasn't registered. It's likely just mod options.
+[08:55:31] [Server thread/INFO] [FML/]: Holder lookups applied
+[08:55:31] [Server thread/TRACE] [mcp/mcp]: Sending event FMLServerStoppedEvent to mod mcp
+[08:55:31] [Server thread/TRACE] [mcp/mcp]: Sent event FMLServerStoppedEvent to mod mcp
+[08:55:31] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopped - Minecraft Coder Pack took 0.001s
+[08:55:31] [Server thread/TRACE] [FML/FML]: Sending event FMLServerStoppedEvent to mod FML
+[08:55:31] [Server thread/TRACE] [FML/FML]: Sent event FMLServerStoppedEvent to mod FML
+[08:55:31] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopped - Forge Mod Loader took 0.001s
+[08:55:31] [Server thread/TRACE] [Forge/Forge]: Sending event FMLServerStoppedEvent to mod Forge
+[08:55:31] [Server thread/TRACE] [Forge/Forge]: Sent event FMLServerStoppedEvent to mod Forge
+[08:55:31] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopped - Minecraft Forge took 0.000s
+[08:55:31] [Server thread/TRACE] [CodeChickenCore/CodeChickenCore]: Sending event FMLServerStoppedEvent to mod CodeChickenCore
+[08:55:31] [Server thread/TRACE] [CodeChickenCore/CodeChickenCore]: Sent event FMLServerStoppedEvent to mod CodeChickenCore
+[08:55:31] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopped - CodeChicken Core took 0.000s
+[08:55:31] [Server thread/TRACE] [NotEnoughItems/NotEnoughItems]: Sending event FMLServerStoppedEvent to mod NotEnoughItems
+[08:55:31] [Server thread/TRACE] [NotEnoughItems/NotEnoughItems]: Sent event FMLServerStoppedEvent to mod NotEnoughItems
+[08:55:31] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopped - Not Enough Items took 0.000s
+[08:55:31] [Server thread/TRACE] [lilrichymod/lilrichymod]: Sending event FMLServerStoppedEvent to mod lilrichymod
+[08:55:31] [Server thread/TRACE] [lilrichymod/lilrichymod]: Sent event FMLServerStoppedEvent to mod lilrichymod
+[08:55:31] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopped - LiLRichy Mod took 0.000s
+[08:55:31] [Server thread/TRACE] [Waila/Waila]: Sending event FMLServerStoppedEvent to mod Waila
+[08:55:31] [Server thread/TRACE] [Waila/Waila]: Sent event FMLServerStoppedEvent to mod Waila
+[08:55:31] [Server thread/DEBUG] [FML/]: Bar Step: ServerStopped - Waila took 0.000s
+[08:55:31] [Server thread/DEBUG] [FML/]: Bar Finished: ServerStopped took 0.003s
+[08:55:31] [Client thread/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:importantMessage:90]:     Author: Paul Lamb, www.paulscode.com
+[08:55:31] [Client thread/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: 
