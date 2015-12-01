@@ -1,42 +1,53 @@
-[07:27:20] [main/INFO]: Logging in with username & password
-[07:27:30] [main/INFO]: Setting user: LiLRichy
-[07:27:34] [Client thread/INFO]: LWJGL Version: 2.9.1
-[07:27:36] [Twitch authenticator/ERROR]: [Broadcast controller] TTV_EC_INTEL_FAILED_SESSION_INIT
-[07:27:49] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
-[07:27:51] [Sound Library Loader/INFO]: Sound engine started
-[07:27:53] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[07:27:53] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[07:27:55] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
-[07:27:56] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
-[07:27:57] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[07:27:57] [Sound Library Loader/INFO]: Sound engine started
-[07:28:06] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[07:28:06] [Server thread/INFO]: Generating keypair
-[07:28:07] [Server thread/INFO]: Preparing start region for level 0
-[07:28:07] [Server thread/INFO]: Changing view distance to 12, from 10
-[07:28:09] [Server thread/INFO]: LiLRichy[local:E:6ec36d59] logged in with entity id 214 at (826.5779620255555, 4.0, -316.23723420301616)
-[07:28:09] [Server thread/INFO]: LiLRichy joined the game
-[07:28:35] [Server thread/INFO]: [LiLRichy: Given [Oak Wood Planks] * 64 to LiLRichy]
-[07:28:35] [Client thread/INFO]: [CHAT] Given [Oak Wood Planks] * 64 to LiLRichy
-[07:29:39] [Server thread/INFO]: [LiLRichy: Given [Spruce Paneling] * 1 to LiLRichy]
-[07:29:39] [Client thread/INFO]: [CHAT] Given [Spruce Paneling] * 1 to LiLRichy
-[07:29:40] [Server thread/INFO]: [LiLRichy: Given [Birch Paneling] * 1 to LiLRichy]
-[07:29:40] [Client thread/INFO]: [CHAT] Given [Birch Paneling] * 1 to LiLRichy
-[07:29:41] [Server thread/INFO]: [LiLRichy: Given [Dark Oak Paneling] * 1 to LiLRichy]
-[07:29:41] [Client thread/INFO]: [CHAT] Given [Dark Oak Paneling] * 1 to LiLRichy
-[07:29:41] [Server thread/INFO]: [LiLRichy: Given [Jungle Paneling] * 1 to LiLRichy]
-[07:29:41] [Client thread/INFO]: [CHAT] Given [Jungle Paneling] * 1 to LiLRichy
-[07:29:42] [Server thread/INFO]: [LiLRichy: Given [Acacia Paneling] * 1 to LiLRichy]
-[07:29:42] [Client thread/INFO]: [CHAT] Given [Acacia Paneling] * 1 to LiLRichy
-[07:30:11] [Server thread/INFO]: [LiLRichy: Given [Cracked Stone] * 1 to LiLRichy]
-[07:30:11] [Client thread/INFO]: [CHAT] Given [Cracked Stone] * 1 to LiLRichy
-[07:30:51] [Client thread/INFO]: [CHAT] Saved screenshot as 2015-12-01_07.30.51.png
-[07:33:08] [Client thread/INFO]: Stopping!
-[07:33:08] [Server thread/INFO]: Stopping server
-[07:33:08] [Server thread/INFO]: Saving players
-[07:33:08] [Server thread/INFO]: Saving worlds
-[07:33:08] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
-[07:33:08] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
-[07:33:08] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
-[07:33:08] [Client Shutdown Thread/INFO]: Stopping server
-[07:33:08] [Client Shutdown Thread/INFO]: Saving players
+[08:25:44] [main/INFO]: Logging in with username & password
+[08:25:54] [main/INFO]: Setting user: LiLRichy
+[08:25:58] [Client thread/INFO]: LWJGL Version: 2.9.1
+[08:26:00] [Twitch authenticator/ERROR]: [Broadcast controller] TTV_EC_INTEL_FAILED_SESSION_INIT
+[08:26:13] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
+[08:26:15] [Sound Library Loader/INFO]: Sound engine started
+[08:26:18] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[08:26:18] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[08:26:19] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:LiLRichy Mod, FMLFileResourcePack:Waila
+[08:26:20] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[08:26:21] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[08:26:21] [Sound Library Loader/INFO]: Sound engine started
+[08:26:29] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[08:26:29] [Server thread/INFO]: Generating keypair
+[08:26:30] [Server thread/INFO]: Preparing start region for level 0
+[08:26:31] [Server thread/INFO]: Changing view distance to 12, from 10
+[08:26:32] [Server thread/INFO]: LiLRichy[local:E:19b9c8b3] logged in with entity id 214 at (834.1861419405284, 4.0, -316.68606192491706)
+[08:26:32] [Server thread/INFO]: LiLRichy joined the game
+[08:26:46] [Server thread/INFO]: [LiLRichy: Given [Dark Oak Wood Paneling] * 1 to LiLRichy]
+[08:26:46] [Client thread/INFO]: [CHAT] Given [Dark Oak Wood Paneling] * 1 to LiLRichy
+[08:26:48] [Server thread/INFO]: [LiLRichy: Given [Dark Oak Wood Paneling] * 64 to LiLRichy]
+[08:26:48] [Client thread/INFO]: [CHAT] Given [Dark Oak Wood Paneling] * 64 to LiLRichy
+[08:27:19] [Client thread/INFO]: [CHAT] You are now playing creative
+[08:27:19] [Client thread/INFO]: [CHAT] You are now playing creative+
+[08:27:23] [Server thread/INFO]: [LiLRichy: Cleared the inventory of LiLRichy, removing 319 items]
+[08:27:23] [Client thread/INFO]: [CHAT] Cleared the inventory of LiLRichy, removing 319 items
+[08:27:39] [Server thread/INFO]: [LiLRichy: Given [Oak Planks Paneling] * 1 to LiLRichy]
+[08:27:39] [Client thread/INFO]: [CHAT] Given [Oak Planks Paneling] * 1 to LiLRichy
+[08:27:40] [Server thread/INFO]: [LiLRichy: Given [Spruce Planks Paneling] * 1 to LiLRichy]
+[08:27:40] [Client thread/INFO]: [CHAT] Given [Spruce Planks Paneling] * 1 to LiLRichy
+[08:27:40] [Server thread/INFO]: [LiLRichy: Given [Birch Planks Paneling] * 1 to LiLRichy]
+[08:27:40] [Client thread/INFO]: [CHAT] Given [Birch Planks Paneling] * 1 to LiLRichy
+[08:27:41] [Server thread/INFO]: [LiLRichy: Given [Dark Oak Planks Paneling] * 1 to LiLRichy]
+[08:27:41] [Client thread/INFO]: [CHAT] Given [Dark Oak Planks Paneling] * 1 to LiLRichy
+[08:27:41] [Server thread/INFO]: [LiLRichy: Given [Jungle Planks Paneling] * 1 to LiLRichy]
+[08:27:41] [Client thread/INFO]: [CHAT] Given [Jungle Planks Paneling] * 1 to LiLRichy
+[08:27:42] [Server thread/INFO]: [LiLRichy: Given [Acacia Planks Paneling] * 1 to LiLRichy]
+[08:27:42] [Client thread/INFO]: [CHAT] Given [Acacia Planks Paneling] * 1 to LiLRichy
+[08:27:43] [Server thread/INFO]: [LiLRichy: Given [Acacia Wood Paneling] * 1 to LiLRichy]
+[08:27:43] [Client thread/INFO]: [CHAT] Given [Acacia Wood Paneling] * 1 to LiLRichy
+[08:27:44] [Server thread/INFO]: [LiLRichy: Given [Spruce Wood Paneling] * 1 to LiLRichy]
+[08:27:44] [Client thread/INFO]: [CHAT] Given [Spruce Wood Paneling] * 1 to LiLRichy
+[08:27:44] [Server thread/INFO]: [LiLRichy: Given [Birch Wood Paneling] * 1 to LiLRichy]
+[08:27:44] [Client thread/INFO]: [CHAT] Given [Birch Wood Paneling] * 1 to LiLRichy
+[08:27:44] [Server thread/INFO]: [LiLRichy: Given [Jungle Wood Paneling] * 1 to LiLRichy]
+[08:27:44] [Client thread/INFO]: [CHAT] Given [Jungle Wood Paneling] * 1 to LiLRichy
+[08:27:45] [Server thread/INFO]: [LiLRichy: Given [Dark Oak Wood Paneling] * 1 to LiLRichy]
+[08:27:45] [Client thread/INFO]: [CHAT] Given [Dark Oak Wood Paneling] * 1 to LiLRichy
+[08:27:45] [Server thread/INFO]: [LiLRichy: Given [Oak Wood Paneling] * 1 to LiLRichy]
+[08:27:45] [Client thread/INFO]: [CHAT] Given [Oak Wood Paneling] * 1 to LiLRichy
+[08:29:02] [Server thread/INFO]: [LiLRichy: Given [Glass] * 1 to LiLRichy]
+[08:29:02] [Client thread/INFO]: [CHAT] Given [Glass] * 1 to LiLRichy
+[08:29:38] [Client thread/INFO]: [CHAT] Saved screenshot as 2015-12-01_08.29.38.png

@@ -51,11 +51,20 @@ public class Names
 
     public static class Panels
     {
+        //Planks
         public static final String OAK_PANEL = "oakPanel";
         public static final String ACACIA_PANEL = "acaciaPanel";
         public static final String BIG_OAK_PANEL = "big_oakPanel";
         public static final String BIRCH_PANEL = "birchPanel";
         public static final String JUNGLE_PANEL = "junglePanel";
         public static final String SPRUCE_PANEL = "sprucePanel";
+
+        //Logs
+        public static final String LOG_OAK_PANEL = "log_oakPanel";
+        public static final String LOG_ACACIA_PANEL = "log_acaciaPanel";
+        public static final String LOG_BIG_OAK_PANEL = "log_big_oakPanel";
+        public static final String LOG_BIRCH_PANEL = "log_birchPanel";
+        public static final String LOG_JUNGLE_PANEL = "log_junglePanel";
+        public static final String LOG_SPRUCE_PANEL = "log_sprucePanel";
     }
 }
