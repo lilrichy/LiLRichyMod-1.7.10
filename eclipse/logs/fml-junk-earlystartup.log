@@ -2001,3 +2001,363 @@
 [14:47:06] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
 [14:47:06] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
 [14:47:06] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[20:44:10] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[20:44:10] [main/INFO] [GradleStart]: Extra: []
+[20:44:10] [main/INFO] [GradleStart]: Password found, attempting login
+[20:44:12] [main/INFO] [GradleStart]: Login Succesful!
+[20:44:12] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[20:44:12] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[20:44:12] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[20:44:12] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[20:44:12] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[20:47:24] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[20:47:24] [main/INFO] [GradleStart]: Extra: []
+[20:47:24] [main/INFO] [GradleStart]: Password found, attempting login
+[20:47:25] [main/INFO] [GradleStart]: Login Succesful!
+[20:47:25] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[20:47:25] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[20:47:25] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[20:47:25] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[20:47:25] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[20:52:22] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[20:52:22] [main/INFO] [GradleStart]: Extra: []
+[20:52:22] [main/INFO] [GradleStart]: Password found, attempting login
+[20:52:23] [main/INFO] [GradleStart]: Login Succesful!
+[20:52:23] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[20:52:23] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[20:52:23] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[20:52:23] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[20:52:23] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[10:51:17] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[10:51:17] [main/INFO] [GradleStart]: Extra: []
+[10:51:17] [main/INFO] [GradleStart]: Password found, attempting login
+[10:51:19] [main/INFO] [GradleStart]: Login Succesful!
+[10:51:19] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[10:51:19] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[10:51:19] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[10:51:19] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[10:51:19] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[11:22:36] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[11:22:36] [main/INFO] [GradleStart]: Extra: []
+[11:22:36] [main/INFO] [GradleStart]: Password found, attempting login
+[11:22:37] [main/INFO] [GradleStart]: Login Succesful!
+[11:22:37] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[11:22:37] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[11:22:37] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[11:22:37] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[11:22:37] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[15:45:53] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[15:45:53] [main/INFO] [GradleStart]: Extra: []
+[15:45:53] [main/INFO] [GradleStart]: Password found, attempting login
+[15:45:54] [main/INFO] [GradleStart]: Login Succesful!
+[15:45:54] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[15:45:54] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[15:45:54] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[15:45:54] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[15:45:54] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[16:00:25] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[16:00:25] [main/INFO] [GradleStart]: Extra: []
+[16:00:25] [main/INFO] [GradleStart]: Password found, attempting login
+[16:00:26] [main/INFO] [GradleStart]: Login Succesful!
+[16:00:26] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[16:00:26] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[16:00:26] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[16:00:26] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[16:00:26] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[16:10:09] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[16:10:09] [main/INFO] [GradleStart]: Extra: []
+[16:10:09] [main/INFO] [GradleStart]: Password found, attempting login
+[16:10:10] [main/INFO] [GradleStart]: Login Succesful!
+[16:10:10] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[16:10:10] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[16:10:10] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[16:10:10] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[16:10:10] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[16:12:14] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[16:12:14] [main/INFO] [GradleStart]: Extra: []
+[16:12:14] [main/INFO] [GradleStart]: Password found, attempting login
+[16:12:14] [main/INFO] [GradleStart]: Login Succesful!
+[16:12:15] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[16:12:15] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[16:12:15] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[16:12:15] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[16:12:15] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[16:52:12] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[16:52:13] [main/INFO] [GradleStart]: Extra: []
+[16:52:13] [main/INFO] [GradleStart]: Password found, attempting login
+[16:52:13] [main/INFO] [GradleStart]: Login Succesful!
+[16:52:14] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[16:52:14] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[16:52:14] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[16:52:14] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[16:52:14] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[17:08:26] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[17:08:26] [main/INFO] [GradleStart]: Extra: []
+[17:08:26] [main/INFO] [GradleStart]: Password found, attempting login
+[17:08:27] [main/INFO] [GradleStart]: Login Succesful!
+[17:08:27] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:08:27] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[17:08:27] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[17:08:27] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:08:27] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[17:26:36] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[17:26:36] [main/INFO] [GradleStart]: Extra: []
+[17:26:36] [main/INFO] [GradleStart]: Password found, attempting login
+[17:26:37] [main/INFO] [GradleStart]: Login Succesful!
+[17:26:37] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:26:37] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[17:26:37] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[17:26:37] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:26:37] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[17:49:46] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[17:49:46] [main/INFO] [GradleStart]: Extra: []
+[17:49:46] [main/INFO] [GradleStart]: Password found, attempting login
+[17:49:47] [main/INFO] [GradleStart]: Login Succesful!
+[17:49:47] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:49:47] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[17:49:47] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[17:49:47] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:49:47] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[17:59:08] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[17:59:08] [main/INFO] [GradleStart]: Extra: []
+[17:59:08] [main/INFO] [GradleStart]: Password found, attempting login
+[17:59:09] [main/INFO] [GradleStart]: Login Succesful!
+[17:59:09] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:59:09] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[17:59:09] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[17:59:09] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:59:09] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[18:02:26] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[18:02:26] [main/INFO] [GradleStart]: Extra: []
+[18:02:26] [main/INFO] [GradleStart]: Password found, attempting login
+[18:02:27] [main/INFO] [GradleStart]: Login Succesful!
+[18:02:27] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:02:28] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:02:28] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:02:28] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:02:28] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[18:05:52] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[18:05:52] [main/INFO] [GradleStart]: Extra: []
+[18:05:52] [main/INFO] [GradleStart]: Password found, attempting login
+[18:05:53] [main/INFO] [GradleStart]: Login Succesful!
+[18:05:54] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:05:54] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:05:54] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:05:54] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:05:54] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[18:08:34] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[18:08:34] [main/INFO] [GradleStart]: Extra: []
+[18:08:34] [main/INFO] [GradleStart]: Password found, attempting login
+[18:08:35] [main/INFO] [GradleStart]: Login Succesful!
+[18:08:35] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:08:35] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:08:35] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:08:35] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:08:35] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[18:10:48] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[18:10:48] [main/INFO] [GradleStart]: Extra: []
+[18:10:48] [main/INFO] [GradleStart]: Password found, attempting login
+[18:10:49] [main/INFO] [GradleStart]: Login Succesful!
+[18:10:50] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:10:50] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:10:50] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:10:50] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:10:50] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[18:22:16] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[18:22:16] [main/INFO] [GradleStart]: Extra: []
+[18:22:16] [main/INFO] [GradleStart]: Password found, attempting login
+[18:22:17] [main/INFO] [GradleStart]: Login Succesful!
+[18:22:17] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:22:17] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:22:17] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:22:17] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:22:17] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[18:27:54] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[18:27:54] [main/INFO] [GradleStart]: Extra: []
+[18:27:54] [main/INFO] [GradleStart]: Password found, attempting login
+[18:27:55] [main/INFO] [GradleStart]: Login Succesful!
+[18:27:55] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:27:56] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:27:56] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:27:56] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:27:56] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[18:30:40] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[18:30:40] [main/INFO] [GradleStart]: Extra: []
+[18:30:40] [main/INFO] [GradleStart]: Password found, attempting login
+[18:30:41] [main/INFO] [GradleStart]: Login Succesful!
+[18:30:41] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:30:41] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:30:41] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:30:41] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:30:41] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[18:37:17] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[18:37:17] [main/INFO] [GradleStart]: Extra: []
+[18:37:17] [main/INFO] [GradleStart]: Password found, attempting login
+[18:37:19] [main/INFO] [GradleStart]: Login Succesful!
+[18:37:19] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:37:19] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:37:19] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:37:19] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:37:19] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[18:41:21] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[18:41:21] [main/INFO] [GradleStart]: Extra: []
+[18:41:21] [main/INFO] [GradleStart]: Password found, attempting login
+[18:41:22] [main/INFO] [GradleStart]: Login Succesful!
+[18:41:22] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:41:22] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:41:22] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:41:22] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:41:22] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[18:43:12] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[18:43:12] [main/INFO] [GradleStart]: Extra: []
+[18:43:12] [main/INFO] [GradleStart]: Password found, attempting login
+[18:43:13] [main/INFO] [GradleStart]: Login Succesful!
+[18:43:13] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:43:13] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:43:13] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:43:13] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:43:13] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[18:46:48] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[18:46:48] [main/INFO] [GradleStart]: Extra: []
+[18:46:48] [main/INFO] [GradleStart]: Password found, attempting login
+[18:46:49] [main/INFO] [GradleStart]: Login Succesful!
+[18:46:49] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:46:49] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:46:49] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:46:49] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:46:49] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[18:49:57] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[18:49:57] [main/INFO] [GradleStart]: Extra: []
+[18:49:57] [main/INFO] [GradleStart]: Password found, attempting login
+[18:49:58] [main/INFO] [GradleStart]: Login Succesful!
+[18:49:58] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:49:58] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:49:58] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:49:58] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:49:58] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[18:54:10] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[18:54:10] [main/INFO] [GradleStart]: Extra: []
+[18:54:10] [main/INFO] [GradleStart]: Password found, attempting login
+[18:54:11] [main/INFO] [GradleStart]: Login Succesful!
+[18:54:11] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:54:11] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:54:11] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[18:54:11] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:54:11] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[19:13:28] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[19:13:28] [main/INFO] [GradleStart]: Extra: []
+[19:13:28] [main/INFO] [GradleStart]: Password found, attempting login
+[19:13:30] [main/INFO] [GradleStart]: Login Succesful!
+[19:13:30] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[19:13:30] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[19:13:30] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[19:13:30] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[19:13:30] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[19:20:54] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[19:20:54] [main/INFO] [GradleStart]: Extra: []
+[19:20:54] [main/INFO] [GradleStart]: Password found, attempting login
+[19:20:55] [main/INFO] [GradleStart]: Login Succesful!
+[19:20:55] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[19:20:55] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[19:20:55] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[19:20:55] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[19:20:55] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[19:25:16] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[19:25:16] [main/INFO] [GradleStart]: Extra: []
+[19:25:16] [main/INFO] [GradleStart]: Password found, attempting login
+[19:25:17] [main/INFO] [GradleStart]: Login Succesful!
+[19:25:17] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[19:25:17] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[19:25:17] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[19:25:17] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[19:25:17] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[19:32:10] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[19:32:10] [main/INFO] [GradleStart]: Extra: []
+[19:32:10] [main/INFO] [GradleStart]: Password found, attempting login
+[19:32:10] [main/INFO] [GradleStart]: Login Succesful!
+[19:32:11] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[19:32:11] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[19:32:11] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[19:32:11] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[19:32:11] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[19:35:40] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[19:35:40] [main/INFO] [GradleStart]: Extra: []
+[19:35:40] [main/INFO] [GradleStart]: Password found, attempting login
+[19:35:41] [main/INFO] [GradleStart]: Login Succesful!
+[19:35:41] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[19:35:41] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[19:35:41] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[19:35:41] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[19:35:41] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[19:41:15] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[19:41:15] [main/INFO] [GradleStart]: Extra: []
+[19:41:15] [main/INFO] [GradleStart]: Password found, attempting login
+[19:41:16] [main/INFO] [GradleStart]: Login Succesful!
+[19:41:16] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[19:41:16] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[19:41:16] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[19:41:16] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[19:41:16] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[19:46:23] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[19:46:23] [main/INFO] [GradleStart]: Extra: []
+[19:46:23] [main/INFO] [GradleStart]: Password found, attempting login
+[19:46:24] [main/INFO] [GradleStart]: Login Succesful!
+[19:46:24] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[19:46:24] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[19:46:24] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[19:46:24] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[19:46:24] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[19:54:15] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[19:54:15] [main/INFO] [GradleStart]: Extra: []
+[19:54:15] [main/INFO] [GradleStart]: Password found, attempting login
+[19:54:16] [main/INFO] [GradleStart]: Login Succesful!
+[19:54:16] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[19:54:16] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[19:54:16] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[19:54:16] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[19:54:16] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[19:59:42] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[19:59:42] [main/INFO] [GradleStart]: Extra: []
+[19:59:42] [main/INFO] [GradleStart]: Password found, attempting login
+[19:59:43] [main/INFO] [GradleStart]: Login Succesful!
+[19:59:43] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[19:59:43] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[19:59:43] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[19:59:43] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[19:59:43] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[20:14:33] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[20:14:33] [main/INFO] [GradleStart]: Extra: []
+[20:14:33] [main/INFO] [GradleStart]: Password found, attempting login
+[20:14:34] [main/INFO] [GradleStart]: Login Succesful!
+[20:14:34] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[20:14:34] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[20:14:34] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[20:14:34] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[20:14:34] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[20:29:54] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[20:29:54] [main/INFO] [GradleStart]: Extra: []
+[20:29:54] [main/INFO] [GradleStart]: Password found, attempting login
+[20:29:55] [main/INFO] [GradleStart]: Login Succesful!
+[20:29:55] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[20:29:55] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[20:29:55] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[20:29:55] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[20:29:55] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[20:36:33] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[20:36:33] [main/INFO] [GradleStart]: Extra: []
+[20:36:33] [main/INFO] [GradleStart]: Password found, attempting login
+[20:36:34] [main/INFO] [GradleStart]: Login Succesful!
+[20:36:34] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[20:36:34] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[20:36:34] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[20:36:34] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[20:36:34] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[20:41:20] [main/INFO] [GradleStart]: username: richardreigens@gmail.com
+[20:41:20] [main/INFO] [GradleStart]: Extra: []
+[20:41:20] [main/INFO] [GradleStart]: Password found, attempting login
+[20:41:21] [main/INFO] [GradleStart]: Login Succesful!
+[20:41:21] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {"twitch_access_token":["94eos00s5874omycmym6jufihuo42f"]}, --assetsDir, C:/Users/Rich/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --userType, mojang, --accessToken, {REDACTED}, --version, 1.7.10, --uuid, 08a2730ac03949aca7c55e46d7e7f0a9, --username, LiLRichy, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[20:41:21] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[20:41:21] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[20:41:21] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[20:41:21] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker

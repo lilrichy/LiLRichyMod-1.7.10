@@ -1,9 +1,9 @@
 package com.blogspot.richardreigens.lilrichymod.init;
 
 import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
-import com.blogspot.richardreigens.lilrichymod.items.ItemConcreteMix;
-import com.blogspot.richardreigens.lilrichymod.items.ItemCrushedConcrete;
 import com.blogspot.richardreigens.lilrichymod.items.ItemLiLRichyMod;
+import com.blogspot.richardreigens.lilrichymod.items.ItemLiLRichySeedFood;
+import com.blogspot.richardreigens.lilrichymod.items.seeds.SeedBearedAzailia;
 import com.blogspot.richardreigens.lilrichymod.items.tools.ItemDeathSock;
 import com.blogspot.richardreigens.lilrichymod.items.tools.ItemShadowmourne;
 import com.blogspot.richardreigens.lilrichymod.items.tools.ItemSwordLiLRichyMod;
@@ -20,10 +20,11 @@ import net.minecraft.item.Item;
 public class ModItems
 {
     public static final ItemLiLRichyMod deathSock = new ItemDeathSock();
-    public static final ItemLiLRichyMod concreteMix = new ItemConcreteMix();
-    public static final ItemLiLRichyMod crushedConcrete = new ItemCrushedConcrete();
+    public static final ItemLiLRichyMod concreteMix = new ItemLiLRichyMod(Names.Items.CONCRETE_MIX, 64);
+    public static final ItemLiLRichyMod crushedConcrete = new ItemLiLRichyMod(Names.Items.CRUSHED_CONCRETE, 64);
     public static final ItemSwordLiLRichyMod shadowmourne = new ItemShadowmourne(Item.ToolMaterial.EMERALD, 93f);
-
+    public static final ItemLiLRichySeedFood seedBearedAzailia = new SeedBearedAzailia(Names.Crops.BEARED_AZAILIA_SEED);
+    public static final ItemLiLRichyMod essanceOfBeared = new ItemLiLRichyMod(Names.Items.ESSENCE_OF_BEARED, 64);
 
     public static void init()
     {
@@ -31,5 +32,7 @@ public class ModItems
         GameRegistry.registerItem(concreteMix, Names.Items.CONCRETE_MIX);
         GameRegistry.registerItem(crushedConcrete, Names.Items.CRUSHED_CONCRETE);
         if (ConfigurationHandler.loadShadowmourne) GameRegistry.registerItem(shadowmourne, Names.Items.SHADOWMOURNE);
+        GameRegistry.registerItem(seedBearedAzailia, Names.Crops.BEARED_AZAILIA_SEED);
+        GameRegistry.registerItem(essanceOfBeared, Names.Items.ESSENCE_OF_BEARED);
     }
 }

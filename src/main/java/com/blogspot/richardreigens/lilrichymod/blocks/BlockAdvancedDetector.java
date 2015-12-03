@@ -35,9 +35,9 @@ public class BlockAdvancedDetector extends BlockTileEntityLiLRichyMod
     @Override
     public void registerBlockIcons(IIconRegister iconRegister)
     {
-        sideOff = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "advancedDetectorOFF");
-        sideOn = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "advancedDetectorON");
-        topBottom = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "advancedDetectorTopBottom");
+        sideOff = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "detector/advancedDetectorOFF");
+        sideOn = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "detector/advancedDetectorON");
+        topBottom = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "detector/advancedDetectorTopBottom");
     }
 
     public IIcon getIcon(IBlockAccess world, int x, int y, int z, int side)

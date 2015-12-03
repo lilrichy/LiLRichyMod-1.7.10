@@ -13,12 +13,18 @@ import net.minecraft.item.ItemStack;
  */
 public class ItemLiLRichyMod extends Item
 {
-    public ItemLiLRichyMod()
+    public ItemLiLRichyMod(String Name, int StackSize)
     {
         super();
-        this.maxStackSize = 1;
+        this.setUnlocalizedName(Name);
+        this.maxStackSize = StackSize;
         this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
         this.setNoRepair();
+    }
+
+    public ItemLiLRichyMod()
+    {
+        this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
     }
 
     @Override

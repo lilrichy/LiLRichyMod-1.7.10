@@ -22,11 +22,9 @@ public class Names
         public static final String CRACKED_STONE = "crackedStone";
         public static final String ARRANGED_STONE_BRICKS = "arrangedStoneBricks";
 
-
         //PlayerDetector Blocks
         public static final String PLAYER_DETECTOR = "playerDetector";
         public static final String ADVANCED_DETECTOR = "advancedDetector";
-
     }
 
     public static class Items
@@ -35,13 +33,13 @@ public class Names
         public static final String CRUSHED_CONCRETE = "crushedConcrete";
         public static final String DEATH_SOCK = "deathSock";
         public static final String SHADOWMOURNE = "shadowmourne";
+        public static final String ESSENCE_OF_BEARED = "essenceOfBeared";
     }
 
     public static class TileEntities
     {
         public static final String PLAYER_DETECTOR = Reference.MOD_ID + ":" + "playerDetector";
         public static final String ADVANCED_DETECTOR = Reference.MOD_ID + ":" + "advancedDetector";
-
     }
 
     public static class Gui
@@ -66,5 +64,12 @@ public class Names
         public static final String LOG_BIRCH_PANEL = "log_birchPanel";
         public static final String LOG_JUNGLE_PANEL = "log_junglePanel";
         public static final String LOG_SPRUCE_PANEL = "log_sprucePanel";
+    }
+
+    public static class Crops
+    {
+        //Beared Azailia
+        public static final String BEARED_AZAILIA = "bearedAzailia";
+        public static final String BEARED_AZAILIA_SEED = "bearedAzailiaSeed";
     }
 }

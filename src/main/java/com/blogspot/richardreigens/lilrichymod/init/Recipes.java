@@ -56,7 +56,7 @@ public class Recipes
         GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.smallConcreteBricks),
                 new ItemStack(ModBlocks.concrete), new ItemStack(ModBlocks.concrete));
 
-        //Small concrete Textured Squares
+        //Small decorativeBlocks Textured Squares
         GameRegistry.addRecipe(new ItemStack(ModBlocks.smallConcreteTexturedSquares, 4), "ccc", "cbc", "ccc",
                 'c', new ItemStack(ModItems.crushedConcrete), 'b', new ItemStack(ModBlocks.concreteSquares));
 

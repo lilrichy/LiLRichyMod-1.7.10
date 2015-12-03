@@ -1,9 +1,7 @@
 package com.blogspot.richardreigens.lilrichymod.init;
 
 import com.blogspot.richardreigens.lilrichymod.blocks.*;
-import com.blogspot.richardreigens.lilrichymod.blocks.type.concrete.*;
-import com.blogspot.richardreigens.lilrichymod.blocks.type.stone.BlockArrangedStoneBricks;
-import com.blogspot.richardreigens.lilrichymod.blocks.type.stone.BlockCrackedStone;
+import com.blogspot.richardreigens.lilrichymod.blocks.crops.BearedAzailia;
 import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
@@ -17,20 +15,23 @@ import net.minecraft.block.material.Material;
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModBlocks
 {
+    //Crops
+    public static final LiLRichyCrop bearedAzailia = new BearedAzailia(Names.Crops.BEARED_AZAILIA);
+
     //Blocks
-    public static final BlockLiLRichyMod concrete = new BlockConcrete();
-    public static final BlockLiLRichyMod fancyConcreteBlocks = new BlockFancyConcreteBlocks();
-    public static final BlockLiLRichyMod concreteBricks = new BlockConcreteBricks();
-    public static final BlockLiLRichyMod concreteBricksDark = new BlockConcreteBricksDark();
-    public static final BlockLiLRichyMod concreteRocks = new BlockConcreteRocks();
-    public static final BlockLiLRichyMod concreteTexturedBlocks = new BlockConcreteTexturedBlocks();
-    public static final BlockLiLRichyMod oldConcreteSquares = new BlockOldConcreteSquares();
-    public static final BlockLiLRichyMod concreteSquares = new BlockConcreteSquares();
-    public static final BlockLiLRichyMod smallConcreteBricks = new BlockSmallConcreteBricks();
-    public static final BlockLiLRichyMod smallConcreteTexturedSquares = new BlockSmallConcreteTexturedSquares();
-    public static final BlockLiLRichyMod arrangedConcreteBricks = new BlockArrangedConcreteBricks();
-    public static final BlockLiLRichyMod crackedStone = new BlockCrackedStone();
-    public static final BlockLiLRichyMod arrangedStoneBricks = new BlockArrangedStoneBricks();
+    public static final DecorativeBlocks concrete = new DecorativeBlocks(Names.Blocks.CONCRETE, Material.rock);
+    public static final DecorativeBlocks fancyConcreteBlocks = new DecorativeBlocks(Names.Blocks.FANCY_CONCRETE_BLOCKS, Material.rock);
+    public static final DecorativeBlocks concreteBricks = new DecorativeBlocks(Names.Blocks.CONCRETE_BRICKS, Material.rock);
+    public static final DecorativeBlocks concreteBricksDark = new DecorativeBlocks(Names.Blocks.CONCRETE_BRICKS_DARK, Material.rock);
+    public static final DecorativeBlocks concreteRocks = new DecorativeBlocks(Names.Blocks.CONCRETE_ROCKS, Material.rock);
+    public static final DecorativeBlocks concreteTexturedBlocks = new DecorativeBlocks(Names.Blocks.CONCRETE_TEXTURED_BLOCKS, Material.rock);
+    public static final DecorativeBlocks oldConcreteSquares = new DecorativeBlocks(Names.Blocks.OLD_CONCRETE_SQUARES, Material.rock);
+    public static final DecorativeBlocks concreteSquares = new DecorativeBlocks(Names.Blocks.CONCRETE_SQUARES, Material.rock);
+    public static final DecorativeBlocks smallConcreteBricks = new DecorativeBlocks(Names.Blocks.SMALL_CONCRETE_BRICKS, Material.rock);
+    public static final DecorativeBlocks smallConcreteTexturedSquares = new DecorativeBlocks(Names.Blocks.SMALL_CONCRETE_TEXTURED_SQUARES, Material.rock);
+    public static final DecorativeBlocks arrangedConcreteBricks = new DecorativeBlocks(Names.Blocks.ARRANGED_CONCRETE_BRICKS, Material.rock);
+    public static final DecorativeBlocks crackedStone = new DecorativeBlocks(Names.Blocks.CRACKED_STONE, Material.rock);
+    public static final DecorativeBlocks arrangedStoneBricks = new DecorativeBlocks(Names.Blocks.ARRANGED_STONE_BRICKS, Material.rock);
 
     //Panels
     public static final LiLRichyPanel acaciaPanel = new LiLRichyPanel(Names.Panels.ACACIA_PANEL, "Side", "Top", Material.wood, true);
@@ -55,6 +56,9 @@ public class ModBlocks
 
     public static void init()
     {
+        //Crops
+        GameRegistry.registerBlock(bearedAzailia, Names.Crops.BEARED_AZAILIA);
+
         //Blocks
         GameRegistry.registerBlock(concrete, Names.Blocks.CONCRETE);
         GameRegistry.registerBlock(fancyConcreteBlocks, Names.Blocks.FANCY_CONCRETE_BLOCKS);
@@ -70,14 +74,14 @@ public class ModBlocks
         GameRegistry.registerBlock(crackedStone, Names.Blocks.CRACKED_STONE);
         GameRegistry.registerBlock(arrangedStoneBricks, Names.Blocks.ARRANGED_STONE_BRICKS);
 
-        //Panels
+        //Panels Planks
         GameRegistry.registerBlock(acaciaPanel, Names.Panels.ACACIA_PANEL);
         GameRegistry.registerBlock(big_oakPanel, Names.Panels.BIG_OAK_PANEL);
         GameRegistry.registerBlock(birchPanel, Names.Panels.BIRCH_PANEL);
         GameRegistry.registerBlock(junglePanel, Names.Panels.JUNGLE_PANEL);
         GameRegistry.registerBlock(oakPanel, Names.Panels.OAK_PANEL);
         GameRegistry.registerBlock(sprucePanel, Names.Panels.SPRUCE_PANEL);
-
+        //Panels Logs
         GameRegistry.registerBlock(log_acaciaPanel, Names.Panels.LOG_ACACIA_PANEL);
         GameRegistry.registerBlock(log_big_oakPanel, Names.Panels.LOG_BIG_OAK_PANEL);
         GameRegistry.registerBlock(log_birchPanel, Names.Panels.LOG_BIRCH_PANEL);
