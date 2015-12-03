@@ -1,24 +1,30 @@
 itemGroup.lilrichymod=LiLRichy Mod
 
+#ITEMS
 item.lilrichymod:deathSock.name=Death Sock
 item.lilrichymod:concreteMix.name=Concrete Mix
 item.lilrichymod:shadowmourne.name=Shadowmourne
 item.lilrichymod:crushedConcrete.name=Crushed Concrete
+item.lilrichymod:essenceOfBeared.name=Essence of Beared
 
-tile.lilrichymod:arrangedConcreteBricks.name=Arranged Concrete Bricks
-tile.lilrichymod:concrete.name=Concrete
-tile.lilrichymod:fancyConcreteBlocks.name=Fancy Concrete Blocks
-tile.lilrichymod:concreteBricks.name=Concrete Bricks
-tile.lilrichymod:concreteBricksDark.name=Dark Concrete Bricks
-tile.lilrichymod:concreteRocks.name=Concrete Rocks
-tile.lilrichymod:concreteTexturedBlocks.name=Textured Concrete Blocks
-tile.lilrichymod:oldConcreteSquares.name=Old Concrete Squares
-tile.lilrichymod:concreteSquares.name=Concrete Squares
-tile.lilrichymod:smallConcreteBricks.name=Small Concrete Bricks
-tile.lilrichymod:smallConcreteTexturedSquares.name=Small Textured Concrete Squares
-tile.lilrichymod:crackedStone.name=Cracked Stone
-tile.lilrichymod:arrangedStoneBricks.name=Arranged Stone Bricks
+#CONCRETE
+tile.lilrichymod:decorativeBlocks/arrangedConcreteBricks.name=Arranged Concrete Bricks
+tile.lilrichymod:decorativeBlocks/concrete.name=Concrete
+tile.lilrichymod:decorativeBlocks/fancyConcreteBlocks.name=Fancy Concrete Blocks
+tile.lilrichymod:decorativeBlocks/concreteBricks.name=Concrete Bricks
+tile.lilrichymod:decorativeBlocks/concreteBricksDark.name=Dark Concrete Bricks
+tile.lilrichymod:decorativeBlocks/concreteRocks.name=Concrete Rocks
+tile.lilrichymod:decorativeBlocks/concreteTexturedBlocks.name=Textured Concrete Blocks
+tile.lilrichymod:decorativeBlocks/oldConcreteSquares.name=Old Concrete Squares
+tile.lilrichymod:decorativeBlocks/concreteSquares.name=Concrete Squares
+tile.lilrichymod:decorativeBlocks/smallConcreteBricks.name=Small Concrete Bricks
+tile.lilrichymod:decorativeBlocks/smallConcreteTexturedSquares.name=Small Textured Concrete Squares
 
+#STONE
+tile.lilrichymod:decorativeBlocks/crackedStone.name=Cracked Stone
+tile.lilrichymod:decorativeBlocks/arrangedStoneBricks.name=Arranged Stone Bricks
+
+#PANELS PLANKS
 tile.lilrichymod:panels/acaciaPanel.name=Acacia Planks Paneling
 tile.lilrichymod:panels/big_oakPanel.name=Dark Oak Planks Paneling
 tile.lilrichymod:panels/birchPanel.name=Birch Planks Paneling
@@ -26,6 +32,7 @@ tile.lilrichymod:panels/junglePanel.name=Jungle Planks Paneling
 tile.lilrichymod:panels/oakPanel.name=Oak Planks Paneling
 tile.lilrichymod:panels/sprucePanel.name=Spruce Planks Paneling
 
+#PANELS LOGS
 tile.lilrichymod:panels/log_acaciaPanel.name=Acacia Wood Paneling
 tile.lilrichymod:panels/log_big_oakPanel.name=Dark Oak Wood Paneling
 tile.lilrichymod:panels/log_birchPanel.name=Birch Wood Paneling
@@ -33,10 +40,13 @@ tile.lilrichymod:panels/log_junglePanel.name=Jungle Wood Paneling
 tile.lilrichymod:panels/log_oakPanel.name=Oak Wood Paneling
 tile.lilrichymod:panels/log_sprucePanel.name=Spruce Wood Paneling
 
-
+#DETECTORS
 tile.lilrichymod:playerDetector.name=Player Detector
 tile.lilrichymod:advancedDetector.name=Advanced Detector
-
 gui.LiLRichyMod.AdvancedDetector.button.invert=Inverted
 gui.LiLRichyMod.AdvancedDetector.button.regular=Regular
+
+#CROPS
+tile.lilrichymod:crops/bearedAzailia.name=Beared Azailia
+item.lilrichymod:seeds/bearedAzailiaSeed.name=Beared Azailia Seeds
 
