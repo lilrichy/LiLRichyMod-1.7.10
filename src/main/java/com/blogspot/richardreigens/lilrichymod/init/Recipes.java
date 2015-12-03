@@ -56,7 +56,7 @@ public class Recipes
         GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.smallConcreteBricks),
                 new ItemStack(ModBlocks.concrete), new ItemStack(ModBlocks.concrete));
 
-        //Small decorativeBlocks Textured Squares
+        //Small Concrete Textured Squares
         GameRegistry.addRecipe(new ItemStack(ModBlocks.smallConcreteTexturedSquares, 4), "ccc", "cbc", "ccc",
                 'c', new ItemStack(ModItems.crushedConcrete), 'b', new ItemStack(ModBlocks.concreteSquares));
 
@@ -131,6 +131,10 @@ public class Recipes
         GameRegistry.addRecipe(new ItemStack(ModBlocks.log_sprucePanel, 16), "www", "wpw", "www",
                 'w', new ItemStack(Blocks.log, 1, 1), 'p', new ItemStack(Blocks.glass_pane));
 
+        //Seed of Beared Azailia
+        GameRegistry.addRecipe(new ItemStack(ModItems.seedBearedAzailia, 1), " r ", "ese", " r ",
+                'r', new ItemStack(Items.rotten_flesh), 'e', new ItemStack(Items.spider_eye),
+                's', new ItemStack(Items.wheat_seeds));
 
 
     }
