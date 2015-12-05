@@ -21,7 +21,7 @@ public class BearedAzailia extends LiLRichyCrop
         super(name);
         // Basic block setup
         setBlockName(name);
-        setBlockTextureName(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())) + "_stage_7");
+        setBlockTextureName(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
     }
 
     @Override
@@ -55,6 +55,12 @@ public class BearedAzailia extends LiLRichyCrop
         iIcon[5] = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())) + "_stage_5");
         iIcon[6] = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())) + "_stage_6");
         iIcon[7] = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())) + "_stage_7");
+    }
+
+    @SideOnly(Side.CLIENT)
+    public String getItemIconName()
+    {
+        return String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName()));
     }
 
     @Override

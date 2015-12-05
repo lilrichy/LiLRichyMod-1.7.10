@@ -2,6 +2,7 @@ package com.blogspot.richardreigens.lilrichymod.init;
 
 import com.blogspot.richardreigens.lilrichymod.blocks.*;
 import com.blogspot.richardreigens.lilrichymod.blocks.crops.BearedAzailia;
+import com.blogspot.richardreigens.lilrichymod.blocks.crops.CropItemBlock;
 import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
@@ -57,7 +58,7 @@ public class ModBlocks
     public static void init()
     {
         //Crops
-        GameRegistry.registerBlock(bearedAzailia, Names.Crops.BEARED_AZAILIA);
+        GameRegistry.registerBlock(bearedAzailia, CropItemBlock.class, Names.Crops.BEARED_AZAILIA);
 
         //Blocks
         GameRegistry.registerBlock(concrete, DecorativeItemBlock.class, Names.Blocks.CONCRETE);
