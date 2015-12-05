@@ -15,4 +15,6 @@ public class Reference
     //Strings for other things
 
     public static final String DEATH_SOCK_PROCCED_MESSAGE = "The foul stench of such a stinky sock, has caused it to Proc!";
+    public static final String MADE_BY = "Designed by: ";
+    public static final String LILRICHY = "LiLRichy";
 }

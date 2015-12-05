@@ -13,6 +13,20 @@ import net.minecraft.client.renderer.texture.IIconRegister;
  */
 public class DecorativeBlocks extends Block
 {
+
+
+    private final String blockToolTip;
+
+    public DecorativeBlocks(String name, Material material, String toolTip)
+    {
+        super(material);
+        this.setHardness(2f);
+        this.setStepSound(soundTypeStone);
+        this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
+        this.setBlockName(name);
+        this.blockToolTip = toolTip;
+    }
+
     public DecorativeBlocks(String name, Material material)
     {
         super(material);
@@ -20,7 +34,18 @@ public class DecorativeBlocks extends Block
         this.setStepSound(soundTypeStone);
         this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
         this.setBlockName(name);
+        this.blockToolTip = null;
     }
+
+
+    public static String getToolTip(Block block)
+    {
+        if (block instanceof DecorativeBlocks) {
+            DecorativeBlocks n = (DecorativeBlocks) block;
+            return n.blockToolTip;
+        } else return null;
+    }
+
 
     @Override
     public String getUnlocalizedName()
@@ -39,5 +64,6 @@ public class DecorativeBlocks extends Block
     {
         blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
     }
+
 
 }
