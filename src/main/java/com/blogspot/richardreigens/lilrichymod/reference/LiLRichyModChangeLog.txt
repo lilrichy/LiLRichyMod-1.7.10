@@ -2,7 +2,8 @@ LiLRichy Mod Change Log
 Versioning =VForge Change . Mod change + incremental NEVER Reset
 
 v1.3
-Added Flower
+Added Beared Azailia Crop, seeds, and Essence
+
 
 v1.2
 Fixed render of panels to be 2 pixels wide

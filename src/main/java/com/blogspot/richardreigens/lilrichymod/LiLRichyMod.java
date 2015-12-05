@@ -1,10 +1,14 @@
 package com.blogspot.richardreigens.lilrichymod;
 
 import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
+import com.blogspot.richardreigens.lilrichymod.handler.EventHandler;
 import com.blogspot.richardreigens.lilrichymod.handler.GuiHandler;
 import com.blogspot.richardreigens.lilrichymod.handler.PacketDescriptionHandler;
 import com.blogspot.richardreigens.lilrichymod.handler.network.NetworkHandler;
-import com.blogspot.richardreigens.lilrichymod.init.*;
+import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
+import com.blogspot.richardreigens.lilrichymod.init.ModItems;
+import com.blogspot.richardreigens.lilrichymod.init.ModTileEntitys;
+import com.blogspot.richardreigens.lilrichymod.init.Recipes;
 import com.blogspot.richardreigens.lilrichymod.proxy.CommonProxy;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import com.blogspot.richardreigens.lilrichymod.utility.LogHelper;
@@ -15,7 +19,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
-import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.common.MinecraftForge;
 
 /**
  * Created by Rich on 11/18/2015.
@@ -52,7 +56,8 @@ public class lilrichymod
         LogHelper.info("Packet Description Handler Loaded");
 
 
-        GameRegistry.registerWorldGenerator(new WorldGenLiLRichy(), 0);
+        //GameRegistry.registerWorldGenerator(new WorldGenLiLRichy(), 0);
+        MinecraftForge.EVENT_BUS.register(new EventHandler());
 
         NetworkHandler.init();
 
@@ -80,4 +85,6 @@ public class lilrichymod
 
         LogHelper.info("LiLRichy Mod Loaded!");
     }
+
+
 }
