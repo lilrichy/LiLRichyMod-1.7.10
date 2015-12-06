@@ -18,6 +18,7 @@ public class ConfigurationHandler
     public static boolean loadAdvancedDetector = true;
     public static int defaultRangePlayerDetector;
     public static int defaultRangeAdvancedDetector;
+    public static boolean flipPlayers = false;
 
     public static void init(File configFile)
     {
@@ -32,6 +33,7 @@ public class ConfigurationHandler
     {
         String DETECTOR_SETTINGS = "Detector Settings";
         String SHOULD_LOAD = "Enable or Disable Blocks and Items";
+        String FUN_SETTINGS = "Fun Settings";
         // testValue = configuration.getBoolean("configValue", "Main Settings", false, "This is an example of a config value");
         // Get int = String name, String category, int defaultValue, int minValue, int maxValue, String comment
 
@@ -41,6 +43,8 @@ public class ConfigurationHandler
         loadAdvancedDetector = configuration.getBoolean("loadAdvancedDetector", SHOULD_LOAD, true, "Enable the Advanced Detector Block.");
         defaultRangePlayerDetector = configuration.getInt("defautRangePlayerDetector", DETECTOR_SETTINGS, 2, 1, 20, "Range of the Player Detector");
         defaultRangeAdvancedDetector = configuration.getInt("defautRangeAdvancedDetector", DETECTOR_SETTINGS, 5, 1, 20, "Range of the Advanced Detector");
+
+        flipPlayers = configuration.getBoolean("flipPlayers", FUN_SETTINGS, false, "Flip Players Upside Down.");
 
         if (configuration.hasChanged()) {
             configuration.save();

@@ -5,6 +5,7 @@ v1.3
 Added Beared Azailia Crop, seeds, and Essence
 Added ToolTips to Decorative Blocks
 Code clean up
+Death sock is a lil friendlier
 
 v1.2
 Fixed render of panels to be 2 pixels wide
