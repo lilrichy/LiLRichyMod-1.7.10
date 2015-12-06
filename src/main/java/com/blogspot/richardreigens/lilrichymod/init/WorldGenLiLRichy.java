@@ -49,8 +49,8 @@ public class WorldGenLiLRichy implements IWorldGenerator
             int randZ = z + random.nextInt(16);
             int randY = world.getActualHeight();
 
-            if (world.isAirBlock(randX, randY, randZ) && ModBlocks.bearedAzailia.canBlockStay(world, randX, randY, randZ))
-                world.setBlock(randX, randY, randZ, ModBlocks.bearedAzailia);
+            if (world.isAirBlock(randX, randY, randZ) && ModBlocks.beardedAzalea.canBlockStay(world, randX, randY, randZ))
+                world.setBlock(randX, randY, randZ, ModBlocks.beardedAzalea);
         }
     }
 }

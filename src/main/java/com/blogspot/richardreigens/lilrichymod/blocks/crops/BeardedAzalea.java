@@ -14,9 +14,9 @@ import java.util.Random;
 /**
  * Created by Rich on 12/2/2015.
  */
-public class BearedAzailia extends LiLRichyCrop
+public class BeardedAzalea extends LiLRichyCrop
 {
-    public BearedAzailia(String name)
+    public BeardedAzalea(String name)
     {
         super(name);
         // Basic block setup

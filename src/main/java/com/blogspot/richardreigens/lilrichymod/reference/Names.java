@@ -9,6 +9,14 @@ public class Names
     {
         //Deco Blocks
 
+        //Lava
+        public static final String LAVA_BOWL = "lavaBowl";
+        public static final String LAVA_CRACKS = "lavaCracks";
+        public static final String LAVA_DEEP_FIRE = "lavaDeepFire";
+        public static final String LAVA_PELES_LAKE = "lavaPelesLake";
+        public static final String LAVA_SEARING_GORGE = "lavaSearingGorge";
+        public static final String LAVA_SLUMBERING_VOLCANO = "lavaSlumberingVolcano";
+
         //Metal
         public static final String METAL_BATTERED_ROBOT = "metalBatteredRobot";
         public static final String METAL_BUBBLE_GRIP = "metalBubbleGrip";
@@ -99,7 +107,7 @@ public class Names
     public static class Crops
     {
         //Beared Azailia
-        public static final String BEARED_AZAILIA = "bearedAzailia";
-        public static final String BEARED_AZAILIA_SEED = "bearedAzailiaSeed";
+        public static final String BEARDED_AZALEA = "beardedAzalea";
+        public static final String BEARDED_AZALEA_SEED = "beardedAzaleaSeed";
     }
 }

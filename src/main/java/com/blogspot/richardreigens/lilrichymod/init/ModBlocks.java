@@ -1,7 +1,7 @@
 package com.blogspot.richardreigens.lilrichymod.init;
 
 import com.blogspot.richardreigens.lilrichymod.blocks.*;
-import com.blogspot.richardreigens.lilrichymod.blocks.crops.BearedAzailia;
+import com.blogspot.richardreigens.lilrichymod.blocks.crops.BeardedAzalea;
 import com.blogspot.richardreigens.lilrichymod.blocks.crops.CropItemBlock;
 import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
@@ -17,9 +17,17 @@ import net.minecraft.block.material.Material;
 public class ModBlocks
 {
     //Crops
-    public static final LiLRichyCrop bearedAzailia = new BearedAzailia(Names.Crops.BEARED_AZAILIA);
+    public static final LiLRichyCrop beardedAzalea = new BeardedAzalea(Names.Crops.BEARDED_AZALEA);
 
     //Decorative Blocks
+
+    //Lava
+    public static final DecorativeBlocks lavaBowl = new DecorativeBlocks(Names.Blocks.LAVA_BOWL, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks lavaCracks = new DecorativeBlocks(Names.Blocks.LAVA_CRACKS, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks lavaDeepFire = new DecorativeBlocks(Names.Blocks.LAVA_DEEP_FIRE, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks lavaPelesLake = new DecorativeBlocks(Names.Blocks.LAVA_PELES_LAKE, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks lavaSearingGorge = new DecorativeBlocks(Names.Blocks.LAVA_SEARING_GORGE, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks lavaVolcano = new DecorativeBlocks(Names.Blocks.LAVA_SLUMBERING_VOLCANO, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
 
     //Metal
     public static final DecorativeBlocks metalBatteredRobot = new DecorativeBlocks(Names.Blocks.METAL_BATTERED_ROBOT, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
@@ -29,13 +37,11 @@ public class ModBlocks
     public static final DecorativeBlocks metalSeafoamTarnish = new DecorativeBlocks(Names.Blocks.METAL_SEAFOAM_TARNISH, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
     public static final DecorativeBlocks metalStained = new DecorativeBlocks(Names.Blocks.METAL_STAINED, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
 
-
     //Marble
     public static final DecorativeBlocks marbleBlack = new DecorativeBlocks(Names.Blocks.MARBLE_BLACK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
     public static final DecorativeBlocks marbleBlancoAurora = new DecorativeBlocks(Names.Blocks.MARBLE_BLANCO_AURORA, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
     public static final DecorativeBlocks marbleBlancoNafin = new DecorativeBlocks(Names.Blocks.MARBLE_BLANCO_NAFIN, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
     public static final DecorativeBlocks marbleSpottedBianco = new DecorativeBlocks(Names.Blocks.MARBLE_SPOTTED_BIANCO, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-
 
     //Cottage
     public static final DecorativeBlocks cottageWall = new DecorativeBlocks(Names.Blocks.COTTAGE_WALL, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
@@ -48,7 +54,6 @@ public class ModBlocks
     public static final DecorativeBlocks cottageWallXLight = new DecorativeBlocks(Names.Blocks.COTTAGE_WALL_X_LIGHT, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
     public static final DecorativeBlocks cottageWindowDark = new DecorativeBlocks(Names.Blocks.COTTAGE_WINDOW_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
     public static final DecorativeBlocks cottageWindowLight = new DecorativeBlocks(Names.Blocks.COTTAGE_WINDOW_LIGHT, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-
 
     //Concrete
     public static final DecorativeBlocks concrete = new DecorativeBlocks(Names.Blocks.CONCRETE, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
@@ -82,18 +87,24 @@ public class ModBlocks
     public static final LiLRichyPanel log_oakPanel = new LiLRichyPanel(Names.Panels.LOG_OAK_PANEL, "Side", "Top", Material.wood, true);
     public static final LiLRichyPanel log_sprucePanel = new LiLRichyPanel(Names.Panels.LOG_SPRUCE_PANEL, "Side", "Top", Material.wood, true);
 
-
     //Tile Entity Blocks
     public static final BlockTileEntityLiLRichyMod playerDetector = new BlockPlayerDetector();
     public static final BlockTileEntityLiLRichyMod advancedDetector = new BlockAdvancedDetector();
 
-
     public static void init()
     {
         //Crops
-        GameRegistry.registerBlock(bearedAzailia, CropItemBlock.class, Names.Crops.BEARED_AZAILIA);
+        GameRegistry.registerBlock(beardedAzalea, CropItemBlock.class, Names.Crops.BEARDED_AZALEA);
 
         //Decorative Blocks
+
+        //Lava
+        GameRegistry.registerBlock(lavaBowl, DecorativeItemBlock.class, Names.Blocks.LAVA_BOWL);
+        GameRegistry.registerBlock(lavaCracks, DecorativeItemBlock.class, Names.Blocks.LAVA_CRACKS);
+        GameRegistry.registerBlock(lavaDeepFire, DecorativeItemBlock.class, Names.Blocks.LAVA_DEEP_FIRE);
+        GameRegistry.registerBlock(lavaPelesLake, DecorativeItemBlock.class, Names.Blocks.LAVA_PELES_LAKE);
+        GameRegistry.registerBlock(lavaSearingGorge, DecorativeItemBlock.class, Names.Blocks.LAVA_SEARING_GORGE);
+        GameRegistry.registerBlock(lavaVolcano, DecorativeItemBlock.class, Names.Blocks.LAVA_SLUMBERING_VOLCANO);
 
         //Metal
         GameRegistry.registerBlock(metalBatteredRobot, DecorativeItemBlock.class, Names.Blocks.METAL_BATTERED_ROBOT);

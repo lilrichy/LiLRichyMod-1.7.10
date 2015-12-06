@@ -23,6 +23,6 @@ public class CropItemBlock extends ItemBlock
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean show)
     {
-        if (block != null && block instanceof BearedAzailia) list.add("Designed By: Aaeos");
+        if (block != null && block instanceof BeardedAzalea) list.add("Designed By: Aaeos");
     }
 }

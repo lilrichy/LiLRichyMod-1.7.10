@@ -27,6 +27,16 @@ tile.lilrichymod:decorativeBlocks/metalRustedIronGrip.name=Metal Rusted Iron Gri
 tile.lilrichymod:decorativeBlocks/metalSeafoamTarnish.name=Metal Seafoam Tarnish
 tile.lilrichymod:decorativeBlocks/metalStained.name=Metal Stained
 
+#LAVA
+tile.lilrichymod:decorativeBlocks/lavaBowl.name=Lava Bowl
+tile.lilrichymod:decorativeBlocks/lavaCracks.name=Lava Cracks
+tile.lilrichymod:decorativeBlocks/lavaDeepFire.name=Lava Deep Fire
+tile.lilrichymod:decorativeBlocks/lavaPelesLake.name=Lava Pele's Lake
+tile.lilrichymod:decorativeBlocks/lavaSearingGorge.name=Lava Searing Gorge
+tile.lilrichymod:decorativeBlocks/lavaVolcano.name=Lava Slumbering Volcano
+
+
+
 #MARBLE
 tile.lilrichymod:decorativeBlocks/marbleBlack.name=Black Marble
 tile.lilrichymod:decorativeBlocks/marbleBlancoAurora.name=Blanco Aurora Marble
@@ -73,6 +83,6 @@ gui.LiLRichyMod.AdvancedDetector.button.invert=Inverted
 gui.LiLRichyMod.AdvancedDetector.button.regular=Regular
 
 #CROPS
-tile.lilrichymod:crops/bearedAzailia.name=Beared Azailia
-item.lilrichymod:seeds/bearedAzailiaSeed.name=Beared Azailia Seeds
+tile.lilrichymod:crops/beardedAzalea.name=Bearded Azalea
+item.lilrichymod:seeds/beardedAzaleaSeed.name=Bearded Azalea Seeds
 

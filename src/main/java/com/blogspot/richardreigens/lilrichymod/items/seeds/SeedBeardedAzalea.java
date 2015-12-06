@@ -8,12 +8,12 @@ import net.minecraft.init.Blocks;
 /**
  * Created by Rich on 12/2/2015.
  */
-public class SeedBearedAzailia extends ItemLiLRichySeedFood
+public class SeedBeardedAzalea extends ItemLiLRichySeedFood
 {
 
-    public SeedBearedAzailia(String name)
+    public SeedBeardedAzalea(String name)
     {
-        super(1, 0.3F, ModBlocks.bearedAzailia, Blocks.farmland);
+        super(1, 0.3F, ModBlocks.beardedAzalea, Blocks.farmland);
         setUnlocalizedName(name);
         this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
     }
