@@ -34,7 +34,6 @@ public class lilrichymod
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static CommonProxy proxy;
 
-
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
@@ -44,27 +43,26 @@ public class lilrichymod
         LogHelper.info("LILRICHY MOD IS BOOTING UP!!!!!!!!!");
 
         ModItems.init();
-        LogHelper.info("Items Loaded");
+        LogHelper.info("Items Loading");
 
         ModBlocks.init();
-        LogHelper.info("Blocks Loaded");
+        LogHelper.info("Blocks Loading");
 
         ModTileEntitys.Init();
-        LogHelper.info("Tile Entity's Loaded");
+        LogHelper.info("Tile Entity's Loading");
 
         PacketDescriptionHandler.init();
-        LogHelper.info("Packet Description Handler Loaded");
-
+        LogHelper.info("Packet Description Handler Loading");
 
         //GameRegistry.registerWorldGenerator(new WorldGenLiLRichy(), 0);
+        //LogHelper.info("World Gen Loading");
+
         MinecraftForge.EVENT_BUS.register(new EventHandler());
 
         NetworkHandler.init();
 
-
         NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
-        LogHelper.info("GUI Handler Loaded");
-
+        LogHelper.info("GUI Handler Loading");
         LogHelper.info("Pre Initialization Complete");
     }
 
@@ -72,19 +70,14 @@ public class lilrichymod
     public void init(FMLInitializationEvent event)
     {
         Recipes.init();
-        LogHelper.info("Recipes Loaded");
-
+        LogHelper.info("Recipes Loading");
         LogHelper.info("Initialization Complete");
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
-
         LogHelper.info("Post Initialization Complete");
-
         LogHelper.info("LiLRichy Mod Loaded!");
     }
-
-
 }
