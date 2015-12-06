@@ -8,6 +8,34 @@ public class Names
     public static class Blocks
     {
         //Deco Blocks
+
+        //Metal
+        public static final String METAL_BATTERED_ROBOT = "metalBatteredRobot";
+        public static final String METAL_BUBBLE_GRIP = "metalBubbleGrip";
+        public static final String METAL_NEEDLEPOINT_STEEL = "metalNeedlepointSteel";
+        public static final String METAL_RUSTED_IRON_GRIP = "metalRustedIronGrip";
+        public static final String METAL_SEAFOAM_TARNISH = "metalSeafoamTarnish";
+        public static final String METAL_STAINED = "metalStained";
+
+        //Marble
+        public static final String MARBLE_BLACK = "marbleBlack";
+        public static final String MARBLE_BLANCO_AURORA = "marbleBlancoAurora";
+        public static final String MARBLE_BLANCO_NAFIN = "marbleBlancoNafin";
+        public static final String MARBLE_SPOTTED_BIANCO = "marbleSpottedBianco";
+
+        //Cottage
+        public static final String COTTAGE_WALL = "cottageWall";
+        public static final String COTTAGE_WALL_ARCHED_BEAM = "cottageWallArchedBeam";
+        public static final String COTTAGE_WALL_ARCHED_BEAM_DARK = "cottageWallArchedBeamDark";
+        public static final String COTTAGE_WALL_DARK = "cottageWallDark";
+        public static final String COTTAGE_WALL_PANEL_DARK = "cottageWallPanelDark";
+        public static final String COTTAGE_WALL_PANEL_LIGHT = "cottageWallPanelLight";
+        public static final String COTTAGE_WALL_X_DARK = "cottageWallXDark";
+        public static final String COTTAGE_WALL_X_LIGHT = "cottageWallXLight";
+        public static final String COTTAGE_WINDOW_DARK = "cottageWindowDark";
+        public static final String COTTAGE_WINDOW_LIGHT = "cottageWindowLight";
+
+        //Concrete
         public static final String CONCRETE = "concrete";
         public static final String FANCY_CONCRETE_BLOCKS = "fancyConcreteBlocks";
         public static final String CONCRETE_BRICKS = "concreteBricks";
@@ -19,6 +47,8 @@ public class Names
         public static final String SMALL_CONCRETE_BRICKS = "smallConcreteBricks";
         public static final String SMALL_CONCRETE_TEXTURED_SQUARES = "smallConcreteTexturedSquares";
         public static final String ARRANGED_CONCRETE_BRICKS = "arrangedConcreteBricks";
+
+        //Stone
         public static final String CRACKED_STONE = "crackedStone";
         public static final String ARRANGED_STONE_BRICKS = "arrangedStoneBricks";
 

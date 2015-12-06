@@ -18,4 +18,5 @@ public class Reference
     public static final String DEATH_SOCK_CHARGED = "The sock has gained enough power to Proc!";
     public static final String MADE_BY = "Designed by: ";
     public static final String LILRICHY = "LiLRichy";
+    public static final String SPIRAL_GRAPHICS = "Spiral Graphics";
 }

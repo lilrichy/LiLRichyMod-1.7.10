@@ -19,7 +19,38 @@ public class ModBlocks
     //Crops
     public static final LiLRichyCrop bearedAzailia = new BearedAzailia(Names.Crops.BEARED_AZAILIA);
 
-    //Blocks
+    //Decorative Blocks
+
+    //Metal
+    public static final DecorativeBlocks metalBatteredRobot = new DecorativeBlocks(Names.Blocks.METAL_BATTERED_ROBOT, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks metalBubbleGrip = new DecorativeBlocks(Names.Blocks.METAL_BUBBLE_GRIP, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks metalNeedlepointSteel = new DecorativeBlocks(Names.Blocks.METAL_NEEDLEPOINT_STEEL, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks metalRustedIronGrip = new DecorativeBlocks(Names.Blocks.METAL_RUSTED_IRON_GRIP, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks metalSeafoamTarnish = new DecorativeBlocks(Names.Blocks.METAL_SEAFOAM_TARNISH, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks metalStained = new DecorativeBlocks(Names.Blocks.METAL_STAINED, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+
+
+    //Marble
+    public static final DecorativeBlocks marbleBlack = new DecorativeBlocks(Names.Blocks.MARBLE_BLACK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks marbleBlancoAurora = new DecorativeBlocks(Names.Blocks.MARBLE_BLANCO_AURORA, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks marbleBlancoNafin = new DecorativeBlocks(Names.Blocks.MARBLE_BLANCO_NAFIN, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks marbleSpottedBianco = new DecorativeBlocks(Names.Blocks.MARBLE_SPOTTED_BIANCO, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+
+
+    //Cottage
+    public static final DecorativeBlocks cottageWall = new DecorativeBlocks(Names.Blocks.COTTAGE_WALL, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks cottageWallArchedBeam = new DecorativeBlocks(Names.Blocks.COTTAGE_WALL_ARCHED_BEAM, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks cottageWallArchedBeamDark = new DecorativeBlocks(Names.Blocks.COTTAGE_WALL_ARCHED_BEAM_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks cottageWallDark = new DecorativeBlocks(Names.Blocks.COTTAGE_WALL_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks cottageWallPanelDark = new DecorativeBlocks(Names.Blocks.COTTAGE_WALL_PANEL_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks cottageWallPanelLight = new DecorativeBlocks(Names.Blocks.COTTAGE_WALL_PANEL_LIGHT, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks cottageWallXDark = new DecorativeBlocks(Names.Blocks.COTTAGE_WALL_X_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks cottageWallXLight = new DecorativeBlocks(Names.Blocks.COTTAGE_WALL_X_LIGHT, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks cottageWindowDark = new DecorativeBlocks(Names.Blocks.COTTAGE_WINDOW_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks cottageWindowLight = new DecorativeBlocks(Names.Blocks.COTTAGE_WINDOW_LIGHT, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+
+
+    //Concrete
     public static final DecorativeBlocks concrete = new DecorativeBlocks(Names.Blocks.CONCRETE, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
     public static final DecorativeBlocks fancyConcreteBlocks = new DecorativeBlocks(Names.Blocks.FANCY_CONCRETE_BLOCKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
     public static final DecorativeBlocks concreteBricks = new DecorativeBlocks(Names.Blocks.CONCRETE_BRICKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
@@ -31,6 +62,8 @@ public class ModBlocks
     public static final DecorativeBlocks smallConcreteBricks = new DecorativeBlocks(Names.Blocks.SMALL_CONCRETE_BRICKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
     public static final DecorativeBlocks smallConcreteTexturedSquares = new DecorativeBlocks(Names.Blocks.SMALL_CONCRETE_TEXTURED_SQUARES, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
     public static final DecorativeBlocks arrangedConcreteBricks = new DecorativeBlocks(Names.Blocks.ARRANGED_CONCRETE_BRICKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
+
+    //Stone
     public static final DecorativeBlocks crackedStone = new DecorativeBlocks(Names.Blocks.CRACKED_STONE, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
     public static final DecorativeBlocks arrangedStoneBricks = new DecorativeBlocks(Names.Blocks.ARRANGED_STONE_BRICKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
 
@@ -60,7 +93,36 @@ public class ModBlocks
         //Crops
         GameRegistry.registerBlock(bearedAzailia, CropItemBlock.class, Names.Crops.BEARED_AZAILIA);
 
-        //Blocks
+        //Decorative Blocks
+
+        //Metal
+        GameRegistry.registerBlock(metalBatteredRobot, DecorativeItemBlock.class, Names.Blocks.METAL_BATTERED_ROBOT);
+        GameRegistry.registerBlock(metalBubbleGrip, DecorativeItemBlock.class, Names.Blocks.METAL_BUBBLE_GRIP);
+        GameRegistry.registerBlock(metalNeedlepointSteel, DecorativeItemBlock.class, Names.Blocks.METAL_NEEDLEPOINT_STEEL);
+        GameRegistry.registerBlock(metalRustedIronGrip, DecorativeItemBlock.class, Names.Blocks.METAL_RUSTED_IRON_GRIP);
+        GameRegistry.registerBlock(metalSeafoamTarnish, DecorativeItemBlock.class, Names.Blocks.METAL_SEAFOAM_TARNISH);
+        GameRegistry.registerBlock(metalStained, DecorativeItemBlock.class, Names.Blocks.METAL_STAINED);
+
+
+        //Marble
+        GameRegistry.registerBlock(marbleBlack, DecorativeItemBlock.class, Names.Blocks.MARBLE_BLACK);
+        GameRegistry.registerBlock(marbleBlancoAurora, DecorativeItemBlock.class, Names.Blocks.MARBLE_BLANCO_AURORA);
+        GameRegistry.registerBlock(marbleBlancoNafin, DecorativeItemBlock.class, Names.Blocks.MARBLE_BLANCO_NAFIN);
+        GameRegistry.registerBlock(marbleSpottedBianco, DecorativeItemBlock.class, Names.Blocks.MARBLE_SPOTTED_BIANCO);
+
+        //Cottage
+        GameRegistry.registerBlock(cottageWall, DecorativeItemBlock.class, Names.Blocks.COTTAGE_WALL);
+        GameRegistry.registerBlock(cottageWallArchedBeam, DecorativeItemBlock.class, Names.Blocks.COTTAGE_WALL_ARCHED_BEAM);
+        GameRegistry.registerBlock(cottageWallArchedBeamDark, DecorativeItemBlock.class, Names.Blocks.COTTAGE_WALL_ARCHED_BEAM_DARK);
+        GameRegistry.registerBlock(cottageWallDark, DecorativeItemBlock.class, Names.Blocks.COTTAGE_WALL_DARK);
+        GameRegistry.registerBlock(cottageWallPanelDark, DecorativeItemBlock.class, Names.Blocks.COTTAGE_WALL_PANEL_DARK);
+        GameRegistry.registerBlock(cottageWallPanelLight, DecorativeItemBlock.class, Names.Blocks.COTTAGE_WALL_PANEL_LIGHT);
+        GameRegistry.registerBlock(cottageWallXDark, DecorativeItemBlock.class, Names.Blocks.COTTAGE_WALL_X_DARK);
+        GameRegistry.registerBlock(cottageWallXLight, DecorativeItemBlock.class, Names.Blocks.COTTAGE_WALL_X_LIGHT);
+        GameRegistry.registerBlock(cottageWindowDark, DecorativeItemBlock.class, Names.Blocks.COTTAGE_WINDOW_DARK);
+        GameRegistry.registerBlock(cottageWindowLight, DecorativeItemBlock.class, Names.Blocks.COTTAGE_WINDOW_LIGHT);
+
+        //Concrete
         GameRegistry.registerBlock(concrete, DecorativeItemBlock.class, Names.Blocks.CONCRETE);
         GameRegistry.registerBlock(fancyConcreteBlocks, DecorativeItemBlock.class, Names.Blocks.FANCY_CONCRETE_BLOCKS);
         GameRegistry.registerBlock(concreteBricks, DecorativeItemBlock.class, Names.Blocks.CONCRETE_BRICKS);
@@ -72,6 +134,8 @@ public class ModBlocks
         GameRegistry.registerBlock(smallConcreteBricks, DecorativeItemBlock.class, Names.Blocks.SMALL_CONCRETE_BRICKS);
         GameRegistry.registerBlock(smallConcreteTexturedSquares, DecorativeItemBlock.class, Names.Blocks.SMALL_CONCRETE_TEXTURED_SQUARES);
         GameRegistry.registerBlock(arrangedConcreteBricks, DecorativeItemBlock.class, Names.Blocks.ARRANGED_CONCRETE_BRICKS);
+
+        //Stone
         GameRegistry.registerBlock(crackedStone, DecorativeItemBlock.class, Names.Blocks.CRACKED_STONE);
         GameRegistry.registerBlock(arrangedStoneBricks, DecorativeItemBlock.class, Names.Blocks.ARRANGED_STONE_BRICKS);
 

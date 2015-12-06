@@ -2,6 +2,7 @@ LiLRichy Mod Change Log
 Versioning =VForge Change . Mod change + incremental NEVER Reset
 
 v1.3
+Added a LOT More Blocks
 Added Beared Azailia Crop, seeds, and Essence
 Added ToolTips to Decorative Blocks
 Code clean up
