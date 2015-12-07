@@ -1,21 +1,19 @@
-package com.blogspot.richardreigens.lilrichymod.init;
+package com.blogspot.richardreigens.lilrichymod.recipes;
 
+import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
+import com.blogspot.richardreigens.lilrichymod.init.ModItems;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
 /**
- * Created by Rich on 11/20/2015.
+ * Created by Rich on 12/7/2015.
  */
-public class Recipes
+public class DecorativeBlockRecipes
 {
     public static void init()
     {
-        //DeathSock
-        GameRegistry.addRecipe(new ItemStack(ModItems.deathSock), "  w", "  w", "www", 'w', new ItemStack(Blocks.wool));
-        GameRegistry.addRecipe(new ItemStack(ModItems.deathSock), "w  ", "w  ", "www", 'w', new ItemStack(Blocks.wool));
-
         //Fancy Concrete Blocks
         GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.fancyConcreteBlocks, 4),
                 new ItemStack(ModBlocks.concreteBricks), new ItemStack(ModBlocks.concreteBricks),
@@ -60,17 +58,10 @@ public class Recipes
         GameRegistry.addRecipe(new ItemStack(ModBlocks.smallConcreteTexturedSquares, 4), "ccc", "cbc", "ccc",
                 'c', new ItemStack(ModItems.crushedConcrete), 'b', new ItemStack(ModBlocks.concreteSquares));
 
-        //Concrete Mix
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.concreteMix, 4),
-                new ItemStack(Blocks.sand), new ItemStack(Blocks.gravel), new ItemStack(Blocks.gravel),
-                new ItemStack(Blocks.cobblestone));
-
         //Concrete
         GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.concrete),
                 new ItemStack(ModItems.crushedConcrete), new ItemStack(ModItems.crushedConcrete),
                 new ItemStack(ModItems.crushedConcrete), new ItemStack(ModItems.crushedConcrete));
-
-        GameRegistry.addSmelting(new ItemStack(ModItems.concreteMix), new ItemStack(ModBlocks.concrete), 0.1f);
 
         //Arranged Concrete Bricks
         GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.arrangedConcreteBricks, 4),
@@ -84,57 +75,6 @@ public class Recipes
         //Arranged Stone Bricks
         GameRegistry.addRecipe(new ItemStack(ModBlocks.arrangedStoneBricks, 4), "bbb", "bsb", "bbb",
                 'b', new ItemStack(Blocks.stonebrick), 's', new ItemStack(Blocks.stone));
-
-        //Player Detector
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.playerDetector, 1), "ici", "ctc", "ici",
-                'i', new ItemStack(Items.iron_ingot), 'c', new ItemStack(Items.comparator), 't', new ItemStack(Blocks.redstone_torch));
-
-        //Advanced Detector
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.advancedDetector, 1), "idi", "dtd", "idi",
-                'i', new ItemStack(Items.gold_ingot), 'd', new ItemStack(Items.diamond), 't', new ItemStack(ModBlocks.playerDetector));
-
-        //Plank Panels
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.acaciaPanel, 16), "www", "wpw", "www",
-                'w', new ItemStack(Blocks.planks, 1, 4), 'p', new ItemStack(Blocks.glass_pane));
-
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.big_oakPanel, 16), "www", "wpw", "www",
-                'w', new ItemStack(Blocks.planks, 1, 5), 'p', new ItemStack(Blocks.glass_pane));
-
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.birchPanel, 16), "www", "wpw", "www",
-                'w', new ItemStack(Blocks.planks, 1, 2), 'p', new ItemStack(Blocks.glass_pane));
-
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.junglePanel, 16), "www", "wpw", "www",
-                'w', new ItemStack(Blocks.planks, 1, 3), 'p', new ItemStack(Blocks.glass_pane));
-
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.oakPanel, 16), "www", "wpw", "www",
-                'w', new ItemStack(Blocks.planks, 1, 0), 'p', new ItemStack(Blocks.glass_pane));
-
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.sprucePanel, 16), "www", "wpw", "www",
-                'w', new ItemStack(Blocks.planks, 1, 1), 'p', new ItemStack(Blocks.glass_pane));
-
-        //Wood Panels
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.log_acaciaPanel, 16), "www", "wpw", "www",
-                'w', new ItemStack(Blocks.log2, 1, 0), 'p', new ItemStack(Blocks.glass_pane));
-
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.log_big_oakPanel, 16), "www", "wpw", "www",
-                'w', new ItemStack(Blocks.log2, 1, 1), 'p', new ItemStack(Blocks.glass_pane));
-
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.log_birchPanel, 16), "www", "wpw", "www",
-                'w', new ItemStack(Blocks.log, 1, 2), 'p', new ItemStack(Blocks.glass_pane));
-
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.log_junglePanel, 16), "www", "wpw", "www",
-                'w', new ItemStack(Blocks.log, 1, 3), 'p', new ItemStack(Blocks.glass_pane));
-
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.log_oakPanel, 16), "www", "wpw", "www",
-                'w', new ItemStack(Blocks.log, 1, 0), 'p', new ItemStack(Blocks.glass_pane));
-
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.log_sprucePanel, 16), "www", "wpw", "www",
-                'w', new ItemStack(Blocks.log, 1, 1), 'p', new ItemStack(Blocks.glass_pane));
-
-        //Seed of Beared Azailia
-        GameRegistry.addRecipe(new ItemStack(ModItems.seedBearedAzailia, 1), " r ", "ese", " r ",
-                'r', new ItemStack(Items.rotten_flesh), 'e', new ItemStack(Items.spider_eye),
-                's', new ItemStack(Items.wheat_seeds));
 
         //Lava Bowl
         GameRegistry.addRecipe(new ItemStack(ModBlocks.lavaBowl, 8), "ccc", "cbc", "ccc",
@@ -206,7 +146,7 @@ public class Recipes
                 'c', new ItemStack(ModBlocks.concrete));
 
         //Marble Blanco Nafin
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.marbleBlancoNafin, 8), "scs", "sbs", "scs",
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.marbleBlancoNafin, 8), "scs", "cbc", "scs",
                 's', new ItemStack(Blocks.sand), 'b', new ItemStack(Blocks.sandstone),
                 'c', new ItemStack(ModBlocks.concrete));
 
@@ -257,5 +197,6 @@ public class Recipes
         GameRegistry.addRecipe(new ItemStack(ModBlocks.cottageWindowLight, 8), "ccc", "wgw", "ccc",
                 'w', new ItemStack(Blocks.planks), 'c', new ItemStack(ModBlocks.cottageWall),
                 'g', new ItemStack(Blocks.glass_pane));
+
     }
 }
