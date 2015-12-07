@@ -136,6 +136,126 @@ public class Recipes
                 'r', new ItemStack(Items.rotten_flesh), 'e', new ItemStack(Items.spider_eye),
                 's', new ItemStack(Items.wheat_seeds));
 
+        //Lava Bowl
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.lavaBowl, 8), "ccc", "cbc", "ccc",
+                'c', new ItemStack(ModBlocks.concrete), 'b', new ItemStack(Items.lava_bucket));
 
+        //Lava Cracks
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.lavaCracks, 8), "ccc", "sbs", "ccc",
+                'c', new ItemStack(ModBlocks.concrete), 'b', new ItemStack(Items.lava_bucket),
+                's', new ItemStack(Blocks.stone));
+
+        //Lava Deep Fire
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.lavaDeepFire, 8), "scs", "cbc", "scs",
+                's', new ItemStack(ModBlocks.concrete), 'b', new ItemStack(Items.lava_bucket),
+                'c', new ItemStack(Blocks.cobblestone));
+
+        //Lava Pele's Lake
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.lavaPelesLake, 8), "csc", "sbs", "csc",
+                's', new ItemStack(ModBlocks.concrete), 'b', new ItemStack(Items.lava_bucket),
+                'c', new ItemStack(Blocks.cobblestone));
+
+        //Lava Searing Gorge
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.lavaSearingGorge, 8), "scs", "cbc", "scs",
+                's', new ItemStack(Blocks.netherrack), 'b', new ItemStack(Items.lava_bucket),
+                'c', new ItemStack(ModBlocks.concrete));
+
+        //Lava Volcano
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.lavaVolcano, 8), "csc", "sbs", "csc",
+                's', new ItemStack(ModBlocks.concrete), 'b', new ItemStack(Items.lava_bucket),
+                'c', new ItemStack(Blocks.cobblestone));
+
+        //Metal Battered Robot
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.metalBatteredRobot, 8), "scs", "cbc", "scs",
+                's', new ItemStack(Blocks.stone), 'b', new ItemStack(Items.iron_ingot),
+                'c', new ItemStack(ModBlocks.concrete));
+
+        //Metal Bubble Grip
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.metalBubbleGrip, 8), "scs", "cbc", "scs",
+                's', new ItemStack(ModBlocks.concrete), 'b', new ItemStack(Items.iron_ingot),
+                'c', new ItemStack(Blocks.cobblestone));
+
+        //Metal Needlepoint Steel
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.metalNeedlepointSteel, 8), "scs", "cbc", "scs",
+                's', new ItemStack(ModBlocks.concrete), 'b', new ItemStack(Items.iron_ingot),
+                'c', new ItemStack(Blocks.stone));
+
+        //Metal Rusted Iron Grip
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.metalRustedIronGrip, 8), "scs", "cbc", "scs",
+                's', new ItemStack(Blocks.cobblestone), 'b', new ItemStack(Items.iron_ingot),
+                'c', new ItemStack(ModBlocks.concrete));
+
+        //Metal Seafoam Tarnish
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.metalSeafoamTarnish, 8), "scs", "sbs", "scs",
+                's', new ItemStack(ModBlocks.concrete), 'b', new ItemStack(Items.iron_ingot),
+                'c', new ItemStack(Blocks.cobblestone));
+
+        //Metal Stained
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.metalStained, 8), "scs", "sbs", "scs",
+                's', new ItemStack(ModBlocks.concrete), 'b', new ItemStack(Items.iron_ingot),
+                'c', new ItemStack(Blocks.stone));
+
+        //Marble Black
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.marbleBlack, 8), "scs", "sbs", "scs",
+                's', new ItemStack(ModBlocks.concrete), 'b', new ItemStack(Blocks.sandstone),
+                'c', new ItemStack(Blocks.sand));
+
+        //Marble Blanco Aurora
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.marbleBlancoAurora, 8), "scs", "sbs", "scs",
+                's', new ItemStack(Blocks.sand), 'b', new ItemStack(Blocks.sandstone),
+                'c', new ItemStack(ModBlocks.concrete));
+
+        //Marble Blanco Nafin
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.marbleBlancoNafin, 8), "scs", "sbs", "scs",
+                's', new ItemStack(Blocks.sand), 'b', new ItemStack(Blocks.sandstone),
+                'c', new ItemStack(ModBlocks.concrete));
+
+        //Marble Spotted Bianco
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.marbleSpottedBianco, 8), "scs", "cbc", "scs",
+                's', new ItemStack(ModBlocks.concrete), 'b', new ItemStack(Blocks.sandstone),
+                'c', new ItemStack(Blocks.sand));
+
+        //Cottage wall
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.cottageWall, 8), "wcw", "wcw", "wcw",
+                'w', new ItemStack(Blocks.planks), 'c', new ItemStack(ModBlocks.concrete));
+
+        //Cottage wall dark
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.cottageWallDark, 8), "wcw", "wdw", "wcw",
+                'w', new ItemStack(Blocks.planks), 'c', new ItemStack(ModBlocks.concrete),
+                'd', new ItemStack(Items.dye, 1, 0));
+
+        //Cottage wall arched beam
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.cottageWallArchedBeam, 8), "cwc", "wcw", "ccc",
+                'w', new ItemStack(Blocks.planks), 'c', new ItemStack(ModBlocks.cottageWall));
+
+        //Cottage wall arched beam dark
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.cottageWallArchedBeamDark, 8), "cwc", "wcw", "ccc",
+                'w', new ItemStack(Blocks.planks), 'c', new ItemStack(ModBlocks.cottageWallDark));
+
+        //Cottage wall panelDark
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.cottageWallPanelDark, 8), "ccc", "ccc", "www",
+                'w', new ItemStack(Blocks.planks), 'c', new ItemStack(ModBlocks.cottageWallDark));
+
+        //Cottage wall panel light
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.cottageWallPanelLight, 8), "ccc", "ccc", "www",
+                'w', new ItemStack(Blocks.planks), 'c', new ItemStack(ModBlocks.cottageWall));
+
+        //Cottage wall x dark
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.cottageWallXDark, 8), "wcw", "cwc", "wcw",
+                'w', new ItemStack(Blocks.planks), 'c', new ItemStack(ModBlocks.cottageWallDark));
+
+        //Cottage wall x light
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.cottageWallXLight, 8), "wcw", "cwc", "wcw",
+                'w', new ItemStack(Blocks.planks), 'c', new ItemStack(ModBlocks.cottageWall));
+
+        //Cottage window dark
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.cottageWindowDark, 8), "ccc", "wgw", "ccc",
+                'w', new ItemStack(Blocks.planks), 'c', new ItemStack(ModBlocks.cottageWallDark),
+                'g', new ItemStack(Blocks.glass_pane));
+
+        //Cottage window light
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.cottageWindowLight, 8), "ccc", "wgw", "ccc",
+                'w', new ItemStack(Blocks.planks), 'c', new ItemStack(ModBlocks.cottageWall),
+                'g', new ItemStack(Blocks.glass_pane));
     }
 }

@@ -1,9 +1,12 @@
 LiLRichy Mod Change Log
-Versioning =VForge Change . Mod change + incremental NEVER Reset
+Version =VForge Change . Mod change + incremental NEVER Reset
+
+v1.4
+Added Crafting recipes for new blocks added in 1.3
 
 v1.3
 Added a LOT More Blocks
-Added Beared Azailia Crop, seeds, and Essence
+Added Bearded Azalea Crop, seeds, and Essence
 Added ToolTips to Decorative Blocks
 Code clean up
 Death sock is a lil friendlier

@@ -4,10 +4,18 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87f2f7f7-ba3d-43fb-b0b7-76bafc0d90d7" name="Default" comment="Pushing to version">
+    <list default="true" id="87f2f7f7-ba3d-43fb-b0b7-76bafc0d90d7" name="Default" comment="Pushing to version 1.3">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.0/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.0/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.0/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.0/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.0/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.0/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.0/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.0/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.0/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.0/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/gradle.log" afterPath="$PROJECT_DIR$/.gradle/gradle.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LiLRichyMod.iml" afterPath="$PROJECT_DIR$/LiLRichyMod.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LiLRichyMod.iws" afterPath="$PROJECT_DIR$/LiLRichyMod.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/LiLRichyMod.java" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/LiLRichyMod.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/Recipes.java" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/Recipes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/LiLRichyModChangeLog.txt" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/LiLRichyModChangeLog.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/Reference.java" afterPath="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/Reference.java" />
     </list>
     <ignored path="LiLRichyMod.iws" />
@@ -132,7 +140,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/LiLRichyModChangeLog.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.11038961">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -457,7 +465,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="1448999831749" />
+        <entry key="$PROJECT_DIR$" value="1449438725115" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -769,7 +777,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/BlockPlayerDetector.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/LiLRichyCrop.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/items/ItemLiLRichyMod.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/Recipes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityAjustableRepeater.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/blocks/AjustableRepeater.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mcmod.info" />
@@ -780,16 +787,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/handler/ConfigurationHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/handler/EventHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/items/tools/ItemDeathSock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/LiLRichyModChangeLog.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/Names.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModItems.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/lilrichymod/lang/en_US.lang" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/items/seeds/SeedBeardedAzalea.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/WorldGenLiLRichy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/lilrichymod.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModBlocks.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/Names.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/Recipes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/Reference.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/LiLRichyModChangeLog.txt" />
       </list>
     </option>
   </component>
@@ -1193,36 +1201,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="reference" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LiLRichyMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LiLRichyMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lilrichymod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="init" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2084,7 +2062,13 @@
       <option name="project" value="LOCAL" />
       <updated>1449432756044</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Pushing to version 1.3">
+      <created>1449438773666</created>
+      <option name="number" value="00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1449438773666</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2139,7 +2123,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Updateing Names to String file" />
     <MESSAGE value="finished upating Names to String file&#10;added localization to PlayerDetector Block&#10;Removed unneeded blocks" />
     <MESSAGE value="player detector redstone works finaly&#10;" />
     <MESSAGE value="player detector side images working now&#10;" />
@@ -2164,7 +2147,8 @@
     <MESSAGE value="Death sock Modifications" />
     <MESSAGE value="Added Cottage, Marble, and Metal blocks" />
     <MESSAGE value="Added Lava Blocks and fixed spelling of Bearded Azalea" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Lava Blocks and fixed spelling of Bearded Azalea" />
+    <MESSAGE value="Pushing to version 1.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pushing to version 1.3" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
@@ -2181,13 +2165,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10-sources.jar!/net/minecraft/block/BlockCrops.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7780347">
-          <caret line="225" column="60" selection-start-line="225" selection-start-column="47" selection-end-line="225" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/items/ItemLiLRichySeedFood.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2259,14 +2236,6 @@
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar!/assets/minecraft/textures/models/armor/diamond_layer_2.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/Recipes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7733333">
-          <caret line="134" column="93" selection-start-line="134" selection-start-column="93" selection-end-line="134" selection-end-column="93" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/tileEntity/TileEntityLiLRichyMod.java">
@@ -2473,14 +2442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/handler/ConfigurationHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="108" selection-start-line="46" selection-start-column="108" selection-end-line="46" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/handler/EventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2537,10 +2498,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModBlocks.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/lilrichymod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.24837662">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -2548,7 +2509,23 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/Names.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7516234">
-          <caret line="110" column="49" selection-start-line="110" selection-start-column="49" selection-end-line="110" selection-end-column="49" />
+          <caret line="110" column="77" selection-start-line="110" selection-start-column="77" selection-end-line="110" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1566-1.7.10/forgeSrc-1.7.10-10.13.4.1566-1.7.10-sources.jar!/net/minecraftforge/common/config/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27597404">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/handler/ConfigurationHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.4431818">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -2561,14 +2538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/lilrichymod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24837662">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/Reference.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24837662">
@@ -2577,10 +2546,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/Recipes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.4853897">
+          <caret line="34" column="107" selection-start-line="34" selection-start-column="107" selection-end-line="35" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/init/ModBlocks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30194804">
+          <caret line="55" column="51" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/blogspot/richardreigens/lilrichymod/reference/LiLRichyModChangeLog.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11038961">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding />
         </state>
       </provider>
