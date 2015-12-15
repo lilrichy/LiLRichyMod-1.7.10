@@ -7,6 +7,9 @@ item.lilrichymod:shadowmourne.name=Shadowmourne
 item.lilrichymod:crushedConcrete.name=Crushed Concrete
 item.lilrichymod:essenceOfBeared.name=Essence of Beared
 
+#BLOCK TABLE
+tile.lilrichymod:blockTable.name=Block Table
+
 #COTTAGE
 tile.lilrichymod:decorativeBlocks/cottageWall.name=Cottage Wall
 tile.lilrichymod:decorativeBlocks/cottageWallArchedBeam.name=Cottage Wall with Arched Beam
@@ -34,8 +37,6 @@ tile.lilrichymod:decorativeBlocks/lavaDeepFire.name=Lava Deep Fire
 tile.lilrichymod:decorativeBlocks/lavaPelesLake.name=Lava Pele's Lake
 tile.lilrichymod:decorativeBlocks/lavaSearingGorge.name=Lava Searing Gorge
 tile.lilrichymod:decorativeBlocks/lavaVolcano.name=Lava Slumbering Volcano
-
-
 
 #MARBLE
 tile.lilrichymod:decorativeBlocks/marbleBlack.name=Black Marble

@@ -24,11 +24,14 @@ public abstract class GuiLiLRichyMod extends GuiContainer
         this.inventory = inventory;
     }
 
+
     protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY)
     {
-        String s = this.inventory.hasCustomInventoryName() ? this.inventory.getInventoryName() : I18n.format(this.inventory.getInventoryName());
-        this.fontRendererObj.drawString(s, this.xSize / 2 - this.fontRendererObj.getStringWidth(s) / 2, 6, Colors.COLOR_BLACK_GUI_TEXT);
-        this.fontRendererObj.drawString(I18n.format("container.inventory"), 8, this.ySize - 96 + 2, Colors.COLOR_BLACK_GUI_TEXT);
+        if (inventory != null) {
+            String s = this.inventory.hasCustomInventoryName() ? this.inventory.getInventoryName() : I18n.format(this.inventory.getInventoryName());
+            this.fontRendererObj.drawString(s, this.xSize / 2 - this.fontRendererObj.getStringWidth(s) / 2, 6, Colors.COLOR_BLACK_GUI_TEXT);
+            this.fontRendererObj.drawString(I18n.format("container.inventory"), 8, this.ySize - 96 + 2, Colors.COLOR_BLACK_GUI_TEXT);
+        }
     }
 
     @Override

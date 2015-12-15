@@ -19,6 +19,9 @@ public class ModBlocks
     //Crops
     public static final LiLRichyCrop beardedAzalea = new BeardedAzalea(Names.Crops.BEARDED_AZALEA);
 
+    //Custom Rendered Blocks
+    public static final BlockTable blockTable = new BlockTable(Material.rock);
+
     //Decorative Blocks
 
     //Lava
@@ -93,6 +96,10 @@ public class ModBlocks
 
     public static void init()
     {
+
+        //Custom Rendered Blocks
+        GameRegistry.registerBlock(blockTable, Names.Models.BLOCK_TABLE);
+
         //Crops
         GameRegistry.registerBlock(beardedAzalea, CropItemBlock.class, Names.Crops.BEARDED_AZALEA);
 

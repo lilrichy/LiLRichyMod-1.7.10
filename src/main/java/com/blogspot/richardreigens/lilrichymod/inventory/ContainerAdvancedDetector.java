@@ -21,8 +21,6 @@ public class ContainerAdvancedDetector extends ContainerLiLRichyMod
 
         this.addPlayerSlots(playerInventory, 8, 84);
         this.te = te;
-
-
     }
 
     @Override

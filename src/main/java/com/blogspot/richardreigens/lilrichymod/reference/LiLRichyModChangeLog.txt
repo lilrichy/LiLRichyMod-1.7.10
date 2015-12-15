@@ -1,5 +1,8 @@
 LiLRichy Mod Change Log
-Version =VForge Change . Mod change + incremental NEVER Reset
+Version = V Forge Change . Mod change + incremental NEVER Reset
+
+v1.5
+Added Block Table
 
 v1.4
 Added Crafting recipes for new blocks added in 1.3

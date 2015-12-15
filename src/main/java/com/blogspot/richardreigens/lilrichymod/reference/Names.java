@@ -5,6 +5,11 @@ package com.blogspot.richardreigens.lilrichymod.reference;
  */
 public class Names
 {
+    public static class Models
+    {
+        public static final String BLOCK_TABLE = "blockTable";
+    }
+
     public static class Blocks
     {
         //Deco Blocks
@@ -83,6 +88,7 @@ public class Names
     public static class Gui
     {
         public static final String ADVANCED_DETECTOR_GUI = "advancedDetectorGUI";
+        public static final String BLOCK_TABLE_GUI = "blockTableGUI";
     }
 
     public static class Panels
