@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87f2f7f7-ba3d-43fb-b0b7-76bafc0d90d7" name="Default" comment="Lot of progress made on block table - still more to go....">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LiLRichyMod.iml" afterPath="$PROJECT_DIR$/LiLRichyMod.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LiLRichyMod.ipr" afterPath="$PROJECT_DIR$/LiLRichyMod.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LiLRichyMod.iws" afterPath="$PROJECT_DIR$/LiLRichyMod.iws" />
     </list>
     <ignored path="LiLRichyMod.iws" />
@@ -209,7 +209,9 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="FORCE_PUSH_ALLOWED" value="true" />
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -1725,7 +1727,7 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/ModelResearchTable.class" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -2406,7 +2408,13 @@
       <option name="project" value="LOCAL" />
       <updated>1450185113337</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Lot of progress made on block table - still more to go....">
+      <created>1450185268998</created>
+      <option name="number" value="00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1450185268998</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TodoView">
