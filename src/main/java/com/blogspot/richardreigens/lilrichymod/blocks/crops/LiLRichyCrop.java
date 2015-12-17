@@ -1,4 +1,4 @@
-package com.blogspot.richardreigens.lilrichymod.blocks;
+package com.blogspot.richardreigens.lilrichymod.blocks.crops;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

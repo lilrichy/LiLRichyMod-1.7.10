@@ -1,6 +1,5 @@
 package com.blogspot.richardreigens.lilrichymod.blocks.crops;
 
-import com.blogspot.richardreigens.lilrichymod.blocks.LiLRichyCrop;
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import cpw.mods.fml.relauncher.Side;

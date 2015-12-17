@@ -1,9 +1,10 @@
 package com.blogspot.richardreigens.lilrichymod.inventory;
 
+import com.blogspot.richardreigens.lilrichymod.recipes.BlockTableRecipes;
+import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityBlockTable;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.inventory.ICrafting;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
@@ -13,62 +14,117 @@ import net.minecraft.item.ItemStack;
  */
 public class ContainerBlockTable extends ContainerLiLRichyMod
 {
+    public static final int OUTPUT[] = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17};
+    public static final int INPUT_CONCRETE_1 = 0, INPUT_MODIFIER_2 = 1, INV_START = OUTPUT.length + 1,
+            INV_END = INV_START + 26, HOTBAR_START = INV_END + 1, HOTBAR_END = HOTBAR_START + 8;
     private TileEntityBlockTable te;
 
     public ContainerBlockTable(InventoryPlayer playerInventory, TileEntityBlockTable te)
     {
         this.te = te;
 
-        //Player inventory and hot bar slots
-        this.addPlayerSlots(playerInventory, 8, 84);
-
         //crafting slots
-        this.addSlotToContainer(new SlotInput(te, TileEntityBlockTable.FIRST_INPUT_SLOT, 8, 33));
-        this.addSlotToContainer(new SlotInput(te, TileEntityBlockTable.FIRST_INPUT_SLOT + 1, 45, 33));
-
+        this.addSlotToContainer(new SlotInputConcrete(te, INPUT_CONCRETE_1, 8, 33));
+        this.addSlotToContainer(new SlotInputModifier(te, INPUT_MODIFIER_2, 45, 33));
         //Results Grid
         for (int i = 0; i < 3; ++i) {
             for (int j = 0; j < 5; ++j) {
-                this.addSlotToContainer(new SlotOutput(te, j + i * 5 + TileEntityBlockTable.FIRST_OUTPUT_SLOT, j * 18 + 80, i * 18 + 16));
+                this.addSlotToContainer(new SlotOutput(te, OUTPUT[j + i * 5], j * 18 + 80, i * 18 + 16));
             }
         }
+        //Player inventory and hot bar slots
+        this.addPlayerSlots(playerInventory, 8, 84);
     }
 
-    // Checks each tick to make sure the player is still able to access the inventory and if not closes the gui
+    @Override
+    public ItemStack slotClick(int slot, int clickButton, int clickID, EntityPlayer player)
+    {
+        if (slot > INPUT_MODIFIER_2 && slot < INV_START) {
+            te.doCrafting(slot, clickButton, clickID, player);
+        }
+        return super.slotClick(slot, clickButton, clickID, player);
+    }
+
     @Override
     public boolean canInteractWith(EntityPlayer player)
     {
         return te.isUseableByPlayer(player);
     }
-
-    @Override
-    public ItemStack transferStackInSlot(EntityPlayer player, int slotIndex)
-    {
-        return null;
-    }
-
-    @Override
-    public void addCraftingToCrafters(ICrafting p_75132_1_)
-    {
-        super.addCraftingToCrafters(p_75132_1_);
-    }
+//--------------------------------------------------------
 
     /**
-     * Looks for changes made in the container, sends them to every listener.
+     * Called when a player shift-clicks on a slot. You must override this or you will crash when someone does that.
      */
-    public void detectAndSendChanges()
+    public ItemStack transferStackInSlot(EntityPlayer player, int slotIndex)
     {
-        super.detectAndSendChanges();
+        ItemStack itemstack = null;
+        Slot slot = (Slot) this.inventorySlots.get(slotIndex);
 
-        for (int i = 0; i < this.crafters.size(); ++i) {
-            ICrafting icrafting = (ICrafting) this.crafters.get(i);
+        if (slot != null && slot.getHasStack()) {
+            ItemStack itemstack1 = slot.getStack();
+            itemstack = itemstack1.copy();
+
+            // If item is in TileEntity inventory
+            if (slotIndex >= INPUT_CONCRETE_1 && slotIndex <= INPUT_MODIFIER_2 && slotIndex < INV_START) {
+                // try to place in player inventory / action bar
+                if (!this.mergeItemStack(itemstack1, INV_START, HOTBAR_END + 1, false)) {
+                    return null;
+                }
+                slot.onSlotChange(itemstack1, itemstack);
+            }
+            // Item is in player inventory, try to place in GUI
+            else if (slotIndex < HOTBAR_END) {
+                // if it's a correct block put in first slot
+                if (BlockTableRecipes.isCraftableBlock(itemstack1)) {
+                    if (!this.mergeItemStack(itemstack1, INPUT_CONCRETE_1, INPUT_CONCRETE_1 + 1, false)) {
+                        player.worldObj.playSoundEffect((double) this.te.xCoord + 0.5D, (double) te.yCoord + 0.5D,
+                                (double) te.zCoord + 0.5D, Reference.MOD_ID + ":" + "blockTableCraftSound2", 0.3F, .1f);
+                        return null;
+                    }
+                }
+                // if it is a recipe material, place in the Modifier input slot
+                else if (BlockTableRecipes.isMaterial(itemstack1)) {
+                    if (!this.mergeItemStack(itemstack1.splitStack(1), INPUT_MODIFIER_2, INPUT_MODIFIER_2 + 1, false)) {
+                        player.worldObj.playSoundEffect((double) this.te.xCoord + 0.5D, (double) te.yCoord + 0.5D,
+                                (double) te.zCoord + 0.5D, Reference.MOD_ID + ":" + "blockTableCraftSound2", 0.3F, .1f);
+                        return null;
+                    }
+                }
+                // item in player's inventory, but not in action bar
+                else if (slotIndex >= INV_START && slotIndex < HOTBAR_START) {
+                    // place in action bar
+                    if (!this.mergeItemStack(itemstack1, HOTBAR_START, HOTBAR_END + 1, false)) {
+                        return null;
+                    }
+                }
+                // item in action bar - place in player inventory
+                else if (slotIndex >= HOTBAR_START && slotIndex < HOTBAR_END + 1 &&
+                        !this.mergeItemStack(itemstack1, INV_START, HOTBAR_START, false)) {
+                    return null;
+                }
+            }
+            // In one of the slots; try to place in player inventory / action bar
+            else if (slotIndex >= INPUT_CONCRETE_1 && slotIndex <= INPUT_MODIFIER_2 &&
+                    !this.mergeItemStack(itemstack1, INV_START, HOTBAR_END + 1, false)) {
+                return null;
+            }
+            if (itemstack1.stackSize == 0) {
+                slot.putStack(null);
+            } else {
+                slot.onSlotChanged();
+            }
+            if (itemstack1.stackSize == itemstack.stackSize) {
+                return null;
+            }
+            slot.onPickupFromSlot(player, itemstack1);
         }
+        return itemstack;
     }
 
-    // SlotInput is a slot for input items
-    public class SlotInput extends Slot
+    // SlotInput is a slot for Concrete items
+    public class SlotInputConcrete extends Slot
     {
-        public SlotInput(IInventory inventoryIn, int index, int xPosition, int yPosition)
+        public SlotInputConcrete(IInventory inventoryIn, int index, int xPosition, int yPosition)
         {
             super(inventoryIn, index, xPosition, yPosition);
         }
@@ -77,7 +133,29 @@ public class ContainerBlockTable extends ContainerLiLRichyMod
         @Override
         public boolean isItemValid(ItemStack stack)
         {
-            return TileEntityBlockTable.isItemValidForInputSlot(stack);
+            return TileEntityBlockTable.isItemValidForBlockInputSlot(stack);
+        }
+    }
+
+    // SlotInput is a single stack slot for Modifier items
+    public class SlotInputModifier extends Slot
+    {
+        public SlotInputModifier(IInventory inventoryIn, int index, int xPosition, int yPosition)
+        {
+            super(inventoryIn, index, xPosition, yPosition);
+        }
+
+        @Override
+        public int getSlotStackLimit()
+        {
+            return 1;
+        }
+
+        // if this function returns false, the player won't be able to insert the given item into this slot
+        @Override
+        public boolean isItemValid(ItemStack stack)
+        {
+            return TileEntityBlockTable.isItemValidForModifierInputSlot(stack);
         }
     }
 
@@ -89,6 +167,12 @@ public class ContainerBlockTable extends ContainerLiLRichyMod
             super(inventoryIn, index, xPosition, yPosition);
         }
 
+        @Override
+        public void onPickupFromSlot(EntityPlayer player, ItemStack stack)
+        {
+            super.onPickupFromSlot(player, stack);
+        }
+
         // if this function returns false, the player won't be able to insert the given item into this slot
         @Override
         public boolean isItemValid(ItemStack stack)
@@ -97,4 +181,3 @@ public class ContainerBlockTable extends ContainerLiLRichyMod
         }
     }
 }
-

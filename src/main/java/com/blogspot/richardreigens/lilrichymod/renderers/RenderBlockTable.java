@@ -4,7 +4,6 @@ import com.blogspot.richardreigens.lilrichymod.models.ModelBlockTable;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityBlockTable;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
@@ -25,6 +24,7 @@ public class RenderBlockTable extends TileEntitySpecialRenderer
         this.model = new ModelBlockTable();
     }
 
+
     @Override
     public void renderTileEntityAt(TileEntity tileEntity, double i, double j, double k, float f)
     {
@@ -36,13 +36,14 @@ public class RenderBlockTable extends TileEntitySpecialRenderer
         GL11.glTranslatef(x, y, z);
         GL11.glTranslatef(0.5F, 1.5F, 0.5F);
 
-        Minecraft.getMinecraft().renderEngine.bindTexture(texture);
+        //    Minecraft.getMinecraft().renderEngine.bindTexture(texture);
+        this.bindTexture(texture);
 
         GL11.glPushMatrix();
         GL11.glRotatef(180F, 0.0F, 0.0F, 1.0F);
         GL11.glRotatef(te.direction * 90, 0.0F, 1.0F, 0.0F);
 
-        model.render(null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
+        model.renderModel(0.0625F);
         GL11.glPopMatrix();
         GL11.glPopMatrix();
     }

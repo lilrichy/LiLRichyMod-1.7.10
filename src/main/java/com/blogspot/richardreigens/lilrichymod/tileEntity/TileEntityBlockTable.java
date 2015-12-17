@@ -1,7 +1,9 @@
 package com.blogspot.richardreigens.lilrichymod.tileEntity;
 
-import com.blogspot.richardreigens.lilrichymod.handler.BlockTableRecipes;
 import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
+import com.blogspot.richardreigens.lilrichymod.inventory.ContainerBlockTable;
+import com.blogspot.richardreigens.lilrichymod.recipes.BlockTableRecipes;
+import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
@@ -21,20 +23,22 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
     public static final int OUTPUT_SLOTS_COUNT = 15;
     public static final int TOTAL_SLOTS_COUNT = PLAYER_SLOTS_TOTAL + INPUT_SLOTS_COUNT + OUTPUT_SLOTS_COUNT;
 
-    public static final int FIRST_INPUT_SLOT = PLAYER_SLOTS_TOTAL;
-    public static final int FIRST_OUTPUT_SLOT = FIRST_INPUT_SLOT + INPUT_SLOTS_COUNT;
+    public static final int FIRST_INPUT_SLOT = ContainerBlockTable.INPUT_CONCRETE_1;
+    public static final int FIRST_OUTPUT_SLOT = FIRST_INPUT_SLOT + 2;
     public int direction;
-    private ItemStack[] resultItemStack = new ItemStack[0];
+    public ItemStack[] input;
     private ItemStack[] itemStacks = new ItemStack[TOTAL_SLOTS_COUNT];
-    private int update = 0;
-    private ItemStack[] input = {getStackInSlot(FIRST_INPUT_SLOT), getStackInSlot(FIRST_INPUT_SLOT + 1)};
-    private ItemStack[] resultOfLastCrafting;
+    private ItemStack[] resultItemStack = new ItemStack[0];
 
     // Return true if the given stack is allowed to be inserted in the given slot
-    // Unlike the vanilla furnace, we allow anything to be placed in the fuel slots
-    static public boolean isItemValidForInputSlot(ItemStack itemStack)
+    static public boolean isItemValidForBlockInputSlot(ItemStack itemStack)
     {
-        return true;
+        return BlockTableRecipes.isCraftableBlock(itemStack);
+    }
+
+    static public boolean isItemValidForModifierInputSlot(ItemStack itemStack)
+    {
+        return BlockTableRecipes.isMaterial(itemStack);
     }
 
     static public boolean isItemValidForOutputSlot(ItemStack itemStack)
@@ -42,14 +46,159 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
         return false;
     }
 
+    //-----------------------------------------------------------------------------------------------------------
+    //Main Recipe, tileEntity, and other Methods.
+    //-----------------------------------------------------------------------------------------------------------
+    public void updateEntity()
+    {
+        getInput();
+        resultItemStack = getCurrentRecipe();
+        if (resultItemStack != null) {
+            updateOutputSlots();
+        } else {
+            clearOutput();
+        }
+        if (!inputHasItems()) {
+            clearOutput();
+        }
+    }
+
+    public void getInput()
+    {
+        input = new ItemStack[]{getStackInSlot(FIRST_INPUT_SLOT), getStackInSlot(FIRST_INPUT_SLOT + 1)};
+    }
+
+    public void updateOutputSlots()
+    {
+        clearOutput();
+        for (int i = 0; i < resultItemStack.length; i++) {
+            ItemStack stack = new ItemStack(resultItemStack[i].getItem());
+            stack.stackSize = getStackInSlot(0).stackSize;
+            setInventorySlotContents(FIRST_OUTPUT_SLOT + i, stack);
+        }
+    }
+
+    public void clearOutput()
+    {
+        for (int i = FIRST_OUTPUT_SLOT; i < FIRST_OUTPUT_SLOT + OUTPUT_SLOTS_COUNT; i++) {
+            setInventorySlotContents(i, null);
+        }
+    }
+
+    public boolean inputHasItems()
+    {
+        return getStackInSlot(FIRST_INPUT_SLOT) != null && getStackInSlot(FIRST_INPUT_SLOT + 1) != null;
+    }
+
+// -----------------------------------------------------------------------------------------------------------
+// NBT, Packets, and slot methods.
+// -----------------------------------------------------------------------------------------------------------
+
+    public ItemStack[] getCurrentRecipe()
+    {
+        if (inputHasItems()) {
+            if (BlockTableRecipes.recipes().getCraftingResult(getStackInSlot(FIRST_INPUT_SLOT), getStackInSlot(FIRST_INPUT_SLOT + 1)) != null) {
+                return BlockTableRecipes.recipes().getCraftingResult(getStackInSlot(FIRST_INPUT_SLOT), getStackInSlot(FIRST_INPUT_SLOT + 1));
+            }
+        }
+        return null;
+    }
+
+    public void doCrafting(int slot, int clickButton, int clickID, EntityPlayer player)
+    {
+        if (inputHasItems()) {
+            if (getCurrentRecipe() != null) {
+                //Not Shift Clicking
+                if (clickID == 0) {
+                    switch (clickButton) {
+                        case 0: //Left Click
+                            if (getStackInSlot(slot) != null) {
+                                decrStackSize(0, getStackInSlot(slot).stackSize);
+                                worldObj.playSoundEffect((double) this.xCoord + 0.5D, (double) this.yCoord + 0.5D,
+                                        (double) this.zCoord + 0.5D, Reference.MOD_ID + ":" + "blockTableCraftSound", 0.3F, .1f);
+                            }
+                            break;
+
+                        case 1: //Right Click
+                            if (getStackInSlot(0) != null && getStackInSlot(0).stackSize <= 1) {
+                                setInventorySlotContents(0, null);
+                                worldObj.playSoundEffect((double) this.xCoord + 0.5D, (double) this.yCoord + 0.5D,
+                                        (double) this.zCoord + 0.5D, Reference.MOD_ID + ":" + "blockTableCraftSound", 0.3F, .1f);
+                            }
+                            if (getStackInSlot(0) != null && getStackInSlot(0).stackSize > 1) {
+                                ItemStack mats;
+                                mats = getStackInSlot(0);
+                                mats.stackSize = (int) (getStackInSlot(slot).stackSize * .5);
+                                worldObj.playSoundEffect((double) this.xCoord + 0.5D, (double) this.yCoord + 0.5D,
+                                        (double) this.zCoord + 0.5D, Reference.MOD_ID + ":" + "blockTableCraftSound", 0.3F, .1f);
+
+                            }
+                            break;
+                    }
+                }
+            }
+            //Shift Clicking
+            if (clickID == 1) {
+                switch (clickButton) {
+                    case 0: //Left Click
+                        if (getStackInSlot(slot) != null) {
+                            decrStackSize(0, getStackInSlot(slot).stackSize);
+                            player.inventory.addItemStackToInventory(getStackInSlot(slot));
+                            worldObj.playSoundEffect((double) this.xCoord + 0.5D, (double) this.yCoord + 0.5D,
+                                    (double) this.zCoord + 0.5D, Reference.MOD_ID + ":" + "blockTableCraftSound", 0.3F, .1f);
+
+                        }
+                        break;
+
+                    case 1: //Right Click
+                        if (getStackInSlot(0) != null && getStackInSlot(0).stackSize <= 1) {
+                            setInventorySlotContents(0, null);
+                            player.inventory.addItemStackToInventory(getStackInSlot(slot));
+                            worldObj.playSoundEffect((double) this.xCoord + 0.5D, (double) this.yCoord + 0.5D,
+                                    (double) this.zCoord + 0.5D, Reference.MOD_ID + ":" + "blockTableCraftSound", 0.3F, .1f);
+                        }
+                        if (getStackInSlot(0) != null && getStackInSlot(0).stackSize > 1) {
+                            ItemStack mats;
+                            mats = getStackInSlot(0);
+                            mats.stackSize = (int) (getStackInSlot(slot).stackSize * .5);
+                            mats = getStackInSlot(slot);
+                            mats.stackSize = (int) (getStackInSlot(slot).stackSize * .5);
+                            player.inventory.addItemStackToInventory(getStackInSlot(slot));
+                            worldObj.playSoundEffect((double) this.xCoord + 0.5D, (double) this.yCoord + 0.5D,
+                                    (double) this.zCoord + 0.5D, Reference.MOD_ID + ":" + "blockTableCraftSound", 0.3F, .1f);
+                        }
+                        break;
+                }
+            }
+        }
+        markDirty();
+    }
+
+    @Override
+    public ItemStack decrStackSize(int slotIndex, int count)
+    {
+        ItemStack itemStackInSlot = getStackInSlot(slotIndex);
+        if (itemStackInSlot == null) return null;
+        ItemStack itemStackRemoved;
+        if (itemStackInSlot.stackSize <= count) {
+            itemStackRemoved = itemStackInSlot;
+            setInventorySlotContents(slotIndex, null);
+        } else {
+            itemStackRemoved = itemStackInSlot.splitStack(count);
+            if (itemStackInSlot.stackSize == 0) {
+                setInventorySlotContents(slotIndex, null);
+            }
+        }
+        markDirty();
+        return itemStackRemoved;
+    }
+
     @Override
     public void writeToNBT(NBTTagCompound tag)
     {
         super.writeToNBT(tag);
         tag.setInteger("direction", direction);
-
         NBTTagList nbttaglist = new NBTTagList();
-
         if (getStackInSlot(FIRST_INPUT_SLOT) != null) {
             NBTTagCompound nbttagcompound1 = new NBTTagCompound();
             getStackInSlot(FIRST_INPUT_SLOT).writeToNBT(nbttagcompound1);
@@ -60,7 +209,6 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
             getStackInSlot(FIRST_INPUT_SLOT + 1).writeToNBT(nbttagcompound1);
             nbttaglist.appendTag(nbttagcompound1);
         }
-
         tag.setTag("Items", nbttaglist);
     }
 
@@ -69,13 +217,11 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
     {
         super.readFromNBT(tag);
         direction = tag.getInteger("direction");
-
         NBTTagList nbttaglist = (NBTTagList) tag.getTag("Items");
         NBTTagCompound nbttagcompound1 = nbttaglist.getCompoundTagAt(0);
         setInventorySlotContents(FIRST_INPUT_SLOT, ItemStack.loadItemStackFromNBT(nbttagcompound1));
         nbttagcompound1 = nbttaglist.getCompoundTagAt(1);
         setInventorySlotContents(FIRST_INPUT_SLOT + 1, ItemStack.loadItemStackFromNBT(nbttagcompound1));
-
     }
 
     @Override
@@ -92,6 +238,10 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
         readFromNBT(pkt.func_148857_g());
     }
 
+// -----------------------------------------------------------------------------------------------------------
+// The following methods must be implemented but don't really affect the way the table works
+// -----------------------------------------------------------------------------------------------------------
+
     // Gets the number of slots in the inventory
     @Override
     public int getSizeInventory()
@@ -103,34 +253,22 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
     @Override
     public ItemStack getStackInSlot(int i)
     {
-//        LogHelper.info("Total: " + TOTAL_SLOTS_COUNT);
-//        LogHelper.info("Slot i: " + i);
         return itemStacks[i];
     }
 
-    // overwrites the stack in the given slotIndex with the given stack
     @Override
-    public void setInventorySlotContents(int slotIndex, ItemStack itemstack)
+    public void setInventorySlotContents(int index, ItemStack stack)
     {
-        itemStacks[slotIndex] = itemstack;
-        if (itemstack != null && itemstack.stackSize > getInventoryStackLimit()) {
-            itemstack.stackSize = getInventoryStackLimit();
-        }
-        markDirty();
+        if (index < 0 || index >= this.getSizeInventory())
+            return;
+        if (stack != null && stack.stackSize > this.getInventoryStackLimit())
+            stack.stackSize = this.getInventoryStackLimit();
+        if (stack != null && stack.stackSize == 0)
+            stack = null;
+        this.itemStacks[index] = stack;
+        this.markDirty();
     }
 
-    // This is the maximum number if items allowed in each slot
-    // This only affects things such as hoppers trying to insert items you need to use the container to enforce this for players
-    // inserting items via the gui
-    @Override
-    public int getInventoryStackLimit()
-    {
-        return 64;
-    }
-
-    // Return true if the given player is able to use this block. In this case it checks that
-    // 1) the world tileentity hasn't been replaced in the meantime, and
-    // 2) the player isn't too far away from the centre of the block
     @Override
     public boolean isUseableByPlayer(EntityPlayer player)
     {
@@ -142,35 +280,10 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
         return player.getDistanceSq(player.posX + X_CENTRE_OFFSET, player.posY + Y_CENTRE_OFFSET, player.posZ + Z_CENTRE_OFFSET) < MAXIMUM_DISTANCE_SQ;
     }
 
-
-    //-----------------------------------------------------------------------------------------------------------
-    //Trying to get working recipies
-
-    /**
-     * Removes some of the units from itemstack in the given slot, and returns as a separate itemstack
-     *
-     * @param slotIndex the slot number to remove the items from
-     * @param count     the number of units to remove
-     * @return a new itemstack containing the units removed from the slot
-     */
     @Override
-    public ItemStack decrStackSize(int slotIndex, int count)
+    public int getInventoryStackLimit()
     {
-        ItemStack itemStackInSlot = getStackInSlot(slotIndex);
-        if (itemStackInSlot == null) return null;
-
-        ItemStack itemStackRemoved;
-        if (itemStackInSlot.stackSize <= count) {
-            itemStackRemoved = itemStackInSlot;
-            setInventorySlotContents(slotIndex, null);
-        } else {
-            itemStackRemoved = itemStackInSlot.splitStack(count);
-            if (itemStackInSlot.stackSize == 0) {
-                setInventorySlotContents(slotIndex, null);
-            }
-        }
-        markDirty();
-        return itemStackRemoved;
+        return 64;
     }
 
     @Override
@@ -185,71 +298,12 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
         return false;
     }
 
-    public void updateEntity()
-    {
-//        update++;
-//        if (update > 20) {
-//            update = 0;
-
-        if (inputHasItems() && resultItemStack != resultOfLastCrafting) {
-            resultOfLastCrafting = resultItemStack;
-            clearOutput();
-            for (int l = 0; l < resultItemStack.length; l++) {
-
-                setInventorySlotContents(FIRST_OUTPUT_SLOT + l, resultItemStack[l]);
-            }
-        }
-
-        //  }
-    }
-
-
-    public void clearOutput()
-    {
-        for (int i = FIRST_OUTPUT_SLOT; i < FIRST_OUTPUT_SLOT + OUTPUT_SLOTS_COUNT; i++) {
-            setInventorySlotContents(i, null);
-
-        }
-        resultOfLastCrafting = null;
-    }
-
-    private boolean inputHasItems()
-    {
-        if (getStackInSlot(FIRST_INPUT_SLOT) != null && getStackInSlot(FIRST_INPUT_SLOT + 1) != null) {
-            resultItemStack = getCurrentRecipe();
-            return true;
-        } else
-            clearOutput();
-        return false;
-    }
-
-    // If you have more than one output per recipe, this will return an ItemStack[] array instead
-    public ItemStack[] getCurrentRecipe()
-    {
-        // resultItemStack = BlockTableRecipes.recipes().getCraftingResult(getStackInSlot(FIRST_INPUT_SLOT), getStackInSlot(FIRST_INPUT_SLOT + 1));
-
-        return BlockTableRecipes.recipes().getCraftingResult(getStackInSlot(FIRST_INPUT_SLOT), getStackInSlot(FIRST_INPUT_SLOT + 1));
-    }
-
-
-    // -----------------------------------------------------------------------------------------------------------
-    // The following methods are not needed for this example but are part of IInventory so they must be implemented
-
-    // Unused unless your container specifically uses it.
-    // Return true if the given stack is allowed to go in the given slot
     @Override
     public boolean isItemValidForSlot(int slotIndex, ItemStack itemstack)
     {
         return false;
     }
 
-    /**
-     * This method removes the entire contents of the given slot and returns it.
-     * Used by containers such as crafting tables which return any items in their slots when you close the GUI
-     *
-     * @param slotIndex
-     * @return
-     */
     @Override
     public ItemStack getStackInSlotOnClosing(int slotIndex)
     {
@@ -261,13 +315,10 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
     @Override
     public void closeInventory()
     {
-
     }
 
     @Override
     public void openInventory()
     {
-
     }
-
 }

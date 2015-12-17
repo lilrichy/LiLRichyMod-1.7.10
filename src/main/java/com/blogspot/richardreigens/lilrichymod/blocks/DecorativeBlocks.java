@@ -13,8 +13,6 @@ import net.minecraft.client.renderer.texture.IIconRegister;
  */
 public class DecorativeBlocks extends Block
 {
-
-
     private final String blockToolTip;
 
     public DecorativeBlocks(String name, Material material, String toolTip)
@@ -37,7 +35,6 @@ public class DecorativeBlocks extends Block
         this.blockToolTip = null;
     }
 
-
     public static String getToolTip(Block block)
     {
         if (block instanceof DecorativeBlocks) {
@@ -45,7 +42,6 @@ public class DecorativeBlocks extends Block
             return n.blockToolTip;
         } else return null;
     }
-
 
     @Override
     public String getUnlocalizedName()
@@ -64,6 +60,4 @@ public class DecorativeBlocks extends Block
     {
         blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
     }
-
-
 }

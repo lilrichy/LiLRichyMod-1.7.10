@@ -3,6 +3,7 @@ package com.blogspot.richardreigens.lilrichymod.init;
 import com.blogspot.richardreigens.lilrichymod.blocks.*;
 import com.blogspot.richardreigens.lilrichymod.blocks.crops.BeardedAzalea;
 import com.blogspot.richardreigens.lilrichymod.blocks.crops.CropItemBlock;
+import com.blogspot.richardreigens.lilrichymod.blocks.crops.LiLRichyCrop;
 import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
@@ -22,7 +23,7 @@ public class ModBlocks
     //Custom Rendered Blocks
     public static final BlockTable blockTable = new BlockTable(Material.rock);
 
-    //Decorative Blocks
+    //Decorative Blocks ------------------------------------------------------------------------------------------------
 
     //Lava
     public static final DecorativeBlocks lavaBowl = new DecorativeBlocks(Names.Blocks.LAVA_BOWL, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
@@ -59,7 +60,7 @@ public class ModBlocks
     public static final DecorativeBlocks cottageWindowLight = new DecorativeBlocks(Names.Blocks.COTTAGE_WINDOW_LIGHT, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
 
     //Concrete
-    public static final DecorativeBlocks concrete = new DecorativeBlocks(Names.Blocks.CONCRETE, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
+    public static final BlockConcrete concrete = new BlockConcrete(Names.Blocks.CONCRETE, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
     public static final DecorativeBlocks fancyConcreteBlocks = new DecorativeBlocks(Names.Blocks.FANCY_CONCRETE_BLOCKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
     public static final DecorativeBlocks concreteBricks = new DecorativeBlocks(Names.Blocks.CONCRETE_BRICKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
     public static final DecorativeBlocks concreteBricksDark = new DecorativeBlocks(Names.Blocks.CONCRETE_BRICKS_DARK, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
@@ -96,14 +97,13 @@ public class ModBlocks
 
     public static void init()
     {
-
         //Custom Rendered Blocks
         GameRegistry.registerBlock(blockTable, Names.Models.BLOCK_TABLE);
 
         //Crops
         GameRegistry.registerBlock(beardedAzalea, CropItemBlock.class, Names.Crops.BEARDED_AZALEA);
 
-        //Decorative Blocks
+        //Decorative Blocks---------------------------------------------------------------------------------------------
 
         //Lava
         GameRegistry.registerBlock(lavaBowl, DecorativeItemBlock.class, Names.Blocks.LAVA_BOWL);
@@ -120,7 +120,6 @@ public class ModBlocks
         GameRegistry.registerBlock(metalRustedIronGrip, DecorativeItemBlock.class, Names.Blocks.METAL_RUSTED_IRON_GRIP);
         GameRegistry.registerBlock(metalSeafoamTarnish, DecorativeItemBlock.class, Names.Blocks.METAL_SEAFOAM_TARNISH);
         GameRegistry.registerBlock(metalStained, DecorativeItemBlock.class, Names.Blocks.METAL_STAINED);
-
 
         //Marble
         GameRegistry.registerBlock(marbleBlack, DecorativeItemBlock.class, Names.Blocks.MARBLE_BLACK);
@@ -177,6 +176,5 @@ public class ModBlocks
             GameRegistry.registerBlock(playerDetector, Names.Blocks.PLAYER_DETECTOR);
         if (ConfigurationHandler.loadAdvancedDetector)
             GameRegistry.registerBlock(advancedDetector, Names.Blocks.ADVANCED_DETECTOR);
-
     }
 }

@@ -19,6 +19,7 @@ public class ConfigurationHandler
     public static int defaultRangePlayerDetector;
     public static int defaultRangeAdvancedDetector;
     public static boolean flipPlayers = false;
+    public static boolean loadDecorativeBlockRecipes = false;
 
     public static void init(File configFile)
     {
@@ -38,6 +39,8 @@ public class ConfigurationHandler
         // Get int = String name, String category, int defaultValue, int minValue, int maxValue, String comment
 
 
+        loadDecorativeBlockRecipes = configuration.getBoolean("loadDecorativeBlockRecipes", SHOULD_LOAD, false, "If this is true old recipes for decorative blocks will load, if " +
+                "false blocks will need to be made in the Block Table");
         loadShadowmourne = configuration.getBoolean("loadShandowmourne", SHOULD_LOAD, false, "Enable the Shadowmourne Weapon *Note currently a WIP Creative Only Item.");
         loadPlayerDetector = configuration.getBoolean("loadPlayerDetector", SHOULD_LOAD, true, "Enable the Player Detector Block.");
         loadAdvancedDetector = configuration.getBoolean("loadAdvancedDetector", SHOULD_LOAD, true, "Enable the Advanced Detector Block.");

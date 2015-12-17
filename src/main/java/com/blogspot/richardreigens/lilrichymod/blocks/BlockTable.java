@@ -38,7 +38,6 @@ public class BlockTable extends BlockContainer
     {
         if (!world.isRemote) {
             player.openGui(lilrichymod.instance, GuiHandler.GuiIDs.BLOCK_TABLE.ordinal(), world, x, y, z);
-
         }
         return true;
     }
@@ -49,7 +48,7 @@ public class BlockTable extends BlockContainer
         TileEntity tileEntityBlockTable = world.getTileEntity(x, y, z);
         if (tileEntityBlockTable instanceof IInventory) {
 
-//			// For each slot in the inventory
+            // For each slot in the inventory
             for (int i = TileEntityBlockTable.FIRST_INPUT_SLOT; i < TileEntityBlockTable.FIRST_INPUT_SLOT + 2; i++) {
                 // If the slot is not empty
                 if (((IInventory) tileEntityBlockTable).getStackInSlot(i) != null) {
@@ -72,10 +71,8 @@ public class BlockTable extends BlockContainer
                 }
             }
         }
-
         super.breakBlock(world, x, y, z, b, par1);
     }
-
 
     @Override
     public String getUnlocalizedName()
@@ -120,5 +117,4 @@ public class BlockTable extends BlockContainer
     {
         return new TileEntityBlockTable();
     }
-
 }
