@@ -25,8 +25,14 @@ minecraft {
     version = "1.7.10-10.13.4.1566-1.7.10"
     runDir = "eclipse"
 }
+repositories {
+    maven { url = "http://chickenbones.net/maven/" }
+}
 
 dependencies {
+    runtime "codechicken:CodeChickenCore:${mc_version}-${ccc_version}:dev"
+    runtime "codechicken:CodeChickenLib:${mc_version}-${ccl_version}:dev"
+    runtime "codechicken:NotEnoughItems:${mc_version}-${nei_version}:dev"
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
