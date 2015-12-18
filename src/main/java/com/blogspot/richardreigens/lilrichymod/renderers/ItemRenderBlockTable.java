@@ -1,5 +1,7 @@
 package com.blogspot.richardreigens.lilrichymod.renderers;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -11,6 +13,7 @@ import org.lwjgl.opengl.GL11;
  */
 public class ItemRenderBlockTable implements IItemRenderer
 {
+    @SideOnly(Side.CLIENT)
     TileEntitySpecialRenderer render;
     private TileEntity entity;
 
@@ -20,19 +23,21 @@ public class ItemRenderBlockTable implements IItemRenderer
         this.render = render;
     }
 
-
+    @SideOnly(Side.CLIENT)
     @Override
     public boolean handleRenderType(ItemStack item, ItemRenderType type)
     {
         return true;
     }
 
+    @SideOnly(Side.CLIENT)
     @Override
     public boolean shouldUseRenderHelper(ItemRenderType type, ItemStack item, ItemRendererHelper helper)
     {
         return true;
     }
 
+    @SideOnly(Side.CLIENT)
     @Override
     public void renderItem(ItemRenderType type, ItemStack item, Object... data)
     {

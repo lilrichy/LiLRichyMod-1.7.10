@@ -4,6 +4,8 @@ import com.blogspot.richardreigens.lilrichymod.models.ModelBlockTable;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityBlockTable;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
@@ -12,6 +14,7 @@ import org.lwjgl.opengl.GL11;
 /**
  * Created by Rich on 12/8/2015.
  */
+@SideOnly(Side.CLIENT)
 public class RenderBlockTable extends TileEntitySpecialRenderer
 {
     ResourceLocation texture = new ResourceLocation(
@@ -23,7 +26,6 @@ public class RenderBlockTable extends TileEntitySpecialRenderer
     {
         this.model = new ModelBlockTable();
     }
-
 
     @Override
     public void renderTileEntityAt(TileEntity tileEntity, double i, double j, double k, float f)

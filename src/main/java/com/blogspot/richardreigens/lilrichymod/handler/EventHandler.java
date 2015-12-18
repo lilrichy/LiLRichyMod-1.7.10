@@ -9,6 +9,7 @@ import org.lwjgl.opengl.GL11;
  */
 public class EventHandler
 {
+
     @SubscribeEvent
     public void playerRenderPre(RenderPlayerEvent.Pre e)
     {
