@@ -59,40 +59,6 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
         }
     }
 
-    public void getInput() {
-        this.input = new ItemStack[]{getStackInSlot(FIRST_INPUT_SLOT), getStackInSlot(FIRST_INPUT_SLOT + 1)};
-        if (inputHasItems()) {
-            if (getStackInSlot(FIRST_INPUT_SLOT).stackSize >= getStackInSlot(FIRST_INPUT_SLOT + 1).stackSize) {
-                this.decreaseAmt = this.getStackInSlot(FIRST_INPUT_SLOT + 1).stackSize;
-            } else if (getStackInSlot(FIRST_INPUT_SLOT).stackSize < getStackInSlot(FIRST_INPUT_SLOT + 1).stackSize) {
-                this.decreaseAmt = this.getStackInSlot(FIRST_INPUT_SLOT).stackSize;
-            }
-        } else this.decreaseAmt = 0;
-    }
-
-    public void updateOutputSlots() {
-        clearOutput();
-        for (int i = 0; i < resultItemStack.length; i++) {
-            ItemStack stack = new ItemStack(resultItemStack[i].getItem());
-            stack.stackSize = getStackInSlot(0).stackSize;
-            setInventorySlotContents(FIRST_OUTPUT_SLOT + i, stack);
-        }
-    }
-
-    public void clearOutput() {
-        for (int i = FIRST_OUTPUT_SLOT; i < FIRST_OUTPUT_SLOT + OUTPUT_SLOTS_COUNT; i++) {
-            setInventorySlotContents(i, null);
-        }
-    }
-
-    public boolean inputHasItems() {
-        return getStackInSlot(FIRST_INPUT_SLOT) != null && getStackInSlot(FIRST_INPUT_SLOT + 1) != null;
-    }
-
-// -----------------------------------------------------------------------------------------------------------
-// NBT, Packets, and slot methods.
-// -----------------------------------------------------------------------------------------------------------
-
     public ItemStack[] getCurrentRecipe() {
         if (inputHasItems()) {
             if (BlockTableRecipes.recipes().getCraftingResult(getStackInSlot(FIRST_INPUT_SLOT), getStackInSlot(FIRST_INPUT_SLOT + 1)) != null) {
@@ -129,6 +95,40 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
         }
         markDirty();
         return itemStackRemoved;
+    }
+
+    public void getInput() {
+        this.input = new ItemStack[]{getStackInSlot(FIRST_INPUT_SLOT), getStackInSlot(FIRST_INPUT_SLOT + 1)};
+        if (inputHasItems()) {
+            if (getStackInSlot(FIRST_INPUT_SLOT).stackSize >= getStackInSlot(FIRST_INPUT_SLOT + 1).stackSize) {
+                this.decreaseAmt = this.getStackInSlot(FIRST_INPUT_SLOT + 1).stackSize;
+            } else if (getStackInSlot(FIRST_INPUT_SLOT).stackSize < getStackInSlot(FIRST_INPUT_SLOT + 1).stackSize) {
+                this.decreaseAmt = this.getStackInSlot(FIRST_INPUT_SLOT).stackSize;
+            }
+        } else this.decreaseAmt = 0;
+    }
+
+// -----------------------------------------------------------------------------------------------------------
+// NBT, Packets, and slot methods.
+// -----------------------------------------------------------------------------------------------------------
+
+    public void updateOutputSlots() {
+        clearOutput();
+        for (int i = 0; i < resultItemStack.length; i++) {
+            ItemStack stack = new ItemStack(resultItemStack[i].getItem());
+            stack.stackSize = getStackInSlot(0).stackSize;
+            setInventorySlotContents(FIRST_OUTPUT_SLOT + i, stack);
+        }
+    }
+
+    public void clearOutput() {
+        for (int i = FIRST_OUTPUT_SLOT; i < FIRST_OUTPUT_SLOT + OUTPUT_SLOTS_COUNT; i++) {
+            setInventorySlotContents(i, null);
+        }
+    }
+
+    public boolean inputHasItems() {
+        return getStackInSlot(FIRST_INPUT_SLOT) != null && getStackInSlot(FIRST_INPUT_SLOT + 1) != null;
     }
 
     @Override
