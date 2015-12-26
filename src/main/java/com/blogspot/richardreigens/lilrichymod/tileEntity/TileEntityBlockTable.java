@@ -112,7 +112,7 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
         clearOutput();
         for (int i = 0; i < resultItemStack.length; i++) {
             ItemStack stack = new ItemStack(resultItemStack[i].getItem());
-            stack.stackSize = getStackInSlot(0).stackSize;
+            stack.stackSize = decreaseAmt;
             setInventorySlotContents(FIRST_OUTPUT_SLOT + i, stack);
         }
     }
