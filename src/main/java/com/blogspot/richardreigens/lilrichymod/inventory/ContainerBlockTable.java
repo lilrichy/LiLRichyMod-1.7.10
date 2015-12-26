@@ -12,15 +12,13 @@ import net.minecraft.item.ItemStack;
 /**
  * Created by Rich on 12/10/2015.
  */
-public class ContainerBlockTable extends ContainerLiLRichyMod
-{
+public class ContainerBlockTable extends ContainerLiLRichyMod {
     public static final int OUTPUT[] = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17};
     public static final int INPUT_CONCRETE_1 = 0, INPUT_MODIFIER_2 = 1, INV_START = OUTPUT.length + 1,
             INV_END = INV_START + 26, HOTBAR_START = INV_END + 1, HOTBAR_END = HOTBAR_START + 8;
     private TileEntityBlockTable te;
 
-    public ContainerBlockTable(InventoryPlayer playerInventory, TileEntityBlockTable te)
-    {
+    public ContainerBlockTable(InventoryPlayer playerInventory, TileEntityBlockTable te) {
         this.te = te;
 
         //crafting slots
@@ -37,8 +35,7 @@ public class ContainerBlockTable extends ContainerLiLRichyMod
     }
 
     @Override
-    public ItemStack slotClick(int slot, int clickButton, int clickID, EntityPlayer player)
-    {
+    public ItemStack slotClick(int slot, int clickButton, int clickID, EntityPlayer player) {
         if (slot > INPUT_MODIFIER_2 && slot < INV_START) {
             te.doCrafting(slot, clickButton, clickID, player);
         }
@@ -46,8 +43,7 @@ public class ContainerBlockTable extends ContainerLiLRichyMod
     }
 
     @Override
-    public boolean canInteractWith(EntityPlayer player)
-    {
+    public boolean canInteractWith(EntityPlayer player) {
         return te.isUseableByPlayer(player);
     }
 //--------------------------------------------------------
@@ -55,8 +51,7 @@ public class ContainerBlockTable extends ContainerLiLRichyMod
     /**
      * Called when a player shift-clicks on a slot. You must override this or you will crash when someone does that.
      */
-    public ItemStack transferStackInSlot(EntityPlayer player, int slotIndex)
-    {
+    public ItemStack transferStackInSlot(EntityPlayer player, int slotIndex) {
         ItemStack itemstack = null;
         Slot slot = (Slot) this.inventorySlots.get(slotIndex);
 
@@ -122,61 +117,45 @@ public class ContainerBlockTable extends ContainerLiLRichyMod
     }
 
     // SlotInput is a slot for Concrete items
-    public class SlotInputConcrete extends Slot
-    {
-        public SlotInputConcrete(IInventory inventoryIn, int index, int xPosition, int yPosition)
-        {
+    public class SlotInputConcrete extends Slot {
+        public SlotInputConcrete(IInventory inventoryIn, int index, int xPosition, int yPosition) {
             super(inventoryIn, index, xPosition, yPosition);
         }
 
         // if this function returns false, the player won't be able to insert the given item into this slot
         @Override
-        public boolean isItemValid(ItemStack stack)
-        {
+        public boolean isItemValid(ItemStack stack) {
             return TileEntityBlockTable.isItemValidForBlockInputSlot(stack);
         }
     }
 
     // SlotInput is a single stack slot for Modifier items
-    public class SlotInputModifier extends Slot
-    {
-        public SlotInputModifier(IInventory inventoryIn, int index, int xPosition, int yPosition)
-        {
+    public class SlotInputModifier extends Slot {
+        public SlotInputModifier(IInventory inventoryIn, int index, int xPosition, int yPosition) {
             super(inventoryIn, index, xPosition, yPosition);
-        }
-
-        @Override
-        public int getSlotStackLimit()
-        {
-            return 1;
         }
 
         // if this function returns false, the player won't be able to insert the given item into this slot
         @Override
-        public boolean isItemValid(ItemStack stack)
-        {
+        public boolean isItemValid(ItemStack stack) {
             return TileEntityBlockTable.isItemValidForModifierInputSlot(stack);
         }
     }
 
     // SlotOutput is a slot that will not accept any items
-    public class SlotOutput extends Slot
-    {
-        public SlotOutput(IInventory inventoryIn, int index, int xPosition, int yPosition)
-        {
+    public class SlotOutput extends Slot {
+        public SlotOutput(IInventory inventoryIn, int index, int xPosition, int yPosition) {
             super(inventoryIn, index, xPosition, yPosition);
         }
 
         @Override
-        public void onPickupFromSlot(EntityPlayer player, ItemStack stack)
-        {
+        public void onPickupFromSlot(EntityPlayer player, ItemStack stack) {
             super.onPickupFromSlot(player, stack);
         }
 
         // if this function returns false, the player won't be able to insert the given item into this slot
         @Override
-        public boolean isItemValid(ItemStack stack)
-        {
+        public boolean isItemValid(ItemStack stack) {
             return TileEntityBlockTable.isItemValidForOutputSlot(stack);
         }
     }

@@ -5,14 +5,7 @@
  R4wk, ZeuX, IngisKahn, bspkrs
  MCP Data version : unknown
 ****************************
-:ideaModule
-Download http://chickenbones.net/maven/codechicken/CodeChickenCore/1.7.10-1.0.7.47/CodeChickenCore-1.7.10-1.0.7.47-dev.jar
-Download http://files.minecraftforge.net/maven/codechicken/CodeChickenLib/1.7.10-1.1.3.138/CodeChickenLib-1.7.10-1.1.3.138-dev.jar
-Download http://chickenbones.net/maven/codechicken/NotEnoughItems/1.7.10-1.0.5.118/NotEnoughItems-1.7.10-1.0.5.118-dev.jar
-:ideaProject
-:ideaWorkspace
-:idea
 
 BUILD SUCCESSFUL
 
-Total time: 26.726 secs
+Total time: 15.576 secs

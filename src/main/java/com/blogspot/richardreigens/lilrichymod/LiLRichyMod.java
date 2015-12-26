@@ -8,7 +8,6 @@ import com.blogspot.richardreigens.lilrichymod.handler.network.NetworkHandler;
 import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
 import com.blogspot.richardreigens.lilrichymod.init.ModTileEntitys;
-import com.blogspot.richardreigens.lilrichymod.proxy.ClientProxy;
 import com.blogspot.richardreigens.lilrichymod.proxy.CommonProxy;
 import com.blogspot.richardreigens.lilrichymod.recipes.Recipes;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
@@ -64,6 +63,8 @@ public class lilrichymod
 
         NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
         LogHelper.info("GUI Handler Loading");
+
+        proxy.registerRenderers();
         LogHelper.info("Pre Initialization Complete");
     }
 
@@ -73,7 +74,7 @@ public class lilrichymod
         Recipes.init();
         LogHelper.info("Recipes Loading");
 
-        ClientProxy.registerRenders();
+
         LogHelper.info("Initialization Complete");
     }
 

@@ -27,7 +27,7 @@ public class GuiAdvancedDetector extends GuiLiLRichyMod
     public void initGui()
     {
         super.initGui();
-        invertButton = new GuiButton(0, guiLeft + 7, guiTop + 48, 55, 20, I18n.format("gui.LiLRichyMod.AdvancedDetector.button.invert"));
+        invertButton = new GuiButton(0, guiLeft + 7, guiTop + 48, 55, 20, I18n.format("gui.lilrichymod.AdvancedDetector.button.invert"));
         buttonList.add(invertButton);
 
     }
@@ -43,6 +43,6 @@ public class GuiAdvancedDetector extends GuiLiLRichyMod
     public void updateScreen()
     {
         super.updateScreen();
-        invertButton.displayString = I18n.format("gui.LiLRichyMod.AdvancedDetector.button." + (te.invert ? "invert" : "regular"));
+        invertButton.displayString = I18n.format("gui.lilrichymod.AdvancedDetector.button." + (te.invert ? "invert" : "regular"));
     }
 }
