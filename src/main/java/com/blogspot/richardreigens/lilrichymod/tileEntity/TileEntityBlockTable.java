@@ -59,10 +59,6 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
         }
     }
 
-// -----------------------------------------------------------------------------------------------------------
-// NBT, Packets, and slot methods.
-// -----------------------------------------------------------------------------------------------------------
-
     public ItemStack[] getCurrentRecipe() {
         if (inputHasItems()) {
             if (BlockTableRecipes.recipes().getCraftingResult(getStackInSlot(FIRST_INPUT_SLOT), getStackInSlot(FIRST_INPUT_SLOT + 1)) != null) {
@@ -130,6 +126,10 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
     public boolean inputHasItems() {
         return getStackInSlot(FIRST_INPUT_SLOT) != null && getStackInSlot(FIRST_INPUT_SLOT + 1) != null;
     }
+
+// -----------------------------------------------------------------------------------------------------------
+// NBT, Packets, and slot methods.
+// -----------------------------------------------------------------------------------------------------------
 
     @Override
     public void writeToNBT(NBTTagCompound tag) {
