@@ -21,9 +21,9 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
     public static final int INPUT_SLOTS_COUNT = 2;
     public static final int OUTPUT_SLOTS_COUNT = 15;
     public static final int TOTAL_SLOTS_COUNT = PLAYER_SLOTS_TOTAL + INPUT_SLOTS_COUNT + OUTPUT_SLOTS_COUNT;
-
     public static final int FIRST_INPUT_SLOT = ContainerBlockTable.INPUT_CONCRETE_1;
     public static final int FIRST_OUTPUT_SLOT = FIRST_INPUT_SLOT + 2;
+
     public int direction;
     public ItemStack[] input;
     private int decreaseAmt = 0;
@@ -59,6 +59,10 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
         }
     }
 
+// -----------------------------------------------------------------------------------------------------------
+// NBT, Packets, and slot methods.
+// -----------------------------------------------------------------------------------------------------------
+
     public ItemStack[] getCurrentRecipe() {
         if (inputHasItems()) {
             if (BlockTableRecipes.recipes().getCraftingResult(getStackInSlot(FIRST_INPUT_SLOT), getStackInSlot(FIRST_INPUT_SLOT + 1)) != null) {
@@ -79,6 +83,17 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
         }
     }
 
+    public void getInput() {
+        this.input = new ItemStack[]{getStackInSlot(FIRST_INPUT_SLOT), getStackInSlot(FIRST_INPUT_SLOT + 1)};
+        if (inputHasItems()) {
+            if (getStackInSlot(FIRST_INPUT_SLOT).stackSize >= getStackInSlot(FIRST_INPUT_SLOT + 1).stackSize) {
+                this.decreaseAmt = this.getStackInSlot(FIRST_INPUT_SLOT + 1).stackSize;
+            } else if (getStackInSlot(FIRST_INPUT_SLOT).stackSize < getStackInSlot(FIRST_INPUT_SLOT + 1).stackSize) {
+                this.decreaseAmt = this.getStackInSlot(FIRST_INPUT_SLOT).stackSize;
+            }
+        } else this.decreaseAmt = 0;
+    }
+
     @Override
     public ItemStack decrStackSize(int slotIndex, int count) {
         ItemStack itemStackInSlot = getStackInSlot(slotIndex);
@@ -96,21 +111,6 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
         markDirty();
         return itemStackRemoved;
     }
-
-    public void getInput() {
-        this.input = new ItemStack[]{getStackInSlot(FIRST_INPUT_SLOT), getStackInSlot(FIRST_INPUT_SLOT + 1)};
-        if (inputHasItems()) {
-            if (getStackInSlot(FIRST_INPUT_SLOT).stackSize >= getStackInSlot(FIRST_INPUT_SLOT + 1).stackSize) {
-                this.decreaseAmt = this.getStackInSlot(FIRST_INPUT_SLOT + 1).stackSize;
-            } else if (getStackInSlot(FIRST_INPUT_SLOT).stackSize < getStackInSlot(FIRST_INPUT_SLOT + 1).stackSize) {
-                this.decreaseAmt = this.getStackInSlot(FIRST_INPUT_SLOT).stackSize;
-            }
-        } else this.decreaseAmt = 0;
-    }
-
-// -----------------------------------------------------------------------------------------------------------
-// NBT, Packets, and slot methods.
-// -----------------------------------------------------------------------------------------------------------
 
     public void updateOutputSlots() {
         clearOutput();
