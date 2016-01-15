@@ -17,6 +17,9 @@ import net.minecraft.block.material.Material;
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModBlocks
 {
+    //Testing
+
+
     //Crops
     public static final LiLRichyCrop beardedAzalea = new BeardedAzalea(Names.Crops.BEARDED_AZALEA);
 
@@ -97,6 +100,10 @@ public class ModBlocks
 
     public static void init()
     {
+        //Testing
+
+
+
         //Custom Rendered Blocks
         GameRegistry.registerBlock(blockTable, Names.Models.BLOCK_TABLE);
 

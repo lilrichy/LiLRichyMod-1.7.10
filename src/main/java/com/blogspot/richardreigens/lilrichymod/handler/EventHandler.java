@@ -20,6 +20,7 @@ public class EventHandler
         if (ConfigurationHandler.flipPlayers) {
             GL11.glTranslatef(0f, e.entityPlayer.height - 3F, 0.0F);
             GL11.glRotatef(180f, 0f, 0f, 1f);
+
         }
     }
 
