@@ -1,7 +1,6 @@
 package com.blogspot.richardreigens.lilrichymod;
 
 import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
-import com.blogspot.richardreigens.lilrichymod.handler.EventHandler;
 import com.blogspot.richardreigens.lilrichymod.handler.GuiHandler;
 import com.blogspot.richardreigens.lilrichymod.handler.PacketDescriptionHandler;
 import com.blogspot.richardreigens.lilrichymod.handler.network.NetworkHandler;
@@ -19,15 +18,13 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
-import net.minecraftforge.common.MinecraftForge;
 
 /**
  * Created by Rich on 11/18/2015.
  */
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
-public class lilrichymod
-{
+public class lilrichymod {
     @Mod.Instance(Reference.MOD_ID)
     public static lilrichymod instance;
 
@@ -35,8 +32,7 @@ public class lilrichymod
     public static CommonProxy proxy;
 
     @Mod.EventHandler
-    public void preInit(FMLPreInitializationEvent event)
-    {
+    public void preInit(FMLPreInitializationEvent event) {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
@@ -57,8 +53,6 @@ public class lilrichymod
         //GameRegistry.registerWorldGenerator(new WorldGenLiLRichy(), 0);
         //LogHelper.info("World Gen Loading");
 
-        MinecraftForge.EVENT_BUS.register(new EventHandler());
-
         NetworkHandler.init();
 
         NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
@@ -69,18 +63,14 @@ public class lilrichymod
     }
 
     @Mod.EventHandler
-    public void init(FMLInitializationEvent event)
-    {
+    public void init(FMLInitializationEvent event) {
         Recipes.init();
         LogHelper.info("Recipes Loading");
-
-
         LogHelper.info("Initialization Complete");
     }
 
     @Mod.EventHandler
-    public void postInit(FMLPostInitializationEvent event)
-    {
+    public void postInit(FMLPostInitializationEvent event) {
         LogHelper.info("Post Initialization Complete");
         LogHelper.info("LiLRichy Mod Loaded!");
     }
