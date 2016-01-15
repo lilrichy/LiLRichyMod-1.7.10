@@ -11,10 +11,8 @@ import net.minecraft.item.ItemStack;
 /**
  * Created by Rich on 11/20/2015.
  */
-public class Recipes
-{
-    public static void init()
-    {
+public class Recipes {
+    public static void init() {
         if (ConfigurationHandler.loadDecorativeBlockRecipes) {
             DecorativeBlockRecipes.init();
         }
@@ -25,14 +23,12 @@ public class Recipes
         tileRecipes();
     }
 
-    public static void smeltingRecipes()
-    {
+    public static void smeltingRecipes() {
         //Concrete
         GameRegistry.addSmelting(new ItemStack(ModItems.concreteMix), new ItemStack(ModBlocks.concrete), 0.1f);
     }
 
-    public static void tileRecipes()
-    {
+    public static void tileRecipes() {
         //Player Detector
         GameRegistry.addRecipe(new ItemStack(ModBlocks.playerDetector, 1), "ici", "ctc", "ici",
                 'i', new ItemStack(Items.iron_ingot), 'c', new ItemStack(Items.comparator), 't', new ItemStack(Blocks.redstone_torch));

@@ -13,10 +13,8 @@ import java.util.Random;
 /**
  * Created by Rich on 12/2/2015.
  */
-public class BeardedAzalea extends LiLRichyCrop
-{
-    public BeardedAzalea(String name)
-    {
+public class BeardedAzalea extends LiLRichyCrop {
+    public BeardedAzalea(String name) {
         super(name);
         // Basic block setup
         setBlockName(name);
@@ -24,14 +22,12 @@ public class BeardedAzalea extends LiLRichyCrop
     }
 
     @Override
-    public int quantityDropped(int metaData, int parFortune, Random random)
-    {
+    public int quantityDropped(int metaData, int parFortune, Random random) {
         return (random.nextInt(3));
     }
 
     @Override
-    public Item getItemDropped(int metaData, Random random, int parFortune)
-    {
+    public Item getItemDropped(int metaData, Random random, int parFortune) {
         if (metaData < maxGrowthStage) {
             return ModItems.seedBearedAzailia;
         } else if (random.nextInt(10) > 5)
@@ -41,8 +37,7 @@ public class BeardedAzalea extends LiLRichyCrop
 
     @Override
     @SideOnly(Side.CLIENT)
-    public void registerBlockIcons(IIconRegister iconRegister)
-    {
+    public void registerBlockIcons(IIconRegister iconRegister) {
         iIcon = new IIcon[maxGrowthStage + 1];
         // seems that crops like to have 8 growth icons, but okay to repeat actual texture if you want
         // to make generic should loop to maxGrowthStage
@@ -57,19 +52,16 @@ public class BeardedAzalea extends LiLRichyCrop
     }
 
     @SideOnly(Side.CLIENT)
-    public String getItemIconName()
-    {
+    public String getItemIconName() {
         return String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName()));
     }
 
     @Override
-    public String getUnlocalizedName()
-    {
+    public String getUnlocalizedName() {
         return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":crops/", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
-    protected String getUnwrappedUnlocalizedName(String unlocalizedName)
-    {
+    protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
 }

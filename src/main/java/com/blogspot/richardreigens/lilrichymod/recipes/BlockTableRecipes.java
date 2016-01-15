@@ -13,13 +13,11 @@ import java.util.List;
 /**
  * Created by Rich on 12/10/2015.
  */
-public class BlockTableRecipes
-{
+public class BlockTableRecipes {
     private static final BlockTableRecipes recipes = new BlockTableRecipes();
     private HashMap<List<Integer>, ItemStack[]> result = new HashMap<List<Integer>, ItemStack[]>();
 
-    public BlockTableRecipes()
-    {
+    public BlockTableRecipes() {
         // Output Lists "also add to isCraftableBlock": these lists are what is displayed in the output
         //slots of the Block Table.
         ItemStack[] concreteList = {new ItemStack(ModBlocks.concreteBricks),
@@ -43,7 +41,6 @@ public class BlockTableRecipes
                 new ItemStack(ModBlocks.cottageWallXLight), new ItemStack(ModBlocks.cottageWallXDark),
                 new ItemStack(ModBlocks.cottageWindowLight), new ItemStack(ModBlocks.cottageWindowDark)};
 
-
         // Recipe Lists: (output, slot 1 input, slot 2 input) this is the recipes for the Block table results
         this.addRecipe(concreteList, new ItemStack(ModBlocks.concrete), new ItemStack(ModItems.crushedConcrete));
         this.addRecipe(metalsList, new ItemStack(ModBlocks.concrete), new ItemStack(Items.iron_ingot));
@@ -66,8 +63,7 @@ public class BlockTableRecipes
     }
 
     //This is used to check if the block can be placed in the first slot.
-    public static boolean isCraftableBlock(ItemStack stack)
-    {
+    public static boolean isCraftableBlock(ItemStack stack) {
         //Lists should be the same as the output lists.
         ItemStack[] concreteList = {new ItemStack(ModBlocks.concreteBricks),
                 new ItemStack(ModBlocks.concreteRocks), new ItemStack(ModBlocks.concreteTexturedBlocks),
@@ -119,8 +115,7 @@ public class BlockTableRecipes
         return false;
     }
 
-    public static boolean isMaterial(ItemStack stack)
-    {
+    public static boolean isMaterial(ItemStack stack) {
         if (stack.isItemEqual(new ItemStack(ModItems.crushedConcrete))) {
             return true;
         } else if (stack.isItemEqual(new ItemStack(Items.iron_ingot))) {
@@ -130,13 +125,11 @@ public class BlockTableRecipes
         } else return stack.isItemEqual(new ItemStack(Blocks.planks));
     }
 
-    public static final BlockTableRecipes recipes()
-    {
+    public static final BlockTableRecipes recipes() {
         return recipes;
     }
 
-    public void addRecipe(ItemStack[] output, ItemStack... inputs)
-    {
+    public void addRecipe(ItemStack[] output, ItemStack... inputs) {
         List<Integer> inputData = new ArrayList<Integer>();
         for (ItemStack stack : inputs) {
             inputData.add(stack.getItem().getIdFromItem(stack.getItem()));
@@ -144,8 +137,7 @@ public class BlockTableRecipes
         result.put(inputData, output);
     }
 
-    public ItemStack[] getCraftingResult(ItemStack... inputs)
-    {
+    public ItemStack[] getCraftingResult(ItemStack... inputs) {
         List<Integer> inputData = new ArrayList<Integer>();
         for (ItemStack stack : inputs) {
             inputData.add(stack.getItem().getIdFromItem(stack.getItem()));
@@ -154,4 +146,3 @@ public class BlockTableRecipes
         return result.get(inputData);
     }
 }
-

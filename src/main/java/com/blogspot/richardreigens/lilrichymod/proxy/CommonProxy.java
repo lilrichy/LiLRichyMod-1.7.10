@@ -5,8 +5,7 @@ import net.minecraft.entity.player.EntityPlayer;
 /**
  * Created by Rich on 11/19/2015.
  */
-public abstract class CommonProxy
-{
+public abstract class CommonProxy {
     public abstract void registerRenderers();
 
     public abstract void preInit();

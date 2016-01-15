@@ -17,16 +17,14 @@ import net.minecraftforge.common.util.ForgeDirection;
 /**
  * Created by Rich on 12/2/2015.
  */
-public class ItemLiLRichySeedFood extends ItemFood implements IPlantable
-{
+public class ItemLiLRichySeedFood extends ItemFood implements IPlantable {
     private final Block theBlockPlant;
 
     //Block ID of the soil this seed food should be planted on.
     private final Block soilId;
 
     public ItemLiLRichySeedFood(int healAmount, float saturationModifier,
-                                Block blockPlant, Block blockRequiredToBePlanted)
-    {
+                                Block blockPlant, Block blockRequiredToBePlanted) {
         super(healAmount, saturationModifier, false);
         theBlockPlant = blockPlant;
         soilId = blockRequiredToBePlanted;
@@ -35,8 +33,7 @@ public class ItemLiLRichySeedFood extends ItemFood implements IPlantable
     @Override
     public boolean onItemUse(ItemStack itemStack, EntityPlayer entityPlayer,
                              World world, int x, int y, int z, int par7, float par8,
-                             float par9, float par10)
-    {
+                             float par9, float par10) {
         // not sure what this parameter does, copied it from potato
         if (par7 != 1) {
             return false;
@@ -62,49 +59,41 @@ public class ItemLiLRichySeedFood extends ItemFood implements IPlantable
     }
 
     @Override
-    public EnumPlantType getPlantType(IBlockAccess world, int x, int y, int z)
-    {
+    public EnumPlantType getPlantType(IBlockAccess world, int x, int y, int z) {
         return EnumPlantType.Crop;
     }
 
     @Override
-    public Block getPlant(IBlockAccess world, int x, int y, int z)
-    {
+    public Block getPlant(IBlockAccess world, int x, int y, int z) {
         return theBlockPlant;
     }
 
     @Override
-    public int getPlantMetadata(IBlockAccess world, int x, int y, int z)
-    {
+    public int getPlantMetadata(IBlockAccess world, int x, int y, int z) {
         return 0;
     }
 
-    public Block getSoilId()
-    {
+    public Block getSoilId() {
         return soilId;
     }
 
     @Override
-    public String getUnlocalizedName()
-    {
+    public String getUnlocalizedName() {
         return String.format("item.%s%s", Reference.MOD_ID.toLowerCase() + ":seeds/", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
     @Override
-    public String getUnlocalizedName(ItemStack itemStack)
-    {
+    public String getUnlocalizedName(ItemStack itemStack) {
         return String.format("item.%s%s", Reference.MOD_ID.toLowerCase() + ":seeds/", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
     @Override
     @SideOnly(Side.CLIENT)
-    public void registerIcons(IIconRegister iIconRegister)
-    {
+    public void registerIcons(IIconRegister iIconRegister) {
         itemIcon = iIconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
     }
 
-    protected String getUnwrappedUnlocalizedName(String unlocalizedName)
-    {
+    protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
 }

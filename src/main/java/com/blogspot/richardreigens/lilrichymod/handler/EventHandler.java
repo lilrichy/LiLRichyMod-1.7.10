@@ -9,7 +9,6 @@ import org.lwjgl.opengl.GL11;
  */
 public class EventHandler
 {
-
     @SubscribeEvent
     public void playerRenderPre(RenderPlayerEvent.Pre e)
     {
@@ -20,7 +19,6 @@ public class EventHandler
         if (ConfigurationHandler.flipPlayers) {
             GL11.glTranslatef(0f, e.entityPlayer.height - 3F, 0.0F);
             GL11.glRotatef(180f, 0f, 0f, 1f);
-
         }
     }
 
@@ -29,6 +27,4 @@ public class EventHandler
     {
         GL11.glPopMatrix();
     }
-
-
 }

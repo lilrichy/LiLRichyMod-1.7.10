@@ -8,35 +8,25 @@ import net.minecraft.entity.player.EntityPlayer;
  * Created by Rich on 11/19/2015.
  */
 @SideOnly(Side.SERVER)
-public class ServerProxy extends CommonProxy
-{
+public class ServerProxy extends CommonProxy {
     @Override
-    public void registerRenderers()
-    {
-
+    public void registerRenderers() {
     }
 
     @Override
-    public void preInit()
-    {
-
+    public void preInit() {
     }
 
     @Override
-    public void init()
-    {
-
+    public void init() {
     }
 
     @Override
-    public void postInit()
-    {
-
+    public void postInit() {
     }
 
     @Override
-    public EntityPlayer getClientPlayer()
-    {
+    public EntityPlayer getClientPlayer() {
         return null;
     }
 }

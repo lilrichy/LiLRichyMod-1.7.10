@@ -10,8 +10,7 @@ import net.minecraft.nbt.NBTTagCompound;
 /**
  * Created by Rich on 11/23/2015.
  */
-public class TileEntityPlayerDetector extends TileEntityLiLRichyMod
-{
+public class TileEntityPlayerDetector extends TileEntityLiLRichyMod {
     public boolean activated = false;
     private int tick = 0;
     private int rate = 5;
@@ -20,8 +19,7 @@ public class TileEntityPlayerDetector extends TileEntityLiLRichyMod
     private NBTTagCompound tag = new NBTTagCompound();
 
     @Override
-    public void updateEntity()
-    {
+    public void updateEntity() {
         {
             if (worldObj.isRemote)
                 return;
@@ -42,7 +40,6 @@ public class TileEntityPlayerDetector extends TileEntityLiLRichyMod
     }
 
     private void updateBlocks()
-
     {
         worldObj.notifyBlocksOfNeighborChange(xCoord, yCoord, zCoord, worldObj.getBlock(xCoord, yCoord, zCoord));
         worldObj.notifyBlocksOfNeighborChange(xCoord - 1, yCoord, zCoord, worldObj.getBlock(xCoord, yCoord, zCoord));
@@ -53,57 +50,46 @@ public class TileEntityPlayerDetector extends TileEntityLiLRichyMod
         worldObj.notifyBlocksOfNeighborChange(xCoord, yCoord, zCoord + 1, worldObj.getBlock(xCoord, yCoord, zCoord));
     }
 
-    public int getRange()
-    {
+    public int getRange() {
         return range;
     }
 
-    public void setRange(int value)
-    {
+    public void setRange(int value) {
         this.range = value;
     }
 
-    public ItemStack getCamouflage()
-    {
+    public ItemStack getCamouflage() {
         return camoStack;
     }
 
-    public void setCamouflage(ItemStack stack)
-    {
+    public void setCamouflage(ItemStack stack) {
         this.camoStack = stack;
         worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
     }
 
-    public Boolean getActivated()
-    {
+    public Boolean getActivated() {
         return activated;
     }
 
-    private void setActivated(boolean output)
-    {
+    private void setActivated(boolean output) {
         activated = output;
         worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
         updateBlocks();
     }
 
-    public void writeToPacket(ByteBuf buf)
-    {
+    public void writeToPacket(ByteBuf buf) {
         ByteBufUtils.writeItemStack(buf, camoStack);
         buf.writeBoolean(activated);
-
     }
 
-    public void readFromPacket(ByteBuf buf)
-    {
+    public void readFromPacket(ByteBuf buf) {
         camoStack = ByteBufUtils.readItemStack(buf);
         activated = buf.readBoolean();
         worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
-
     }
 
     @Override
-    public void readFromNBT(NBTTagCompound tag)
-    {
+    public void readFromNBT(NBTTagCompound tag) {
         activated = tag.getBoolean("activated");
         range = tag.getInteger("range");
         if (tag.hasKey("camoStack")) {
@@ -115,8 +101,7 @@ public class TileEntityPlayerDetector extends TileEntityLiLRichyMod
     }
 
     @Override
-    public void writeToNBT(NBTTagCompound tag)
-    {
+    public void writeToNBT(NBTTagCompound tag) {
         tag.setBoolean("activated", activated);
         tag.setInteger("range", range);
         if (camoStack != null) {

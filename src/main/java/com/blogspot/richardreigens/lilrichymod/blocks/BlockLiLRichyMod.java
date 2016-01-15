@@ -11,34 +11,28 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 /**
  * Created by Rich on 11/19/2015.
  */
-public class BlockLiLRichyMod extends Block
-{
-    public BlockLiLRichyMod(Material material)
-    {
+public class BlockLiLRichyMod extends Block {
+    public BlockLiLRichyMod(Material material) {
         super(material);
     }
 
-    public BlockLiLRichyMod()
-    {
+    public BlockLiLRichyMod() {
         this(Material.rock);
         this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
     }
 
     @Override
-    public String getUnlocalizedName()
-    {
+    public String getUnlocalizedName() {
         return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
-    protected String getUnwrappedUnlocalizedName(String unlocalizedName)
-    {
+    protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
 
     @Override
     @SideOnly(Side.CLIENT)
-    public void registerBlockIcons(IIconRegister iconRegister)
-    {
+    public void registerBlockIcons(IIconRegister iconRegister) {
         blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
     }
 }

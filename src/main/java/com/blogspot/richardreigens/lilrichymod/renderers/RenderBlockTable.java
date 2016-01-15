@@ -15,21 +15,18 @@ import org.lwjgl.opengl.GL11;
  * Created by Rich on 12/8/2015.
  */
 @SideOnly(Side.CLIENT)
-public class RenderBlockTable extends TileEntitySpecialRenderer
-{
+public class RenderBlockTable extends TileEntitySpecialRenderer {
     ResourceLocation texture = new ResourceLocation(
             Reference.MOD_ID + ":textures/models/" + Names.Models.BLOCK_TABLE + ".png");
 
     private ModelBlockTable model;
 
-    public RenderBlockTable()
-    {
+    public RenderBlockTable() {
         this.model = new ModelBlockTable();
     }
 
     @Override
-    public void renderTileEntityAt(TileEntity tileEntity, double i, double j, double k, float f)
-    {
+    public void renderTileEntityAt(TileEntity tileEntity, double i, double j, double k, float f) {
         TileEntityBlockTable te = (TileEntityBlockTable) tileEntity;
         float x = (float) i;
         float y = (float) j;

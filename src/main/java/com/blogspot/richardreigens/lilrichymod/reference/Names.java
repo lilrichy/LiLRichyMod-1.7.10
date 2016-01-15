@@ -3,17 +3,12 @@ package com.blogspot.richardreigens.lilrichymod.reference;
 /**
  * Created by Rich on 11/23/2015.
  */
-public class Names
-{
-    public static class Models
-    {
+public class Names {
+    public static class Models {
         public static final String BLOCK_TABLE = "blockTable";
     }
 
-    public static class Blocks
-    {
-        //Deco Blocks
-
+    public static class Blocks {
         //Lava
         public static final String LAVA_BOWL = "lavaBowl";
         public static final String LAVA_CRACKS = "lavaCracks";
@@ -70,8 +65,7 @@ public class Names
         public static final String ADVANCED_DETECTOR = "advancedDetector";
     }
 
-    public static class Items
-    {
+    public static class Items {
         public static final String CONCRETE_MIX = "concreteMix";
         public static final String CRUSHED_CONCRETE = "crushedConcrete";
         public static final String DEATH_SOCK = "deathSock";
@@ -79,20 +73,17 @@ public class Names
         public static final String ESSENCE_OF_BEARED = "essenceOfBeared";
     }
 
-    public static class TileEntities
-    {
+    public static class TileEntities {
         public static final String PLAYER_DETECTOR = Reference.MOD_ID + ":" + "playerDetector";
         public static final String ADVANCED_DETECTOR = Reference.MOD_ID + ":" + "advancedDetector";
     }
 
-    public static class Gui
-    {
+    public static class Gui {
         public static final String ADVANCED_DETECTOR_GUI = "advancedDetectorGUI";
         public static final String BLOCK_TABLE_GUI = "blockTableGUI";
     }
 
-    public static class Panels
-    {
+    public static class Panels {
         //Planks
         public static final String OAK_PANEL = "oakPanel";
         public static final String ACACIA_PANEL = "acaciaPanel";
@@ -110,8 +101,7 @@ public class Names
         public static final String LOG_SPRUCE_PANEL = "log_sprucePanel";
     }
 
-    public static class Crops
-    {
+    public static class Crops {
         //Beared Azailia
         public static final String BEARDED_AZALEA = "beardedAzalea";
         public static final String BEARDED_AZALEA_SEED = "beardedAzaleaSeed";

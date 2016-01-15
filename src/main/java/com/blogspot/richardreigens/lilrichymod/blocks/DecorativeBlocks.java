@@ -11,12 +11,10 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 /**
  * Created by Rich on 12/2/2015.
  */
-public class DecorativeBlocks extends Block
-{
+public class DecorativeBlocks extends Block {
     private final String blockToolTip;
 
-    public DecorativeBlocks(String name, Material material, String toolTip)
-    {
+    public DecorativeBlocks(String name, Material material, String toolTip) {
         super(material);
         this.setHardness(2f);
         this.setStepSound(soundTypeStone);
@@ -25,8 +23,7 @@ public class DecorativeBlocks extends Block
         this.blockToolTip = toolTip;
     }
 
-    public DecorativeBlocks(String name, Material material)
-    {
+    public DecorativeBlocks(String name, Material material) {
         super(material);
         this.setHardness(2f);
         this.setStepSound(soundTypeStone);
@@ -35,8 +32,7 @@ public class DecorativeBlocks extends Block
         this.blockToolTip = null;
     }
 
-    public static String getToolTip(Block block)
-    {
+    public static String getToolTip(Block block) {
         if (block instanceof DecorativeBlocks) {
             DecorativeBlocks n = (DecorativeBlocks) block;
             return n.blockToolTip;
@@ -44,20 +40,17 @@ public class DecorativeBlocks extends Block
     }
 
     @Override
-    public String getUnlocalizedName()
-    {
+    public String getUnlocalizedName() {
         return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", "decorativeBlocks/" + getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
-    protected String getUnwrappedUnlocalizedName(String unlocalizedName)
-    {
+    protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
 
     @Override
     @SideOnly(Side.CLIENT)
-    public void registerBlockIcons(IIconRegister iconRegister)
-    {
+    public void registerBlockIcons(IIconRegister iconRegister) {
         blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
     }
 }

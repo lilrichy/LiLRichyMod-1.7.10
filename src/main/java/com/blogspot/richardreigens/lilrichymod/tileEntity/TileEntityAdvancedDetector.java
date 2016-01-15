@@ -13,8 +13,7 @@ import net.minecraft.nbt.NBTTagCompound;
 /**
  * Created by Rich on 11/23/2015.
  */
-public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements IInventory
-{
+public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements IInventory {
     public boolean activated = false;
     public boolean invert = false;
     private int tick = 0;
@@ -22,8 +21,7 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
     private ItemStack camoStack;
 
     @Override
-    public void updateEntity()
-    {
+    public void updateEntity() {
         if (worldObj.isRemote)
             return;
 
@@ -57,15 +55,13 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
     }
 
     @Override
-    public void onGuiButtonPress(int id)
-    {
+    public void onGuiButtonPress(int id) {
         if (id == 0) {
             invert = !invert;
         }
     }
 
-    private void updateBlocks()
-    {
+    private void updateBlocks() {
         worldObj.notifyBlocksOfNeighborChange(xCoord, yCoord, zCoord, worldObj.getBlock(xCoord, yCoord, zCoord));
         worldObj.notifyBlocksOfNeighborChange(xCoord - 1, yCoord, zCoord, worldObj.getBlock(xCoord, yCoord, zCoord));
         worldObj.notifyBlocksOfNeighborChange(xCoord + 1, yCoord, zCoord, worldObj.getBlock(xCoord, yCoord, zCoord));
@@ -75,49 +71,41 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
         worldObj.notifyBlocksOfNeighborChange(xCoord, yCoord, zCoord + 1, worldObj.getBlock(xCoord, yCoord, zCoord));
     }
 
-    public int getRange()
-    {
+    public int getRange() {
         return range;
     }
 
-    public void setRange(int value)
-    {
+    public void setRange(int value) {
         this.range = value;
     }
 
-    public ItemStack getCamouflage(int camoSlot)
-    {
+    public ItemStack getCamouflage(int camoSlot) {
         return getStackInSlot(camoSlot);
     }
 
-    public void setCamouflage(int camoSlot, ItemStack stack)
-    {
+    public void setCamouflage(int camoSlot, ItemStack stack) {
         setInventorySlotContents(camoSlot, stack);
         this.camoStack = stack;
         worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
     }
 
-    public Boolean getActivated()
-    {
+    public Boolean getActivated() {
         return activated;
     }
 
-    private void setActivated(boolean output)
-    {
+    private void setActivated(boolean output) {
         activated = output;
         worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
         updateBlocks();
     }
 
-    public void writeToPacket(ByteBuf buf)
-    {
+    public void writeToPacket(ByteBuf buf) {
         ByteBufUtils.writeItemStack(buf, camoStack);
         buf.writeBoolean(activated);
         buf.writeBoolean(invert);
     }
 
-    public void readFromPacket(ByteBuf buf)
-    {
+    public void readFromPacket(ByteBuf buf) {
         camoStack = ByteBufUtils.readItemStack(buf);
         activated = buf.readBoolean();
         invert = buf.readBoolean();
@@ -125,8 +113,7 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
     }
 
     @Override
-    public void readFromNBT(NBTTagCompound tag)
-    {
+    public void readFromNBT(NBTTagCompound tag) {
         activated = tag.getBoolean("activated");
         invert = tag.getBoolean("invert");
         range = tag.getInteger("range");
@@ -139,8 +126,7 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
     }
 
     @Override
-    public void writeToNBT(NBTTagCompound tag)
-    {
+    public void writeToNBT(NBTTagCompound tag) {
         tag.setBoolean("activated", activated);
         tag.setBoolean("invert", invert);
         tag.setInteger("range", range);
@@ -153,20 +139,17 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
     }
 
     @Override
-    public int getSizeInventory()
-    {
+    public int getSizeInventory() {
         return 1;
     }
 
     @Override
-    public ItemStack getStackInSlot(int p_70301_1_)
-    {
+    public ItemStack getStackInSlot(int p_70301_1_) {
         return camoStack;
     }
 
     @Override
-    public ItemStack decrStackSize(int slot, int decreaseAmount)
-    {
+    public ItemStack decrStackSize(int slot, int decreaseAmount) {
         if (camoStack != null) {
             ItemStack itemstack;
 
@@ -189,8 +172,7 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
     }
 
     @Override
-    public ItemStack getStackInSlotOnClosing(int slot)
-    {
+    public ItemStack getStackInSlotOnClosing(int slot) {
         if (camoStack != null) {
             ItemStack itemstack = camoStack;
             camoStack = null;
@@ -201,8 +183,7 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
     }
 
     @Override
-    public void setInventorySlotContents(int slot, ItemStack stack)
-    {
+    public void setInventorySlotContents(int slot, ItemStack stack) {
         camoStack = stack;
         if (stack != null && stack.stackSize > getInventoryStackLimit()) {
             stack.stackSize = getInventoryStackLimit();
@@ -212,42 +193,35 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
     }
 
     @Override
-    public String getInventoryName()
-    {
+    public String getInventoryName() {
         return ModBlocks.advancedDetector.getUnlocalizedName() + ".name";
     }
 
     @Override
-    public boolean hasCustomInventoryName()
-    {
+    public boolean hasCustomInventoryName() {
         return false;
     }
 
     @Override
-    public int getInventoryStackLimit()
-    {
+    public int getInventoryStackLimit() {
         return 1;
     }
 
     @Override
-    public boolean isUseableByPlayer(EntityPlayer player)
-    {
+    public boolean isUseableByPlayer(EntityPlayer player) {
         return worldObj.getTileEntity(xCoord, yCoord, zCoord) != this ? false : player.getDistanceSq(xCoord + 0.5D, yCoord + 0.5D, zCoord + 0.5D) <= 64.0D;
     }
 
     @Override
-    public void openInventory()
-    {
+    public void openInventory() {
     }
 
     @Override
-    public void closeInventory()
-    {
+    public void closeInventory() {
     }
 
     @Override
-    public boolean isItemValidForSlot(int p_94041_1_, ItemStack stack)
-    {
+    public boolean isItemValidForSlot(int p_94041_1_, ItemStack stack) {
         return stack != null && stack.getItem() instanceof ItemBlock;
     }
 }

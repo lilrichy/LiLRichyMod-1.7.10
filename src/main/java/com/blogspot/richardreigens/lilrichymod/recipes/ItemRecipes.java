@@ -9,10 +9,8 @@ import net.minecraft.item.ItemStack;
 /**
  * Created by Rich on 12/7/2015.
  */
-public class ItemRecipes
-{
-    public static void init()
-    {
+public class ItemRecipes {
+    public static void init() {
         //DeathSock
         GameRegistry.addRecipe(new ItemStack(ModItems.deathSock), "  w", "  w", "www", 'w', new ItemStack(Blocks.wool));
         GameRegistry.addRecipe(new ItemStack(ModItems.deathSock), "w  ", "w  ", "www", 'w', new ItemStack(Blocks.wool));

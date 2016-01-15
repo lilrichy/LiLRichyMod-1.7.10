@@ -9,55 +9,44 @@ import net.minecraft.tileentity.TileEntity;
 /**
  * Created by Rich on 11/30/2015.
  */
-public class MessageHandleGuiButtonPress extends MessageBase<MessageHandleGuiButtonPress>
-{
+public class MessageHandleGuiButtonPress extends MessageBase<MessageHandleGuiButtonPress> {
     private int x, y, z, id;
 
-    public MessageHandleGuiButtonPress()
-    {
+    public MessageHandleGuiButtonPress() {
     }
 
-    public MessageHandleGuiButtonPress(TileEntityLiLRichyMod te, int id)
-    {
+    public MessageHandleGuiButtonPress(TileEntityLiLRichyMod te, int id) {
         x = te.xCoord;
         y = te.yCoord;
         z = te.zCoord;
         this.id = id;
-
     }
 
     @Override
-    public void fromBytes(ByteBuf buf)
-    {
+    public void fromBytes(ByteBuf buf) {
         x = buf.readInt();
         y = buf.readInt();
         z = buf.readInt();
         id = buf.readInt();
-
     }
 
     @Override
-    public void toBytes(ByteBuf buf)
-    {
+    public void toBytes(ByteBuf buf) {
         buf.writeInt(x);
         buf.writeInt(y);
         buf.writeInt(z);
         buf.writeInt(id);
-
     }
 
     @Override
-    public void handleClientSide(MessageHandleGuiButtonPress message, EntityPlayer player)
-    {
+    public void handleClientSide(MessageHandleGuiButtonPress message, EntityPlayer player) {
     }
 
     @Override
-    public void handleServerSide(MessageHandleGuiButtonPress message, EntityPlayer player)
-    {
+    public void handleServerSide(MessageHandleGuiButtonPress message, EntityPlayer player) {
         TileEntity te = player.worldObj.getTileEntity(message.x, message.y, message.z);
         if (te instanceof TileEntityLiLRichyMod) {
             ((TileEntityLiLRichyMod) te).onGuiButtonPress(id);
         }
-
     }
 }

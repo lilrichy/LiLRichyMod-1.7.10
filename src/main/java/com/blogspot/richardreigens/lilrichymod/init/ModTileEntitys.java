@@ -9,10 +9,8 @@ import cpw.mods.fml.common.registry.GameRegistry;
 /**
  * Created by Rich on 11/23/2015.
  */
-public class ModTileEntitys
-{
-    public static void Init()
-    {
+public class ModTileEntitys {
+    public static void Init() {
         GameRegistry.registerTileEntity(TileEntityPlayerDetector.class, Names.TileEntities.PLAYER_DETECTOR);
         GameRegistry.registerTileEntity(TileEntityAdvancedDetector.class, Names.TileEntities.ADVANCED_DETECTOR);
         GameRegistry.registerTileEntity(TileEntityBlockTable.class, Names.Models.BLOCK_TABLE);

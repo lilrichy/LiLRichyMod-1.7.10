@@ -10,11 +10,9 @@ import net.minecraft.tileentity.TileEntity;
 /**
  * Created by Rich on 11/24/2015.
  */
-public abstract class TileEntityLiLRichyMod extends TileEntity
-{
+public abstract class TileEntityLiLRichyMod extends TileEntity {
     @Override
-    public Packet getDescriptionPacket()
-    {
+    public Packet getDescriptionPacket() {
         ByteBuf buf = Unpooled.buffer();
         buf.writeInt(xCoord);
         buf.writeInt(yCoord);
@@ -23,15 +21,12 @@ public abstract class TileEntityLiLRichyMod extends TileEntity
         return new FMLProxyPacket(buf, PacketDescriptionHandler.CHANNEL);
     }
 
-    public void writeToPacket(ByteBuf buf)
-    {
+    public void writeToPacket(ByteBuf buf) {
     }
 
-    public void readFromPacket(ByteBuf buf)
-    {
+    public void readFromPacket(ByteBuf buf) {
     }
 
-    public void onGuiButtonPress(int id)
-    {
+    public void onGuiButtonPress(int id) {
     }
 }

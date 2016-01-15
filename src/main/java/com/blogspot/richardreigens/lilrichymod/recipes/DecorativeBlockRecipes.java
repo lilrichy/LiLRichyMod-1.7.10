@@ -10,10 +10,8 @@ import net.minecraft.item.ItemStack;
 /**
  * Created by Rich on 12/7/2015.
  */
-public class DecorativeBlockRecipes
-{
-    public static void init()
-    {
+public class DecorativeBlockRecipes {
+    public static void init() {
         //Fancy Concrete Blocks
         GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.fancyConcreteBlocks, 4),
                 new ItemStack(ModBlocks.concreteBricks), new ItemStack(ModBlocks.concreteBricks),
@@ -197,6 +195,5 @@ public class DecorativeBlockRecipes
         GameRegistry.addRecipe(new ItemStack(ModBlocks.cottageWindowLight, 8), "ccc", "wgw", "ccc",
                 'w', new ItemStack(Blocks.planks), 'c', new ItemStack(ModBlocks.cottageWall),
                 'g', new ItemStack(Blocks.glass_pane));
-
     }
 }

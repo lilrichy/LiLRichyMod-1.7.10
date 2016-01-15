@@ -19,41 +19,29 @@ import net.minecraftforge.common.MinecraftForge;
  * Created by Rich on 11/19/2015.
  */
 @SideOnly(Side.CLIENT)
-public class ClientProxy extends CommonProxy
-{
-
+public class ClientProxy extends CommonProxy {
     @Override
-    public void registerRenderers()
-    {
+    public void registerRenderers() {
         TileEntitySpecialRenderer render = new RenderBlockTable();
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBlockTable.class, render);
         MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.blockTable), new ItemRenderBlockTable(render, new TileEntityBlockTable()));
     }
 
-
     @Override
-    public void preInit()
-    {
-
+    public void preInit() {
     }
 
     @Override
-    public void init()
-    {
-
+    public void init() {
     }
 
     @Override
-    public void postInit()
-    {
+    public void postInit() {
         MinecraftForge.EVENT_BUS.register(new EventHandler());
     }
 
     @Override
-    public EntityPlayer getClientPlayer()
-    {
+    public EntityPlayer getClientPlayer() {
         return Minecraft.getMinecraft().thePlayer;
     }
-
-
 }

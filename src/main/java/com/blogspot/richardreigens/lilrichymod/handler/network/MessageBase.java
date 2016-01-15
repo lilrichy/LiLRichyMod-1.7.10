@@ -11,12 +11,9 @@ import net.minecraft.entity.player.EntityPlayer;
  * Created by Rich on 11/30/2015.
  */
 
-public abstract class MessageBase<REQ extends IMessage> implements IMessage, IMessageHandler<REQ, REQ>
-{
-
+public abstract class MessageBase<REQ extends IMessage> implements IMessage, IMessageHandler<REQ, REQ> {
     @Override
-    public REQ onMessage(REQ message, MessageContext ctx)
-    {
+    public REQ onMessage(REQ message, MessageContext ctx) {
         if (ctx.side == Side.SERVER) {
             handleServerSide(message, ctx.getServerHandler().playerEntity);
         } else {
@@ -25,20 +22,7 @@ public abstract class MessageBase<REQ extends IMessage> implements IMessage, IMe
         return null;
     }
 
-    /**
-     * Handle a packet on the client side. Note this occurs after decoding has completed.
-     *
-     * @param message
-     * @param player  the player reference
-     */
     public abstract void handleClientSide(REQ message, EntityPlayer player);
 
-    /**
-     * Handle a packet on the server side. Note this occurs after decoding has completed.
-     *
-     * @param message
-     * @param player  the player reference
-     */
     public abstract void handleServerSide(REQ message, EntityPlayer player);
 }
-

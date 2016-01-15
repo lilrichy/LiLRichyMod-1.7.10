@@ -8,10 +8,8 @@ import net.minecraft.item.ItemStack;
 /**
  * Created by Rich on 12/7/2015.
  */
-public class PanelsRecipies
-{
-    public static void init()
-    {
+public class PanelsRecipies {
+    public static void init() {
         //Plank Panels
         GameRegistry.addRecipe(new ItemStack(ModBlocks.acaciaPanel, 16), "www", "wpw", "www",
                 'w', new ItemStack(Blocks.planks, 1, 4), 'p', new ItemStack(Blocks.glass_pane));
@@ -50,5 +48,4 @@ public class PanelsRecipies
         GameRegistry.addRecipe(new ItemStack(ModBlocks.log_sprucePanel, 16), "www", "wpw", "www",
                 'w', new ItemStack(Blocks.log, 1, 1), 'p', new ItemStack(Blocks.glass_pane));
     }
-
 }

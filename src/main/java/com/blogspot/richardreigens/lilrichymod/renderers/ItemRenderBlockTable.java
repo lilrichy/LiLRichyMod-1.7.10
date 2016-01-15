@@ -11,36 +11,31 @@ import org.lwjgl.opengl.GL11;
 /**
  * Created by Rich on 12/17/2015.
  */
-public class ItemRenderBlockTable implements IItemRenderer
-{
+public class ItemRenderBlockTable implements IItemRenderer {
     @SideOnly(Side.CLIENT)
     TileEntitySpecialRenderer render;
     private TileEntity entity;
 
-    public ItemRenderBlockTable(TileEntitySpecialRenderer render, TileEntity entity)
-    {
+    public ItemRenderBlockTable(TileEntitySpecialRenderer render, TileEntity entity) {
         this.entity = entity;
         this.render = render;
     }
 
     @SideOnly(Side.CLIENT)
     @Override
-    public boolean handleRenderType(ItemStack item, ItemRenderType type)
-    {
+    public boolean handleRenderType(ItemStack item, ItemRenderType type) {
         return true;
     }
 
     @SideOnly(Side.CLIENT)
     @Override
-    public boolean shouldUseRenderHelper(ItemRenderType type, ItemStack item, ItemRendererHelper helper)
-    {
+    public boolean shouldUseRenderHelper(ItemRenderType type, ItemStack item, ItemRendererHelper helper) {
         return true;
     }
 
     @SideOnly(Side.CLIENT)
     @Override
-    public void renderItem(ItemRenderType type, ItemStack item, Object... data)
-    {
+    public void renderItem(ItemRenderType type, ItemStack item, Object... data) {
         if (type == ItemRenderType.ENTITY) {
             GL11.glTranslatef(-0.5F, 0.0F, -0.5F);
             this.render.renderTileEntityAt(this.entity, 0.0D, 0.0D, 0.0D, 0.0F);

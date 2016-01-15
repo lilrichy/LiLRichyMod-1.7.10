@@ -16,21 +16,18 @@ import net.minecraft.tileentity.TileEntity;
  */
 
 @Sharable
-public class PacketDescriptionHandler extends SimpleChannelInboundHandler<FMLProxyPacket>
-{
+public class PacketDescriptionHandler extends SimpleChannelInboundHandler<FMLProxyPacket> {
     public static final String CHANNEL = Reference.MOD_ID + "Description";
 
     static {
         NetworkRegistry.INSTANCE.newChannel(CHANNEL, new PacketDescriptionHandler());
     }
 
-    public static void init()
-    {
+    public static void init() {
     }
 
     @Override
-    protected void channelRead0(ChannelHandlerContext ctx, FMLProxyPacket msg) throws Exception
-    {
+    protected void channelRead0(ChannelHandlerContext ctx, FMLProxyPacket msg) throws Exception {
         ByteBuf buf = msg.payload();
         int x = buf.readInt();
         int y = buf.readInt();

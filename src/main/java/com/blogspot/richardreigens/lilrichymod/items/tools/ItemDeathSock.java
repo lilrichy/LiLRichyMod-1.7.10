@@ -18,28 +18,24 @@ import java.util.List;
 /**
  * Created by Rich on 11/19/2015.
  */
-public class ItemDeathSock extends ItemLiLRichyMod
-{
+public class ItemDeathSock extends ItemLiLRichyMod {
     public boolean charged = false;
     public boolean activated = false;
     public int chargeTime = 0;
 
-    public ItemDeathSock()
-    {
+    public ItemDeathSock() {
         super();
         this.setUnlocalizedName(Names.Items.DEATH_SOCK);
         this.maxStackSize = 1;
     }
 
     @SideOnly(Side.CLIENT)
-    public boolean hasEffect(ItemStack par1ItemStack, int pass)
-    {
+    public boolean hasEffect(ItemStack par1ItemStack, int pass) {
         return charged;
     }
 
     @Override
-    public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean show)
-    {
+    public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean show) {
         if (charged && !activated) {
             list.add("Charged Right Click while sneaking to activate the sock!");
         } else if (activated && chargeTime >= 0) {
@@ -49,8 +45,7 @@ public class ItemDeathSock extends ItemLiLRichyMod
     }
 
     @Override
-    public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer player)
-    {
+    public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer player) {
         if (player.isSneaking() && charged && !activated) {
             activated = true;
             player.addChatMessage((new ChatComponentText("The sock has been activated!")));
@@ -66,8 +61,7 @@ public class ItemDeathSock extends ItemLiLRichyMod
     }
 
     @Override
-    public void onUpdate(ItemStack stack, World world, Entity entity, int p_77663_4_, boolean p_77663_5_)
-    {
+    public void onUpdate(ItemStack stack, World world, Entity entity, int p_77663_4_, boolean p_77663_5_) {
         if (charged && activated) {
             world.getClosestPlayerToEntity(entity, 10).addPotionEffect(new PotionEffect(Potion.poison.id, 200, 6000, false));
             chargeTime--;

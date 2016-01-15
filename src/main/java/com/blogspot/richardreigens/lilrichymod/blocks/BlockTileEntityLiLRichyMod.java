@@ -8,27 +8,22 @@ import net.minecraft.block.material.Material;
 /**
  * Created by Rich on 11/23/2015.
  */
-public abstract class BlockTileEntityLiLRichyMod extends BlockContainer
-{
-    public BlockTileEntityLiLRichyMod(Material material)
-    {
+public abstract class BlockTileEntityLiLRichyMod extends BlockContainer {
+    public BlockTileEntityLiLRichyMod(Material material) {
         super(material);
     }
 
-    public BlockTileEntityLiLRichyMod()
-    {
+    public BlockTileEntityLiLRichyMod() {
         this(Material.rock);
         this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
     }
 
     @Override
-    public String getUnlocalizedName()
-    {
+    public String getUnlocalizedName() {
         return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
-    protected String getUnwrappedUnlocalizedName(String unlocalizedName)
-    {
+    protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
 }

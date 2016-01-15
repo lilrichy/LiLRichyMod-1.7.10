@@ -17,8 +17,7 @@ import net.minecraft.item.Item;
  */
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
-public class ModItems
-{
+public class ModItems {
     public static final ItemLiLRichyMod deathSock = new ItemDeathSock();
     public static final ItemLiLRichyMod concreteMix = new ItemLiLRichyMod(Names.Items.CONCRETE_MIX, 64);
     public static final ItemLiLRichyMod crushedConcrete = new ItemLiLRichyMod(Names.Items.CRUSHED_CONCRETE, 64);
@@ -26,8 +25,7 @@ public class ModItems
     public static final ItemLiLRichySeedFood seedBearedAzailia = new SeedBeardedAzalea(Names.Crops.BEARDED_AZALEA_SEED);
     public static final ItemLiLRichyMod essanceOfBeared = new ItemLiLRichyMod(Names.Items.ESSENCE_OF_BEARED, 64);
 
-    public static void init()
-    {
+    public static void init() {
         GameRegistry.registerItem(deathSock, Names.Items.DEATH_SOCK);
         GameRegistry.registerItem(concreteMix, Names.Items.CONCRETE_MIX);
         GameRegistry.registerItem(crushedConcrete, Names.Items.CRUSHED_CONCRETE);

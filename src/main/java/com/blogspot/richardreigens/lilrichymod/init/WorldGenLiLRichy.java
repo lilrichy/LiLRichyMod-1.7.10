@@ -9,12 +9,9 @@ import java.util.Random;
 /**
  * Created by Rich on 12/2/2015.
  */
-public class WorldGenLiLRichy implements IWorldGenerator
-{
-
+public class WorldGenLiLRichy implements IWorldGenerator {
     @Override
-    public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider)
-    {
+    public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
         int x = chunkX * 16;
         int z = chunkZ * 16;
         switch (world.provider.dimensionId) {
@@ -32,23 +29,17 @@ public class WorldGenLiLRichy implements IWorldGenerator
         }
     }
 
-    private void generateEnd(World world, int x, int z, Random random)
-    {
-
+    private void generateEnd(World world, int x, int z, Random random) {
     }
 
-    private void generateNether(World world, int x, int z, Random random)
-    {
-
+    private void generateNether(World world, int x, int z, Random random) {
     }
 
-    private void generateSurface(World world, int x, int z, Random random)
-    {
+    private void generateSurface(World world, int x, int z, Random random) {
         if (random.nextInt(3) == 1) {
             int randX = x + random.nextInt(16);
             int randZ = z + random.nextInt(16);
             int randY = world.getActualHeight();
-
             if (world.isAirBlock(randX, randY, randZ) && ModBlocks.beardedAzalea.canBlockStay(world, randX, randY, randZ))
                 world.setBlock(randX, randY, randZ, ModBlocks.beardedAzalea);
         }

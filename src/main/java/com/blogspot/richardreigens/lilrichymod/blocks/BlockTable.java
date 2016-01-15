@@ -21,10 +21,8 @@ import net.minecraft.world.World;
 /**
  * Created by Rich on 12/8/2015.
  */
-public class BlockTable extends BlockContainer
-{
-    public BlockTable(Material material)
-    {
+public class BlockTable extends BlockContainer {
+    public BlockTable(Material material) {
         super(material);
         this.setBlockName(Names.Models.BLOCK_TABLE);
         this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
@@ -34,8 +32,7 @@ public class BlockTable extends BlockContainer
     }
 
     @Override
-    public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ)
-    {
+    public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ) {
         if (!world.isRemote) {
             player.openGui(lilrichymod.instance, GuiHandler.GuiIDs.BLOCK_TABLE.ordinal(), world, x, y, z);
         }
@@ -43,8 +40,7 @@ public class BlockTable extends BlockContainer
     }
 
     @Override
-    public void breakBlock(World world, int x, int y, int z, Block b, int par1)
-    {
+    public void breakBlock(World world, int x, int y, int z, Block b, int par1) {
         TileEntity tileEntityBlockTable = world.getTileEntity(x, y, z);
         if (tileEntityBlockTable instanceof IInventory) {
 
@@ -75,36 +71,30 @@ public class BlockTable extends BlockContainer
     }
 
     @Override
-    public String getUnlocalizedName()
-    {
+    public String getUnlocalizedName() {
         return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
-    protected String getUnwrappedUnlocalizedName(String unlocalizedName)
-    {
+    protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
 
     @Override
-    public int getRenderType()
-    {
+    public int getRenderType() {
         return -1;
     }
 
     @Override
-    public boolean isOpaqueCube()
-    {
+    public boolean isOpaqueCube() {
         return false;
     }
 
     @Override
-    public boolean renderAsNormalBlock()
-    {
+    public boolean renderAsNormalBlock() {
         return false;
     }
 
-    public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase player, ItemStack stack)
-    {
+    public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase player, ItemStack stack) {
         int l = MathHelper.floor_double(player.rotationYaw * 4F / 360F + 0.5D) & 3;
         TileEntityBlockTable te = (TileEntityBlockTable) world.getTileEntity(x, y, z);
         if (te != null) {
@@ -113,8 +103,7 @@ public class BlockTable extends BlockContainer
     }
 
     @Override
-    public TileEntity createNewTileEntity(World world, int p_149915_2_)
-    {
+    public TileEntity createNewTileEntity(World world, int p_149915_2_) {
         return new TileEntityBlockTable();
     }
 }

@@ -11,10 +11,8 @@ import net.minecraft.item.ItemStack;
 /**
  * Created by Rich on 11/19/2015.
  */
-public class ItemLiLRichyMod extends Item
-{
-    public ItemLiLRichyMod(String Name, int StackSize)
-    {
+public class ItemLiLRichyMod extends Item {
+    public ItemLiLRichyMod(String Name, int StackSize) {
         super();
         this.setUnlocalizedName(Name);
         this.maxStackSize = StackSize;
@@ -22,34 +20,27 @@ public class ItemLiLRichyMod extends Item
         this.setNoRepair();
     }
 
-    public ItemLiLRichyMod()
-    {
+    public ItemLiLRichyMod() {
         this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
     }
 
     @Override
-    public String getUnlocalizedName()
-    {
+    public String getUnlocalizedName() {
         return String.format("item.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
     @Override
-    public String getUnlocalizedName(ItemStack itemStack)
-    {
+    public String getUnlocalizedName(ItemStack itemStack) {
         return String.format("item.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
     @Override
     @SideOnly(Side.CLIENT)
-    public void registerIcons(IIconRegister iIconRegister)
-    {
+    public void registerIcons(IIconRegister iIconRegister) {
         itemIcon = iIconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
     }
 
-    protected String getUnwrappedUnlocalizedName(String unlocalizedName)
-    {
+    protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
-
-
 }

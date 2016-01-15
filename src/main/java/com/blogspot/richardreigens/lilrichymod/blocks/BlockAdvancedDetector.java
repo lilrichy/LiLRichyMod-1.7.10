@@ -19,29 +19,25 @@ import net.minecraftforge.common.util.ForgeDirection;
 /**
  * Created by Rich on 11/23/2015.
  */
-public class BlockAdvancedDetector extends BlockTileEntityLiLRichyMod
-{
+public class BlockAdvancedDetector extends BlockTileEntityLiLRichyMod {
     IIcon sideOff;
     IIcon sideOn;
     IIcon topBottom;
 
-    public BlockAdvancedDetector()
-    {
+    public BlockAdvancedDetector() {
         setBlockName(Names.Blocks.ADVANCED_DETECTOR);
         this.setHardness(3f);
         this.setStepSound(soundTypeMetal);
     }
 
     @Override
-    public void registerBlockIcons(IIconRegister iconRegister)
-    {
+    public void registerBlockIcons(IIconRegister iconRegister) {
         sideOff = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "detector/advancedDetectorOFF");
         sideOn = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "detector/advancedDetectorON");
         topBottom = iconRegister.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + "detector/advancedDetectorTopBottom");
     }
 
-    public IIcon getIcon(IBlockAccess world, int x, int y, int z, int side)
-    {
+    public IIcon getIcon(IBlockAccess world, int x, int y, int z, int side) {
         TileEntityAdvancedDetector te = (TileEntityAdvancedDetector) world.getTileEntity(x, y, z);
         ItemStack stack = te.getCamouflage(0);
         if (stack != null && stack.getItem() instanceof ItemBlock) {
@@ -65,8 +61,7 @@ public class BlockAdvancedDetector extends BlockTileEntityLiLRichyMod
     }
 
     @Override
-    public IIcon getIcon(int side, int meta)
-    {
+    public IIcon getIcon(int side, int meta) {
         if (side == 0)
             return topBottom;
         else if (side == 1)
@@ -76,43 +71,36 @@ public class BlockAdvancedDetector extends BlockTileEntityLiLRichyMod
     }
 
     @Override
-    public TileEntity createNewTileEntity(World world, int metadata)
-    {
+    public TileEntity createNewTileEntity(World world, int metadata) {
         return new TileEntityAdvancedDetector();
     }
 
     @Override
-    public boolean canConnectRedstone(IBlockAccess world, int x, int y, int z, int side)
-    {
+    public boolean canConnectRedstone(IBlockAccess world, int x, int y, int z, int side) {
         return true;
     }
 
     @Override
-    public boolean canProvidePower()
-    {
+    public boolean canProvidePower() {
         return true;
     }
 
     @Override
-    public boolean isBlockSolid(IBlockAccess world, int x, int y, int z, int p_149747_5_)
-    {
+    public boolean isBlockSolid(IBlockAccess world, int x, int y, int z, int p_149747_5_) {
         return true;
     }
 
     @Override
-    public boolean isSideSolid(IBlockAccess world, int x, int y, int z, ForgeDirection side)
-    {
+    public boolean isSideSolid(IBlockAccess world, int x, int y, int z, ForgeDirection side) {
         return true;
     }
 
     @Override
-    public boolean hasTileEntity(int meta)
-    {
+    public boolean hasTileEntity(int meta) {
         return true;
     }
 
-    public int isProvidingWeakPower(IBlockAccess world, int x, int y, int z, int p_149709_5_)
-    {
+    public int isProvidingWeakPower(IBlockAccess world, int x, int y, int z, int p_149709_5_) {
         TileEntity te = world.getTileEntity(x, y, z);
         TileEntityAdvancedDetector detector = (te != null && te instanceof TileEntityAdvancedDetector) ? (TileEntityAdvancedDetector) te : null;
         if (detector != null)
@@ -122,8 +110,7 @@ public class BlockAdvancedDetector extends BlockTileEntityLiLRichyMod
     }
 
     @Override
-    public int isProvidingStrongPower(IBlockAccess world, int x, int y, int z, int meta)
-    {
+    public int isProvidingStrongPower(IBlockAccess world, int x, int y, int z, int meta) {
         TileEntity te = world.getTileEntity(x, y, z);
         TileEntityAdvancedDetector detector = (te != null && te instanceof TileEntityAdvancedDetector) ? (TileEntityAdvancedDetector) te : null;
         if (detector != null)
@@ -133,8 +120,7 @@ public class BlockAdvancedDetector extends BlockTileEntityLiLRichyMod
     }
 
     @Override
-    public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ)
-    {
+    public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ) {
         if (!world.isRemote) {
             player.openGui(lilrichymod.instance, GuiHandler.GuiIDs.ADVANCED_DETECTOR.ordinal(), world, x, y, z);
         }
@@ -142,8 +128,7 @@ public class BlockAdvancedDetector extends BlockTileEntityLiLRichyMod
     }
 
     @Override
-    public void breakBlock(World world, int x, int y, int z, Block block, int meta)
-    {
+    public void breakBlock(World world, int x, int y, int z, Block block, int meta) {
         super.breakBlock(world, x, y, z, block, meta);
         world.notifyBlocksOfNeighborChange(x - 1, y, z, world.getBlock(x, y, z));
         world.notifyBlocksOfNeighborChange(x + 1, y, z, world.getBlock(x, y, z));
