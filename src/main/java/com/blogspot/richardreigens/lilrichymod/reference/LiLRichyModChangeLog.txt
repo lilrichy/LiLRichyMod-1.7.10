@@ -2,6 +2,9 @@ LiLRichy Mod Change Log
 Version = V Forge Change . Mod change + incremental NEVER Reset
 Update version in this file, build.gradle, gradle.properties, Reference
 
+v1.10
+Added Lava Blocks to the Block table - crafted with concrete and nether rack
+
 v1.9
 Renamed files to fix textures not showing on cottage blocks.
 

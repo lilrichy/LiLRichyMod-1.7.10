@@ -41,11 +41,16 @@ public class BlockTableRecipes {
                 new ItemStack(ModBlocks.cottageWallXLight), new ItemStack(ModBlocks.cottageWallXDark),
                 new ItemStack(ModBlocks.cottageWindowLight), new ItemStack(ModBlocks.cottageWindowDark)};
 
+        ItemStack[] lavaList = {new ItemStack(ModBlocks.lavaBowl), new ItemStack(ModBlocks.lavaCracks),
+                new ItemStack(ModBlocks.lavaDeepFire), new ItemStack(ModBlocks.lavaPelesLake),
+                new ItemStack(ModBlocks.lavaSearingGorge), new ItemStack(ModBlocks.lavaVolcano)};
+
         // Recipe Lists: (output, slot 1 input, slot 2 input) this is the recipes for the Block table results
         this.addRecipe(concreteList, new ItemStack(ModBlocks.concrete), new ItemStack(ModItems.crushedConcrete));
         this.addRecipe(metalsList, new ItemStack(ModBlocks.concrete), new ItemStack(Items.iron_ingot));
         this.addRecipe(marbleList, new ItemStack(ModBlocks.concrete), new ItemStack(Blocks.sandstone));
         this.addRecipe(cottageList, new ItemStack(ModBlocks.concrete), new ItemStack(Blocks.planks));
+        this.addRecipe(lavaList, new ItemStack(ModBlocks.concrete), new ItemStack(Blocks.netherrack));
 
         // Altered Blocks Recipe List "to change any block into any other block in same group"
         for (ItemStack aConcreteList : concreteList) {
@@ -59,6 +64,9 @@ public class BlockTableRecipes {
         }
         for (ItemStack aCottageList : cottageList) {
             this.addRecipe(cottageList, aCottageList, new ItemStack(Blocks.planks));
+        }
+        for (ItemStack aLavaList : lavaList) {
+            this.addRecipe(lavaList, aLavaList, new ItemStack(Blocks.netherrack));
         }
     }
 
@@ -86,6 +94,10 @@ public class BlockTableRecipes {
                 new ItemStack(ModBlocks.cottageWallXLight), new ItemStack(ModBlocks.cottageWallXDark),
                 new ItemStack(ModBlocks.cottageWindowLight), new ItemStack(ModBlocks.cottageWindowDark)};
 
+        ItemStack[] lavaList = {new ItemStack(ModBlocks.lavaBowl), new ItemStack(ModBlocks.lavaCracks),
+                new ItemStack(ModBlocks.lavaDeepFire), new ItemStack(ModBlocks.lavaPelesLake),
+                new ItemStack(ModBlocks.lavaSearingGorge), new ItemStack(ModBlocks.lavaVolcano)};
+
         //Check if valid block
         if (stack != null) {
             if (stack.isItemEqual(new ItemStack(ModBlocks.concrete))) {
@@ -111,6 +123,11 @@ public class BlockTableRecipes {
                     return true;
                 }
             }
+            for (ItemStack aLavaList : lavaList) {
+                if (stack.isItemEqual(aLavaList)) {
+                    return true;
+                }
+            }
         }
         return false;
     }
@@ -122,7 +139,12 @@ public class BlockTableRecipes {
             return true;
         } else if (stack.isItemEqual(new ItemStack(Blocks.sandstone))) {
             return true;
-        } else return stack.isItemEqual(new ItemStack(Blocks.planks));
+        } else if (stack.isItemEqual(new ItemStack(Blocks.planks))) {
+            return true;
+        } else if (stack.isItemEqual(new ItemStack(Blocks.netherrack))) {
+            return true;
+        }
+        return false;
     }
 
     public static final BlockTableRecipes recipes() {
