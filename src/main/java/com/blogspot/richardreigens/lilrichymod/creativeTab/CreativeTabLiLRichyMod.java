@@ -1,6 +1,6 @@
 package com.blogspot.richardreigens.lilrichymod.creativeTab;
 
-import com.blogspot.richardreigens.lilrichymod.init.ModItems;
+import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
@@ -13,7 +13,7 @@ public class CreativeTabLiLRichyMod {
     public static final CreativeTabs LR_Tab = new CreativeTabs(MOD_ID.toLowerCase()) {
         @Override
         public Item getTabIconItem() {
-            return ModItems.shadowmourne;
+            return Item.getItemFromBlock(ModBlocks.blockTable);
         }
     };
 }
