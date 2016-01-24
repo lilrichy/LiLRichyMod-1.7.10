@@ -16,7 +16,7 @@ fancyGraphics:true
 ao:2
 clouds:false
 resourcePacks:[]
-lastServer:
+lastServer:localhost:25566
 lang:en_US
 chatVisibility:0
 chatColors:true

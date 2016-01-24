@@ -22,7 +22,7 @@ group= "com.blogspot.richardreigens.lilrichymod" // http://maven.apache.org/guid
 archivesBaseName = "lilrichymod"
 
 minecraft {
-    version = "1.7.10-10.13.4.1566-1.7.10"
+    version = "1.7.10-10.13.4.1614-1.7.10"
     runDir = "eclipse"
 }
 repositories {
