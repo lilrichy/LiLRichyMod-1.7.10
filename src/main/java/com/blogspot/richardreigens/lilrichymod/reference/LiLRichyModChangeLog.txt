@@ -7,6 +7,7 @@ Added option to reset config file and renamed a bit to make it clearer - should 
 Fixed Server disconnect bug when using Player detector or Advanced player detector
 Added Arranged Stone and Cracked Stone to Recipes for Block table
 Added Tool Tips to blocks to show what materials are needed to craft them.
+Added 8 new Blocks.
 
 v1.10
 Added Lava Blocks to the Block table - crafted with concrete and nether rack

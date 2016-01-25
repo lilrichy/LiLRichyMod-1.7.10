@@ -32,6 +32,9 @@ public class BlockTableRecipes {
                 new ItemStack(ModBlocks.metalBatteredRobot), new ItemStack(ModBlocks.metalRustedIronGrip),
                 new ItemStack(ModBlocks.metalNeedlepointSteel)};
 
+        ItemStack[] metalRobotListColor = {new ItemStack(ModBlocks.metalBatteredRobotBlue),
+                new ItemStack(ModBlocks.metalBatteredRobotOrange), new ItemStack(ModBlocks.metalBatteredRobotPurple)};
+
         ItemStack[] marbleList = {new ItemStack(ModBlocks.marbleBlancoNafin), new ItemStack(ModBlocks.marbleSpottedBianco),
                 new ItemStack(ModBlocks.marbleBlancoAurora), new ItemStack(ModBlocks.marbleBlack)};
 
@@ -45,7 +48,11 @@ public class BlockTableRecipes {
                 new ItemStack(ModBlocks.lavaDeepFire), new ItemStack(ModBlocks.lavaPelesLake),
                 new ItemStack(ModBlocks.lavaSearingGorge), new ItemStack(ModBlocks.lavaVolcano)};
 
-        ItemStack[] stoneList = {new ItemStack(ModBlocks.arrangedStoneBricks), new ItemStack(ModBlocks.crackedStone)};
+        ItemStack[] lavaBowlListColor = {new ItemStack(ModBlocks.lavaBowlBlue), new ItemStack(ModBlocks.lavaBowlGreen),
+                new ItemStack(ModBlocks.lavaBowlPurple)};
+
+        ItemStack[] stoneList = {new ItemStack(ModBlocks.arrangedStoneBricks), new ItemStack(ModBlocks.crackedStone),
+                new ItemStack(ModBlocks.stoneBlocks), new ItemStack(ModBlocks.stoneMinerals)};
 
         // Recipe Lists: (output, slot 1 input, slot 2 input) this is the recipes for the Block table results
         this.addRecipe(concreteList, new ItemStack(ModBlocks.concrete), new ItemStack(ModItems.crushedConcrete));
@@ -54,6 +61,8 @@ public class BlockTableRecipes {
         this.addRecipe(cottageList, new ItemStack(ModBlocks.concrete), new ItemStack(Blocks.planks));
         this.addRecipe(lavaList, new ItemStack(ModBlocks.concrete), new ItemStack(Blocks.netherrack));
         this.addRecipe(stoneList, new ItemStack(ModBlocks.concrete), new ItemStack(Blocks.stone));
+        this.addRecipe(lavaBowlListColor, new ItemStack(ModBlocks.lavaBowl), new ItemStack(ModItems.essanceOfBeared));
+        this.addRecipe(metalRobotListColor, new ItemStack(ModBlocks.metalBatteredRobot), new ItemStack(ModItems.essanceOfBeared));
 
         // Altered Blocks Recipe List "to change any block into any other block in same group"
         for (ItemStack aConcreteList : concreteList) {
@@ -74,6 +83,12 @@ public class BlockTableRecipes {
         for (ItemStack aStoneList : stoneList) {
             this.addRecipe(stoneList, aStoneList, new ItemStack(Blocks.stone));
         }
+        for (ItemStack aLavaBowlColor : lavaBowlListColor) {
+            this.addRecipe(lavaBowlListColor, aLavaBowlColor, new ItemStack(ModItems.essanceOfBeared));
+        }
+        for (ItemStack aMetalRobotColor : metalRobotListColor) {
+            this.addRecipe(metalRobotListColor, aMetalRobotColor, new ItemStack(ModItems.essanceOfBeared));
+        }
     }
 
     //This is used to check if the block can be placed in the first slot.
@@ -91,6 +106,9 @@ public class BlockTableRecipes {
                 new ItemStack(ModBlocks.metalBatteredRobot), new ItemStack(ModBlocks.metalRustedIronGrip),
                 new ItemStack(ModBlocks.metalNeedlepointSteel)};
 
+        ItemStack[] metalRobotListColor = {new ItemStack(ModBlocks.metalBatteredRobotBlue),
+                new ItemStack(ModBlocks.metalBatteredRobotOrange), new ItemStack(ModBlocks.metalBatteredRobotPurple)};
+
         ItemStack[] marbleList = {new ItemStack(ModBlocks.marbleBlancoNafin), new ItemStack(ModBlocks.marbleSpottedBianco),
                 new ItemStack(ModBlocks.marbleBlancoAurora), new ItemStack(ModBlocks.marbleBlack)};
 
@@ -104,7 +122,11 @@ public class BlockTableRecipes {
                 new ItemStack(ModBlocks.lavaDeepFire), new ItemStack(ModBlocks.lavaPelesLake),
                 new ItemStack(ModBlocks.lavaSearingGorge), new ItemStack(ModBlocks.lavaVolcano)};
 
-        ItemStack[] stoneList = {new ItemStack(ModBlocks.arrangedStoneBricks), new ItemStack(ModBlocks.crackedStone)};
+        ItemStack[] lavaBowlListColor = {new ItemStack(ModBlocks.lavaBowlBlue), new ItemStack(ModBlocks.lavaBowlGreen),
+                new ItemStack(ModBlocks.lavaBowlPurple)};
+
+        ItemStack[] stoneList = {new ItemStack(ModBlocks.arrangedStoneBricks), new ItemStack(ModBlocks.crackedStone),
+                new ItemStack(ModBlocks.stoneBlocks), new ItemStack(ModBlocks.stoneMinerals)};
 
 
         //Check if valid block
@@ -142,6 +164,16 @@ public class BlockTableRecipes {
                     return true;
                 }
             }
+            for (ItemStack aLavaListColor : lavaBowlListColor) {
+                if (stack.isItemEqual(aLavaListColor)) {
+                    return true;
+                }
+            }
+            for (ItemStack aMetalRobotListColor : metalRobotListColor) {
+                if (stack.isItemEqual(aMetalRobotListColor)) {
+                    return true;
+                }
+            }
         }
         return false;
     }
@@ -157,7 +189,9 @@ public class BlockTableRecipes {
             return true;
         } else if (stack.isItemEqual(new ItemStack(Blocks.netherrack))) {
             return true;
-        } else return stack.isItemEqual(new ItemStack(Blocks.stone));
+        } else if (stack.isItemEqual(new ItemStack(Blocks.stone))) {
+            return true;
+        } else return stack.isItemEqual(new ItemStack(ModItems.essanceOfBeared));
     }
 
     public static final BlockTableRecipes recipes() {

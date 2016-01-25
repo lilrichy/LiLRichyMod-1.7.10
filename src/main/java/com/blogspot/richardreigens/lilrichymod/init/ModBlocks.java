@@ -27,6 +27,13 @@ public class ModBlocks {
     //Lava
     public static final DecorativeBlocks lavaBowl = new DecorativeBlocks(
             Names.Blocks.LAVA_BOWL, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.LAVA_BLOCKS);
+    public static final DecorativeBlocks lavaBowlBlue = new DecorativeBlocks(
+            Names.Blocks.LAVA_BOWL_BLUE, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.LAVA_BOWL_COLORS);
+    public static final DecorativeBlocks lavaBowlGreen = new DecorativeBlocks(
+            Names.Blocks.LAVA_BOWL_GREEN, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.LAVA_BOWL_COLORS);
+    public static final DecorativeBlocks lavaBowlPurple = new DecorativeBlocks(
+            Names.Blocks.LAVA_BOWL_PURPLE, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.LAVA_BOWL_COLORS);
+
     public static final DecorativeBlocks lavaCracks = new DecorativeBlocks(
             Names.Blocks.LAVA_CRACKS, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.LAVA_BLOCKS);
     public static final DecorativeBlocks lavaDeepFire = new DecorativeBlocks(
@@ -41,6 +48,13 @@ public class ModBlocks {
     //Metal
     public static final DecorativeBlocks metalBatteredRobot = new DecorativeBlocks(
             Names.Blocks.METAL_BATTERED_ROBOT, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.METAL_BLOCKS);
+    public static final DecorativeBlocks metalBatteredRobotBlue = new DecorativeBlocks(
+            Names.Blocks.METAL_BATTERED_ROBOT_BLUE, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.METAL_ROBOT_COLORS);
+    public static final DecorativeBlocks metalBatteredRobotOrange = new DecorativeBlocks(
+            Names.Blocks.METAL_BATTERED_ROBOT_ORANGE, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.METAL_ROBOT_COLORS);
+    public static final DecorativeBlocks metalBatteredRobotPurple = new DecorativeBlocks(
+            Names.Blocks.METAL_BATTERED_ROBOT_PURPLE, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.METAL_ROBOT_COLORS);
+
     public static final DecorativeBlocks metalBubbleGrip = new DecorativeBlocks(
             Names.Blocks.METAL_BUBBLE_GRIP, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.METAL_BLOCKS);
     public static final DecorativeBlocks metalNeedlepointSteel = new DecorativeBlocks(
@@ -113,6 +127,10 @@ public class ModBlocks {
             Names.Blocks.CRACKED_STONE, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.STONE_BLOCKS);
     public static final DecorativeBlocks arrangedStoneBricks = new DecorativeBlocks(
             Names.Blocks.ARRANGED_STONE_BRICKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.STONE_BLOCKS);
+    public static final DecorativeBlocks stoneBlocks = new DecorativeBlocks(
+            Names.Blocks.STONE_BLOCKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.STONE_BLOCKS);
+    public static final DecorativeBlocks stoneMinerals = new DecorativeBlocks(
+            Names.Blocks.STONE_MINERALS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.STONE_BLOCKS);
 
     //Panels
     public static final LiLRichyPanel acaciaPanel = new LiLRichyPanel(Names.Panels.ACACIA_PANEL, "Side", "Top", Material.wood, true);
@@ -144,6 +162,10 @@ public class ModBlocks {
 
         //Lava
         GameRegistry.registerBlock(lavaBowl, DecorativeItemBlock.class, Names.Blocks.LAVA_BOWL);
+        GameRegistry.registerBlock(lavaBowlBlue, DecorativeItemBlock.class, Names.Blocks.LAVA_BOWL_BLUE);
+        GameRegistry.registerBlock(lavaBowlGreen, DecorativeItemBlock.class, Names.Blocks.LAVA_BOWL_GREEN);
+        GameRegistry.registerBlock(lavaBowlPurple, DecorativeItemBlock.class, Names.Blocks.LAVA_BOWL_PURPLE);
+
         GameRegistry.registerBlock(lavaCracks, DecorativeItemBlock.class, Names.Blocks.LAVA_CRACKS);
         GameRegistry.registerBlock(lavaDeepFire, DecorativeItemBlock.class, Names.Blocks.LAVA_DEEP_FIRE);
         GameRegistry.registerBlock(lavaPelesLake, DecorativeItemBlock.class, Names.Blocks.LAVA_PELES_LAKE);
@@ -152,6 +174,10 @@ public class ModBlocks {
 
         //Metal
         GameRegistry.registerBlock(metalBatteredRobot, DecorativeItemBlock.class, Names.Blocks.METAL_BATTERED_ROBOT);
+        GameRegistry.registerBlock(metalBatteredRobotBlue, DecorativeItemBlock.class, Names.Blocks.METAL_BATTERED_ROBOT_BLUE);
+        GameRegistry.registerBlock(metalBatteredRobotOrange, DecorativeItemBlock.class, Names.Blocks.METAL_BATTERED_ROBOT_ORANGE);
+        GameRegistry.registerBlock(metalBatteredRobotPurple, DecorativeItemBlock.class, Names.Blocks.METAL_BATTERED_ROBOT_PURPLE);
+
         GameRegistry.registerBlock(metalBubbleGrip, DecorativeItemBlock.class, Names.Blocks.METAL_BUBBLE_GRIP);
         GameRegistry.registerBlock(metalNeedlepointSteel, DecorativeItemBlock.class, Names.Blocks.METAL_NEEDLEPOINT_STEEL);
         GameRegistry.registerBlock(metalRustedIronGrip, DecorativeItemBlock.class, Names.Blocks.METAL_RUSTED_IRON_GRIP);
@@ -192,6 +218,8 @@ public class ModBlocks {
         //Stone
         GameRegistry.registerBlock(crackedStone, DecorativeItemBlock.class, Names.Blocks.CRACKED_STONE);
         GameRegistry.registerBlock(arrangedStoneBricks, DecorativeItemBlock.class, Names.Blocks.ARRANGED_STONE_BRICKS);
+        GameRegistry.registerBlock(stoneBlocks, DecorativeItemBlock.class, Names.Blocks.STONE_BLOCKS);
+        GameRegistry.registerBlock(stoneMinerals, DecorativeItemBlock.class, Names.Blocks.STONE_MINERALS);
 
         //Panels Planks
         GameRegistry.registerBlock(acaciaPanel, Names.Panels.ACACIA_PANEL);

@@ -10,15 +10,23 @@ public class Names {
 
     public static class Blocks {
         //Lava
-        public static final String LAVA_BOWL = "lavaBowl";
         public static final String LAVA_CRACKS = "lavaCracks";
         public static final String LAVA_DEEP_FIRE = "lavaDeepFire";
         public static final String LAVA_PELES_LAKE = "lavaPelesLake";
         public static final String LAVA_SEARING_GORGE = "lavaSearingGorge";
         public static final String LAVA_SLUMBERING_VOLCANO = "lavaSlumberingVolcano";
 
+        public static final String LAVA_BOWL = "lavaBowl";
+        public static final String LAVA_BOWL_BLUE = "lavaBowlBlue";
+        public static final String LAVA_BOWL_GREEN = "lavaBowlGreen";
+        public static final String LAVA_BOWL_PURPLE = "lavaBowlPurple";
+
         //Metal
         public static final String METAL_BATTERED_ROBOT = "metalBatteredRobot";
+        public static final String METAL_BATTERED_ROBOT_BLUE = "metalBatteredRobotBlue";
+        public static final String METAL_BATTERED_ROBOT_ORANGE = "metalBatteredRobotOrange";
+        public static final String METAL_BATTERED_ROBOT_PURPLE = "metalBatteredRobotPurple";
+
         public static final String METAL_BUBBLE_GRIP = "metalBubbleGrip";
         public static final String METAL_NEEDLEPOINT_STEEL = "metalNeedlepointSteel";
         public static final String METAL_RUSTED_IRON_GRIP = "metalRustedIronGrip";
@@ -59,6 +67,8 @@ public class Names {
         //Stone
         public static final String CRACKED_STONE = "crackedStone";
         public static final String ARRANGED_STONE_BRICKS = "arrangedStoneBricks";
+        public static final String STONE_BLOCKS = "stoneBlocks";
+        public static final String STONE_MINERALS = "stoneMinerals";
 
         //PlayerDetector Blocks
         public static final String PLAYER_DETECTOR = "playerDetector";

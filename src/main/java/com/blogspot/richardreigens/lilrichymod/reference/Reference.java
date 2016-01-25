@@ -6,7 +6,7 @@ package com.blogspot.richardreigens.lilrichymod.reference;
 public class Reference {
     public static final String MOD_ID = "lilrichymod";
     public static final String MOD_NAME = "LiLRichy Mod";
-    public static final String VERSION = "1.7.10-1.10";
+    public static final String VERSION = "1.7.10-1.11";
     public static final String SERVER_PROXY_CLASS = "com.blogspot.richardreigens.lilrichymod.proxy.ServerProxy";
     public static final String CLIENT_PROXY_CLASS = "com.blogspot.richardreigens.lilrichymod.proxy.ClientProxy";
 
@@ -17,13 +17,13 @@ public class Reference {
     public static final String SPIRAL_GRAPHICS = "Spiral Graphics";
 
     //Strings for tool tips for crafting recipies for decorative blocks.
-    public static final String CRAFT_WITH = "Craft in Block Table with Concrete and ";
-    public static final String METAL_BLOCKS = "Iron Ingot";
-    public static final String LAVA_BLOCKS = "Netherack";
-    public static final String STONE_BLOCKS = "Stone";
-    public static final String COTTAGE_BLOCKS = "Wood Planks";
-    public static final String MARBLE_BLOCKS = "Sandstone";
-    public static final String CONCRETE_BLOCKS = "Crushed Concrete";
-
-    public static final String CRUSHED_CONCRETE_CRAFT = "To make: Break Concrete with a pick axe";
+    public static final String CRAFT_WITH = "Craft in Block Table with ";
+    public static final String METAL_BLOCKS = "Concrete and Iron Ingot";
+    public static final String LAVA_BLOCKS = "Concrete and Netherack";
+    public static final String STONE_BLOCKS = "Concrete and Stone";
+    public static final String COTTAGE_BLOCKS = "Concrete and Wood Planks";
+    public static final String MARBLE_BLOCKS = "Concrete and Sandstone";
+    public static final String CONCRETE_BLOCKS = "Concrete and Crushed Concrete";
+    public static final String LAVA_BOWL_COLORS = "Craft in Block Table with Lava Bowl and Essence Of Bearded";
+    public static final String METAL_ROBOT_COLORS = "Craft in Block Table with Metal Battered Robot and Essence Of Beared";
 }

@@ -24,14 +24,23 @@ tile.lilrichymod:decorativeBlocks/cottageWindowLight.name=Cottage Window Light
 
 #METAL
 tile.lilrichymod:decorativeBlocks/metalBatteredRobot.name=Metal Battered Robot
+tile.lilrichymod:decorativeBlocks/metalBatteredRobotBlue.name=Metal Battered Robot Blue
+tile.lilrichymod:decorativeBlocks/metalBatteredRobotOrange.name=Metal Battered Robot Orange
+tile.lilrichymod:decorativeBlocks/metalBatteredRobotPurple.name=Metal Battered Robot Purple
+
+
 tile.lilrichymod:decorativeBlocks/metalBubbleGrip.name=Metal Bubble Grip
 tile.lilrichymod:decorativeBlocks/metalNeedlepointSteel.name=Metal Needlepoint Steel
 tile.lilrichymod:decorativeBlocks/metalRustedIronGrip.name=Metal Rusted Iron Grip
-tile.lilrichymod:decorativeBlocks/metalSeafoamTarnish.name=Metal Seafoam Tarnish
+tile.lilrichymod:decorativeBlocks/metalSeafoamTarnish.name=Metal Sea Foam Tarnish
 tile.lilrichymod:decorativeBlocks/metalStained.name=Metal Stained
 
 #LAVA
 tile.lilrichymod:decorativeBlocks/lavaBowl.name=Lava Bowl
+tile.lilrichymod:decorativeBlocks/lavaBowlBlue.name=Lava Bowl Blue
+tile.lilrichymod:decorativeBlocks/lavaBowlGreen.name=Lava Bowl Green
+tile.lilrichymod:decorativeBlocks/lavaBowlPurple.name=Lava Bowl Purple
+
 tile.lilrichymod:decorativeBlocks/lavaCracks.name=Lava Cracks
 tile.lilrichymod:decorativeBlocks/lavaDeepFire.name=Lava Deep Fire
 tile.lilrichymod:decorativeBlocks/lavaPelesLake.name=Lava Pele's Lake
@@ -60,6 +69,8 @@ tile.lilrichymod:decorativeBlocks/smallConcreteTexturedSquares.name=Small Textur
 #STONE
 tile.lilrichymod:decorativeBlocks/crackedStone.name=Cracked Stone
 tile.lilrichymod:decorativeBlocks/arrangedStoneBricks.name=Arranged Stone Bricks
+tile.lilrichymod:decorativeBlocks/stoneBlocks.name=Stone Blocks
+tile.lilrichymod:decorativeBlocks/stoneMinerals.name=Stone Minerals
 
 #PANELS PLANKS
 tile.lilrichymod:panels/acaciaPanel.name=Acacia Planks Paneling
