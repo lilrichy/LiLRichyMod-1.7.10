@@ -2,12 +2,14 @@ LiLRichy Mod Change Log
 Version = V Forge Change . Mod change + incremental NEVER Reset
 Update version in this file, build.gradle, gradle.properties, Reference
 
-v1.10
-Added Lava Blocks to the Block table - crafted with concrete and nether rack
+v1.11
+Added option to reset config file and renamed a bit to make it clearer - should be done to clean up config file
+Fixed Server disconnect bug when using Player detector or Advanced player detector
+Added Arranged Stone and Cracked Stone to Recipes for Block table
+Added Tool Tips to blocks to show what materials are needed to craft them.
 
 v1.10
-Added option to reset config file and renamed a bit to make it clearer - should be done to clean up config file
-Fixed Server disconect bug when useing Player detector or Advanced player detector
+Added Lava Blocks to the Block table - crafted with concrete and nether rack
 
 v1.9
 Renamed files to fix textures not showing on cottage blocks.

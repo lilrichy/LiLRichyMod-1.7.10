@@ -11,9 +11,19 @@ public class Reference {
     public static final String CLIENT_PROXY_CLASS = "com.blogspot.richardreigens.lilrichymod.proxy.ClientProxy";
 
     //Strings for other things
-    public static final String DEATH_SOCK_PROCCED_MESSAGE = "The foul stench of such a stinky sock, has caused it to Proc!";
     public static final String DEATH_SOCK_CHARGED = "The sock has gained enough power to Proc!";
     public static final String MADE_BY = "Designed by: ";
     public static final String LILRICHY = "LiLRichy";
     public static final String SPIRAL_GRAPHICS = "Spiral Graphics";
+
+    //Strings for tool tips for crafting recipies for decorative blocks.
+    public static final String CRAFT_WITH = "Craft in Block Table with Concrete and ";
+    public static final String METAL_BLOCKS = "Iron Ingot";
+    public static final String LAVA_BLOCKS = "Netherack";
+    public static final String STONE_BLOCKS = "Stone";
+    public static final String COTTAGE_BLOCKS = "Wood Planks";
+    public static final String MARBLE_BLOCKS = "Sandstone";
+    public static final String CONCRETE_BLOCKS = "Crushed Concrete";
+
+    public static final String CRUSHED_CONCRETE_CRAFT = "To make: Break Concrete with a pick axe";
 }

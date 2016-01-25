@@ -12,15 +12,13 @@ import java.util.Random;
  * Created by Rich on 11/19/2015.
  */
 public class BlockConcrete extends DecorativeBlocks {
-    private final String blockToolTip;
 
-    public BlockConcrete(String name, Material material, String toolTip) {
-        super(name, material, toolTip);
+    public BlockConcrete(String name, Material material) {
+        super(name, material);
         this.setHardness(2f);
         this.setStepSound(soundTypeStone);
         this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
         this.setBlockName(name);
-        this.blockToolTip = toolTip;
     }
 
     //Overrides to drop different item then block

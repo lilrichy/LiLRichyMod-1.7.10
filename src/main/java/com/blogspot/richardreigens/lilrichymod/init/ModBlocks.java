@@ -25,55 +25,94 @@ public class ModBlocks {
     //Decorative Blocks ------------------------------------------------------------------------------------------------
 
     //Lava
-    public static final DecorativeBlocks lavaBowl = new DecorativeBlocks(Names.Blocks.LAVA_BOWL, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks lavaCracks = new DecorativeBlocks(Names.Blocks.LAVA_CRACKS, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks lavaDeepFire = new DecorativeBlocks(Names.Blocks.LAVA_DEEP_FIRE, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks lavaPelesLake = new DecorativeBlocks(Names.Blocks.LAVA_PELES_LAKE, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks lavaSearingGorge = new DecorativeBlocks(Names.Blocks.LAVA_SEARING_GORGE, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks lavaVolcano = new DecorativeBlocks(Names.Blocks.LAVA_SLUMBERING_VOLCANO, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks lavaBowl = new DecorativeBlocks(
+            Names.Blocks.LAVA_BOWL, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.LAVA_BLOCKS);
+    public static final DecorativeBlocks lavaCracks = new DecorativeBlocks(
+            Names.Blocks.LAVA_CRACKS, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.LAVA_BLOCKS);
+    public static final DecorativeBlocks lavaDeepFire = new DecorativeBlocks(
+            Names.Blocks.LAVA_DEEP_FIRE, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.LAVA_BLOCKS);
+    public static final DecorativeBlocks lavaPelesLake = new DecorativeBlocks(
+            Names.Blocks.LAVA_PELES_LAKE, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.LAVA_BLOCKS);
+    public static final DecorativeBlocks lavaSearingGorge = new DecorativeBlocks(
+            Names.Blocks.LAVA_SEARING_GORGE, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.LAVA_BLOCKS);
+    public static final DecorativeBlocks lavaVolcano = new DecorativeBlocks(
+            Names.Blocks.LAVA_SLUMBERING_VOLCANO, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.LAVA_BLOCKS);
 
     //Metal
-    public static final DecorativeBlocks metalBatteredRobot = new DecorativeBlocks(Names.Blocks.METAL_BATTERED_ROBOT, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks metalBubbleGrip = new DecorativeBlocks(Names.Blocks.METAL_BUBBLE_GRIP, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks metalNeedlepointSteel = new DecorativeBlocks(Names.Blocks.METAL_NEEDLEPOINT_STEEL, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks metalRustedIronGrip = new DecorativeBlocks(Names.Blocks.METAL_RUSTED_IRON_GRIP, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks metalSeafoamTarnish = new DecorativeBlocks(Names.Blocks.METAL_SEAFOAM_TARNISH, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks metalStained = new DecorativeBlocks(Names.Blocks.METAL_STAINED, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks metalBatteredRobot = new DecorativeBlocks(
+            Names.Blocks.METAL_BATTERED_ROBOT, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.METAL_BLOCKS);
+    public static final DecorativeBlocks metalBubbleGrip = new DecorativeBlocks(
+            Names.Blocks.METAL_BUBBLE_GRIP, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.METAL_BLOCKS);
+    public static final DecorativeBlocks metalNeedlepointSteel = new DecorativeBlocks(
+            Names.Blocks.METAL_NEEDLEPOINT_STEEL, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.METAL_BLOCKS);
+    public static final DecorativeBlocks metalRustedIronGrip = new DecorativeBlocks(
+            Names.Blocks.METAL_RUSTED_IRON_GRIP, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.METAL_BLOCKS);
+    public static final DecorativeBlocks metalSeafoamTarnish = new DecorativeBlocks(
+            Names.Blocks.METAL_SEAFOAM_TARNISH, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.METAL_BLOCKS);
+    public static final DecorativeBlocks metalStained = new DecorativeBlocks(
+            Names.Blocks.METAL_STAINED, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.METAL_BLOCKS);
 
     //Marble
-    public static final DecorativeBlocks marbleBlack = new DecorativeBlocks(Names.Blocks.MARBLE_BLACK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks marbleBlancoAurora = new DecorativeBlocks(Names.Blocks.MARBLE_BLANCO_AURORA, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks marbleBlancoNafin = new DecorativeBlocks(Names.Blocks.MARBLE_BLANCO_NAFIN, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks marbleSpottedBianco = new DecorativeBlocks(Names.Blocks.MARBLE_SPOTTED_BIANCO, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks marbleBlack = new DecorativeBlocks(
+            Names.Blocks.MARBLE_BLACK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.MARBLE_BLOCKS);
+    public static final DecorativeBlocks marbleBlancoAurora = new DecorativeBlocks(
+            Names.Blocks.MARBLE_BLANCO_AURORA, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.MARBLE_BLOCKS);
+    public static final DecorativeBlocks marbleBlancoNafin = new DecorativeBlocks(
+            Names.Blocks.MARBLE_BLANCO_NAFIN, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.MARBLE_BLOCKS);
+    public static final DecorativeBlocks marbleSpottedBianco = new DecorativeBlocks(
+            Names.Blocks.MARBLE_SPOTTED_BIANCO, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.MARBLE_BLOCKS);
 
     //Cottage
-    public static final DecorativeBlocks cottageWall = new DecorativeBlocks(Names.Blocks.COTTAGE_WALL, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks cottageWallArchedBeam = new DecorativeBlocks(Names.Blocks.COTTAGE_WALL_ARCHED_BEAM, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks cottageWallArchedBeamDark = new DecorativeBlocks(Names.Blocks.COTTAGE_WALL_ARCHED_BEAM_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks cottageWallDark = new DecorativeBlocks(Names.Blocks.COTTAGE_WALL_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks cottageWallPanelDark = new DecorativeBlocks(Names.Blocks.COTTAGE_WALL_PANEL_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks cottageWallPanelLight = new DecorativeBlocks(Names.Blocks.COTTAGE_WALL_PANEL_LIGHT, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks cottageWallXDark = new DecorativeBlocks(Names.Blocks.COTTAGE_WALL_X_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks cottageWallXLight = new DecorativeBlocks(Names.Blocks.COTTAGE_WALL_X_LIGHT, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks cottageWindowDark = new DecorativeBlocks(Names.Blocks.COTTAGE_WINDOW_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
-    public static final DecorativeBlocks cottageWindowLight = new DecorativeBlocks(Names.Blocks.COTTAGE_WINDOW_LIGHT, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS);
+    public static final DecorativeBlocks cottageWall = new DecorativeBlocks(
+            Names.Blocks.COTTAGE_WALL, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS);
+    public static final DecorativeBlocks cottageWallArchedBeam = new DecorativeBlocks(
+            Names.Blocks.COTTAGE_WALL_ARCHED_BEAM, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS);
+    public static final DecorativeBlocks cottageWallArchedBeamDark = new DecorativeBlocks(
+            Names.Blocks.COTTAGE_WALL_ARCHED_BEAM_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS);
+    public static final DecorativeBlocks cottageWallDark = new DecorativeBlocks(
+            Names.Blocks.COTTAGE_WALL_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS);
+    public static final DecorativeBlocks cottageWallPanelDark = new DecorativeBlocks(
+            Names.Blocks.COTTAGE_WALL_PANEL_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS);
+    public static final DecorativeBlocks cottageWallPanelLight = new DecorativeBlocks(
+            Names.Blocks.COTTAGE_WALL_PANEL_LIGHT, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS);
+    public static final DecorativeBlocks cottageWallXDark = new DecorativeBlocks(
+            Names.Blocks.COTTAGE_WALL_X_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS);
+    public static final DecorativeBlocks cottageWallXLight = new DecorativeBlocks(
+            Names.Blocks.COTTAGE_WALL_X_LIGHT, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS);
+    public static final DecorativeBlocks cottageWindowDark = new DecorativeBlocks(
+            Names.Blocks.COTTAGE_WINDOW_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS);
+    public static final DecorativeBlocks cottageWindowLight = new DecorativeBlocks(
+            Names.Blocks.COTTAGE_WINDOW_LIGHT, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS);
 
     //Concrete
-    public static final BlockConcrete concrete = new BlockConcrete(Names.Blocks.CONCRETE, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
-    public static final DecorativeBlocks fancyConcreteBlocks = new DecorativeBlocks(Names.Blocks.FANCY_CONCRETE_BLOCKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
-    public static final DecorativeBlocks concreteBricks = new DecorativeBlocks(Names.Blocks.CONCRETE_BRICKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
-    public static final DecorativeBlocks concreteBricksDark = new DecorativeBlocks(Names.Blocks.CONCRETE_BRICKS_DARK, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
-    public static final DecorativeBlocks concreteRocks = new DecorativeBlocks(Names.Blocks.CONCRETE_ROCKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
-    public static final DecorativeBlocks concreteTexturedBlocks = new DecorativeBlocks(Names.Blocks.CONCRETE_TEXTURED_BLOCKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
-    public static final DecorativeBlocks oldConcreteSquares = new DecorativeBlocks(Names.Blocks.OLD_CONCRETE_SQUARES, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
-    public static final DecorativeBlocks concreteSquares = new DecorativeBlocks(Names.Blocks.CONCRETE_SQUARES, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
-    public static final DecorativeBlocks smallConcreteBricks = new DecorativeBlocks(Names.Blocks.SMALL_CONCRETE_BRICKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
-    public static final DecorativeBlocks smallConcreteTexturedSquares = new DecorativeBlocks(Names.Blocks.SMALL_CONCRETE_TEXTURED_SQUARES, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
-    public static final DecorativeBlocks arrangedConcreteBricks = new DecorativeBlocks(Names.Blocks.ARRANGED_CONCRETE_BRICKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
+    public static final BlockConcrete concrete = new BlockConcrete(
+            Names.Blocks.CONCRETE, Material.rock);
+    public static final DecorativeBlocks fancyConcreteBlocks = new DecorativeBlocks(
+            Names.Blocks.FANCY_CONCRETE_BLOCKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS);
+    public static final DecorativeBlocks concreteBricks = new DecorativeBlocks(
+            Names.Blocks.CONCRETE_BRICKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS);
+    public static final DecorativeBlocks concreteBricksDark = new DecorativeBlocks(
+            Names.Blocks.CONCRETE_BRICKS_DARK, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS);
+    public static final DecorativeBlocks concreteRocks = new DecorativeBlocks(
+            Names.Blocks.CONCRETE_ROCKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS);
+    public static final DecorativeBlocks concreteTexturedBlocks = new DecorativeBlocks(
+            Names.Blocks.CONCRETE_TEXTURED_BLOCKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS);
+    public static final DecorativeBlocks oldConcreteSquares = new DecorativeBlocks(
+            Names.Blocks.OLD_CONCRETE_SQUARES, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS);
+    public static final DecorativeBlocks concreteSquares = new DecorativeBlocks(
+            Names.Blocks.CONCRETE_SQUARES, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS);
+    public static final DecorativeBlocks smallConcreteBricks = new DecorativeBlocks(
+            Names.Blocks.SMALL_CONCRETE_BRICKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS);
+    public static final DecorativeBlocks smallConcreteTexturedSquares = new DecorativeBlocks(
+            Names.Blocks.SMALL_CONCRETE_TEXTURED_SQUARES, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS);
+    public static final DecorativeBlocks arrangedConcreteBricks = new DecorativeBlocks(
+            Names.Blocks.ARRANGED_CONCRETE_BRICKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS);
 
     //Stone
-    public static final DecorativeBlocks crackedStone = new DecorativeBlocks(Names.Blocks.CRACKED_STONE, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
-    public static final DecorativeBlocks arrangedStoneBricks = new DecorativeBlocks(Names.Blocks.ARRANGED_STONE_BRICKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY);
+    public static final DecorativeBlocks crackedStone = new DecorativeBlocks(
+            Names.Blocks.CRACKED_STONE, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.STONE_BLOCKS);
+    public static final DecorativeBlocks arrangedStoneBricks = new DecorativeBlocks(
+            Names.Blocks.ARRANGED_STONE_BRICKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.STONE_BLOCKS);
 
     //Panels
     public static final LiLRichyPanel acaciaPanel = new LiLRichyPanel(Names.Panels.ACACIA_PANEL, "Side", "Top", Material.wood, true);

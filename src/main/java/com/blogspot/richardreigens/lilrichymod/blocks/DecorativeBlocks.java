@@ -13,14 +13,17 @@ import net.minecraft.client.renderer.texture.IIconRegister;
  */
 public class DecorativeBlocks extends Block {
     private final String blockToolTip;
+    private final String blockCraftTip;
 
-    public DecorativeBlocks(String name, Material material, String toolTip) {
+
+    public DecorativeBlocks(String name, Material material, String toolTip, String craftTip) {
         super(material);
         this.setHardness(2f);
         this.setStepSound(soundTypeStone);
         this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
         this.setBlockName(name);
         this.blockToolTip = toolTip;
+        this.blockCraftTip = craftTip;
     }
 
     public DecorativeBlocks(String name, Material material) {
@@ -30,12 +33,20 @@ public class DecorativeBlocks extends Block {
         this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
         this.setBlockName(name);
         this.blockToolTip = null;
+        this.blockCraftTip = null;
     }
 
     public static String getToolTip(Block block) {
         if (block instanceof DecorativeBlocks) {
             DecorativeBlocks n = (DecorativeBlocks) block;
             return n.blockToolTip;
+        } else return null;
+    }
+
+    public static Object getCraftWithTip(Block block) {
+        if (block instanceof DecorativeBlocks) {
+            DecorativeBlocks n = (DecorativeBlocks) block;
+            return n.blockCraftTip;
         } else return null;
     }
 
@@ -53,4 +64,6 @@ public class DecorativeBlocks extends Block {
     public void registerBlockIcons(IIconRegister iconRegister) {
         blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
     }
+
+
 }

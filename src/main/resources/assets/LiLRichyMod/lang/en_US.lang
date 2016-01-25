@@ -80,8 +80,8 @@ tile.lilrichymod:panels/log_sprucePanel.name=Spruce Wood Paneling
 #DETECTORS
 tile.lilrichymod:playerDetector.name=Player Detector
 tile.lilrichymod:advancedDetector.name=Advanced Detector
-gui.LiLRichyMod.AdvancedDetector.button.invert=Inverted
-gui.LiLRichyMod.AdvancedDetector.button.regular=Regular
+gui.lilrichymod.AdvancedDetector.button.invert=Inverted
+gui.lilrichymod.AdvancedDetector.button.regular=Regular
 
 #CROPS
 tile.lilrichymod:crops/beardedAzalea.name=Bearded Azalea

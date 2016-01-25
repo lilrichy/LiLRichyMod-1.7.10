@@ -45,12 +45,15 @@ public class BlockTableRecipes {
                 new ItemStack(ModBlocks.lavaDeepFire), new ItemStack(ModBlocks.lavaPelesLake),
                 new ItemStack(ModBlocks.lavaSearingGorge), new ItemStack(ModBlocks.lavaVolcano)};
 
+        ItemStack[] stoneList = {new ItemStack(ModBlocks.arrangedStoneBricks), new ItemStack(ModBlocks.crackedStone)};
+
         // Recipe Lists: (output, slot 1 input, slot 2 input) this is the recipes for the Block table results
         this.addRecipe(concreteList, new ItemStack(ModBlocks.concrete), new ItemStack(ModItems.crushedConcrete));
         this.addRecipe(metalsList, new ItemStack(ModBlocks.concrete), new ItemStack(Items.iron_ingot));
         this.addRecipe(marbleList, new ItemStack(ModBlocks.concrete), new ItemStack(Blocks.sandstone));
         this.addRecipe(cottageList, new ItemStack(ModBlocks.concrete), new ItemStack(Blocks.planks));
         this.addRecipe(lavaList, new ItemStack(ModBlocks.concrete), new ItemStack(Blocks.netherrack));
+        this.addRecipe(stoneList, new ItemStack(ModBlocks.concrete), new ItemStack(Blocks.stone));
 
         // Altered Blocks Recipe List "to change any block into any other block in same group"
         for (ItemStack aConcreteList : concreteList) {
@@ -67,6 +70,9 @@ public class BlockTableRecipes {
         }
         for (ItemStack aLavaList : lavaList) {
             this.addRecipe(lavaList, aLavaList, new ItemStack(Blocks.netherrack));
+        }
+        for (ItemStack aStoneList : stoneList) {
+            this.addRecipe(stoneList, aStoneList, new ItemStack(Blocks.stone));
         }
     }
 
@@ -98,6 +104,9 @@ public class BlockTableRecipes {
                 new ItemStack(ModBlocks.lavaDeepFire), new ItemStack(ModBlocks.lavaPelesLake),
                 new ItemStack(ModBlocks.lavaSearingGorge), new ItemStack(ModBlocks.lavaVolcano)};
 
+        ItemStack[] stoneList = {new ItemStack(ModBlocks.arrangedStoneBricks), new ItemStack(ModBlocks.crackedStone)};
+
+
         //Check if valid block
         if (stack != null) {
             if (stack.isItemEqual(new ItemStack(ModBlocks.concrete))) {
@@ -128,6 +137,11 @@ public class BlockTableRecipes {
                     return true;
                 }
             }
+            for (ItemStack aStoneList : stoneList) {
+                if (stack.isItemEqual(aStoneList)) {
+                    return true;
+                }
+            }
         }
         return false;
     }
@@ -143,8 +157,7 @@ public class BlockTableRecipes {
             return true;
         } else if (stack.isItemEqual(new ItemStack(Blocks.netherrack))) {
             return true;
-        }
-        return false;
+        } else return stack.isItemEqual(new ItemStack(Blocks.stone));
     }
 
     public static final BlockTableRecipes recipes() {

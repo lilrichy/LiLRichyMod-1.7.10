@@ -20,5 +20,6 @@ public class DecorativeItemBlock extends ItemBlock {
 
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean show) {
         if (block != null && DecorativeBlocks.getToolTip(block) != null) list.add(DecorativeBlocks.getToolTip(block));
+        list.add(DecorativeBlocks.getCraftWithTip(block));
     }
 }
