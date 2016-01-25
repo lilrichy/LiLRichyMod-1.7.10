@@ -1,11 +1,14 @@
 package com.blogspot.richardreigens.lilrichymod.blocks;
 
+import com.blogspot.richardreigens.lilrichymod.creativeTab.CreativeTabLiLRichyMod;
 import com.blogspot.richardreigens.lilrichymod.handler.GuiHandler;
 import com.blogspot.richardreigens.lilrichymod.lilrichymod;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityAdvancedDetector;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockContainer;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemBlock;
@@ -19,15 +22,27 @@ import net.minecraftforge.common.util.ForgeDirection;
 /**
  * Created by Rich on 11/23/2015.
  */
-public class BlockAdvancedDetector extends BlockTileEntityLiLRichyMod {
+public class BlockAdvancedDetector extends BlockContainer {
     IIcon sideOff;
     IIcon sideOn;
     IIcon topBottom;
 
-    public BlockAdvancedDetector() {
-        setBlockName(Names.Blocks.ADVANCED_DETECTOR);
-        this.setHardness(3f);
+    public BlockAdvancedDetector(Material material) {
+        super(material);
         this.setStepSound(soundTypeMetal);
+        this.setBlockName(Names.Blocks.ADVANCED_DETECTOR);
+        this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
+        this.setHardness(5f);
+        this.setResistance(0.5f);
+    }
+
+    @Override
+    public String getUnlocalizedName() {
+        return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+    }
+
+    protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
+        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
 
     @Override

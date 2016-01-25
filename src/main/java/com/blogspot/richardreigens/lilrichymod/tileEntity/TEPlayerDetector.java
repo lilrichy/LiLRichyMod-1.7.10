@@ -10,7 +10,7 @@ import net.minecraft.nbt.NBTTagCompound;
 /**
  * Created by Rich on 11/23/2015.
  */
-public class TileEntityPlayerDetector extends TileEntityLiLRichyMod {
+public class TEPlayerDetector extends TileEntityLiLRichyMod {
     public boolean activated = false;
     private int tick = 0;
     private int rate = 5;
@@ -39,8 +39,7 @@ public class TileEntityPlayerDetector extends TileEntityLiLRichyMod {
         }
     }
 
-    private void updateBlocks()
-    {
+    private void updateBlocks() {
         worldObj.notifyBlocksOfNeighborChange(xCoord, yCoord, zCoord, worldObj.getBlock(xCoord, yCoord, zCoord));
         worldObj.notifyBlocksOfNeighborChange(xCoord - 1, yCoord, zCoord, worldObj.getBlock(xCoord, yCoord, zCoord));
         worldObj.notifyBlocksOfNeighborChange(xCoord + 1, yCoord, zCoord, worldObj.getBlock(xCoord, yCoord, zCoord));

@@ -17,7 +17,7 @@ import net.minecraft.tileentity.TileEntity;
 
 @Sharable
 public class PacketDescriptionHandler extends SimpleChannelInboundHandler<FMLProxyPacket> {
-    public static final String CHANNEL = Reference.MOD_ID + "Description";
+    public static final String CHANNEL = Reference.MOD_ID + "Dir";
 
     static {
         NetworkRegistry.INSTANCE.newChannel(CHANNEL, new PacketDescriptionHandler());

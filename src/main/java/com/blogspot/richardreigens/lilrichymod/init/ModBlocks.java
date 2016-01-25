@@ -91,8 +91,8 @@ public class ModBlocks {
     public static final LiLRichyPanel log_sprucePanel = new LiLRichyPanel(Names.Panels.LOG_SPRUCE_PANEL, "Side", "Top", Material.wood, true);
 
     //Tile Entity Blocks
-    public static final BlockTileEntityLiLRichyMod playerDetector = new BlockPlayerDetector();
-    public static final BlockTileEntityLiLRichyMod advancedDetector = new BlockAdvancedDetector();
+    public static final BlockPlayerDetector playerDetector = new BlockPlayerDetector(Material.anvil);
+    public static final BlockAdvancedDetector advancedDetector = new BlockAdvancedDetector(Material.anvil);
 
     public static void init() {
         //Custom Rendered Blocks

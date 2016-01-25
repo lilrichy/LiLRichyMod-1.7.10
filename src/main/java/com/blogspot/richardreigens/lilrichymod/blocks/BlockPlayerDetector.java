@@ -1,9 +1,12 @@
 package com.blogspot.richardreigens.lilrichymod.blocks;
 
+import com.blogspot.richardreigens.lilrichymod.creativeTab.CreativeTabLiLRichyMod;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
-import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityPlayerDetector;
+import com.blogspot.richardreigens.lilrichymod.tileEntity.TEPlayerDetector;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockContainer;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
@@ -18,15 +21,27 @@ import net.minecraftforge.common.util.ForgeDirection;
 /**
  * Created by Rich on 11/23/2015.
  */
-public class BlockPlayerDetector extends BlockTileEntityLiLRichyMod {
+public class BlockPlayerDetector extends BlockContainer {
     IIcon sideOff;
     IIcon sideOn;
     IIcon topBottom;
 
-    public BlockPlayerDetector() {
-        setBlockName(Names.Blocks.PLAYER_DETECTOR);
-        this.setHardness(3f);
+    public BlockPlayerDetector(Material material) {
+        super(material);
         this.setStepSound(soundTypeMetal);
+        this.setBlockName(Names.Blocks.PLAYER_DETECTOR);
+        this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
+        this.setHardness(5f);
+        this.setResistance(0.5f);
+    }
+
+    @Override
+    public String getUnlocalizedName() {
+        return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+    }
+
+    protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
+        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
 
     @Override
@@ -37,7 +52,7 @@ public class BlockPlayerDetector extends BlockTileEntityLiLRichyMod {
     }
 
     public IIcon getIcon(IBlockAccess world, int x, int y, int z, int side) {
-        TileEntityPlayerDetector te = (TileEntityPlayerDetector) world.getTileEntity(x, y, z);
+        TEPlayerDetector te = (TEPlayerDetector) world.getTileEntity(x, y, z);
         ItemStack stack = te.getCamouflage();
         if (stack != null && stack.getItem() instanceof ItemBlock) {
             Block block = ((ItemBlock) stack.getItem()).field_150939_a;
@@ -45,7 +60,7 @@ public class BlockPlayerDetector extends BlockTileEntityLiLRichyMod {
         } else {
             IIcon side_icon;
             TileEntity tile = world.getTileEntity(x, y, z);
-            if (tile instanceof TileEntityPlayerDetector && ((TileEntityPlayerDetector) tile).activated)
+            if (tile instanceof TEPlayerDetector && ((TEPlayerDetector) tile).activated)
                 side_icon = sideOn;
             else
                 side_icon = sideOff;
@@ -71,7 +86,7 @@ public class BlockPlayerDetector extends BlockTileEntityLiLRichyMod {
 
     @Override
     public TileEntity createNewTileEntity(World world, int metadata) {
-        return new TileEntityPlayerDetector();
+        return new TEPlayerDetector();
     }
 
     @Override
@@ -101,7 +116,7 @@ public class BlockPlayerDetector extends BlockTileEntityLiLRichyMod {
 
     public int isProvidingWeakPower(IBlockAccess world, int x, int y, int z, int p_149709_5_) {
         TileEntity te = world.getTileEntity(x, y, z);
-        TileEntityPlayerDetector detector = (te != null && te instanceof TileEntityPlayerDetector) ? (TileEntityPlayerDetector) te : null;
+        TEPlayerDetector detector = (te != null && te instanceof TEPlayerDetector) ? (TEPlayerDetector) te : null;
         if (detector != null)
             return detector.activated ? 15 : 0;
         else
@@ -111,7 +126,7 @@ public class BlockPlayerDetector extends BlockTileEntityLiLRichyMod {
     @Override
     public int isProvidingStrongPower(IBlockAccess world, int x, int y, int z, int meta) {
         TileEntity te = world.getTileEntity(x, y, z);
-        TileEntityPlayerDetector detector = (te != null && te instanceof TileEntityPlayerDetector) ? (TileEntityPlayerDetector) te : null;
+        TEPlayerDetector detector = (te != null && te instanceof TEPlayerDetector) ? (TEPlayerDetector) te : null;
         if (detector != null)
             return detector.activated ? 15 : 0;
         else
@@ -121,7 +136,7 @@ public class BlockPlayerDetector extends BlockTileEntityLiLRichyMod {
     @Override
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ) {
         if (!world.isRemote) {
-            TileEntityPlayerDetector te = (TileEntityPlayerDetector) world.getTileEntity(x, y, z);
+            TEPlayerDetector te = (TEPlayerDetector) world.getTileEntity(x, y, z);
             //check if sneaking and if using empty hand and if block has camo then remove camo
             if (player.isSneaking() && player.getCurrentEquippedItem() == null) {
                 if (te.getCamouflage() != null) {
