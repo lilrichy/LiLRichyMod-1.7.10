@@ -12,22 +12,22 @@ import java.io.File;
  */
 public class ConfigurationHandler {
     public static Configuration configuration;
-    public static boolean loadPlayerDetector = true;
-    public static boolean loadAdvancedDetector = true;
-    public static int defaultRangePlayerDetector;
-    public static int defaultRangeAdvancedDetector;
-    public static boolean flipPlayers = false;
-    public static boolean loadDecorativeBlockRecipes = false;
-    public static boolean resetConfigFile = true;
-
+    public static boolean loadPlayerDetector, loadAdvancedDetector;
+    public static boolean smeltingRecipes, itemRecipes, panelRecipes, thermalExpansionRecipes, enderIORecipies, loadDecorativeBlockRecipes;
+    public static int defaultRangePlayerDetector, defaultRangeAdvancedDetector;
+    public static boolean flipPlayers;
+    public static boolean resetConfigFile;
 
     private static void loadConfiguration() {
         String GENERAL_SETTINGS = "General Mod Settings";
-        resetConfigFile = configuration.getBoolean("Reset Config File", GENERAL_SETTINGS, false, "Set true to reset the config file to default settings and regenerate it.");
+        resetConfigFile = configuration.getBoolean("Reset Config File", GENERAL_SETTINGS, false, "Set true to reset the config file to default settings and regenerate it. Requires Game restart!");
 
-        String SHOULD_LOAD = "Enable or Disable Blocks and Items";
-        loadDecorativeBlockRecipes = configuration.getBoolean("Use old Decorative Block Recipes", SHOULD_LOAD, false, "If this is true old recipes for decorative blocks will load " +
-                "*Depreciated and will not be updated*, if false blocks will need to be made in the Block Table");
+        String SHOULD_LOAD = "Enable or Disable Blocks, Items, and Recipes";
+        smeltingRecipes = configuration.getBoolean("Enable smelting recipes", SHOULD_LOAD, true, "Enable for smelting recipes ex: Concrete from Concrete Mix");
+        itemRecipes = configuration.getBoolean("Enable item recipes", SHOULD_LOAD, true, "Enable for item recipes ex: Death sock, Concrete Mix");
+        panelRecipes = configuration.getBoolean("Enable panel recipes", SHOULD_LOAD, true, "Enable recipes to make Panels");
+        thermalExpansionRecipes = configuration.getBoolean("Enable Thermal Expansion Recipes", SHOULD_LOAD, true, "Enable for Pulverizer recipes ex: Concrete to Crushed Concrete");
+        enderIORecipies = configuration.getBoolean("Enable Ender IO Recipes", SHOULD_LOAD, true, "Enable for Sag Mill recipes ex: Concrete to Crushed Concrete");
         loadPlayerDetector = configuration.getBoolean("Enable Player Detector", SHOULD_LOAD, true, "Enable the Player Detector Block.");
         loadAdvancedDetector = configuration.getBoolean("Enable Advanced Detector", SHOULD_LOAD, true, "Enable the Advanced Detector Block.");
 

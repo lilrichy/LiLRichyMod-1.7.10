@@ -1,7 +1,5 @@
 package com.blogspot.richardreigens.lilrichymod.recipes;
 
-import cofh.api.modhelpers.ThermalExpansionHelper;
-import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Blocks;
@@ -26,8 +24,5 @@ public class ItemRecipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.seedBearedAzailia, 1), " r ", "ese", " r ",
                 'r', new ItemStack(Items.rotten_flesh), 'e', new ItemStack(Items.spider_eye),
                 's', new ItemStack(Items.wheat_seeds));
-
-        //Pulverizer recipe
-        ThermalExpansionHelper.addPulverizerRecipe(400, new ItemStack(ModBlocks.concrete), new ItemStack(ModItems.crushedConcrete, 4));
     }
 }

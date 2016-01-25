@@ -13,14 +13,22 @@ import net.minecraft.item.ItemStack;
  */
 public class Recipes {
     public static void init() {
-        if (ConfigurationHandler.loadDecorativeBlockRecipes) {
-            DecorativeBlockRecipes.init();
-        }
 
-        smeltingRecipes();
-        ItemRecipes.init();
-        PanelsRecipies.init();
+        blockRecipies();
         tileRecipes();
+
+        if (ConfigurationHandler.smeltingRecipes) smeltingRecipes();
+        if (ConfigurationHandler.itemRecipes) ItemRecipes.init();
+        if (ConfigurationHandler.panelRecipes) PanelsRecipies.init();
+        if (ConfigurationHandler.thermalExpansionRecipes) ModCompatRecipes.thermalExpansionRecipesInit();
+        if (ConfigurationHandler.enderIORecipies) ModCompatRecipes.enderIORecipesInit();
+    }
+
+    public static void blockRecipies() {
+        //Concrete
+        GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.concrete),
+                new ItemStack(ModItems.crushedConcrete), new ItemStack(ModItems.crushedConcrete),
+                new ItemStack(ModItems.crushedConcrete), new ItemStack(ModItems.crushedConcrete));
     }
 
     public static void smeltingRecipes() {
