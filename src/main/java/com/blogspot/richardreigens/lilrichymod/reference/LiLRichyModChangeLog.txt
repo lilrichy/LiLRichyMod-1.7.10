@@ -2,6 +2,11 @@ LiLRichy Mod Change Log
 Version = V Forge Change . Mod change + incremental NEVER Reset
 Update version in this file, build.gradle, gradle.properties, Reference
 
+v1.12
+Added Thermal Expansion Pulverizer recipe for crushed concrete from concrete blocks.
+Fixed null showing in tooltip on blocks with out crafting tips.
+
+
 v1.11
 Added option to reset config file and renamed a bit to make it clearer - should be done to clean up config file
 Fixed Server disconnect bug when using Player detector or Advanced player detector

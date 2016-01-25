@@ -15,7 +15,7 @@ public class DecorativeBlocks extends Block {
     private final String blockToolTip;
     private final String blockCraftTip;
 
-
+    //Constructor with Tool tip and Crafting tip string
     public DecorativeBlocks(String name, Material material, String toolTip, String craftTip) {
         super(material);
         this.setHardness(2f);
@@ -26,6 +26,18 @@ public class DecorativeBlocks extends Block {
         this.blockCraftTip = craftTip;
     }
 
+    //Constructor with Tool tip
+    public DecorativeBlocks(String name, Material material, String toolTip) {
+        super(material);
+        this.setHardness(2f);
+        this.setStepSound(soundTypeStone);
+        this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
+        this.setBlockName(name);
+        this.blockToolTip = toolTip;
+        this.blockCraftTip = null;
+    }
+
+    //Constructor with no tool tips
     public DecorativeBlocks(String name, Material material) {
         super(material);
         this.setHardness(2f);
@@ -43,7 +55,7 @@ public class DecorativeBlocks extends Block {
         } else return null;
     }
 
-    public static Object getCraftWithTip(Block block) {
+    public static Object getCraftTip(Block block) {
         if (block instanceof DecorativeBlocks) {
             DecorativeBlocks n = (DecorativeBlocks) block;
             return n.blockCraftTip;
