@@ -54,7 +54,7 @@ public class ItemDeathSock extends ItemLiLRichyMod {
             if (chargeTime >= 1000) {
                 player.addChatMessage((new ChatComponentText(Reference.DEATH_SOCK_CHARGED)));
                 charged = true;
-                this.hasEffect(itemStack, 1);
+                if (world.isRemote) this.hasEffect(itemStack, 1);
             } else player.addChatMessage((new ChatComponentText("Charging " + chargeTime / 10 + " %")));
         }
         return itemStack;

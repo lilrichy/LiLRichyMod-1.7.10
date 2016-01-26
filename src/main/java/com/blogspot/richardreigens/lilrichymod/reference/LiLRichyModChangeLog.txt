@@ -12,6 +12,7 @@ Added Pulverized coal and charcoal usable as black dye.
 Fixed Drop Rate on Bearded Azalea plant.
 Fixed Plant not recognized as a plant - works with ender io farming station now.
 Added crafting recipe to turn Essence of Bearded back into seeds.
+Death sock no longer crashes a server.
 
 v1.11
 Added option to reset config file and renamed a bit to make it clearer - should be done to clean up config file
