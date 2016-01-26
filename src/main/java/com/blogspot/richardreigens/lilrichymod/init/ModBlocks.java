@@ -142,11 +142,11 @@ public class ModBlocks {
             Names.Blocks.STONE_MINERALS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.STONE_BLOCKS);
 
     public static final DecorativeBlocks stoneMineralsBlue = new DecorativeBlocks(
-            Names.Blocks.STONE_MINERALS_BLUE, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.STONE_MINERALS_COLORS_CRAFT);
+            Names.Blocks.STONE_MINERALS_BLUE, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.STONE_MINERALS_COLORS_CRAFT);
     public static final DecorativeBlocks stoneMineralsOrange = new DecorativeBlocks(
-            Names.Blocks.STONE_MINERALS_ORANGE, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.STONE_MINERALS_COLORS_CRAFT);
+            Names.Blocks.STONE_MINERALS_ORANGE, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.STONE_MINERALS_COLORS_CRAFT);
     public static final DecorativeBlocks stoneMineralsPurple = new DecorativeBlocks(
-            Names.Blocks.STONE_MINERALS_PURPLE, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.STONE_MINERALS_COLORS_CRAFT);
+            Names.Blocks.STONE_MINERALS_PURPLE, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.STONE_MINERALS_COLORS_CRAFT);
 
 
     //Panels
