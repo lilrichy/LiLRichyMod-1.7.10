@@ -1,6 +1,7 @@
-package com.blogspot.richardreigens.lilrichymod.tileEntity;
+package com.blogspot.richardreigens.lilrichymod.blocks.playerDetector;
 
 import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
+import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityLiLRichyMod;
 import cpw.mods.fml.common.network.ByteBufUtils;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.entity.player.EntityPlayer;

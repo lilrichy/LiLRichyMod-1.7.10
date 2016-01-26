@@ -1,10 +1,10 @@
 package com.blogspot.richardreigens.lilrichymod.proxy;
 
+import com.blogspot.richardreigens.lilrichymod.blocks.blockTable.ItemRenderBlockTable;
+import com.blogspot.richardreigens.lilrichymod.blocks.blockTable.RenderBlockTable;
+import com.blogspot.richardreigens.lilrichymod.blocks.blockTable.TileEntityBlockTable;
 import com.blogspot.richardreigens.lilrichymod.handler.EventHandler;
 import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
-import com.blogspot.richardreigens.lilrichymod.renderers.ItemRenderBlockTable;
-import com.blogspot.richardreigens.lilrichymod.renderers.RenderBlockTable;
-import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityBlockTable;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

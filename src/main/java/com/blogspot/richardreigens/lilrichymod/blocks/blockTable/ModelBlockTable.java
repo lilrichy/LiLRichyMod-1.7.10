@@ -1,4 +1,4 @@
-package com.blogspot.richardreigens.lilrichymod.models;
+package com.blogspot.richardreigens.lilrichymod.blocks.blockTable;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;

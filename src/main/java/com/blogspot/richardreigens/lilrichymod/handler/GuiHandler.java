@@ -1,11 +1,11 @@
 package com.blogspot.richardreigens.lilrichymod.handler;
 
-import com.blogspot.richardreigens.lilrichymod.gui.GuiAdvancedDetector;
-import com.blogspot.richardreigens.lilrichymod.gui.GuiBlockTable;
-import com.blogspot.richardreigens.lilrichymod.inventory.ContainerAdvancedDetector;
-import com.blogspot.richardreigens.lilrichymod.inventory.ContainerBlockTable;
-import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityAdvancedDetector;
-import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityBlockTable;
+import com.blogspot.richardreigens.lilrichymod.blocks.advancedPlayerDetector.ContainerAdvancedDetector;
+import com.blogspot.richardreigens.lilrichymod.blocks.advancedPlayerDetector.GuiAdvancedDetector;
+import com.blogspot.richardreigens.lilrichymod.blocks.advancedPlayerDetector.TileEntityAdvancedDetector;
+import com.blogspot.richardreigens.lilrichymod.blocks.blockTable.ContainerBlockTable;
+import com.blogspot.richardreigens.lilrichymod.blocks.blockTable.GuiBlockTable;
+import com.blogspot.richardreigens.lilrichymod.blocks.blockTable.TileEntityBlockTable;
 import cpw.mods.fml.common.network.IGuiHandler;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;

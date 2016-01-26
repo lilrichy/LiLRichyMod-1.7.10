@@ -1,4 +1,4 @@
-package com.blogspot.richardreigens.lilrichymod.blocks;
+package com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks;
 
 
 import com.blogspot.richardreigens.lilrichymod.creativeTab.CreativeTabLiLRichyMod;

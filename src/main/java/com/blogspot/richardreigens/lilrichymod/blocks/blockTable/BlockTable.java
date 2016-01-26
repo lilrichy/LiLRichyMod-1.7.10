@@ -1,11 +1,10 @@
-package com.blogspot.richardreigens.lilrichymod.blocks;
+package com.blogspot.richardreigens.lilrichymod.blocks.blockTable;
 
 import com.blogspot.richardreigens.lilrichymod.creativeTab.CreativeTabLiLRichyMod;
 import com.blogspot.richardreigens.lilrichymod.handler.GuiHandler;
 import com.blogspot.richardreigens.lilrichymod.lilrichymod;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
-import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityBlockTable;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;

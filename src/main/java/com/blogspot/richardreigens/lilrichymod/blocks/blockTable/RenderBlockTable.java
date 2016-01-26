@@ -1,9 +1,7 @@
-package com.blogspot.richardreigens.lilrichymod.renderers;
+package com.blogspot.richardreigens.lilrichymod.blocks.blockTable;
 
-import com.blogspot.richardreigens.lilrichymod.models.ModelBlockTable;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
-import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityBlockTable;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;

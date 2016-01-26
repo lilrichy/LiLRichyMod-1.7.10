@@ -1,9 +1,9 @@
-package com.blogspot.richardreigens.lilrichymod.tileEntity;
+package com.blogspot.richardreigens.lilrichymod.blocks.blockTable;
 
 import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
-import com.blogspot.richardreigens.lilrichymod.inventory.ContainerBlockTable;
 import com.blogspot.richardreigens.lilrichymod.recipes.BlockTableRecipes;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
+import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityLiLRichyMod;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;

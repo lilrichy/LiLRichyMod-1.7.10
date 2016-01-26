@@ -1,9 +1,15 @@
 package com.blogspot.richardreigens.lilrichymod.init;
 
-import com.blogspot.richardreigens.lilrichymod.blocks.*;
+import com.blogspot.richardreigens.lilrichymod.blocks.LiLRichyPanel;
+import com.blogspot.richardreigens.lilrichymod.blocks.advancedPlayerDetector.BlockAdvancedDetector;
+import com.blogspot.richardreigens.lilrichymod.blocks.blockTable.BlockTable;
 import com.blogspot.richardreigens.lilrichymod.blocks.crops.BeardedAzalea;
 import com.blogspot.richardreigens.lilrichymod.blocks.crops.CropItemBlock;
 import com.blogspot.richardreigens.lilrichymod.blocks.crops.LiLRichyCrop;
+import com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks.BlockConcrete;
+import com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks.DecorativeBlocks;
+import com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks.DecorativeItemBlock;
+import com.blogspot.richardreigens.lilrichymod.blocks.playerDetector.BlockPlayerDetector;
 import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;

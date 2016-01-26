@@ -1,10 +1,9 @@
-package com.blogspot.richardreigens.lilrichymod.gui;
+package com.blogspot.richardreigens.lilrichymod.blocks.advancedPlayerDetector;
 
+import com.blogspot.richardreigens.lilrichymod.gui.GuiLiLRichyMod;
 import com.blogspot.richardreigens.lilrichymod.handler.MessageHandleGuiButtonPress;
 import com.blogspot.richardreigens.lilrichymod.handler.network.NetworkHandler;
-import com.blogspot.richardreigens.lilrichymod.inventory.ContainerAdvancedDetector;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
-import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityAdvancedDetector;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.InventoryPlayer;

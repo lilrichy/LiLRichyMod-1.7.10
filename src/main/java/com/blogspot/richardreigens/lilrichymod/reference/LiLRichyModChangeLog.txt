@@ -18,7 +18,7 @@ Added 4 new Stone Blocks.
 Added Ore Dictionary Entries for Decorative Blocks.
 Rewrote the Block Table Recipes to Use Ore Dictionary.
 Cottage Recipes Now Use any Wood Planks instead of just Oak.
-Code clean up.
+Code clean up - Reorganized Folders and made Block table Recipe code a bit neater.
 
 v1.11
 Added option to reset config file and renamed a bit to make it clearer - should be done to clean up config file

@@ -1,4 +1,4 @@
-package com.blogspot.richardreigens.lilrichymod.renderers;
+package com.blogspot.richardreigens.lilrichymod.blocks.blockTable;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

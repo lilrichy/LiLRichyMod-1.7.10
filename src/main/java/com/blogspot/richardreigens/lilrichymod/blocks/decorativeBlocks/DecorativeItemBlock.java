@@ -1,4 +1,4 @@
-package com.blogspot.richardreigens.lilrichymod.blocks;
+package com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;

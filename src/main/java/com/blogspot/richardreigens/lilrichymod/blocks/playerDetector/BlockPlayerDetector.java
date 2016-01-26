@@ -1,9 +1,8 @@
-package com.blogspot.richardreigens.lilrichymod.blocks;
+package com.blogspot.richardreigens.lilrichymod.blocks.playerDetector;
 
 import com.blogspot.richardreigens.lilrichymod.creativeTab.CreativeTabLiLRichyMod;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
-import com.blogspot.richardreigens.lilrichymod.tileEntity.TEPlayerDetector;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;

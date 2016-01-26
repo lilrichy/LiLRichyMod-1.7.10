@@ -1,6 +1,6 @@
-package com.blogspot.richardreigens.lilrichymod.inventory;
+package com.blogspot.richardreigens.lilrichymod.blocks.advancedPlayerDetector;
 
-import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityAdvancedDetector;
+import com.blogspot.richardreigens.lilrichymod.inventory.ContainerLiLRichyMod;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Slot;

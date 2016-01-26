@@ -1,7 +1,7 @@
 package com.blogspot.richardreigens.lilrichymod.init;
 
-import com.blogspot.richardreigens.lilrichymod.blocks.DecorativeItemBlock;
-import com.blogspot.richardreigens.lilrichymod.blocks.GlassBlocks;
+import com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks.DecorativeItemBlock;
+import com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks.GlassBlocks;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
