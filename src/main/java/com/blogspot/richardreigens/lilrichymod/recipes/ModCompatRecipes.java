@@ -1,10 +1,12 @@
 package com.blogspot.richardreigens.lilrichymod.recipes;
 
 import cofh.api.modhelpers.ThermalExpansionHelper;
+import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
 import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
 import cpw.mods.fml.common.event.FMLInterModComms;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 
 /**
  * Created by LiLRichy on 1/25/2016.
@@ -14,6 +16,15 @@ public class ModCompatRecipes {
     public static void thermalExpansionRecipesInit() {
         //Thermal Expansion Pulverizer recipe for Crushed Concrete
         ThermalExpansionHelper.addPulverizerRecipe(2400, new ItemStack(ModBlocks.concrete), new ItemStack(ModItems.crushedConcrete, 4));
+
+        //Recipe to make coal and charcoal dust into black dye
+        if (ConfigurationHandler.coalDustRecipe) {
+            if (OreDictionary.doesOreNameExist("dustCoal"))
+                for (ItemStack aList : OreDictionary.getOres("dustCoal")) OreDictionary.registerOre("dyeBlack", aList);
+            if (OreDictionary.doesOreNameExist("dustCharcoal"))
+                for (ItemStack bList : OreDictionary.getOres("dustCharcoal"))
+                    OreDictionary.registerOre("dyeBlack", bList);
+        }
     }
 
     public static void enderIORecipesInit() {
