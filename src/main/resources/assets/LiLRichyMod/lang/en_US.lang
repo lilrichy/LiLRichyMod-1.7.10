@@ -69,7 +69,11 @@ tile.lilrichymod:decorativeBlocks/smallConcreteTexturedSquares.name=Small Textur
 tile.lilrichymod:decorativeBlocks/crackedStone.name=Cracked Stone
 tile.lilrichymod:decorativeBlocks/arrangedStoneBricks.name=Arranged Stone Bricks
 tile.lilrichymod:decorativeBlocks/stoneBlocks.name=Stone Blocks
+tile.lilrichymod:decorativeBlocks/stoneBlocksDark.name=Dark Stone Blocks
 tile.lilrichymod:decorativeBlocks/stoneMinerals.name=Stone Minerals
+tile.lilrichymod:decorativeBlocks/stoneMineralsBlue.name=Stone Minerals Blue
+tile.lilrichymod:decorativeBlocks/stoneMineralsOrange.name=Stone Minerals Orange
+tile.lilrichymod:decorativeBlocks/stoneMineralsPurple.name=Stone Minerals Purple
 
 #PANELS PLANKS
 tile.lilrichymod:panels/acaciaPanel.name=Acacia Planks Paneling
@@ -96,4 +100,13 @@ gui.lilrichymod.AdvancedDetector.button.regular=Regular
 #CROPS
 tile.lilrichymod:crops/beardedAzalea.name=Bearded Azalea
 item.lilrichymod:seeds/beardedAzaleaSeed.name=Bearded Azalea Seeds
+
+#GLASS
+tile.lilrichymod:glass/clearGlassBlue.name=Clear Blue Glass
+tile.lilrichymod:glass/clearGlassGreen.name=Clear Green Glass
+tile.lilrichymod:glass/clearGlassPink.name=Clear Pink Glass
+
+tile.lilrichymod:glass/frostyGlassBlue.name=Frosty Blue Glass
+tile.lilrichymod:glass/frostyGlassGreen.name=Frosty Green Glass
+tile.lilrichymod:glass/frostyGlassPurple.name=Frosty Purple Glass
 

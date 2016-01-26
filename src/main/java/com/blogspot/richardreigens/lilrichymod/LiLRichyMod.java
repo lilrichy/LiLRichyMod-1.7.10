@@ -5,6 +5,7 @@ import com.blogspot.richardreigens.lilrichymod.handler.GuiHandler;
 import com.blogspot.richardreigens.lilrichymod.handler.PacketDescriptionHandler;
 import com.blogspot.richardreigens.lilrichymod.handler.network.NetworkHandler;
 import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
+import com.blogspot.richardreigens.lilrichymod.init.ModBlocksGlass;
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
 import com.blogspot.richardreigens.lilrichymod.init.ModTileEntitys;
 import com.blogspot.richardreigens.lilrichymod.proxy.CommonProxy;
@@ -42,6 +43,7 @@ public class lilrichymod {
         LogHelper.info("Items Loading");
 
         ModBlocks.init();
+        ModBlocksGlass.init();
         LogHelper.info("Blocks Loading");
 
         ModTileEntitys.Init();

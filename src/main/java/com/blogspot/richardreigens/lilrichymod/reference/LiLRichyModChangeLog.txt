@@ -10,9 +10,15 @@ Added Config options to enable and disable recipes for many things.
 Removed old Decorative block recipes - use block table for all blocks now.
 Added Pulverized coal and charcoal usable as black dye.
 Fixed Drop Rate on Bearded Azalea plant.
-Fixed Plant not recognized as a plant - works with ender io farming station now.
+Fixed Plant not recognized as a plant - works with Ender IO farming station now.
 Added crafting recipe to turn Essence of Bearded back into seeds.
 Death sock no longer crashes a server.
+Added 6 new Glass Blocks.
+Added 4 new Stone Blocks.
+Added Ore Dictionary Entries for Decorative Blocks.
+Rewrote the Block Table Recipes to Use Ore Dictionary.
+Cottage Recipes Now Use any Wood Planks instead of just Oak.
+Code clean up.
 
 v1.11
 Added option to reset config file and renamed a bit to make it clearer - should be done to clean up config file

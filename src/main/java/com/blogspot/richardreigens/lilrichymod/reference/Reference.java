@@ -25,5 +25,7 @@ public class Reference {
     public static final String MARBLE_BLOCKS = "Concrete and Sandstone";
     public static final String CONCRETE_BLOCKS = "Concrete and Crushed Concrete";
     public static final String LAVA_BOWL_COLORS = "Craft in Block Table with Lava Bowl and Essence Of Bearded";
-    public static final String METAL_ROBOT_COLORS = "Craft in Block Table with Metal Battered Robot and Essence Of Beared";
+    public static final String METAL_ROBOT_COLORS = "Craft in Block Table with Metal Battered Robot and Essence Of Bearded";
+    public static final String GLASS_COLORS_CRAFT_TIP = "Craft in Block Table with Glass and Essence Of Bearded";
+    public static final String STONE_MINERALS_COLORS_CRAFT = "Craft in Block table with Stone Minerals and Essence of Bearded";
 }

@@ -8,6 +8,29 @@ public class Names {
         public static final String BLOCK_TABLE = "blockTable";
     }
 
+    public static class OreDicNames {
+        public static final String CONCRETE = "blockLilrichyConcrete";
+        public static final String GLASS = "blockLilrichyGlass";
+        public static final String LAVA = "blockLilrichyLava";
+        public static final String LAVA_BOWL = "blockLilrichyLavaBowl";
+        public static final String METAL = "blockLilrichyMetal";
+        public static final String METAL_ROBOT = "blockLilrichyMetalRobot";
+        public static final String MARBLE = "blockLilrichyMarble";
+        public static final String COTTAGE = "blockLilrichyCottage";
+        public static final String STONE = "blockLilrichyStone";
+        public static final String STONE_MINERALS = "blockLilrichyStoneMinerals";
+    }
+
+    public static class Glass {
+        public static final String CLEAR_GLASS_BLUE = "clearGlassBlue";
+        public static final String CLEAR_GLASS_GREEN = "clearGlassGreen";
+        public static final String CLEAR_GLASS_PINK = "clearGlassPink";
+
+        public static final String FROSTY_GLASS_BLUE = "frostyGlassBlue";
+        public static final String FROSTY_GLASS_GREEN = "frostyGlassGreen";
+        public static final String FROSTY_GLASS_PURPLE = "frostyGlassPurple";
+    }
+
     public static class Blocks {
         //Lava
         public static final String LAVA_CRACKS = "lavaCracks";
@@ -68,7 +91,12 @@ public class Names {
         public static final String CRACKED_STONE = "crackedStone";
         public static final String ARRANGED_STONE_BRICKS = "arrangedStoneBricks";
         public static final String STONE_BLOCKS = "stoneBlocks";
+        public static final String DARK_STONE_BLOCKS = "stoneBlocksDark";
         public static final String STONE_MINERALS = "stoneMinerals";
+
+        public static final String STONE_MINERALS_BLUE = "stoneMineralsBlue";
+        public static final String STONE_MINERALS_ORANGE = "stoneMineralsOrange";
+        public static final String STONE_MINERALS_PURPLE = "stoneMineralsPurple";
 
         //PlayerDetector Blocks
         public static final String PLAYER_DETECTOR = "playerDetector";
