@@ -24,5 +24,6 @@ public class ItemRecipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.seedBearedAzailia, 1), " r ", "ese", " r ",
                 'r', new ItemStack(Items.rotten_flesh), 'e', new ItemStack(Items.spider_eye),
                 's', new ItemStack(Items.wheat_seeds));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.seedBearedAzailia), new ItemStack(ModItems.essanceOfBeared));
     }
 }

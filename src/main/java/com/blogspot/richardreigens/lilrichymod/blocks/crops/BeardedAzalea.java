@@ -8,8 +8,6 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import net.minecraft.util.IIcon;
 
-import java.util.Random;
-
 /**
  * Created by Rich on 12/2/2015.
  */
@@ -22,17 +20,13 @@ public class BeardedAzalea extends LiLRichyCrop {
     }
 
     @Override
-    public int quantityDropped(int metaData, int parFortune, Random random) {
-        return (random.nextInt(3));
+    protected Item func_149866_i() {
+        return ModItems.seedBearedAzailia;
     }
 
     @Override
-    public Item getItemDropped(int metaData, Random random, int parFortune) {
-        if (metaData < maxGrowthStage) {
-            return ModItems.seedBearedAzailia;
-        } else if (random.nextInt(10) > 5)
-            return (ModItems.essanceOfBeared);
-        else return ModItems.seedBearedAzailia;
+    protected Item func_149865_P() {
+        return ModItems.essanceOfBeared;
     }
 
     @Override

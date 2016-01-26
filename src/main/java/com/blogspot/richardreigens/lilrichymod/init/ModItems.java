@@ -1,12 +1,12 @@
 package com.blogspot.richardreigens.lilrichymod.init;
 
 import com.blogspot.richardreigens.lilrichymod.items.ItemLiLRichyMod;
-import com.blogspot.richardreigens.lilrichymod.items.ItemLiLRichySeedFood;
 import com.blogspot.richardreigens.lilrichymod.items.seeds.SeedBeardedAzalea;
 import com.blogspot.richardreigens.lilrichymod.items.tools.ItemDeathSock;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.ItemSeeds;
 
 /**
  * Created by Rich on 11/19/2015.
@@ -17,7 +17,7 @@ public class ModItems {
     public static final ItemLiLRichyMod deathSock = new ItemDeathSock();
     public static final ItemLiLRichyMod concreteMix = new ItemLiLRichyMod(Names.Items.CONCRETE_MIX, 64);
     public static final ItemLiLRichyMod crushedConcrete = new ItemLiLRichyMod(Names.Items.CRUSHED_CONCRETE, 64);
-    public static final ItemLiLRichySeedFood seedBearedAzailia = new SeedBeardedAzalea(Names.Crops.BEARDED_AZALEA_SEED);
+    public static final ItemSeeds seedBearedAzailia = new SeedBeardedAzalea(Names.Crops.BEARDED_AZALEA_SEED);
     public static final ItemLiLRichyMod essanceOfBeared = new ItemLiLRichyMod(Names.Items.ESSENCE_OF_BEARED, 64);
 
     public static void init() {
