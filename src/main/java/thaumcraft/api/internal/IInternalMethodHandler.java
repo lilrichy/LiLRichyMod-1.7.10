@@ -8,30 +8,30 @@ import thaumcraft.api.aspects.AspectList;
 
 public interface IInternalMethodHandler {
 
-    void generateVisEffect(int dim, int x, int y, int z, int x2, int y2, int z2, int color);
+	void generateVisEffect(int dim, int x, int y, int z, int x2, int y2, int z2, int color);
 
-    boolean isResearchComplete(String username, String researchkey);
+	boolean isResearchComplete(String username, String researchkey);
 
-    ItemStack getStackInRowAndColumn(Object instance, int row, int column);
+	ItemStack getStackInRowAndColumn(Object instance, int row, int column);
 
-    AspectList getObjectAspects(ItemStack is);
+	AspectList getObjectAspects(ItemStack is);
 
-    AspectList getBonusObjectTags(ItemStack is, AspectList ot);
+	AspectList getBonusObjectTags(ItemStack is, AspectList ot);
 
-    AspectList generateTags(Item item, int meta);
+	AspectList generateTags(Item item, int meta);
 
-    boolean consumeVisFromWand(ItemStack wand, EntityPlayer player, AspectList cost, boolean doit, boolean crafting);
+	boolean consumeVisFromWand(ItemStack wand, EntityPlayer player, AspectList cost, boolean doit, boolean crafting);
 
-    boolean consumeVisFromWandCrafting(ItemStack wand, EntityPlayer player, AspectList cost, boolean doit);
+	boolean consumeVisFromWandCrafting(ItemStack wand, EntityPlayer player, AspectList cost, boolean doit);
 
-    boolean consumeVisFromInventory(EntityPlayer player, AspectList cost);
+	boolean consumeVisFromInventory(EntityPlayer player, AspectList cost);
 
-    void addWarpToPlayer(EntityPlayer player, int amount, boolean temporary);
+	void addWarpToPlayer(EntityPlayer player, int amount, boolean temporary);
 
-    void addStickyWarpToPlayer(EntityPlayer player, int amount);
+	void addStickyWarpToPlayer(EntityPlayer player, int amount);
 
-    boolean hasDiscoveredAspect(String username, Aspect aspect);
+	boolean hasDiscoveredAspect(String username, Aspect aspect);
 
-    AspectList getDiscoveredAspects(String username);
-
+	AspectList getDiscoveredAspects(String username);
+	
 }

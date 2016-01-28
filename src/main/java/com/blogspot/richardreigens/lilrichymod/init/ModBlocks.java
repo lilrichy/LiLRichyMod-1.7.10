@@ -9,6 +9,7 @@ import com.blogspot.richardreigens.lilrichymod.blocks.crops.LiLRichyCrop;
 import com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks.BlockConcrete;
 import com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks.DecorativeBlocks;
 import com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks.DecorativeItemBlock;
+import com.blogspot.richardreigens.lilrichymod.blocks.lectern.BlockLectern;
 import com.blogspot.richardreigens.lilrichymod.blocks.playerDetector.BlockPlayerDetector;
 import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
@@ -167,10 +168,12 @@ public class ModBlocks {
     //Tile Entity Blocks
     public static final BlockPlayerDetector playerDetector = new BlockPlayerDetector(Material.anvil);
     public static final BlockAdvancedDetector advancedDetector = new BlockAdvancedDetector(Material.anvil);
+    public static final BlockLectern lectern = new BlockLectern();
 
     public static void init() {
         //Custom Rendered Blocks
         GameRegistry.registerBlock(blockTable, Names.Models.BLOCK_TABLE);
+        GameRegistry.registerBlock(lectern, Names.Models.LECTERN);
 
         //Crops
         GameRegistry.registerBlock(beardedAzalea, CropItemBlock.class, Names.Crops.BEARDED_AZALEA);
@@ -179,123 +182,173 @@ public class ModBlocks {
 
         //Lava
         GameRegistry.registerBlock(lavaBowl, DecorativeItemBlock.class, Names.Blocks.LAVA_BOWL);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, lavaBowl);
         OreDictionary.registerOre(Names.OreDicNames.LAVA, lavaBowl);
         OreDictionary.registerOre(Names.OreDicNames.LAVA_BOWL, lavaBowl);
         GameRegistry.registerBlock(lavaBowlBlue, DecorativeItemBlock.class, Names.Blocks.LAVA_BOWL_BLUE);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, lavaBowlBlue);
         OreDictionary.registerOre(Names.OreDicNames.LAVA_BOWL, lavaBowlBlue);
         GameRegistry.registerBlock(lavaBowlGreen, DecorativeItemBlock.class, Names.Blocks.LAVA_BOWL_GREEN);
         OreDictionary.registerOre(Names.OreDicNames.LAVA_BOWL, lavaBowlGreen);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, lavaBowlGreen);
         GameRegistry.registerBlock(lavaBowlPurple, DecorativeItemBlock.class, Names.Blocks.LAVA_BOWL_PURPLE);
         OreDictionary.registerOre(Names.OreDicNames.LAVA_BOWL, lavaBowlPurple);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, lavaBowlPurple);
 
         GameRegistry.registerBlock(lavaCracks, DecorativeItemBlock.class, Names.Blocks.LAVA_CRACKS);
         OreDictionary.registerOre(Names.OreDicNames.LAVA, lavaCracks);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, lavaCracks);
         GameRegistry.registerBlock(lavaDeepFire, DecorativeItemBlock.class, Names.Blocks.LAVA_DEEP_FIRE);
         OreDictionary.registerOre(Names.OreDicNames.LAVA, lavaDeepFire);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, lavaDeepFire);
         GameRegistry.registerBlock(lavaPelesLake, DecorativeItemBlock.class, Names.Blocks.LAVA_PELES_LAKE);
         OreDictionary.registerOre(Names.OreDicNames.LAVA, lavaPelesLake);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, lavaPelesLake);
         GameRegistry.registerBlock(lavaSearingGorge, DecorativeItemBlock.class, Names.Blocks.LAVA_SEARING_GORGE);
         OreDictionary.registerOre(Names.OreDicNames.LAVA, lavaSearingGorge);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, lavaSearingGorge);
         GameRegistry.registerBlock(lavaVolcano, DecorativeItemBlock.class, Names.Blocks.LAVA_SLUMBERING_VOLCANO);
         OreDictionary.registerOre(Names.OreDicNames.LAVA, lavaVolcano);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, lavaVolcano);
 
         //Metal
         GameRegistry.registerBlock(metalBatteredRobot, DecorativeItemBlock.class, Names.Blocks.METAL_BATTERED_ROBOT);
         OreDictionary.registerOre(Names.OreDicNames.METAL, metalBatteredRobot);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, metalBatteredRobot);
         OreDictionary.registerOre(Names.OreDicNames.METAL_ROBOT, metalBatteredRobot);
         GameRegistry.registerBlock(metalBatteredRobotBlue, DecorativeItemBlock.class, Names.Blocks.METAL_BATTERED_ROBOT_BLUE);
         OreDictionary.registerOre(Names.OreDicNames.METAL_ROBOT, metalBatteredRobotBlue);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, metalBatteredRobotBlue);
         GameRegistry.registerBlock(metalBatteredRobotOrange, DecorativeItemBlock.class, Names.Blocks.METAL_BATTERED_ROBOT_ORANGE);
         OreDictionary.registerOre(Names.OreDicNames.METAL_ROBOT, metalBatteredRobotOrange);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, metalBatteredRobotOrange);
         GameRegistry.registerBlock(metalBatteredRobotPurple, DecorativeItemBlock.class, Names.Blocks.METAL_BATTERED_ROBOT_PURPLE);
         OreDictionary.registerOre(Names.OreDicNames.METAL_ROBOT, metalBatteredRobotPurple);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, metalBatteredRobotPurple);
 
         GameRegistry.registerBlock(metalBubbleGrip, DecorativeItemBlock.class, Names.Blocks.METAL_BUBBLE_GRIP);
         OreDictionary.registerOre(Names.OreDicNames.METAL, metalBubbleGrip);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, metalBubbleGrip);
         GameRegistry.registerBlock(metalNeedlepointSteel, DecorativeItemBlock.class, Names.Blocks.METAL_NEEDLEPOINT_STEEL);
         OreDictionary.registerOre(Names.OreDicNames.METAL, metalNeedlepointSteel);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, metalNeedlepointSteel);
         GameRegistry.registerBlock(metalRustedIronGrip, DecorativeItemBlock.class, Names.Blocks.METAL_RUSTED_IRON_GRIP);
         OreDictionary.registerOre(Names.OreDicNames.METAL, metalRustedIronGrip);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, metalRustedIronGrip);
         GameRegistry.registerBlock(metalSeafoamTarnish, DecorativeItemBlock.class, Names.Blocks.METAL_SEAFOAM_TARNISH);
         OreDictionary.registerOre(Names.OreDicNames.METAL, metalSeafoamTarnish);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, metalSeafoamTarnish);
         GameRegistry.registerBlock(metalStained, DecorativeItemBlock.class, Names.Blocks.METAL_STAINED);
         OreDictionary.registerOre(Names.OreDicNames.METAL, metalStained);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, metalStained);
 
         //Marble
         GameRegistry.registerBlock(marbleBlack, DecorativeItemBlock.class, Names.Blocks.MARBLE_BLACK);
         OreDictionary.registerOre(Names.OreDicNames.MARBLE, marbleBlack);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, marbleBlack);
         GameRegistry.registerBlock(marbleBlancoAurora, DecorativeItemBlock.class, Names.Blocks.MARBLE_BLANCO_AURORA);
         OreDictionary.registerOre(Names.OreDicNames.MARBLE, marbleBlancoAurora);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, marbleBlancoAurora);
         GameRegistry.registerBlock(marbleBlancoNafin, DecorativeItemBlock.class, Names.Blocks.MARBLE_BLANCO_NAFIN);
         OreDictionary.registerOre(Names.OreDicNames.MARBLE, marbleBlancoNafin);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, marbleBlancoNafin);
         GameRegistry.registerBlock(marbleSpottedBianco, DecorativeItemBlock.class, Names.Blocks.MARBLE_SPOTTED_BIANCO);
         OreDictionary.registerOre(Names.OreDicNames.MARBLE, marbleSpottedBianco);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, marbleSpottedBianco);
 
         //Cottage
         GameRegistry.registerBlock(cottageWall, DecorativeItemBlock.class, Names.Blocks.COTTAGE_WALL);
         OreDictionary.registerOre(Names.OreDicNames.COTTAGE, cottageWall);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, cottageWall);
         GameRegistry.registerBlock(cottageWallArchedBeam, DecorativeItemBlock.class, Names.Blocks.COTTAGE_WALL_ARCHED_BEAM);
         OreDictionary.registerOre(Names.OreDicNames.COTTAGE, cottageWallArchedBeam);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, cottageWallArchedBeam);
         GameRegistry.registerBlock(cottageWallArchedBeamDark, DecorativeItemBlock.class, Names.Blocks.COTTAGE_WALL_ARCHED_BEAM_DARK);
         OreDictionary.registerOre(Names.OreDicNames.COTTAGE, cottageWallArchedBeamDark);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, cottageWallArchedBeamDark);
         GameRegistry.registerBlock(cottageWallDark, DecorativeItemBlock.class, Names.Blocks.COTTAGE_WALL_DARK);
         OreDictionary.registerOre(Names.OreDicNames.COTTAGE, cottageWallDark);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, cottageWallDark);
         GameRegistry.registerBlock(cottageWallPanelDark, DecorativeItemBlock.class, Names.Blocks.COTTAGE_WALL_PANEL_DARK);
         OreDictionary.registerOre(Names.OreDicNames.COTTAGE, cottageWallPanelDark);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, cottageWallPanelDark);
         GameRegistry.registerBlock(cottageWallPanelLight, DecorativeItemBlock.class, Names.Blocks.COTTAGE_WALL_PANEL_LIGHT);
         OreDictionary.registerOre(Names.OreDicNames.COTTAGE, cottageWallPanelLight);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, cottageWallPanelLight);
         GameRegistry.registerBlock(cottageWallXDark, DecorativeItemBlock.class, Names.Blocks.COTTAGE_WALL_X_DARK);
         OreDictionary.registerOre(Names.OreDicNames.COTTAGE, cottageWallXDark);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, cottageWallXDark);
         GameRegistry.registerBlock(cottageWallXLight, DecorativeItemBlock.class, Names.Blocks.COTTAGE_WALL_X_LIGHT);
         OreDictionary.registerOre(Names.OreDicNames.COTTAGE, cottageWallXLight);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, cottageWallXLight);
         GameRegistry.registerBlock(cottageWindowDark, DecorativeItemBlock.class, Names.Blocks.COTTAGE_WINDOW_DARK);
         OreDictionary.registerOre(Names.OreDicNames.COTTAGE, cottageWindowDark);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, cottageWindowDark);
         GameRegistry.registerBlock(cottageWindowLight, DecorativeItemBlock.class, Names.Blocks.COTTAGE_WINDOW_LIGHT);
         OreDictionary.registerOre(Names.OreDicNames.COTTAGE, cottageWindowLight);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, cottageWindowLight);
 
         //Concrete
         GameRegistry.registerBlock(concrete, DecorativeItemBlock.class, Names.Blocks.CONCRETE);
         OreDictionary.registerOre(Names.OreDicNames.CONCRETE, concrete);
         GameRegistry.registerBlock(fancyConcreteBlocks, DecorativeItemBlock.class, Names.Blocks.FANCY_CONCRETE_BLOCKS);
         OreDictionary.registerOre(Names.OreDicNames.CONCRETE, fancyConcreteBlocks);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, fancyConcreteBlocks);
         GameRegistry.registerBlock(concreteBricks, DecorativeItemBlock.class, Names.Blocks.CONCRETE_BRICKS);
         OreDictionary.registerOre(Names.OreDicNames.CONCRETE, concreteBricks);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, concreteBricks);
         GameRegistry.registerBlock(concreteBricksDark, DecorativeItemBlock.class, Names.Blocks.CONCRETE_BRICKS_DARK);
         OreDictionary.registerOre(Names.OreDicNames.CONCRETE, concreteBricksDark);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, concreteBricksDark);
         GameRegistry.registerBlock(concreteRocks, DecorativeItemBlock.class, Names.Blocks.CONCRETE_ROCKS);
         OreDictionary.registerOre(Names.OreDicNames.CONCRETE, concreteRocks);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, concreteRocks);
         GameRegistry.registerBlock(concreteTexturedBlocks, DecorativeItemBlock.class, Names.Blocks.CONCRETE_TEXTURED_BLOCKS);
         OreDictionary.registerOre(Names.OreDicNames.CONCRETE, concreteTexturedBlocks);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, concreteTexturedBlocks);
         GameRegistry.registerBlock(oldConcreteSquares, DecorativeItemBlock.class, Names.Blocks.OLD_CONCRETE_SQUARES);
         OreDictionary.registerOre(Names.OreDicNames.CONCRETE, oldConcreteSquares);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, oldConcreteSquares);
         GameRegistry.registerBlock(concreteSquares, DecorativeItemBlock.class, Names.Blocks.CONCRETE_SQUARES);
         OreDictionary.registerOre(Names.OreDicNames.CONCRETE, concreteSquares);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, concreteSquares);
         GameRegistry.registerBlock(smallConcreteBricks, DecorativeItemBlock.class, Names.Blocks.SMALL_CONCRETE_BRICKS);
         OreDictionary.registerOre(Names.OreDicNames.CONCRETE, smallConcreteBricks);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, smallConcreteBricks);
         GameRegistry.registerBlock(smallConcreteTexturedSquares, DecorativeItemBlock.class, Names.Blocks.SMALL_CONCRETE_TEXTURED_SQUARES);
         OreDictionary.registerOre(Names.OreDicNames.CONCRETE, smallConcreteTexturedSquares);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, smallConcreteTexturedSquares);
         GameRegistry.registerBlock(arrangedConcreteBricks, DecorativeItemBlock.class, Names.Blocks.ARRANGED_CONCRETE_BRICKS);
         OreDictionary.registerOre(Names.OreDicNames.CONCRETE, arrangedConcreteBricks);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, arrangedConcreteBricks);
 
         //Stone
         GameRegistry.registerBlock(crackedStone, DecorativeItemBlock.class, Names.Blocks.CRACKED_STONE);
         OreDictionary.registerOre(Names.OreDicNames.STONE, crackedStone);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, crackedStone);
         GameRegistry.registerBlock(arrangedStoneBricks, DecorativeItemBlock.class, Names.Blocks.ARRANGED_STONE_BRICKS);
         OreDictionary.registerOre(Names.OreDicNames.STONE, arrangedStoneBricks);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, arrangedStoneBricks);
         GameRegistry.registerBlock(stoneBlocks, DecorativeItemBlock.class, Names.Blocks.STONE_BLOCKS);
         OreDictionary.registerOre(Names.OreDicNames.STONE, stoneBlocks);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, stoneBlocks);
         GameRegistry.registerBlock(darkStoneBlocks, DecorativeItemBlock.class, Names.Blocks.DARK_STONE_BLOCKS);
         OreDictionary.registerOre(Names.OreDicNames.STONE, darkStoneBlocks);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, darkStoneBlocks);
 
         GameRegistry.registerBlock(stoneMinerals, DecorativeItemBlock.class, Names.Blocks.STONE_MINERALS);
         OreDictionary.registerOre(Names.OreDicNames.STONE, stoneMinerals);
         OreDictionary.registerOre(Names.OreDicNames.STONE_MINERALS, stoneMinerals);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, stoneMinerals);
         GameRegistry.registerBlock(stoneMineralsBlue, DecorativeItemBlock.class, Names.Blocks.STONE_MINERALS_BLUE);
         OreDictionary.registerOre(Names.OreDicNames.STONE_MINERALS, stoneMineralsBlue);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, stoneMineralsBlue);
         GameRegistry.registerBlock(stoneMineralsOrange, DecorativeItemBlock.class, Names.Blocks.STONE_MINERALS_ORANGE);
         OreDictionary.registerOre(Names.OreDicNames.STONE_MINERALS, stoneMineralsOrange);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, stoneMineralsOrange);
         GameRegistry.registerBlock(stoneMineralsPurple, DecorativeItemBlock.class, Names.Blocks.STONE_MINERALS_PURPLE);
         OreDictionary.registerOre(Names.OreDicNames.STONE_MINERALS, stoneMineralsPurple);
+        OreDictionary.registerOre(Names.OreDicNames.SMELT_TO_CONCRETE, stoneMineralsPurple);
 
         //Panels Planks
         GameRegistry.registerBlock(acaciaPanel, Names.Panels.ACACIA_PANEL);

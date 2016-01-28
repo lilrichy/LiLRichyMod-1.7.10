@@ -4,6 +4,9 @@ Update version in this file, build.gradle, gradle.properties, Reference
 
 v1.13
 Fixed Typo on Stone Minerals blocks
+Added checks for recipes to not load if required mod is not present.
+Added Lectern Block.
+Added Glass Panes.
 
 v1.12
 Added Thermal Expansion Pulverizer recipe for crushed concrete from concrete blocks.

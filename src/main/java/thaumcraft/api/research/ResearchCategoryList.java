@@ -17,19 +17,13 @@ public class ResearchCategoryList {
      */
     public int minDisplayRow;
 
-    /**
-     * Is the biggest column used on the GUI.
-     */
+    /** Is the biggest column used on the GUI. */
     public int maxDisplayColumn;
 
-    /**
-     * Is the biggest row used on the GUI.
-     */
+    /** Is the biggest row used on the GUI. */
     public int maxDisplayRow;
 
-    /**
-     * display variables
-     **/
+    /** display variables **/
     public ResourceLocation icon;
     public ResourceLocation background;
     //Research

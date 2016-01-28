@@ -1,0 +1,9 @@
+package com.blogspot.richardreigens.lilrichymod.handler.network;
+
+/**
+ * Created by LiLRichy on 1/27/2016.
+ */
+public class PacketIDs {
+    public static final byte GuiButtonPress = 1;
+    public static final byte LecternData = 2;
+}

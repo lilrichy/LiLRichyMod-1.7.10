@@ -19,45 +19,52 @@ public class BlockCoordinates implements Comparable {
     public BlockCoordinates() {
     }
 
-    public BlockCoordinates(int par1, int par2, int par3) {
+    public BlockCoordinates(int par1, int par2, int par3)
+    {
         this.x = par1;
         this.y = par2;
         this.z = par3;
     }
 
-    public BlockCoordinates(TileEntity tile) {
+    public BlockCoordinates(TileEntity tile)
+    {
         this.x = tile.xCoord;
         this.y = tile.yCoord;
         this.z = tile.zCoord;
     }
 
-    public BlockCoordinates(BlockCoordinates par1ChunkCoordinates) {
+    public BlockCoordinates(BlockCoordinates par1ChunkCoordinates)
+    {
         this.x = par1ChunkCoordinates.x;
         this.y = par1ChunkCoordinates.y;
         this.z = par1ChunkCoordinates.z;
     }
 
     public boolean equals(Object par1Obj) {
-        if (!(par1Obj instanceof BlockCoordinates)) {
+        if (!(par1Obj instanceof BlockCoordinates))
+        {
             return false;
         } else {
             BlockCoordinates coordinates = (BlockCoordinates) par1Obj;
-            return this.x == coordinates.x && this.y == coordinates.y && this.z == coordinates.z;
+            return this.x == coordinates.x && this.y == coordinates.y && this.z == coordinates.z ;
         }
     }
 
-    public int hashCode() {
+    public int hashCode()
+    {
         return this.x + this.y << 8 + this.z << 16;
     }
 
     /**
      * Compare the coordinate with another coordinate
      */
-    public int compareWorldCoordinate(BlockCoordinates par1) {
+    public int compareWorldCoordinate(BlockCoordinates par1)
+    {
         return this.y == par1.y ? (this.z == par1.z ? this.x - par1.x : this.z - par1.z) : this.y - par1.y;
     }
 
-    public void set(int par1, int par2, int par3, int d) {
+    public void set(int par1, int par2, int par3, int d)
+    {
         this.x = par1;
         this.y = par2;
         this.z = par3;
@@ -76,24 +83,25 @@ public class BlockCoordinates implements Comparable {
     /**
      * Return the squared distance between this coordinates and the ChunkCoordinates given as argument.
      */
-    public float getDistanceSquaredToWorldCoordinates(BlockCoordinates par1ChunkCoordinates) {
+    public float getDistanceSquaredToWorldCoordinates(BlockCoordinates par1ChunkCoordinates)
+    {
         return this.getDistanceSquared(par1ChunkCoordinates.x, par1ChunkCoordinates.y, par1ChunkCoordinates.z);
     }
 
     public int compareTo(Object par1Obj) {
-        return this.compareWorldCoordinate((BlockCoordinates) par1Obj);
+        return this.compareWorldCoordinate((BlockCoordinates)par1Obj);
     }
-
+    
     public void readNBT(NBTTagCompound nbt) {
         this.x = nbt.getInteger("b_x");
         this.y = nbt.getInteger("b_y");
         this.z = nbt.getInteger("b_z");
     }
-
+    
     public void writeNBT(NBTTagCompound nbt) {
         nbt.setInteger("b_x", x);
         nbt.setInteger("b_y", y);
         nbt.setInteger("b_z", z);
     }
-
+    
 }

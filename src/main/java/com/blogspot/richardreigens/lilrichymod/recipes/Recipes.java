@@ -3,10 +3,12 @@ package com.blogspot.richardreigens.lilrichymod.recipes;
 import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
 import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
+import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 
 /**
  * Created by Rich on 11/20/2015.
@@ -14,17 +16,19 @@ import net.minecraft.item.ItemStack;
 public class Recipes {
     public static void init() {
 
-        blockRecipies();
+        blockRecipes();
         tileRecipes();
+
+        PanesRecipes.init();
 
         if (ConfigurationHandler.smeltingRecipes) smeltingRecipes();
         if (ConfigurationHandler.itemRecipes) ItemRecipes.init();
-        if (ConfigurationHandler.panelRecipes) PanelsRecipies.init();
+        if (ConfigurationHandler.panelRecipes) PanelsRecipes.init();
         if (ConfigurationHandler.thermalExpansionRecipes) ModCompatRecipes.thermalExpansionRecipesInit();
         if (ConfigurationHandler.enderIORecipies) ModCompatRecipes.enderIORecipesInit();
     }
 
-    public static void blockRecipies() {
+    public static void blockRecipes() {
         //Concrete
         GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.concrete),
                 new ItemStack(ModItems.crushedConcrete), new ItemStack(ModItems.crushedConcrete),
@@ -34,6 +38,11 @@ public class Recipes {
     public static void smeltingRecipes() {
         //Concrete
         GameRegistry.addSmelting(new ItemStack(ModItems.concreteMix), new ItemStack(ModBlocks.concrete), 0.1f);
+
+        //Smelt Blocks back to Concrete
+        for (ItemStack aList : OreDictionary.getOres(Names.OreDicNames.SMELT_TO_CONCRETE)) {
+            GameRegistry.addSmelting(new ItemStack(aList.getItem()), new ItemStack(ModBlocks.concrete), 0.1f);
+        }
     }
 
     public static void tileRecipes() {
@@ -48,5 +57,9 @@ public class Recipes {
         //Block Table
         GameRegistry.addRecipe(new ItemStack(ModBlocks.blockTable, 1), "www", "pwp", "p p",
                 'w', new ItemStack(Blocks.heavy_weighted_pressure_plate), 'p', new ItemStack(Blocks.planks));
+
+        //Lectern
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.lectern, 1), "sss", " p ", " s ",
+                's', new ItemStack(Blocks.wooden_slab), 'p', new ItemStack(Blocks.planks));
     }
 }

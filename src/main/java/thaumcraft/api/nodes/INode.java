@@ -6,55 +6,54 @@ import thaumcraft.api.aspects.IAspectContainer;
 
 public interface INode extends IAspectContainer {
 
-    /**
-     * Unique identifier to distinguish nodes. Normal node id's are based on world id and coordinates
-     *
-     * @return
-     */
-    String getId();
+	/**
+	 * Unique identifier to distinguish nodes. Normal node id's are based on world id and coordinates
+	 *
+	 * @return
+	 */
+	String getId();
 
-    AspectList getAspectsBase();
+	AspectList getAspectsBase();
 
-    /**
-     * Return the type of node
-     *
-     * @return
-     */
-    NodeType getNodeType();
+	/**
+	 * Return the type of node
+	 *
+	 * @return
+	 */
+	NodeType getNodeType();
 
-    /**
-     * Set the type of node
-     *
-     * @return
-     */
-    void setNodeType(NodeType nodeType);
+	/**
+	 * Set the type of node
+	 *
+	 * @return
+	 */
+	void setNodeType(NodeType nodeType);
 
-    /**
-     * Return the node modifier
-     *
-     * @return
-     */
-    NodeModifier getNodeModifier();
+	/**
+	 * Return the node modifier
+	 *
+	 * @return
+	 */
+	NodeModifier getNodeModifier();
 
-    /**
-     * Set the node modifier
-     *
-     * @return
-     */
-    void setNodeModifier(NodeModifier nodeModifier);
+	/**
+	 * Set the node modifier
+	 *
+	 * @return
+	 */
+	void setNodeModifier(NodeModifier nodeModifier);
 
-    /**
-     * Return the maximum capacity of each aspect the node can hold
-     *
-     * @return
-     */
-    int getNodeVisBase(Aspect aspect);
+	/**
+	 * Return the maximum capacity of each aspect the node can hold
+	 * @return
+	 */
+	int getNodeVisBase(Aspect aspect);
 
-    /**
-     * Set the maximum capacity of each aspect the node can hold
-     *
-     * @return
-     */
-    void setNodeVisBase(Aspect aspect, short nodeVisBase);
-
+	/**
+	 * Set the maximum capacity of each aspect the node can hold
+	 *
+	 * @return
+	 */
+	void setNodeVisBase(Aspect aspect, short nodeVisBase);
+	
 }

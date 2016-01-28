@@ -21,7 +21,7 @@ public class ShapedArcaneRecipe implements IArcaneRecipe {
     public ItemStack output = null;
     public Object[] input = null;
     public AspectList aspects = null;
-    public String research;
+    public String research; 
     public int width = 0;
     public int height = 0;
     private boolean mirrored = true;
@@ -201,7 +201,6 @@ public class ShapedArcaneRecipe implements IArcaneRecipe {
     /**
      * Returns the input for this recipe, any mod accessing this value should never
      * manipulate the values in this array as it will effect the recipe itself.
-     *
      * @return The recipes input vales.
      */
     public Object[] getInput() {

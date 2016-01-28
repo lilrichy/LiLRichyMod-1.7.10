@@ -65,7 +65,7 @@ public class ResearchItem {
     private boolean isSecondary;
 
     /**
-     * This indicates if the research should use a circular icon border. Usually used for "passive" research
+     * This indicates if the research should use a circular icon border. Usually used for "passive" research 
      * that doesn't have recipes and grants passive effects, or that unlock automatically.
      */
     private boolean isRound;
@@ -76,26 +76,27 @@ public class ResearchItem {
     private boolean isStub;
 
     /**
-     * This indicated that the research is completely hidden and cannot be discovered by any
+     * This indicated that the research is completely hidden and cannot be discovered by any 
      * player-controlled means. The recipes will never show up in the thaumonomicon.
-     * Usually used to unlock "hidden" recipes via sibling unlocking, like
+     * Usually used to unlock "hidden" recipes via sibling unlocking, like 
      * the various cap and rod combos for wands.
      */
-    private boolean isVirtual;
-
-
+    private boolean isVirtual;    
+    
+    
+    
     /**
      * Concealed research does not display in the thaumonomicon until parent researches are discovered.
      */
     private boolean isConcealed;
 
     /**
-     * Hidden research can only be discovered via scanning or knowledge fragments
+     * Hidden research can only be discovered via scanning or knowledge fragments 
      */
     private boolean isHidden;
 
     /**
-     * This is the same as isHidden, except it cannot be discovered with knowledge fragments, only scanning.
+     * This is the same as isHidden, except it cannot be discovered with knowledge fragments, only scanning.  
      */
     private boolean isLost;
 

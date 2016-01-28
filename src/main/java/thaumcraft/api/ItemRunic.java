@@ -5,16 +5,16 @@ import net.minecraft.item.ItemStack;
 
 public class ItemRunic extends Item implements IRunicArmor {
 
-    int charge;
+	int charge;
 
-    public ItemRunic(int charge) {
-        super();
-        this.charge = charge;
+	public ItemRunic(int charge) {
+		super();
+		this.charge = charge;
     }
 
-    @Override
-    public int getRunicCharge(ItemStack itemstack) {
-        return charge;
-    }
-
+	@Override
+	public int getRunicCharge(ItemStack itemstack) {
+		return charge;
+	}
+	
 }

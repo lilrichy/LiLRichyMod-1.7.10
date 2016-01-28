@@ -6,10 +6,12 @@ package com.blogspot.richardreigens.lilrichymod.reference;
 public class Names {
     public static class Models {
         public static final String BLOCK_TABLE = "blockTable";
+        public static final String LECTERN = "lectern";
     }
 
     public static class OreDicNames {
         public static final String CONCRETE = "blockLilrichyConcrete";
+        public static final String SMELT_TO_CONCRETE = "lilrichySmeltable";
         public static final String GLASS = "blockLilrichyGlass";
         public static final String LAVA = "blockLilrichyLava";
         public static final String LAVA_BOWL = "blockLilrichyLavaBowl";
@@ -19,16 +21,28 @@ public class Names {
         public static final String COTTAGE = "blockLilrichyCottage";
         public static final String STONE = "blockLilrichyStone";
         public static final String STONE_MINERALS = "blockLilrichyStoneMinerals";
+        public static final String GLASS_PANE = "paneLilrichyGlass";
     }
 
     public static class Glass {
         public static final String CLEAR_GLASS_BLUE = "clearGlassBlue";
+        public static final String CLEAR_GLASS_BLUE_PANE = "clearGlassBluePane";
+
         public static final String CLEAR_GLASS_GREEN = "clearGlassGreen";
+        public static final String CLEAR_GLASS_GREEN_PANE = "clearGlassGreenPane";
+
         public static final String CLEAR_GLASS_PINK = "clearGlassPink";
+        public static final String CLEAR_GLASS_PINK_PANE = "clearGlassPinkPane";
 
         public static final String FROSTY_GLASS_BLUE = "frostyGlassBlue";
+        public static final String FROSTY_GLASS_BLUE_PANE = "frostyGlassBluePane";
+
         public static final String FROSTY_GLASS_GREEN = "frostyGlassGreen";
+        public static final String FROSTY_GLASS_GREEN_PANE = "frostyGlassGreenPane";
+
         public static final String FROSTY_GLASS_PURPLE = "frostyGlassPurple";
+        public static final String FROSTY_GLASS_PURPLE_PANE = "frostyGlassPurplePane";
+
     }
 
     public static class Blocks {
