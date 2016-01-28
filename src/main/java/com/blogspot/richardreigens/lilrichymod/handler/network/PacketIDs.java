@@ -5,5 +5,4 @@ package com.blogspot.richardreigens.lilrichymod.handler.network;
  */
 public class PacketIDs {
     public static final byte GuiButtonPress = 1;
-    public static final byte LecternData = 2;
 }
