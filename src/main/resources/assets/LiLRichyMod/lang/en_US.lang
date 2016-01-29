@@ -9,6 +9,9 @@ item.lilrichymod:essenceOfBeared.name=Essence of Bearded
 #BLOCK TABLE
 tile.lilrichymod:blockTable.name=Block Table
 
+#Lectern
+tile.lilrichymod:lectern.name=Lectern
+
 #COTTAGE
 tile.lilrichymod:decorativeBlocks/cottageWall.name=Cottage Wall
 tile.lilrichymod:decorativeBlocks/cottageWallArchedBeam.name=Cottage Wall with Arched Beam
@@ -26,8 +29,6 @@ tile.lilrichymod:decorativeBlocks/metalBatteredRobot.name=Metal Battered Robot
 tile.lilrichymod:decorativeBlocks/metalBatteredRobotBlue.name=Metal Battered Robot Blue
 tile.lilrichymod:decorativeBlocks/metalBatteredRobotOrange.name=Metal Battered Robot Orange
 tile.lilrichymod:decorativeBlocks/metalBatteredRobotPurple.name=Metal Battered Robot Purple
-
-
 tile.lilrichymod:decorativeBlocks/metalBubbleGrip.name=Metal Bubble Grip
 tile.lilrichymod:decorativeBlocks/metalNeedlepointSteel.name=Metal Needlepoint Steel
 tile.lilrichymod:decorativeBlocks/metalRustedIronGrip.name=Metal Rusted Iron Grip
@@ -39,7 +40,6 @@ tile.lilrichymod:decorativeBlocks/lavaBowl.name=Lava Bowl
 tile.lilrichymod:decorativeBlocks/lavaBowlBlue.name=Lava Bowl Blue
 tile.lilrichymod:decorativeBlocks/lavaBowlGreen.name=Lava Bowl Green
 tile.lilrichymod:decorativeBlocks/lavaBowlPurple.name=Lava Bowl Purple
-
 tile.lilrichymod:decorativeBlocks/lavaCracks.name=Lava Cracks
 tile.lilrichymod:decorativeBlocks/lavaDeepFire.name=Lava Deep Fire
 tile.lilrichymod:decorativeBlocks/lavaPelesLake.name=Lava Pele's Lake
@@ -105,8 +105,19 @@ item.lilrichymod:seeds/beardedAzaleaSeed.name=Bearded Azalea Seeds
 tile.lilrichymod:glass/clearGlassBlue.name=Clear Blue Glass
 tile.lilrichymod:glass/clearGlassGreen.name=Clear Green Glass
 tile.lilrichymod:glass/clearGlassPink.name=Clear Pink Glass
+tile.lilrichymod:glass/frostyGlassBrown.name=Frosty Brown Glass
 
 tile.lilrichymod:glass/frostyGlassBlue.name=Frosty Blue Glass
 tile.lilrichymod:glass/frostyGlassGreen.name=Frosty Green Glass
 tile.lilrichymod:glass/frostyGlassPurple.name=Frosty Purple Glass
+
+#Glass Panes
+tile.lilrichymod:glass/clearGlassBluePane.name=Clear Blue Glass Pane
+tile.lilrichymod:glass/clearGlassGreenPane.name=Clear Green Glass Pane
+tile.lilrichymod:glass/clearGlassPinkPane.name=Clear Pink Glass Pane
+tile.lilrichymod:glass/clearGlassBrownPane.name=Clear Brown Glass Pane
+
+tile.lilrichymod:glass/frostyGlassBluePane.name=Frosty Blue Glass Pane
+tile.lilrichymod:glass/frostyGlassGreenPane.name=Frosty Green Glass Pane
+tile.lilrichymod:glass/frostyGlassPurplePane.name=Frosty Purple Glass Pane
 

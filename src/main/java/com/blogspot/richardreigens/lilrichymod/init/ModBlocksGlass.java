@@ -20,6 +20,8 @@ public class ModBlocksGlass {
             Reference.MADE_BY + Reference.LILRICHY, Reference.GLASS_COLORS_CRAFT_TIP);
     public static final GlassBlocks CLEAR_GLASS_PINK = new GlassBlocks(Names.Glass.CLEAR_GLASS_PINK,
             Reference.MADE_BY + Reference.LILRICHY, Reference.GLASS_COLORS_CRAFT_TIP);
+    public static final GlassBlocks CLEAR_GLASS_BROWN = new GlassBlocks(Names.Glass.CLEAR_GLASS_BROWN,
+            Reference.MADE_BY + Reference.LILRICHY, Reference.GLASS_COLORS_CRAFT_TIP);
 
     public static final GlassBlocks FROSTY_GLASS_BLUE = new GlassBlocks(Names.Glass.FROSTY_GLASS_BLUE,
             Reference.MADE_BY + Reference.LILRICHY, Reference.GLASS_COLORS_CRAFT_TIP);
@@ -28,6 +30,7 @@ public class ModBlocksGlass {
     public static final GlassBlocks FROSTY_GLASS_PURPLE = new GlassBlocks(Names.Glass.FROSTY_GLASS_PURPLE,
             Reference.MADE_BY + Reference.LILRICHY, Reference.GLASS_COLORS_CRAFT_TIP);
 
+
     //Glass Panes
     public static final LiLRichyPane CLEAR_GLASS_BLUE_PANE = new LiLRichyPane(Names.Glass.CLEAR_GLASS_BLUE_PANE,
             "clearGlassBlue", "clearGlassBlueTop", Material.glass, true);
@@ -35,6 +38,8 @@ public class ModBlocksGlass {
             "clearGlassGreen", "clearGlassGreenTop", Material.glass, true);
     public static final LiLRichyPane CLEAR_GLASS_PINK_PANE = new LiLRichyPane(Names.Glass.CLEAR_GLASS_PINK_PANE,
             "clearGlassPink", "clearGlassPinkTop", Material.glass, true);
+    public static final LiLRichyPane CLEAR_GLASS_BROWN_PANE = new LiLRichyPane(Names.Glass.CLEAR_GLASS_BROWN_PANE,
+            "clearGlassBrown", "clearGlassBrownTop", Material.glass, true);
 
     public static final LiLRichyPane FROSTY_GLASS_BLUE_PANE = new LiLRichyPane(Names.Glass.FROSTY_GLASS_BLUE_PANE,
             "frostyGlassBlue", "clearGlassBlueTop", Material.glass, true);
@@ -51,6 +56,8 @@ public class ModBlocksGlass {
         OreDictionary.registerOre("blockGlass", CLEAR_GLASS_GREEN);
         GameRegistry.registerBlock(CLEAR_GLASS_PINK, DecorativeItemBlock.class, Names.Glass.CLEAR_GLASS_PINK);
         OreDictionary.registerOre("blockGlass", CLEAR_GLASS_PINK);
+        GameRegistry.registerBlock(CLEAR_GLASS_BROWN, DecorativeItemBlock.class, Names.Glass.CLEAR_GLASS_BROWN);
+        OreDictionary.registerOre("blockGlass", CLEAR_GLASS_BROWN);
 
         GameRegistry.registerBlock(FROSTY_GLASS_BLUE, DecorativeItemBlock.class, Names.Glass.FROSTY_GLASS_BLUE);
         OreDictionary.registerOre("blockGlass", FROSTY_GLASS_BLUE);
@@ -66,6 +73,8 @@ public class ModBlocksGlass {
         OreDictionary.registerOre(Names.OreDicNames.GLASS_PANE, CLEAR_GLASS_GREEN_PANE);
         GameRegistry.registerBlock(CLEAR_GLASS_PINK_PANE, Names.Glass.CLEAR_GLASS_PINK_PANE);
         OreDictionary.registerOre(Names.OreDicNames.GLASS_PANE, CLEAR_GLASS_PINK_PANE);
+        GameRegistry.registerBlock(CLEAR_GLASS_BROWN_PANE, Names.Glass.CLEAR_GLASS_BROWN_PANE);
+        OreDictionary.registerOre(Names.OreDicNames.GLASS_PANE, CLEAR_GLASS_BROWN_PANE);
 
         GameRegistry.registerBlock(FROSTY_GLASS_BLUE_PANE, Names.Glass.FROSTY_GLASS_BLUE_PANE);
         OreDictionary.registerOre(Names.OreDicNames.GLASS_PANE, FROSTY_GLASS_BLUE_PANE);

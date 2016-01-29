@@ -15,6 +15,8 @@ public class PanesRecipes {
                 'g', new ItemStack(ModBlocksGlass.CLEAR_GLASS_GREEN));
         GameRegistry.addRecipe(new ItemStack(ModBlocksGlass.CLEAR_GLASS_PINK_PANE, 16), "   ", "ggg", "ggg",
                 'g', new ItemStack(ModBlocksGlass.CLEAR_GLASS_PINK));
+        GameRegistry.addRecipe(new ItemStack(ModBlocksGlass.CLEAR_GLASS_BROWN_PANE, 16), "   ", "ggg", "ggg",
+                'g', new ItemStack(ModBlocksGlass.CLEAR_GLASS_BROWN));
 
         GameRegistry.addRecipe(new ItemStack(ModBlocksGlass.FROSTY_GLASS_BLUE_PANE, 16), "   ", "ggg", "ggg",
                 'g', new ItemStack(ModBlocksGlass.FROSTY_GLASS_BLUE));

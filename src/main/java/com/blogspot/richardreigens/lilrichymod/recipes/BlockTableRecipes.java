@@ -61,8 +61,9 @@ public class BlockTableRecipes {
                 new ItemStack(ModBlocks.stoneMineralsPurple)};
 
         ItemStack[] glassList = {new ItemStack(ModBlocksGlass.CLEAR_GLASS_BLUE), new ItemStack(ModBlocksGlass.CLEAR_GLASS_GREEN),
-                new ItemStack(ModBlocksGlass.CLEAR_GLASS_PINK), new ItemStack(ModBlocksGlass.FROSTY_GLASS_BLUE),
-                new ItemStack(ModBlocksGlass.FROSTY_GLASS_GREEN), new ItemStack(ModBlocksGlass.FROSTY_GLASS_PURPLE)};
+                new ItemStack(ModBlocksGlass.CLEAR_GLASS_PINK), new ItemStack(ModBlocksGlass.CLEAR_GLASS_BROWN),
+                new ItemStack(ModBlocksGlass.FROSTY_GLASS_BLUE), new ItemStack(ModBlocksGlass.FROSTY_GLASS_GREEN),
+                new ItemStack(ModBlocksGlass.FROSTY_GLASS_PURPLE)};
 
         // Recipe Lists: (output, slot 1 input, slot 2 input) this is the Main recipes for the Block table
         this.addRecipe(concreteList, new ItemStack(ModBlocks.concrete), new ItemStack(ModItems.crushedConcrete));

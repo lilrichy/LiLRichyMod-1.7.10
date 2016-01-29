@@ -34,6 +34,9 @@ public class Names {
         public static final String CLEAR_GLASS_PINK = "clearGlassPink";
         public static final String CLEAR_GLASS_PINK_PANE = "clearGlassPinkPane";
 
+        public static final String CLEAR_GLASS_BROWN = "clearGlassBrown";
+        public static final String CLEAR_GLASS_BROWN_PANE = "clearGlassBrownPane";
+
         public static final String FROSTY_GLASS_BLUE = "frostyGlassBlue";
         public static final String FROSTY_GLASS_BLUE_PANE = "frostyGlassBluePane";
 
@@ -42,6 +45,7 @@ public class Names {
 
         public static final String FROSTY_GLASS_PURPLE = "frostyGlassPurple";
         public static final String FROSTY_GLASS_PURPLE_PANE = "frostyGlassPurplePane";
+
 
     }
 
