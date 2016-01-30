@@ -1,6 +1,6 @@
 package com.blogspot.richardreigens.lilrichymod.blocks.blockTable;
 
-import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
+import com.blogspot.richardreigens.lilrichymod.init.ModTileEntity;
 import com.blogspot.richardreigens.lilrichymod.recipes.BlockTableRecipes;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityLiLRichyMod;
@@ -217,7 +217,7 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
 
     @Override
     public String getInventoryName() {
-        return ModBlocks.blockTable.getUnlocalizedName() + ".name";
+        return ModTileEntity.blockTable.getUnlocalizedName() + ".name";
     }
 
     @Override

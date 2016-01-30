@@ -22,6 +22,7 @@ public class Names {
         public static final String STONE = "blockLilrichyStone";
         public static final String STONE_MINERALS = "blockLilrichyStoneMinerals";
         public static final String GLASS_PANE = "paneLilrichyGlass";
+        public static final String STAIRS = "lilrichyStairs";
     }
 
     public static class Glass {

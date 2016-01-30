@@ -12,6 +12,7 @@ tile.lilrichymod:blockTable.name=Block Table
 #Lectern
 tile.lilrichymod:lectern.name=Lectern
 
+#BLOCKS------------------------------------------------------------------------------------------------
 #COTTAGE
 tile.lilrichymod:decorativeBlocks/cottageWall.name=Cottage Wall
 tile.lilrichymod:decorativeBlocks/cottageWallArchedBeam.name=Cottage Wall with Arched Beam
@@ -74,6 +75,60 @@ tile.lilrichymod:decorativeBlocks/stoneMinerals.name=Stone Minerals
 tile.lilrichymod:decorativeBlocks/stoneMineralsBlue.name=Stone Minerals Blue
 tile.lilrichymod:decorativeBlocks/stoneMineralsOrange.name=Stone Minerals Orange
 tile.lilrichymod:decorativeBlocks/stoneMineralsPurple.name=Stone Minerals Purple
+#End of Blocks---------------------------------------------------------------------------------------------------
+
+
+#Stairs----------------------------------------------------------------------------------------------------------
+#METAL
+tile.lilrichymod:decorativeBlocks/metalBatteredRobotStairs.name=Metal Battered Robot Stairs
+tile.lilrichymod:decorativeBlocks/metalBatteredRobotBlueStairs.name=Metal Battered Robot Blue Stairs
+tile.lilrichymod:decorativeBlocks/metalBatteredRobotOrangeStairs.name=Metal Battered Robot Orange Stairs
+tile.lilrichymod:decorativeBlocks/metalBatteredRobotPurpleStairs.name=Metal Battered Robot Purple Stairs
+tile.lilrichymod:decorativeBlocks/metalBubbleGripStairs.name=Metal Bubble Grip Stairs
+tile.lilrichymod:decorativeBlocks/metalNeedlepointSteelStairs.name=Metal Needlepoint Steel Stairs
+tile.lilrichymod:decorativeBlocks/metalRustedIronGripStairs.name=Metal Rusted Iron Grip Stairs
+tile.lilrichymod:decorativeBlocks/metalSeafoamTarnishStairs.name=Metal Sea Foam Tarnish Stairs
+tile.lilrichymod:decorativeBlocks/metalStainedStairs.name=Metal Stained Stairs
+
+#LAVA
+tile.lilrichymod:decorativeBlocks/lavaBowlStairs.name=Lava Bowl Stairs
+tile.lilrichymod:decorativeBlocks/lavaBowlBlueStairs.name=Lava Bowl Blue Stairs
+tile.lilrichymod:decorativeBlocks/lavaBowlGreenStairs.name=Lava Bowl Green Stairs
+tile.lilrichymod:decorativeBlocks/lavaBowlPurpleStairs.name=Lava Bowl Purple Stairs
+tile.lilrichymod:decorativeBlocks/lavaCracksStairs.name=Lava Cracks Stairs
+tile.lilrichymod:decorativeBlocks/lavaDeepFireStairs.name=Lava Deep Fire Stairs
+tile.lilrichymod:decorativeBlocks/lavaPelesLakeStairs.name=Lava Pele's Lake Stairs
+tile.lilrichymod:decorativeBlocks/lavaSearingGorgeStairs.name=Lava Searing Gorge Stairs
+tile.lilrichymod:decorativeBlocks/lavaSlumberingVolcanoStairs.name=Lava Slumbering Volcano Stairs
+
+#MARBLE
+tile.lilrichymod:decorativeBlocks/marbleBlackStairs.name=Black Marble Stairs
+tile.lilrichymod:decorativeBlocks/marbleBlancoAuroraStairs.name=Blanco Aurora Marble Stairs
+tile.lilrichymod:decorativeBlocks/marbleBlancoNafinStairs.name=Blanco Nafin Marble Stairs
+tile.lilrichymod:decorativeBlocks/marbleSpottedBiancoStairs.name=Spotted Bianco Marble Stairs
+
+#CONCRETE
+tile.lilrichymod:decorativeBlocks/arrangedConcreteBricksStairs.name=Arranged Concrete Bricks Stairs
+tile.lilrichymod:decorativeBlocks/fancyConcreteBlocksStairs.name=Fancy Concrete Blocks Stairs
+tile.lilrichymod:decorativeBlocks/concreteBricksStairs.name=Concrete Bricks Stairs
+tile.lilrichymod:decorativeBlocks/concreteBricksDarkStairs.name=Dark Concrete Bricks Stairs
+tile.lilrichymod:decorativeBlocks/concreteRocksStairs.name=Concrete Rocks Stairs
+tile.lilrichymod:decorativeBlocks/concreteTexturedBlocksStairs.name=Textured Concrete Blocks Stairs
+tile.lilrichymod:decorativeBlocks/oldConcreteSquaresStairs.name=Old Concrete Squares Stairs
+tile.lilrichymod:decorativeBlocks/concreteSquaresStairs.name=Concrete Squares Stairs
+tile.lilrichymod:decorativeBlocks/smallConcreteBricksStairs.name=Small Concrete Bricks Stairs
+tile.lilrichymod:decorativeBlocks/smallConcreteTexturedSquaresStairs.name=Small Textured Concrete Squares Stairs
+
+#STONE
+tile.lilrichymod:decorativeBlocks/crackedStoneStairs.name=Cracked Stone Stairs
+tile.lilrichymod:decorativeBlocks/arrangedStoneBricksStairs.name=Arranged Stone Bricks Stairs
+tile.lilrichymod:decorativeBlocks/stoneBlocksStairs.name=Stone Blocks Stairs
+tile.lilrichymod:decorativeBlocks/stoneBlocksDarkStairs.name=Dark Stone Blocks Stairs
+tile.lilrichymod:decorativeBlocks/stoneMineralsStairs.name=Stone Minerals Stairs
+tile.lilrichymod:decorativeBlocks/stoneMineralsBlueStairs.name=Stone Minerals Blue Stairs
+tile.lilrichymod:decorativeBlocks/stoneMineralsOrangeStairs.name=Stone Minerals Orange Stairs
+tile.lilrichymod:decorativeBlocks/stoneMineralsPurpleStairs.name=Stone Minerals Purple Stairs
+#End of Stairs --------------------------------------------------------------------------------------------
 
 #PANELS PLANKS
 tile.lilrichymod:panels/acaciaPanel.name=Acacia Planks Paneling

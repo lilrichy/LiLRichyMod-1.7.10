@@ -7,7 +7,7 @@ import com.blogspot.richardreigens.lilrichymod.handler.network.NetworkHandler;
 import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
 import com.blogspot.richardreigens.lilrichymod.init.ModBlocksGlass;
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
-import com.blogspot.richardreigens.lilrichymod.init.ModTileEntitys;
+import com.blogspot.richardreigens.lilrichymod.init.ModTileEntity;
 import com.blogspot.richardreigens.lilrichymod.proxy.CommonProxy;
 import com.blogspot.richardreigens.lilrichymod.recipes.Recipes;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
@@ -46,7 +46,7 @@ public class lilrichymod {
         ModBlocksGlass.init();
         LogHelper.info("Blocks Loading");
 
-        ModTileEntitys.Init();
+        ModTileEntity.Init();
         LogHelper.info("Tile Entity's Loading");
 
         PacketDescriptionHandler.init();

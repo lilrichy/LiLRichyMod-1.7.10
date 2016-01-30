@@ -1,7 +1,7 @@
 package com.blogspot.richardreigens.lilrichymod.blocks.advancedPlayerDetector;
 
 import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
-import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
+import com.blogspot.richardreigens.lilrichymod.init.ModTileEntity;
 import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityLiLRichyMod;
 import cpw.mods.fml.common.network.ByteBufUtils;
 import io.netty.buffer.ByteBuf;
@@ -195,7 +195,7 @@ public class TileEntityAdvancedDetector extends TileEntityLiLRichyMod implements
 
     @Override
     public String getInventoryName() {
-        return ModBlocks.advancedDetector.getUnlocalizedName() + ".name";
+        return ModTileEntity.advancedDetector.getUnlocalizedName() + ".name";
     }
 
     @Override

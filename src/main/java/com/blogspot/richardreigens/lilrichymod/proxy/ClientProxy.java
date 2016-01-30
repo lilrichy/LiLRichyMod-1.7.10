@@ -7,7 +7,7 @@ import com.blogspot.richardreigens.lilrichymod.blocks.lectern.ItemRenderLectern;
 import com.blogspot.richardreigens.lilrichymod.blocks.lectern.LecternRender;
 import com.blogspot.richardreigens.lilrichymod.blocks.lectern.TileEntityLectern;
 import com.blogspot.richardreigens.lilrichymod.handler.EventHandler;
-import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
+import com.blogspot.richardreigens.lilrichymod.init.ModTileEntity;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -27,11 +27,11 @@ public class ClientProxy extends CommonProxy {
     public void registerRenderers() {
         TileEntitySpecialRenderer render = new RenderBlockTable();
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBlockTable.class, render);
-        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.blockTable), new ItemRenderBlockTable(render, new TileEntityBlockTable()));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModTileEntity.blockTable), new ItemRenderBlockTable(render, new TileEntityBlockTable()));
 
         TileEntitySpecialRenderer renderLectern = new LecternRender();
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityLectern.class, renderLectern);
-        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.lectern), new ItemRenderLectern(renderLectern, new TileEntityLectern()));
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModTileEntity.lectern), new ItemRenderLectern(renderLectern, new TileEntityLectern()));
     }
 
     @Override

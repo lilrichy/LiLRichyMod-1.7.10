@@ -30,7 +30,6 @@ public class ModBlocksGlass {
     public static final GlassBlocks FROSTY_GLASS_PURPLE = new GlassBlocks(Names.Glass.FROSTY_GLASS_PURPLE,
             Reference.MADE_BY + Reference.LILRICHY, Reference.GLASS_COLORS_CRAFT_TIP);
 
-
     //Glass Panes
     public static final LiLRichyPane CLEAR_GLASS_BLUE_PANE = new LiLRichyPane(Names.Glass.CLEAR_GLASS_BLUE_PANE,
             "clearGlassBlue", "clearGlassBlueTop", Material.glass, true);
@@ -82,7 +81,5 @@ public class ModBlocksGlass {
         OreDictionary.registerOre(Names.OreDicNames.GLASS_PANE, FROSTY_GLASS_GREEN_PANE);
         GameRegistry.registerBlock(FROSTY_GLASS_PURPLE_PANE, Names.Glass.FROSTY_GLASS_PURPLE_PANE);
         OreDictionary.registerOre(Names.OreDicNames.GLASS_PANE, FROSTY_GLASS_PURPLE_PANE);
-
     }
-
 }

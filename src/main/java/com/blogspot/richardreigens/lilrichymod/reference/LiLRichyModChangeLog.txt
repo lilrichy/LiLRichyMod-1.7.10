@@ -8,6 +8,7 @@ Added checks for recipes to not load if required mod is not present.
 Added Lectern Block.
 Added Glass Panes.
 Added Clear Brown Glass.
+Added Stairs for Decorative Blocks.
 
 v1.12
 Added Thermal Expansion Pulverizer recipe for crushed concrete from concrete blocks.

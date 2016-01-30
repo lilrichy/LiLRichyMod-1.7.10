@@ -3,6 +3,7 @@ package com.blogspot.richardreigens.lilrichymod.recipes;
 import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
 import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
+import com.blogspot.richardreigens.lilrichymod.init.ModTileEntity;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Blocks;
@@ -18,7 +19,7 @@ public class Recipes {
 
         blockRecipes();
         tileRecipes();
-
+        StairsRecipes.init();
         PanesRecipes.init();
 
         if (ConfigurationHandler.smeltingRecipes) smeltingRecipes();
@@ -47,19 +48,19 @@ public class Recipes {
 
     public static void tileRecipes() {
         //Player Detector
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.playerDetector, 1), "ici", "ctc", "ici",
+        GameRegistry.addRecipe(new ItemStack(ModTileEntity.playerDetector, 1), "ici", "ctc", "ici",
                 'i', new ItemStack(Items.iron_ingot), 'c', new ItemStack(Items.comparator), 't', new ItemStack(Blocks.redstone_torch));
 
         //Advanced Detector
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.advancedDetector, 1), "idi", "dtd", "idi",
-                'i', new ItemStack(Items.gold_ingot), 'd', new ItemStack(Items.diamond), 't', new ItemStack(ModBlocks.playerDetector));
+        GameRegistry.addRecipe(new ItemStack(ModTileEntity.advancedDetector, 1), "idi", "dtd", "idi",
+                'i', new ItemStack(Items.gold_ingot), 'd', new ItemStack(Items.diamond), 't', new ItemStack(ModTileEntity.playerDetector));
 
         //Block Table
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.blockTable, 1), "www", "pwp", "p p",
+        GameRegistry.addRecipe(new ItemStack(ModTileEntity.blockTable, 1), "www", "pwp", "p p",
                 'w', new ItemStack(Blocks.heavy_weighted_pressure_plate), 'p', new ItemStack(Blocks.planks));
 
         //Lectern
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.lectern, 1), "sss", " p ", " s ",
+        GameRegistry.addRecipe(new ItemStack(ModTileEntity.lectern, 1), "sss", " p ", " s ",
                 's', new ItemStack(Blocks.wooden_slab), 'p', new ItemStack(Blocks.planks));
     }
 }
